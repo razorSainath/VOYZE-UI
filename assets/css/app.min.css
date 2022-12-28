@@ -1,4 +1,4 @@
-@import url(../../../../css2-3);
+
     :root {
     --bs-sidebar-bg: #ffffff;
     --bs-sidebar-menu-item-color: #7b8190;
@@ -1125,7 +1125,7 @@ body[data-layout=horizontal] .navbar-header {
     width: .4em;
 }
 @media (max-width:991.98px) {
-    .topnav-menu .navbar-nav li: last-of-type .dropdown .dropdown-menu {
+    .topnav-menu .navbar-nav li:last-of-type .dropdown .dropdown-menu {
     right: 100%;
     left: auto;
 }
