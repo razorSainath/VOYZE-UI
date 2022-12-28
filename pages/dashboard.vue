@@ -1,3 +1,11 @@
+<!-- <style scoped src = "@/assets/css/bootstrap.min.css">
+/* @import './assets/css/bootstrap.min.css';
+
+</style> -->
+
+
+
+
 <template>
     <head>
 
@@ -10,11 +18,11 @@
 <link rel="shortcut icon" href="assets/images/favicon.ico">
 
 <!-- Bootstrap Css -->
-<link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+<link href="./assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
 <!-- Icons Css -->
 
 <!-- App Css-->
-<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+<link href="./assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
 </head>
 
