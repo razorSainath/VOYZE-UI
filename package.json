@@ -11,6 +11,7 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.0.2",
     "bootstrap": "^5.2.3",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0"
