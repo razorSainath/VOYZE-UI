@@ -1,14 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
-  css: [
-   "@/assets/styles/global.scss",
 
-  ],
-  buildModules:['@nuxtjs/fontawesome'],
-  fontawesome: {
-    icons:{
-     solid:true,
-     brands:true
-    }
-   }
-});
+
+
+export default {
+  app: {
+    head: {
+      script: [
+        {
+          src: "https://kit.fontawesome.com/79955d71bb.js",
+        },
+      ],
+    },
+  },
+  css: ["assets/styles/global.scss"],
+};
