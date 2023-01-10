@@ -12,5 +12,6 @@ export default {
       ],
     },
   },
-  css: ["assets/styles/global.scss"],
+  css: ["assets/styles/global.scss","assets/styles/bootstrap.scss"],
+  
 };
