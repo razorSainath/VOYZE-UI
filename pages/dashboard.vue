@@ -1,5 +1,5 @@
 <template>
-
+    
                         <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
@@ -26,8 +26,8 @@
                                             <div id="total-revenue-chart" data-colors='["--bs-primary"]'></div>
                                         </div>
                                         <div>
-                                            <h4 class="mb-1 mt-1">$<span data-plugin="counterup">34,152</span></h4>
-                                            <p class="text-muted mb-0">Total Revenue</p>
+                                            <h4 class="mb-1 mt-1"><span data-plugin="counterup">152</span></h4>
+                                            <p class="text-muted mb-0">Total Posts</p>
                                         </div>
                                         <p class="text-muted mt-3 mb-0"><span class="text-success me-1"><i class="mdi mdi-arrow-up-bold me-1"></i>2.65%</span> since last week
                                         </p>
@@ -42,8 +42,8 @@
                                             <div id="orders-chart" data-colors='["--bs-success"]'> </div>
                                         </div>
                                         <div>
-                                            <h4 class="mb-1 mt-1"><span data-plugin="counterup">5,643</span></h4>
-                                            <p class="text-muted mb-0">Orders</p>
+                                            <h4 class="mb-1 mt-1"><span data-plugin="counterup">43</span></h4>
+                                            <p class="text-muted mb-0">Published</p>
                                         </div>
                                         <p class="text-muted mt-3 mb-0"><span class="text-danger me-1"><i class="mdi mdi-arrow-down-bold me-1"></i>0.82%</span> since last week
                                         </p>
@@ -58,8 +58,8 @@
                                             <div id="customers-chart" data-colors='["--bs-primary"]'> </div>
                                         </div>
                                         <div>
-                                            <h4 class="mb-1 mt-1"><span data-plugin="counterup">45,254</span></h4>
-                                            <p class="text-muted mb-0">Customers</p>
+                                            <h4 class="mb-1 mt-1"><span data-plugin="counterup">54</span></h4>
+                                            <p class="text-muted mb-0">Review</p>
                                         </div>
                                         <p class="text-muted mt-3 mb-0"><span class="text-danger me-1"><i class="mdi mdi-arrow-down-bold me-1"></i>6.24%</span> since last week
                                         </p>
@@ -109,7 +109,7 @@
                                         <div class="mt-1">
                                             <ul class="list-inline main-chart mb-0">
                                                 <li class="list-inline-item chart-border-left me-0 border-0">
-                                                    <h3 class="text-primary">$<span data-plugin="counterup">2,371</span><span class="text-muted d-inline-block font-size-15 ms-3">Income</span></h3>
+                                                    <h3 class="text-primary"><span data-plugin="counterup">2,371</span><span class="text-muted d-inline-block font-size-15 ms-3">Income</span></h3>
                                                 </li>
                                                 <li class="list-inline-item chart-border-left me-0">
                                                     <h3><span data-plugin="counterup">258</span><span class="text-muted d-inline-block font-size-15 ms-3">Sales</span>
@@ -301,21 +301,7 @@
                             <div class="col-xl-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="float-end">
-                                            <div class="dropdown">
-                                                <a class=" dropdown-toggle" href="#" id="dropdownMenuButton2"
-                                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="text-muted">All Members<i class="mdi mdi-chevron-down ms-1"></i></span>
-                                                </a>
-
-                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
-                                                    <a class="dropdown-item" href="#">Locations</a>
-                                                    <a class="dropdown-item" href="#">Revenue</a>
-                                                    <a class="dropdown-item" href="#">Join Date</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h4 class="card-title mb-4">Top Users</h4>
+                                        <h4 class="card-title mb-4">Top Leaders</h4>
 
                                         <div data-simplebar style="max-height: 339px;">
                                             <div class="table-responsive">
@@ -328,7 +314,7 @@
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Nevada</p>
                                                             </td>
                                                             <td><span class="badge bg-soft-danger font-size-12">Cancel</span></td>
-                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>$250.00</td>
+                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>250.00</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="assets/images/users/avatar-5.jpg" class="avatar-xs rounded-circle " alt="..."></td>
@@ -337,7 +323,7 @@
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Texas</p>
                                                             </td>
                                                             <td><span class="badge bg-soft-success font-size-12">Success</span></td>
-                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>$110.00</td>
+                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>110.00</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="assets/images/users/avatar-6.jpg" class="avatar-xs rounded-circle " alt="..."></td>
@@ -346,7 +332,7 @@
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
                                                             </td>
                                                             <td><span class="badge bg-soft-info font-size-12">Active</span></td>
-                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>$420.00</td>
+                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>420.00</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="assets/images/users/avatar-7.jpg" class="avatar-xs rounded-circle " alt="..."></td>
@@ -355,7 +341,7 @@
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Montana</p>
                                                             </td>
                                                             <td><span class="badge bg-soft-warning font-size-12">Pending</span></td>
-                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>$120.00</td>
+                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>120.00</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="assets/images/users/avatar-8.jpg" class="avatar-xs rounded-circle " alt="..."></td>
@@ -364,7 +350,7 @@
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Colorado</p>
                                                             </td>
                                                             <td><span class="badge bg-soft-info font-size-12">Active</span></td>
-                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>$112.00</td>
+                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>112.00</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="assets/images/users/avatar-2.jpg" class="avatar-xs rounded-circle " alt="..."></td>
@@ -373,7 +359,7 @@
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Australia</p>
                                                             </td>
                                                             <td><span class="badge bg-soft-success font-size-12">Success</span></td>
-                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>$120.00</td>
+                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>120.00</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="assets/images/users/avatar-1.jpg" class="avatar-xs rounded-circle " alt="..."></td>
@@ -382,7 +368,7 @@
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> India</p>
                                                             </td>
                                                             <td><span class="badge bg-soft-danger font-size-12">Cancel</span></td>
-                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>$112.00</td>
+                                                            <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>112.00</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -486,7 +472,7 @@
                                             <a href="#" class="text-reset font-16">Learn more <i class="mdi mdi-chevron-right"></i></a>
                                         </div>
                                         <div class="row mt-4">
-                                            <div class="col-6">
+                                            <div class="col-3">
                                                 <div class="social-source text-center mt-3">
                                                     <div class="avatar-xs mx-auto mb-3">
                                                         <span class="avatar-title rounded-circle font-size-16" style="background-color: #009dc2;">
@@ -497,7 +483,7 @@
                                                     <p class="text-muted mb-0">125 posts</p>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-3">
                                                 <div class="social-source text-center mt-3">
                                                     <div class="avatar-xs mx-auto mb-3">
                                                         <span class="avatar-title rounded-circle font-size-16" style="background-color: #009dc2;">
@@ -506,6 +492,28 @@
                                                     </div>
                                                     <h5 class="font-size-15">Twitter</h5>
                                                     <p class="text-muted mb-0">112 posts</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="social-source text-center mt-3">
+                                                    <div class="avatar-xs mx-auto mb-3">
+                                                        <span class="avatar-title rounded-circle font-size-16" style="background-color: #009dc2;">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                            </span>
+                                                    </div>
+                                                    <h5 class="font-size-15">Instagram</h5>
+                                                    <p class="text-muted mb-0">12 posts</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="social-source text-center mt-3">
+                                                    <div class="avatar-xs mx-auto mb-3">
+                                                        <span class="avatar-title rounded-circle font-size-16" style="background-color: #009dc2;">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                            </span>
+                                                    </div>
+                                                    <h5 class="font-size-15">Facebook</h5>
+                                                    <p class="text-muted mb-0">102 posts</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="col-4">
@@ -530,7 +538,4 @@
                             </div>
                         </div>
                         <!-- end row -->
-
 </template>
-
-
