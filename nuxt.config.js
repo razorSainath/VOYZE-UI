@@ -11,6 +11,7 @@ export default {
       script: [
         {
           src: "https://kit.fontawesome.com/79955d71bb.js",
+          crossorigin:"anonymous",
         },
       ],
     },

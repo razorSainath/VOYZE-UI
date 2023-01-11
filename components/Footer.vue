@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          © 2021 -{{ new Date().getFullYear() }}Razorlabz Software Private
+          © 2021 - {{ new Date().getFullYear() }} Razorlabz Software Private
           Limited.
         </div>
         <div class="col-sm-6">

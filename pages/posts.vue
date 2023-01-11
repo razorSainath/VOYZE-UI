@@ -14,9 +14,20 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6"></div>
+                                <div class="col-md-3">
+                                    <select name="" id="" class="form-control">
+                                        <option value="0">Select Platform</option>
+                                        <option value="1">LinkedIn</option>
+                                        <option value="2">Twitter</option>
+                                        <option value="3">Facebook</option>
+                                        <option value="4">Instagram</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="datetime-local" name="" id="" class="form-control">
+                                </div>
                                 <div class="col-md-6"> <button type="submit" class="btn btn-primary mb-2 float-md-end"
-                                        data-toggle="modal" data-target="#myModal"><span><i
+                                        data-toggle="modal" data-target="#myModal" style="background-color: #009cd2;border-color: #009cd2;"><span><i
                                                 class="fa-solid fa-plus"></i></span> New Draft</button></div>
                             </div>
 
@@ -25,7 +36,7 @@
                     <!-- end page title -->
 
                     <div class="row">
-                        <div class="col-xl-9 col-lg-8">
+                        <div class="col-xl-12 col-lg-9">
                             <div class="card" style="border-radius: 10px;">
                                 <div class="card-body">
                                     <div>
@@ -54,7 +65,7 @@
                                         </div>
 
                                         <div class="tr-job-posted section-padding">
-                                            <div class="container">
+                                            <div class="container-fluid">
                                                 <div class="job-tab">
                                                     <ul class="nav nav-tab nav-tabs-custom mt-3 mb-2 ecommerce-sortby-list"
                                                         role="tablist">
@@ -111,31 +122,41 @@
                                                                                             <!-- Example split danger button -->
                                                                                             <div class="btn-group">
                                                                                                 <button type="button"
-                                                                                                    class="btn text-primary dropdown-toggle-split fa-solid fa-ellipsis-vertical"
+                                                                                                    class="btn text-primary dropdown-toggle-split"
+                                                                                                    data-bs-toggle="dropdown"
+                                                                                                    aria-expanded="false">💬
+                                                                                                </button>
+                                                                                                <button type="button"
+                                                                                                    class="btn text-primary dropdown-toggle-split fa fa-check-square-o"
                                                                                                     data-bs-toggle="dropdown"
                                                                                                     aria-expanded="false">
+                                                                                                </button>
+                                                                                                <button type="button"
+                                                                                                    class="btn text-primary dropdown-toggle-split"
+                                                                                                    data-bs-toggle="dropdown"
+                                                                                                    aria-expanded="false">&#8942;
                                                                                                 </button>
                                                                                                 <ul
                                                                                                     class="dropdown-menu">
                                                                                                     <li data-toggle="modal" data-target="#myModal1"><a class="dropdown-item"
                                                                                                             href="#"><i
-                                                                                                                class="fa-solid fa-pencil"></i>&nbsp;
+                                                                                                                class="fa-solid fa-pencil"></i>&nbsp;&nbsp;
                                                                                                             Edit</a>
                                                                                                     </li>
                                                                                                     <li><a class="dropdown-item"
                                                                                                             href="#"><i
-                                                                                                                class="fa-solid fa-arrow-right"></i>&nbsp;Move
+                                                                                                                class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Move
                                                                                                             to
                                                                                                             review</a>
                                                                                                     </li>
                                                                                                     <li><a class="dropdown-item"
                                                                                                             href="#"><i
-                                                                                                                class="fa-solid fa-arrow-right"></i>&nbsp;Post
+                                                                                                                class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Post
                                                                                                             Details</a>
                                                                                                     </li>
                                                                                                     <li><a class="dropdown-item"
                                                                                                             href="#"><i
-                                                                                                                class="fa-solid fa-arrow-right"></i>&nbsp;Something
+                                                                                                                class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Something
                                                                                                             else
                                                                                                             here</a>
                                                                                                     </li>
@@ -146,7 +167,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <img src="~/assets/images/modi_mother_12-sixteen_nine.webp"
+                                                                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/main_photo_0-sixteen_nine.jpg?size=948:533"
                                                                             alt="" class="img-fluid">
                                                                         <div class="card-body">
                                                                             <p><b>Rishabh Pant car accident: 'जलती कार
@@ -211,9 +232,19 @@
                                                                                             <!-- Example split danger button -->
                                                                                             <div class="btn-group">
                                                                                                 <button type="button"
-                                                                                                    class="btn text-primary dropdown-toggle dropdown-toggle-split fa-solid fa-ellipsis-vertical"
+                                                                                                    class="btn text-primary dropdown-toggle-split"
+                                                                                                    data-bs-toggle="dropdown"
+                                                                                                    aria-expanded="false">💬
+                                                                                                </button>
+                                                                                                <button type="button"
+                                                                                                    class="btn text-primary dropdown-toggle-split fa fa-check-square-o"
                                                                                                     data-bs-toggle="dropdown"
                                                                                                     aria-expanded="false">
+                                                                                                </button>
+                                                                                                <button type="button"
+                                                                                                    class="btn text-primary dropdown-toggle-split"
+                                                                                                    data-bs-toggle="dropdown"
+                                                                                                    aria-expanded="false">&#8942;
                                                                                                 </button>
                                                                                                 <ul
                                                                                                     class="dropdown-menu">
@@ -246,7 +277,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <img src="~/assets/images/covid_8-sixteen_nine.webp"
+                                                                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/main_photo_0-sixteen_nine.jpg?size=948:533"
                                                                             alt="" class="img-fluid">
                                                                         <div class="card-body">
                                                                             <p><b>Doesn't it feel cold? Rahul Gandhi
@@ -1655,211 +1686,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-lg-4">
-                            <div class="card" style="border-radius: 10px;">
-                                <div class="card-header bg-transparent border-bottom">
-                                    <h5 class="mb-0">Filters</h5>
-                                </div>
-
-                                <div class="p-4">
-                                    <div class="custom-accordion">
-                                        <select name="" id="" class="form-control" multiple>
-                                            <!-- <option value="0">Select Platform</option> -->
-                                            <option value="1">LinkedIn</option>
-                                            <option value="2">Twitter</option>
-                                            <option value="3">Facebook</option>
-                                            <option value="4">Instagram</option>
-                                        </select>
-                                    </div>
-
-                                </div>
-
-                                <div class="p-4 border-top">
-                                    <div>
-                                        <input type="datetime-local" name="" id="" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="custom-accordion">
-                                    <div class="p-4 border-top">
-                                        <div>
-                                            <h5 class="font-size-14 mb-0"><a href="#filtersizes-collapse"
-                                                    class="text-dark d-block" data-bs-toggle="collapse">Sizes <i
-                                                        class="mdi mdi-chevron-up float-end accor-down-icon"></i></a>
-                                            </h5>
-
-                                            <div class="collapse show" id="filtersizes-collapse">
-                                                <div class="mt-4">
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-15 mb-0">Select Sizes</h5>
-                                                        </div>
-                                                        <div class="w-xs">
-                                                            <select class="form-select">
-                                                                <option value="1">3</option>
-                                                                <option value="2">4</option>
-                                                                <option value="3">5</option>
-                                                                <option value="4">6</option>
-                                                                <option value="5" selected>7</option>
-                                                                <option value="6">8</option>
-                                                                <option value="7">9</option>
-                                                                <option value="8">10</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="p-4 border-top">
-                                        <div>
-                                            <h5 class="font-size-14 mb-0"><a href="#filterprodductcolor-collapse"
-                                                    class="text-dark d-block" data-bs-toggle="collapse">Colors <i
-                                                        class="mdi mdi-chevron-up float-end accor-down-icon"></i></a>
-                                            </h5>
-
-                                            <div class="collapse show" id="filterprodductcolor-collapse">
-                                                <div class="mt-4">
-                                                    <div class="form-check mt-2">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            id="productcolorCheck1">
-                                                        <label class="form-check-label" for="productcolorCheck1"><i
-                                                                class="mdi mdi-circle text-dark mx-1"></i> Black</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            id="productcolorCheck2">
-                                                        <label class="form-check-label" for="productcolorCheck2"><i
-                                                                class="mdi mdi-circle text-light mx-1"></i>
-                                                            White</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            id="productcolorCheck3">
-                                                        <label class="form-check-label" for="productcolorCheck3"><i
-                                                                class="mdi mdi-circle text-secondary mx-1"></i>
-                                                            Gray</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            id="productcolorCheck4">
-                                                        <label class="form-check-label" for="productcolorCheck4"><i
-                                                                class="mdi mdi-circle text-primary mx-1"></i>
-                                                            Blue</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            id="productcolorCheck5">
-                                                        <label class="form-check-label" for="productcolorCheck5"><i
-                                                                class="mdi mdi-circle text-success mx-1"></i>
-                                                            Green</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            id="productcolorCheck6">
-                                                        <label class="form-check-label" for="productcolorCheck6"><i
-                                                                class="mdi mdi-circle text-danger mx-1"></i> Red</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            id="productcolorCheck7">
-                                                        <label class="form-check-label" for="productcolorCheck7"><i
-                                                                class="mdi mdi-circle text-warning mx-1"></i>
-                                                            Yellow</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            id="productcolorCheck8">
-                                                        <label class="form-check-label" for="productcolorCheck8"><i
-                                                                class="mdi mdi-circle text-purple mx-1"></i>
-                                                            Purple</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="p-4 border-top">
-                                        <div>
-                                            <h5 class="font-size-14 mb-0"><a href="#filterproduct-color-collapse"
-                                                    class="text-dark d-block" data-bs-toggle="collapse">Customer Rating
-                                                    <i class="mdi mdi-chevron-up float-end accor-down-icon"></i></a>
-                                            </h5>
-
-                                            <div class="collapse show" id="filterproduct-color-collapse">
-                                                <div class="mt-4">
-                                                    <!-- <div class="form-check mt-2">
-                                                        <input type="radio" id="productratingRadio1"
-                                                            name="productratingRadio1" class="form-check-input">
-                                                        <label class="form-check-label" for="productratingRadio1">4 <i
-                                                                class="mdi mdi-star text-warning"></i> & Above</label>
-                                                    </div> -->
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <!-- <div class="p-4 border-top">
-                                        <div>
-                                            <h5 class="font-size-14 mb-0"><a href="#filterproduct-discount-collapse"
-                                                    class="collapsed text-dark d-block"
-                                                    data-bs-toggle="collapse">Discount <i
-                                                        class="mdi mdi-chevron-up float-end accor-down-icon"></i></a>
-                                            </h5>
-
-                                            <div class="collapse" id="filterproduct-discount-collapse">
-                                                <div class="mt-4">
-                                                    <div class="form-check mt-2">
-                                                        <input type="radio" id="productdiscountRadio1"
-                                                            name="productdiscountRadio" class="form-check-input">
-                                                        <label class="form-check-label" for="productdiscountRadio1">50%
-                                                            or more</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="radio" id="productdiscountRadio2"
-                                                            name="productdiscountRadio" class="form-check-input">
-                                                        <label class="form-check-label" for="productdiscountRadio2">40%
-                                                            or more</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="radio" id="productdiscountRadio3"
-                                                            name="productdiscountRadio" class="form-check-input">
-                                                        <label class="form-check-label" for="productdiscountRadio3">30%
-                                                            or more</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="radio" id="productdiscountRadio4"
-                                                            name="productdiscountRadio" class="form-check-input">
-                                                        <label class="form-check-label" for="productdiscountRadio4">20%
-                                                            or more</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="radio" id="productdiscountRadio5"
-                                                            name="productdiscountRadio" class="form-check-input">
-                                                        <label class="form-check-label" for="productdiscountRadio5">10%
-                                                            or more</label>
-                                                    </div>
-                                                    <div class="form-check mt-2">
-                                                        <input type="radio" id="productdiscountRadio6"
-                                                            name="productdiscountRadio" class="form-check-input">
-                                                        <label class="form-check-label" for="productdiscountRadio6">Less
-                                                            than 10%</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div> -->
-
-                                </div>
-
                             </div>
                         </div>
 
