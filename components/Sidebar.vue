@@ -11,7 +11,7 @@ switch (page) {
   console.log(page);
   break
   case 'leaders':
-  navigateTo("/organizations/123/workspaces/345/leaders")
+  navigateTo("/leaders")
   console.log(page);
     break;
   case 'analytics':
@@ -27,13 +27,13 @@ switch (page) {
   navigateTo("/category-management")
     break;
   case 'user-management':
-  navigateTo("/user-management")
+  navigateTo("/users")
     break;
   case 'role-management':
-  navigateTo("/role-management")
+  navigateTo("/roles")
     break;
   case 'partners-management':
-  navigateTo("/partner-management")
+  navigateTo("/partners")
     break;
 //   default:
 //     console.log(`Sorry, we are out of ${expr}.`);

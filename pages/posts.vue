@@ -146,7 +146,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <img src="assets/images/modi_mother_12-sixteen_nine.webp"
+                                                                        <img src="~/assets/images/modi_mother_12-sixteen_nine.webp"
                                                                             alt="" class="img-fluid">
                                                                         <div class="card-body">
                                                                             <p><b>Rishabh Pant car accident: 'जलती कार
@@ -246,7 +246,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <img src="assets/images/covid_8-sixteen_nine.webp"
+                                                                        <img src="~/assets/images/covid_8-sixteen_nine.webp"
                                                                             alt="" class="img-fluid">
                                                                         <div class="card-body">
                                                                             <p><b>Doesn't it feel cold? Rahul Gandhi
@@ -346,7 +346,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <img src="assets/images/covid_8-sixteen_nine.webp"
+                                                                        <img src="~/assets/images/covid_8-sixteen_nine.webp"
                                                                             alt="" class="img-fluid">
                                                                         <div class="card-body">
                                                                             <p><b>Doesn't it feel cold? Rahul Gandhi

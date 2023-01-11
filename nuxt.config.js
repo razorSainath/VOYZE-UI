@@ -3,6 +3,9 @@
 
 
 export default {
+
+  
+
   app: {
     head: {
       script: [

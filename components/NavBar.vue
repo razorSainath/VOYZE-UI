@@ -236,7 +236,7 @@
               >
                 <img
                   class="rounded-circle header-profile-user"
-                  src="assets/images/users/avatar-2.jpg"
+                  src="~/assets/images/users/avatar-2.jpg"
                   alt="Header Avatar"
                 />
                 <span
