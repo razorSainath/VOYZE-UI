@@ -122,6 +122,7 @@
                                         </div>
 
                                         <div class="mt-3">
+                                            
                                             <div id="sales-analytics-chart" data-colors='["--bs-primary", "#dfe2e6", "--bs-warning"]' class="apex-charts" dir="ltr"></div>
                                         </div>
                                     </div> <!-- end card-body-->
