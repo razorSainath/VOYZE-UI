@@ -94,7 +94,7 @@
                                                                 
                                                                     <div class="dropdown-menu dropdown-menu-end">
                                                                         <a class="dropdown-item" href="#">Action</a>
-                                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                                        <a class="dropdown-item" href="#">Delete</a>
                                                                         <a class="dropdown-item" href="#">Something else here</a>
                                                                     </div>
                                                                 </li>
@@ -129,7 +129,7 @@
                                                                 
                                                                     <div class="dropdown-menu dropdown-menu-end">
                                                                         <a class="dropdown-item" href="#">Action</a>
-                                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                                        <a class="dropdown-item" href="#">Delete</a>
                                                                         <a class="dropdown-item" href="#">Something else here</a>
                                                                     </div>
                                                                 </li>
@@ -164,7 +164,7 @@
                                                                 
                                                                     <div class="dropdown-menu dropdown-menu-end">
                                                                         <a class="dropdown-item" href="#">Action</a>
-                                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                                        <a class="dropdown-item" href="#">Delete</a>
                                                                         <a class="dropdown-item" href="#">Something else here</a>
                                                                     </div>
                                                                 </li>
@@ -199,7 +199,7 @@
                                                                 
                                                                     <div class="dropdown-menu dropdown-menu-end">
                                                                         <a class="dropdown-item" href="#">Action</a>
-                                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                                        <a class="dropdown-item" href="#">Delete</a>
                                                                         <a class="dropdown-item" href="#">Something else here</a>
                                                                     </div>
                                                                 </li>
@@ -234,8 +234,7 @@
                                                                 
                                                                     <div class="dropdown-menu dropdown-menu-end">
                                                                         <a class="dropdown-item" href="#">Action</a>
-                                                                        <a class="dropdown-item" href="#">Another action</a>
-                                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                                        <a class="dropdown-item" href="#">Delete</a>
                                                                     </div>
                                                                 </li>
                                                             </ul>
@@ -269,7 +268,7 @@
                                                                 
                                                                     <div class="dropdown-menu dropdown-menu-end">
                                                                         <a class="dropdown-item" href="#">Action</a>
-                                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                                        <a class="dropdown-item" href="#">Delete</a>
                                                                         <a class="dropdown-item" href="#">Something else here</a>
                                                                     </div>
                                                                 </li>
