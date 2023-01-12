@@ -44,7 +44,7 @@ export default {
       v-model="selected"
       :options="options"
       :multiple="true"
-      placeholder="Select"
+      placeholder="Select Workspace/s"
       :limit="2"
       :limit-text="limitText"
       >

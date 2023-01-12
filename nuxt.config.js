@@ -1,11 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-
-
 export default {
-
-  
-
   app: {
     head: {
       script: [
@@ -15,6 +10,5 @@ export default {
       ],
     },
   },
-  css: ["assets/styles/global.scss","assets/styles/bootstrap.scss"],
-  
+  css: ["assets/styles/global.scss", "assets/styles/bootstrap.scss"],
 };

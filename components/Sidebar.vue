@@ -24,7 +24,7 @@ switch (page) {
   navigateTo("/curation")
     break;
   case 'category':
-  navigateTo("/category-management")
+  navigateTo("/categories")
     break;
   case 'user-management':
   navigateTo("/users")
