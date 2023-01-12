@@ -208,12 +208,6 @@ const series = [
               ></apexchart>
 </ClientOnly>
             </div>
-            <div
-              id="sales-analytics-chart"
-              data-colors='["--bs-primary", "#dfe2e6", "--bs-warning"]'
-              class="apex-charts"
-              dir="ltr"
-            ></div>
           </div>
         </div>
         <!-- end card-body-->
