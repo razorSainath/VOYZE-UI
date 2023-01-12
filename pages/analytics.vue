@@ -234,7 +234,7 @@
                                         </div>
                                         <h4 class="card-title mb-4">Top Users</h4>
 
-                                        <div data-simplebar style="max-height: 339px;">
+                                        <div data-simplebar style="max-height: 339px;overflow:auto">
                                             <div class="table-responsive">
                                                 <table class="table table-borderless table-centered table-nowrap">
                                                     <tbody>

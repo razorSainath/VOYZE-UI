@@ -42,34 +42,24 @@ export default {
   <!-- end page title -->
 
   <div class="row mb-2">
-    <div class="col-md-6">
-      <button
-        type="button"
-        class="btn btn-success"
-        data-toggle="modal"
-        data-target="#exampleModal"
-      >
-        <span><i class="fa-solid fa-plus"></i>&nbsp;</span>Add New Workspace
-      </button>
-    </div>
+                            <div class="col-md-3">
+                                <div class="form-inline mb-3">
+                                    <div class="search-box ms-2">
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control rounded border-0" placeholder="Search...">
+                                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-primary float-md-end" data-toggle="modal" data-target="#exampleModal">
+                                    <span><i class="fa-solid fa-plus"></i>&nbsp;</span>Add New Workspace
+                                  </button>
+                            </div>
 
-
-
-    <div class="col-md-6">
-      <div class="form-inline float-md-end mb-3">
-        <div class="search-box ms-2">
-          <div class="position-relative">
-            <input
-              type="text"
-              class="form-control rounded border-0"
-              placeholder="Search..."
-            />
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                        </div>
   <!-- end row -->
   <div class="row mb-2">
   <div class="col-md-4">

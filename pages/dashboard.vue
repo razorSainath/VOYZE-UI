@@ -477,11 +477,11 @@ const series = [
     <div class="col-xl-4">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title mb-4">Top Leaders</h4>
+          <h4 class="card-title mb-4">Top Users</h4>
 
-          <div data-simplebar style="max-height: 339px">
+          <div data-simplebar style="max-height: 339px; overflow:auto" >
             <div class="table-responsive">
-              <table class="table table-borderless table-centered table-nowrap">
+              <table class="table table-borderless table-centered table-nowrap" >
                 <tbody>
                   <tr>
                     <td style="width: 20px">
@@ -713,12 +713,12 @@ const series = [
             </div>
           </div>
 
-          <h4 class="card-title mb-4">Recent Activity</h4>
+          <h4 class="card-title mb-4" >Recent Activity</h4>
 
           <ol
             class="activity-feed mb-0 ps-2"
             data-simplebar
-            style="max-height: 339px"
+            style="max-height: 339px; overflow:auto"
           >
             <li class="feed-item">
               <div class="feed-item-list">
