@@ -103,7 +103,7 @@
                                                         <div role="tabpanel" class="tab-pane fade active show"
                                                             id="draft">
                                                             <div class="row">
-                                                                <div class="col-xl-6 col-sm-6 col-md-6">
+                                                                <div class="col-xl-4 col-sm-12 col-md-6">
                                                                     <div class="card">
                                                                         <div class="card-header"
                                                                             style="background-color: transparent;border: none;">
@@ -213,7 +213,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-xl-6 col-sm-6 col-md-6">
+                                                                <div class="col-xl-4 col-sm-12 col-md-6">
                                                                     <div class="card">
                                                                         <div class="card-header"
                                                                             style="background-color: transparent;border: none;">
