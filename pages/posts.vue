@@ -1,68 +1,67 @@
 <template>
-                        <!-- start page title -->
-                        <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">Content Post</h4>
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-flex align-items-center justify-content-between">
+                <h4 class="mb-0">Content Post</h4>
 
-                                <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Content</a></li>
-                                        <li class="breadcrumb-item active">Post</li>
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Content</a></li>
+                        <li class="breadcrumb-item active">Post</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <select name="" id="" class="form-control">
+                        <option value="0">Select Platform</option>
+                        <option value="1">LinkedIn</option>
+                        <option value="2">Twitter</option>
+                        <option value="3">Facebook</option>
+                        <option value="4">Instagram</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input type="datetime-local" name="" id="" class="form-control">
+                </div>
+                <div class="col-md-6"> <button type="submit" class="btn btn-primary mb-2 float-md-end"
+                        data-toggle="modal" data-target="#myModal"
+                        style="background-color: #009cd2;border-color: #009cd2;"><span><i
+                                class="fa-solid fa-plus"></i></span> New Draft</button></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-9">
+            <div class="card" style="border-radius: 10px;">
+                <div class="card-body">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div>
+                                    <ol class="breadcrumb p-0 bg-transparent mb-2">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Post</a></li>
+                                        <li class="breadcrumb-item active">Draft</li>
                                     </ol>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <select name="" id="" class="form-control">
-                                        <option value="0">Select Platform</option>
-                                        <option value="1">LinkedIn</option>
-                                        <option value="2">Twitter</option>
-                                        <option value="3">Facebook</option>
-                                        <option value="4">Instagram</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3">
-                                    <input type="datetime-local" name="" id="" class="form-control">
-                                </div>
-                                <div class="col-md-6"> <button type="submit" class="btn btn-primary mb-2 float-md-end"
-                                        data-toggle="modal" data-target="#myModal" style="background-color: #009cd2;border-color: #009cd2;"><span><i
-                                                class="fa-solid fa-plus"></i></span> New Draft</button></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- end page title -->
-
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-9">
-                            <div class="card" style="border-radius: 10px;">
-                                <div class="card-body">
-                                    <div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div>
-                                                    <ol class="breadcrumb p-0 bg-transparent mb-2">
-                                                        <li class="breadcrumb-item"><a
-                                                                href="javascript: void(0);">Post</a></li>
-                                                        <li class="breadcrumb-item active">Draft</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-inline float-md-end">
-                                                    <div class="search-box ms-2">
-                                                        <div class="position-relative">
-                                                            <input type="text"
-                                                                class="form-control bg-light border-light rounded"
-                                                                placeholder="Search...">
-                                                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <div class="col-md-6">
+                                <div class="form-inline float-md-end">
+                                    <div class="search-box ms-2">
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control bg-light border-light rounded"
+                                                placeholder="Search...">
+                                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                                         <div class="tr-job-posted section-padding">
                                             <div class="container-fluid">
@@ -103,7 +102,7 @@
                                                         <div role="tabpanel" class="tab-pane fade active show"
                                                             id="draft">
                                                             <div class="row">
-                                                                <div class="col-xl-4 col-sm-12 col-md-6">
+                                                                <div class="col-xl-6 col-sm-6 col-md-6">
                                                                     <div class="card">
                                                                         <div class="card-header"
                                                                             style="background-color: transparent;border: none;">
@@ -213,7 +212,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-xl-4 col-sm-12 col-md-6">
+                                                                <div class="col-xl-6 col-sm-6 col-md-6">
                                                                     <div class="card">
                                                                         <div class="card-header"
                                                                             style="background-color: transparent;border: none;">
@@ -1648,47 +1647,45 @@
                                         </div>
                                         <!-- end row -->
 
-                                        <div class="row mt-4">
-                                            <div class="col-sm-6">
-                                                <div>
-                                                    <p class="mb-sm-0">Page 2 of 84</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="float-sm-end">
-                                                    <ul class="pagination pagination-rounded mb-sm-0">
-                                                        <li class="page-item disabled">
-                                                            <a href="#" class="page-link"><i
-                                                                    class="mdi mdi-chevron-left"></i></a>
-                                                        </li>
-                                                        <li class="page-item active">
-                                                            <a href="#" class="page-link">1</a>
-                                                        </li>
-                                                        <li class="page-item">
-                                                            <a href="#" class="page-link">2</a>
-                                                        </li>
-                                                        <li class="page-item">
-                                                            <a href="#" class="page-link">3</a>
-                                                        </li>
-                                                        <li class="page-item">
-                                                            <a href="#" class="page-link">4</a>
-                                                        </li>
-                                                        <li class="page-item">
-                                                            <a href="#" class="page-link">5</a>
-                                                        </li>
-                                                        <li class="page-item">
-                                                            <a href="#" class="page-link"><i
-                                                                    class="mdi mdi-chevron-right"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="row mt-4">
+                            <div class="col-sm-6">
+                                <div>
+                                    <p class="mb-sm-0">Page 2 of 84</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="float-sm-end">
+                                    <ul class="pagination pagination-rounded mb-sm-0">
+                                        <li class="page-item disabled">
+                                            <a href="#" class="page-link"><i class="mdi mdi-chevron-left"></i></a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#" class="page-link">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <!-- end row -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end row -->
 </template>

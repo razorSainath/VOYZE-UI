@@ -14,7 +14,22 @@ export default {
     },
   },
 };
+
 </script>
+<script setup>
+
+const state = reactive({
+  isWorspaceModelOpen: false,
+});
+
+const toggleWorkspaceModal = ()=> {
+      console.log("Add New Workspace");
+      state.isWorspaceModelOpen = !state.isWorspaceModelOpen;
+      // this.workspaceName = null;
+    }
+
+</script>
+
 
 <style src="vue-multiselect/dist/vue-multiselect.css"></style>
 
@@ -54,7 +69,7 @@ export default {
                             </div>
                             <div class="col-md-3"></div>
                             <div class="col-md-6">
-                                <button type="button" class="btn btn-primary float-md-end" data-toggle="modal" data-target="#exampleModal">
+                                <button type="button" class="btn btn-primary float-md-end" @click="toggleWorkspaceModal" data-toggle="modal" data-target="#exampleModal">
                                     <span><i class="fa-solid fa-plus"></i>&nbsp;</span>Add New Workspace
                                   </button>
                             </div>
