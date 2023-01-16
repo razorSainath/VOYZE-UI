@@ -21,7 +21,7 @@
   <!-- end page title -->
 
   <div class="row mb-2">
-    <div class="col-md-3">
+    <div class="col-md-4">
       <label for=""><b>Leader Topics:</b></label>
       <select
         name=""
@@ -36,7 +36,7 @@
         <option value="4">Bussiness</option>
       </select>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
       <label for=""><b>Enter Query:</b></label>
       <input
         type="text"
@@ -46,7 +46,7 @@
         placeholder="Enter queries..."
       />
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
       <label for=""><b>Results:</b></label>
       <select name="" id="" class="form-control">
         <option value="0">10</option>
@@ -55,7 +55,7 @@
         <option value="3">100</option>
       </select>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
       <label for="">&nbsp;</label>
       <input
         type="button"
@@ -68,11 +68,41 @@
   <div class="row">
     <div class="col-xl-9">
       <div class="row">
-        <div class="col-xl-4 col-sm-6">
+        <div class="col-xl-6 col-sm-6">
           <div class="card">
                 <div class="card-body">
                     <div class="float-start">
                         <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
+                    </div>
+                    <div class="dropdown float-end">
+                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                      
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#">View</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="mb-2">
+                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-thumbnail img-fluid">
+                    </div>
+                    <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
+                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
+                    
+                </div>
+
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</button>
+                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-square-twitter me-1"></i> Twitter</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-sm-6">
+          <div class="card">
+                <div class="card-body">
+                    <div class="float-start">
+                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
                     </div>
                     <div class="dropdown float-end">
                         <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">

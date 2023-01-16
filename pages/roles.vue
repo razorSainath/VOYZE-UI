@@ -37,7 +37,7 @@
                                             <div class="col-md-6">
                                                 <div class="mb-3  float-md-end">
                                                     <a href="javascript:void(0);"
-                                                        class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#role"><i
+                                                        class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#role"><i
                                                             class="fa-solid fa-plus me-2"></i> Create Roles</a>
                                                 </div>
                                             </div>
@@ -146,15 +146,13 @@
                         </div>
                         <!-- end row -->
 <!-- The Modal -->
-<div class="modal modal-xl" id="role">
-    <div class="modal-dialog">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Create Role</h4>
-          <button type="button" class="btn-close" data-dismiss="modal"></button>
-        </div>
+<div class="modal fade" id="role" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
   
         <!-- Modal body -->
         <div class="modal-body">
@@ -267,5 +265,5 @@
   
       </div>
     </div>
-  </div>
+    </div>
 </template>

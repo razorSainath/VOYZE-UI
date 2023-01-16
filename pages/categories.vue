@@ -71,12 +71,12 @@
                       ></label>
                     </div>
                   </th>
-                  <th scope="col">Sr.No.</th>
+                  <th scope="col" style="width:25px;">No.</th>
                   <th scope="col">Name</th>
                   <th scope="col">Description</th>
                   <th scope="col">Created At</th>
                   <th scope="col">Active</th>
-                  <th scope="col">Action</th>
+                  <th scope="col" style="width: 25px;">Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -276,3 +276,5 @@
     </div>
   </div>
 </template>
+
+
