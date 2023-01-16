@@ -54,7 +54,7 @@
           </div>
           <!-- end row -->
           <div class="table-responsive mb-4">
-            <table class="table table-centered table-nowrap mb-0">
+            <table class="table table-centered table-nowrap mb-0 table-sm">
               <thead>
                 <tr>
                   <th scope="col" style="width: 50px">
@@ -112,7 +112,7 @@
                     <ul class="list-inline mb-0">
                       <li class="list-inline-item dropdown">
                         <a
-                          class="text-muted dropdown-toggle font-size-18 px-2"
+                          class="text-muted  font-size-18 px-2"
                           href="#"
                           role="button"
                           data-bs-toggle="dropdown"
@@ -170,7 +170,7 @@
                     <ul class="list-inline mb-0">
                       <li class="list-inline-item dropdown">
                         <a
-                          class="text-muted dropdown-toggle font-size-18 px-2"
+                          class="text-muted  font-size-18 px-2"
                           href="#"
                           role="button"
                           data-bs-toggle="dropdown"
@@ -216,7 +216,7 @@
                     <ul class="list-inline mb-0">
                       <li class="list-inline-item dropdown">
                         <a
-                          class="text-muted dropdown-toggle font-size-18 px-2"
+                          class="text-muted  font-size-18 px-2"
                           href="#"
                           role="button"
                           data-bs-toggle="dropdown"
@@ -262,7 +262,7 @@
                     <ul class="list-inline mb-0">
                       <li class="list-inline-item dropdown">
                         <a
-                          class="text-muted dropdown-toggle font-size-18 px-2"
+                          class="text-muted  font-size-18 px-2"
                           href="#"
                           role="button"
                           data-bs-toggle="dropdown"

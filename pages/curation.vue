@@ -69,25 +69,23 @@
     <div class="col-xl-9">
       <div class="row">
         <div class="col-xl-4 col-sm-6">
-          <!-- <div class="card">
+          <div class="card">
                 <div class="card-body">
                     <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><span>January 4th 2021, 14:26</span></small>
+                        <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
                     </div>
                     <div class="dropdown float-end">
-                        <a class="text-body dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                           <i class="fa-solid fa-ellipsis-v"></i>
                         </a>
                       
                         <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">Edit</a>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Remove</a>
+                            <a class="dropdown-item" href="#">View</a>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                     <div class="mb-2">
-                        <img src="assets/images/covid_8-sixteen_nine.webp" alt="" class="img-thumbnail img-fluid">
+                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-thumbnail img-fluid">
                     </div>
                     <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
                     <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
@@ -95,277 +93,10 @@
                 </div>
 
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-light text-truncate"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</button>
-                    <button type="button" class="btn btn-outline-light text-truncate"><i class="fa-brands fa-square-twitter me-1"></i> Twitter</button>
-
+                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</button>
+                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-square-twitter me-1"></i> Twitter</button>
                 </div>
-            </div> -->
-          <div class="card h-100">
-            <div
-              class="card-header d-flex align-items-center justify-content-space-between"
-            >
-              <div
-                style="margin-top: 0px; margin-bottom: 0; margin-right: 60px"
-              >
-                Date Of Publication:
-                <br />
-                <b>{{ "4 oct 1998" }}</b>
-              </div>
-
-              <div class="d-flex">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary block"
-                  >View</a
-                >
-              </div>
             </div>
-
-            <div class="card-body">
-              <div style="height: 220px; position: relative">
-                <img
-                  style="
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 10px;
-                    cover: hidden;
-                  "
-                  class="card-img-top"
-                />
-              </div>
-
-              <h5 class="card-title mt-3">
-                <b>{{ "title......." }}</b>
-              </h5>
-              <p class="card-text">
-                {{ "body.............................." }}
-              </p>
-            </div>
-            <div
-              class="card-footer d-flex align-items-center justify-content-between"
-            >
-              <label>Create draft:</label>
-              <div class="d-flex justify-content-end">
-                <button
-                  style="font-size: 0.75rem; margin-right: 10px"
-                  target="_blank"
-                  class="btn btn-primary block"
-                >
-                  Twitter
-                </button>
-                <button
-                  style="font-size: 0.75rem"
-                  target="_blank"
-                  class="btn btn-primary block"
-                >
-                  LinkedIn
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-sm-6">
-          <div class="card h-100">
-            <div
-              class="card-header d-flex align-items-center justify-content-space-between"
-            >
-              <div
-                style="margin-top: 0px; margin-bottom: 0; margin-right: 60px"
-              >
-                Date Of Publication:
-                <br />
-                <b>{{ "4 oct 1998" }}</b>
-              </div>
-
-              <div class="d-flex">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary block"
-                  >View</a
-                >
-              </div>
-            </div>
-
-            <div class="card-body">
-              <div style="height: 220px; position: relative">
-                <img
-                  style="
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 10px;
-                    cover: hidden;
-                  "
-                  class="card-img-top"
-                />
-              </div>
-
-              <h5 class="card-title mt-3">
-                <b>{{ "title......." }}</b>
-              </h5>
-              <p class="card-text">
-                {{ "body.............................." }}
-              </p>
-            </div>
-            <div
-              class="card-footer d-flex align-items-center justify-content-between"
-            >
-              <label>Create draft:</label>
-              <div class="d-flex justify-content-end">
-                <button
-                  style="font-size: 0.75rem; margin-right: 10px"
-                  target="_blank"
-                  class="btn btn-primary block"
-                >
-                  Twitter
-                </button>
-                <button
-                  style="font-size: 0.75rem"
-                  target="_blank"
-                  class="btn btn-primary block"
-                >
-                  LinkedIn
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-sm-6">
-          <div class="card h-100">
-            <div
-              class="card-header d-flex align-items-center justify-content-space-between"
-            >
-              <div
-                style="margin-top: 0px; margin-bottom: 0; margin-right: 60px"
-              >
-                Date Of Publication:
-                <br />
-                <b>{{ "4 oct 1998" }}</b>
-              </div>
-
-              <div class="d-flex">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary block"
-                  >View</a
-                >
-              </div>
-            </div>
-
-            <div class="card-body">
-              <div style="height: 220px; position: relative">
-                <img
-                  style="
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 10px;
-                    cover: hidden;
-                  "
-                  class="card-img-top"
-                />
-              </div>
-
-              <h5 class="card-title mt-3">
-                <b>{{ "title......." }}</b>
-              </h5>
-              <p class="card-text">
-                {{ "body.............................." }}
-              </p>
-            </div>
-            <div
-              class="card-footer d-flex align-items-center justify-content-between"
-            >
-              <label>Create draft:</label>
-              <div class="d-flex justify-content-end">
-                <button
-                  style="font-size: 0.75rem; margin-right: 10px"
-                  target="_blank"
-                  class="btn btn-primary block"
-                >
-                  Twitter
-                </button>
-                <button
-                  style="font-size: 0.75rem"
-                  target="_blank"
-                  class="btn btn-primary block"
-                >
-                  LinkedIn
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-sm-6 py-4">
-          <div class="card h-100 ">
-            <div
-              class="card-header d-flex align-items-center justify-content-space-between"
-            >
-              <div
-                style="margin-top: 0px; margin-bottom: 0; margin-right: 60px"
-              >
-                Date Of Publication:
-                <br />
-                <b>{{ "4 oct 1998" }}</b>
-              </div>
-
-              <div class="d-flex">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary block"
-                  >View</a
-                >
-              </div>
-            </div>
-
-            <div class="card-body">
-              <div style="height: 220px; position: relative">
-                <img
-                  style="
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 10px;
-                    cover: hidden;
-                  "
-                  class="card-img-top"
-                />
-              </div>
-
-              <h5 class="card-title mt-3">
-                <b>{{ "title......." }}</b>
-              </h5>
-              <p class="card-text">
-                {{ "body.............................." }}
-              </p>
-            </div>
-            <div
-              class="card-footer d-flex align-items-center justify-content-between"
-            >
-              <label>Create draft:</label>
-              <div class="d-flex justify-content-end">
-                <button
-                  style="font-size: 0.75rem; margin-right: 10px"
-                  target="_blank"
-                  class="btn btn-primary block"
-                >
-                  Twitter
-                </button>
-                <button
-                  style="font-size: 0.75rem"
-                  target="_blank"
-                  class="btn btn-primary block"
-                >
-                  LinkedIn
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

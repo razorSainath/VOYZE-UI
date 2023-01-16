@@ -23,6 +23,7 @@
     "popper.js": "^1.16.1",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
+    "vue": "^3.2.45",
     "vue-multiselect": "^3.0.0-alpha.2",
     "vue3-apexcharts": "^1.4.1",
     "webpack": "^5.75.0"
