@@ -6,10 +6,11 @@ export default {
       script: [
         {
           src: "https://kit.fontawesome.com/79955d71bb.js",
-          crossorigin:"anonymous",
+          crossorigin: "anonymous",
         },
       ],
     },
   },
   css: ["assets/styles/global.scss", "assets/styles/bootstrap.scss"],
+  // modules: ["bootstrap-vue/nuxt"],
 };

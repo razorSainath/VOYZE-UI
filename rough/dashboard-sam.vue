@@ -1,6 +1,6 @@
 <script setup>
 
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
 let sidebarSize = ref("lg")
 let sidebarClass = ref('')
