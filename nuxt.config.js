@@ -12,5 +12,5 @@ export default {
     },
   },
   css: ["assets/styles/global.scss", "assets/styles/bootstrap.scss"],
-  // modules: ["bootstrap-vue/nuxt"],
+
 };
