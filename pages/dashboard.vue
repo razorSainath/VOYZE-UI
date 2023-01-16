@@ -1,17 +1,14 @@
 <script setup>
-
 const chartOptions = {
   chart: {
     id: "vuechart-example",
-    selection:false,
-  toolbar: {
-    show: true,
-    tools: {
-      download: false
-    }
-  }
-
-
+    selection: false,
+    toolbar: {
+      show: true,
+      tools: {
+        download: false,
+      },
+    },
   },
   xaxis: {
     categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
@@ -29,6 +26,7 @@ const series = [
   <!-- start page title -->
   <div class="row">
     <div class="col-12">
+      <v-chip>Helo</v-chip>
       <div
         class="page-title-box d-flex align-items-center justify-content-between"
       >
@@ -72,9 +70,7 @@ const series = [
     <div class="col-md-6 col-xl-3">
       <div class="card">
         <div class="card-body">
-          <div class="float-end mt-2">
-
-          </div>
+          <div class="float-end mt-2"></div>
           <div>
             <h4 class="mb-1 mt-1"><span data-plugin="counterup">43</span></h4>
             <p class="text-muted mb-0">Published</p>
@@ -199,14 +195,14 @@ const series = [
 
           <div class="mt-3">
             <div>
-<ClientOnly>
-    <apexchart
-                width=100%
-                type="bar"
-                :options="chartOptions"
-                :series="series"
-              ></apexchart>
-</ClientOnly>
+              <ClientOnly>
+                <apexchart
+                  width="100%"
+                  type="bar"
+                  :options="chartOptions"
+                  :series="series"
+                ></apexchart>
+              </ClientOnly>
             </div>
           </div>
         </div>
@@ -473,9 +469,9 @@ const series = [
         <div class="card-body">
           <h4 class="card-title mb-4">Top Users</h4>
 
-          <div data-simplebar style="max-height: 339px; overflow:auto" >
+          <div data-simplebar style="max-height: 339px; overflow: auto">
             <div class="table-responsive">
-              <table class="table table-borderless table-centered table-nowrap" >
+              <table class="table table-borderless table-centered table-nowrap">
                 <tbody>
                   <tr>
                     <td style="width: 20px">
@@ -707,12 +703,12 @@ const series = [
             </div>
           </div>
 
-          <h4 class="card-title mb-4" >Recent Activity</h4>
+          <h4 class="card-title mb-4">Recent Activity</h4>
 
           <ol
             class="activity-feed mb-0 ps-2"
             data-simplebar
-            style="max-height: 339px; overflow:auto"
+            style="max-height: 339px; overflow: auto"
           >
             <li class="feed-item">
               <div class="feed-item-list">

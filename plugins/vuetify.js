@@ -1,15 +1,13 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-
-// Vuetify
-import 'vuetify/styles'
+// plugins/vuetify.js
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
-const vuetify = createVuetify({
-  components,
-  directives,
-})
+export default defineNuxtPlugin(nuxtApp => {
+  const vuetify = createVuetify({
+    components,
+    directives,
+  })
 
-createApp(App).use(vuetify).mount('#app')
+  nuxtApp.vueApp.use(vuetify)
+})
