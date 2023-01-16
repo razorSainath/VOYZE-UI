@@ -26,7 +26,6 @@ const series = [
   <!-- start page title -->
   <div class="row">
     <div class="col-12">
-      <v-chip>Helo</v-chip>
       <div
         class="page-title-box d-flex align-items-center justify-content-between"
       >
