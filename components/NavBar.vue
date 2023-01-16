@@ -6,17 +6,17 @@
             <div class="navbar-brand-box">
               <a href="index.html" class="logo logo-dark">
                 <span class="logo-sm">
-                  <img src="assets/images/logo-sm.png" alt="" height="22" />
+                  <img src="~/assets/images/logo-sm-removebg-preview.png" alt="" height="22" />
                 </span>
                 <span class="logo-lg">
-                  <img src="assets/images/logo-light.svg" alt="" height="20" />
+                  <img src="~/assets/images/logo-light.svg" alt="" height="20" />
                 </span>
               </a>
             </div>
 
             <button
               type="button"
-              class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn"
+              class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn" @click="isShow = !isShow"
             >
               <i class="fa fa-fw fa-bars"></i>
             </button>
@@ -282,3 +282,18 @@
         </div>
       </header>
 </template>
+
+<script>
+export default {
+  name: "ToggleDiv",
+  data: function () {
+    return {
+      isShow: true,
+    };
+  },
+
+  props: {
+    msg: String,
+  },
+};
+</script>

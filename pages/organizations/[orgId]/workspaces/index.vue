@@ -327,7 +327,7 @@ const toggleWorkspaceModal = ()=> {
       <div class="text-center my-3">
         <a href="javascript:void(0);" class="text-primary"
           ><i
-            class="mdi mdi-loading mdi-spin font-size-20 align-middle me-2"
+            class="fa-solid fa-spinner fa-spin font-size-20 align-middle me-2"
           ></i>
           Load more
         </a>
