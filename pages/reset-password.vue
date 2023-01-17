@@ -2,6 +2,9 @@
 definePageMeta({
   layout: "center-layout",
 });
+const redirectToSignin = ()=>{
+  navigateTo("/signin")
+}
 </script>
 
 <template>
@@ -42,8 +45,8 @@ definePageMeta({
         <div class="mt-4 text-center">
           <p class="mb-0">
             Remember It ?
-            <a href="auth-login.html" class="fw-medium" style="color: #009dc2">
-              Signin
+            <a @click="redirectToSignin" class="fw-medium" style="color: #009dc2">
+              Sign In
             </a>
           </p>
         </div>
