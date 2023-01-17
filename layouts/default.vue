@@ -1,6 +1,6 @@
 <template>
     <NavBar/>
-    <!-- <Sidebar/> -->
+    <Sidebar/>
     <div class="main-content">
     <div class="page-content">
       <div class="container-fluid">

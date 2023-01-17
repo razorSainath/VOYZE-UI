@@ -2,6 +2,9 @@
 definePageMeta({
   layout: "center-layout",
 });
+const redirectToSignup = ()=>{
+  navigateTo("/signup")
+}
 </script>
 
 <template>
@@ -80,7 +83,7 @@ definePageMeta({
           <p class="mb-0">
             Don't have an account ?
             <a
-              href="auth-register.html"
+              @click="redirectToSignup"
               class="fw-medium"
               style="color: #009dc2"
             >

@@ -1,6 +1,11 @@
 <script setup>
 import error404 from "@/assets/images/404-error.png" 
 import image from "@/assets/images/500-error.png" 
+const router = useRouter()
+onMounted(() => {
+//   console.log("route coming in",router.currentRoute.value.fullPath)
+if(router.currentRoute.value.fullPath=="/") router.push("/signin")
+})
 
 const error = useError()
 
