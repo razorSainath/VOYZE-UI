@@ -11,6 +11,13 @@ export default {
       ],
     },
   },
-  css: ["assets/styles/global.scss", "assets/styles/bootstrap.scss"],
-  // modules: ["bootstrap-vue/nuxt"],
+  css: ['vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css', "assets/styles/global.scss", "assets/styles/bootstrap.scss"],
+  build: {
+    transpile: ['vuetify'],
+  },
+  vite: {
+    define: {
+      'process.env.DEBUG': false,
+    },
+  },
 };
