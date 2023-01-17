@@ -384,7 +384,6 @@
                                       title="Scheduled time and date"></i></span>
                                 </div>
                                   </div>
-                                
                             </div>
                           </div>
                         </div>

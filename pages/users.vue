@@ -33,7 +33,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3"></div>
+                                        <div class="col-md-3">
+                                            <input type="text" name="" id="" class="form-control bg-light" placeholder="Enter">
+                                        </div>
                                         <div class="col-md-6">
                                             <div class="mb-3  float-md-end">
                                                 <a href="javascript:void(0);"

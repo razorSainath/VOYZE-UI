@@ -72,7 +72,7 @@
           <div class="card">
                 <div class="card-body">
                     <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
+                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
                     </div>
                     <div class="dropdown float-end">
                         <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
