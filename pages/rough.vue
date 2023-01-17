@@ -2,35 +2,41 @@
   export default {
     data () {
       return {
-        dialog: false,
+        drawer: null,
       }
     },
   }
 </script>
 
-
 <template>
-    <div class="text-center">
-      <v-dialog
-        v-model="dialog"
+  <v-card>
+    <v-layout>
+      <v-navigation-drawer
+        v-model="drawer"
+        temporary
       >
-        <template v-slot:activator="{ props }">
+        <v-list-item
+          prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg"
+          title="John Leider"
+        ></v-list-item>
+
+        <v-divider></v-divider>
+
+        <v-list density="compact" nav>
+          <v-list-item prepend-icon="mdi-view-dashboard" title="Home" value="home"></v-list-item>
+          <v-list-item prepend-icon="mdi-forum" title="About" value="about"></v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+      <v-main style="height: 250px">
+        <div class="d-flex justify-center align-center h-100">
           <v-btn
             color="primary"
-            v-bind="props"
+            @click.stop="drawer = !drawer"
           >
-            Open Dialog
+            Toggle
           </v-btn>
-        </template>
-  
-        <v-card>
-          <v-card-text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </v-card-text>
-          <v-card-actions>
-            <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-dialog>
-    </div>
-  </template>
+        </div>
+      </v-main>
+    </v-layout>
+  </v-card>
+</template>
