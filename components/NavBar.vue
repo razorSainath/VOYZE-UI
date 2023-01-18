@@ -1,9 +1,9 @@
 <script setup>
 let isSidebarOpen = useState("isSidebarOpen")
 const just = ()=>{
-  console.log("beforeClick" ,isSidebarOpen)
-  isSidebarOpen = !isSidebarOpen
-  console.log("afterClick" ,isSidebarOpen)
+  console.log("beforeClick" ,isSidebarOpen.value)
+  isSidebarOpen.value = !isSidebarOpen.value
+  console.log("afterClick" ,isSidebarOpen.value)
 
 }
 </script>
@@ -28,7 +28,7 @@ const just = ()=>{
 
             <button
               type="button"
-              class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn" @click="just"
+               @click="just"
             >
               <i class="fa fa-fw fa-bars"></i>
             </button>
