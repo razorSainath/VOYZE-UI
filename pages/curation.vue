@@ -64,105 +64,99 @@
       />
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-xl-9">
-      <div class="row">
-        <div class="col-xl-6 col-sm-6">
-          <div class="card">
-                <div class="card-body">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-thumbnail img-fluid">
-                    </div>
-                    <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    
-                </div>
-
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</button>
-                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-square-twitter me-1"></i> Twitter</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-6 col-sm-6">
-          <div class="card">
-                <div class="card-body">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-thumbnail img-fluid">
-                    </div>
-                    <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    
-                </div>
-
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</button>
-                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-square-twitter me-1"></i> Twitter</button>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3">
+  <div class="accordion accordion-flush mb-2" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Filters
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col-xl-12">
       <div class="card">
         <div class="card-body">
-          <label for="" class="py-2"><b>Enter Location:</b></label>
+          <div class="row">
+            <div class="col-xl-3" >
+              <label for="" class="py-2"><b>Enter Location:</b></label>
           <select name="" id="" class="form-control">
             <option value="0"></option>
             <option value="1"></option>
             <option value="2"></option>
             <option value="3"></option>
           </select>
-          <label for="" class="py-2"><b>Categories:</b></label>
+            </div>
+            <div class="col-xl-3">
+              <label for="" class="py-2"><b>Categories:</b></label>
           <select name="" id="" class="form-control">
             <option value="0"></option>
             <option value="1"></option>
             <option value="2"></option>
             <option value="3"></option>
           </select>
-          <label for="" class="py-2"><b>Sources:</b></label>
+            </div>
+            <div class="col-xl-3">
+              <label for="" class="py-2"><b>Sources:</b></label>
           <select name="" id="" class="form-control">
             <option value="0"></option>
             <option value="1"></option>
             <option value="2"></option>
             <option value="3"></option>
           </select>
-          <label for="" class="py-2"><b>Authors:</b></label>
+            </div>
+            <div class="col-xl-3">
+              <label for="" class="py-2"><b>Authors:</b></label>
           <select name="" id="" class="form-control">
             <option value="0"></option>
             <option value="1"></option>
             <option value="2"></option>
             <option value="3"></option>
           </select>
-          <label for="" class="py-2"><b>Times Of Interest:</b></label>
+            </div>
+            <div class="col-xl-3" >
+              <label for="" class="py-2"><b>Times Of Interest:</b></label>
           <input type="date" name="" id="" class="form-control" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+    </div>
+  </div>
+  </div>
+  
+
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="row">
+        <div class="col-xl-4 col-sm-12 col-md-6">
+          <div class="card">
+                <div class="card-body">
+                    <div class="float-start">
+                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
+                    </div>
+                    <div class="dropdown float-end">
+                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                      
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#">View</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="mb-2">
+                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-thumbnail img-fluid">
+                    </div>
+                    <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
+                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
+                    
+                </div>
+
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</button>
+                    <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-square-twitter me-1"></i> Twitter</button>
+                </div>
+            </div>
         </div>
       </div>
     </div>
