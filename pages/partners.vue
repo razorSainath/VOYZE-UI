@@ -45,8 +45,7 @@
                 <a
                   href="javascript:void(0);"
                   class="btn btn-primary waves-effect waves-light"
-                  data-toggle="modal"
-                  data-target="#partners"
+                  data-bs-toggle="modal" data-bs-target="#partners"
                   ><i class="fa-solid fa-plus me-2"></i> Add Partner</a
                 >
               </div>
@@ -319,13 +318,13 @@
   </div>
   <!-- end row -->
   <!-- The add partners Modal -->
-  <div class="modal" id="partners">
+  <div class="modal" id="partners" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Add Parters</h4>
-          <button type="button" class="btn-close" data-dismiss="modal"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
         <!-- Modal body -->
@@ -346,10 +345,8 @@
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">
-            Close
-          </button>
-          <button class="btn btn-primary">Send Request</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send Request</button>
         </div>
       </div>
     </div>
