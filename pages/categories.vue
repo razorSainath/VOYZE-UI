@@ -45,14 +45,79 @@
                 <a
                   href="javascript:void(0);"
                   class="btn btn-primary waves-effect waves-light"
-                  data-toggle="modal"
-                  data-target="#category"
+                  data-bs-toggle="modal" data-bs-target="#category"
                   ><i class="fa-solid fa-plus me-2"></i> Add Category</a
                 >
               </div>
               <!-- The Modal -->
             </div>
           </div>
+
+          <!--category modal-->
+          <div class="modal fade" id="category" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+                          
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Add New Category</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                    
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                           <!-- Nav tabs -->
+
+                    <ul class="nav nav-underline" id="myTab" role="tablist">
+  <li class="nav-item"><a class="nav-link active" id="existing-tab" data-bs-toggle="tab" href="#tab-existing" role="tab" aria-controls="tab-existing" aria-selected="true">Selecting from existing</a></li>
+  <li class="nav-item"><a class="nav-link" id="new-tab" data-bs-toggle="tab" href="#tab-new" role="tab" aria-controls="tab-new" aria-selected="false">Add New</a></li>
+</ul>
+<div class="tab-content mt-3" id="myTabContent">
+  <div class="tab-pane fade show active" id="tab-existing" role="tabpanel" aria-labelledby="home-tab"><label for="">Tagged input using dropdown</label>
+                        <select name="" id="" class="form-control">
+                          <option value="0">Select Category</option>
+                          <option value="1">ArtificialIntellige</option>
+                          <option value="2">Blockchain</option>
+                          <option value="3">Business Post</option>
+                          <option value="4">Crypto Currency</option>
+                          <option value="5">Data Structure</option>
+                          <option value="6">Environment</option>
+                          <option value="7">Experimental</option>
+                          <option value="8">Gaming</option>
+                          <option value="9">Geometry</option>
+                          <option value="10">Jumba</option>
+                          <option value="11">Regular Post</option>
+                          <option value="12">Rubics</option>
+                          <option value="13">Rubix</option>
+                          <option value="14">Serverless</option>
+                          <option value="15">Social Post</option>
+                          <option value="16">Tech Articles</option>
+                        </select></div>
+  <div class="tab-pane fade" id="tab-new" role="tabpanel" aria-labelledby="profile-tab"><div class="row">
+                          <div class="col-md-12">
+                              <label for="">Category Name</label>
+                              <input type="text" name="" id="" class="form-control" placeholder="Enter category">
+                              <small class="text-danger">Name must be 3-20 characters long.</small>
+                          </div>
+                        </div>
+                        <div class="row py-1">
+                          <div class="col-md-12">
+                              <label for="">Category Description</label>
+                              <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                              <small class="text-danger">Description must be 15-100 characters long.</small>
+                          </div>
+                        </div></div>
+</div>
+                          </div>
+                    
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                          </div>
+                    
+                        </div>
+    </div>
+    </div>
           <!-- end row -->
           <div class="table-responsive mb-4">
             <table class="table table-centered table-nowrap mb-0 table-sm">
