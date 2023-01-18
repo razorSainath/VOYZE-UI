@@ -99,7 +99,7 @@
   </div>
   <!--filter start-->
   <div class="row py-2">
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-4 col-xs-4">
       <label for="">Select Platform</label>
       <select name="" id="" class="form-control">
         <!-- <option value="0">Select Platform</option> -->
@@ -109,14 +109,14 @@
         <option value="4">Instagram</option>
       </select>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-4 col-xs-4">
       <label for="">Selct Date:</label>
       <div>
         <input type="datetime-local" name="" id="" class="form-control" />
       </div>
     </div>
     <div class="col-md-4"></div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-2">
       <label for="">&nbsp;</label>
       <button type="button" class="btn btn-primary form-control" data-bs-toggle="modal" data-bs-target="#newDraft">
         <i class="fa-solid fa-plus"></i> New Draft
@@ -140,10 +140,10 @@
           <p>Social Platform</p>
           <div class="row">
             <div class="col">
-              <i class="fa-brands fa-linkedin fa-2x"></i>&nbsp;<span>LinkedIn</span>
+              <i class="fa-brands fa-linkedin fa-2x text-primary"></i>&nbsp;<span>LinkedIn</span>
             </div>
             <div class="col">
-              <i class="fa-brands fa-twitter fa-2x"></i>&nbsp;<span>Twitter</span>
+              <i class="fa-brands fa-twitter fa-2x text-primary"></i>&nbsp;<span>Twitter</span>
             </div>
             <div class="col"></div>
             <div class="col"></div>
@@ -215,7 +215,7 @@
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
             Close
           </button>
-          <button type="button" class="btn btn-success">Save changes</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -287,14 +287,14 @@
                     <div class="tab-pane fade show active" id="pill-tab-drafts" role="tabpanel"
                       aria-labelledby="home-tab">
                       <div class="row">
-                        <div class="col-xl-6 col-sm-6 col-md-6">
+                        <div class="col-xl-6 col-sm-8 col-md-6">
                           <div class="card">
                             <div class="card-header" style="
                                 background-color: transparent;
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6" style="
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -315,7 +315,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6 d-flex justify-content-end">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x"></i><span
@@ -344,11 +344,7 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" style="
-                                height: 300px;
-                                width: 100%;
-                                object-fit: cover;
-                              " alt="" class="img-fluid" />
+                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
                                 <b>Rishabh Pant car accident: 'जलती कार से दूर
@@ -368,22 +364,28 @@
                               </div>
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
-                              <div style="display: flex">
+                             <div class="row">
+                              <div class="col-md-8 col-sm-9">
+                                <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
                                           class="avatar-title rounded-circle" />
                                       </div>
                                     <div style="display: flex;flex-direction: column;text-align: start;margin-left: 10px;">
                                       <small><b>Sainath Reddy</b> </small>
-                                      <small style="display: flex;flex-direction: row;"><i class="fa-solid fa-clock text-success"></i><span class="ml-2">Approved</span></small>
+                                      <small style="display: flex;flex-direction: row;"><i class="fa-solid fa-clock text-success" style="position:relative;top:3px;"></i><span class="ml-2">Approved</span></small>
                                     </div>
-                                    <div class="d-flex float-md-end">
+                                  </div>
+                              </div>
+                              <div class="col-md-4 col-sm-3">
+                                <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
                                       title="Scheduled time and date"></i></span>
                                 </div>
-                                  </div>
+                              </div>
+                             </div>
                             </div>
                           </div>
                         </div>
@@ -394,30 +396,40 @@
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6" style="
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
                                   ">
-                                  <div>
-                                    <i class="fa-brands fa-twitter-square text-primary fa-2x"></i>&nbsp;&nbsp;
-                                    <small><b>Education Post</b> </small>&nbsp;&nbsp;
-                                    <small>28/12/2022 10:21</small>
+                                  <div style="display: flex">
+                                    <i class="fa-brands fa-linkedin text-primary fa-3x"></i>
+                                    <div style="
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: start;
+                                        margin-left: 10px;
+                                      ">
+                                      <small><b>Education Post</b> </small>
+                                      <small style="
+                                          display: flex;
+                                          flex-direction: column;
+                                        ">28/12/2022 10:21</small>
+                                    </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6 d-flex justify-content-end">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary"></i>
+                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
                                       <button type="button" class="btn text-primary dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
@@ -434,11 +446,7 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid" style="
-                                height: 300px;
-                                width: 100%;
-                                object-fit: cover;
-                              " />
+                            <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
                             <div class="card-body">
                               <p>
                                 <b>Doesn't it feel cold? Rahul Gandhi said -
@@ -459,35 +467,27 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                               <div class="row">
-                                <div class="col-md-8">
-                                  <div class="d-flex align-items-start">
-                                    <div class="flex-shrink-0 me-4">
-                                      <div class="avatar-xs">
+                              <div class="col-md-8 col-sm-9">
+                                <div style="display: flex">
+                                <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
                                           class="avatar-title rounded-circle" />
                                       </div>
-                                    </div>
-                                    <div class="flex-grow-1 align-self-center">
-                                      <div class="border-bottom">
-                                        <small class="text-truncate font-size-10">
-                                          <a href="#" class="text-dark">Sainath Reddy</a>
-                                        </small>
-                                        &nbsp;
-                                        <small class="text-success font-size-10">
-                                          <i class="fa-solid fa-clock"></i>
-                                          Approved
-                                        </small>
-                                      </div>
+                                    <div style="display: flex;flex-direction: column;text-align: start;margin-left: 10px;">
+                                      <small><b>Sainath Reddy</b> </small>
+                                      <small style="display: flex;flex-direction: row;"><i class="fa-solid fa-clock text-success" style="position:relative;top:3px;"></i><span class="ml-2">Approved</span></small>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="col-md-4 d-flex justify-content-end">
-                                  <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success"
+                              </div>
+                              <div class="col-md-4 col-sm-3">
+                                <div class="d-flex float-md-end">
+                                  <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
-                                  <span><i class="fa-solid fa-calendar-days text-dark"
+                                  <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
                                       title="Scheduled time and date"></i></span>
                                 </div>
                               </div>
+                             </div>
                             </div>
                           </div>
                         </div>
@@ -1840,12 +1840,12 @@
             <!-- end row -->
 
             <div class="row mt-4">
-              <div class="col-sm-6">
+              <div class="col-sm-6 col-xs-6">
                 <div>
                   <p class="mb-sm-0">Page 2 of 84</p>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 col-xs-6">
                 <div class="float-sm-end">
                   <ul class="pagination pagination-rounded mb-sm-0">
                     <li class="page-item disabled">
@@ -1881,7 +1881,51 @@
 </template>
 
 <style scoped>
+.img{
+  height: 300px;
+                                width: 100%;
+                                object-fit: cover;
+}
 .fa-3x {
   font-size: 2.5rem !important;
+}
+@media screen and (max-width: 996px) {
+  .fa-3x {
+    font-size: 1.75rem !important;
+  }
+  .fa-2x{
+    font-size:1.25rem !important;
+  }
+  small{
+    font-size:10px !important;
+  }
+  .img{
+    height: 200px;
+                                width: 100%;
+                                object-fit: cover;
+  }
+  p{
+    font-size:12px !important;
+  }
+  div>ul>li{
+    font-size:10px;
+    margin-top:5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .fa-3x {
+    font-size: 1.25rem !important;
+  }
+  .fa-2x{
+    font-size:.75rem !important;
+  }
+  small{
+    font-size:8px !important;
+  }
+  .img{
+    height: 100px;
+                                width: 100%;
+                                object-fit: cover;
+  }
 }
 </style>
