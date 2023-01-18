@@ -141,5 +141,80 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
       <!-- Sidebar -->
     </div>
   </div>
+  <div class="vertical-menu-collap" v-else="isSidebarOpen" style="display: flex;justify-content: center;">
+    <!-- LOGO -->
+    <div class="navbar-brand-box">
+      <a @click="redirectTo('dashboard')" class="logo logo-dark">
+        <span class="logo-sm" style="position: relative; right: 15px">
+          <img src="~/assets/images/logo-sm-removebg-preview.png" alt="" height="22" />
+        </span>
+      </a>
+    </div>
+
+
+    <div data-simplebar class="sidebar-menu-scroll">
+      <!--- Sidemenu -->
+      <div id="sidebar-menu">
+        <!-- Left Menu Start -->
+        <ul class="metismenu list-unstyled" id="side-menu">
+
+          <li>
+            <a @click="redirectTo('dashboard')" class="waves-effect">
+              <i class="fa-solid fa-dashboard fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a @click="redirectTo('workspace')" class="waves-effect">
+              <i class="fa-solid fa-folder-tree fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a @click="redirectTo('leaders')" class="waves-effect">
+              <i class="fa-solid fa-user fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a @click="redirectTo('analytics')" class="waves-effect">
+              <i class="fa-solid fa-chart-simple fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a @click="redirectTo('posts')" class="waves-effect">
+              <i class="fa-solid fa-envelopes-bulk fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a @click="redirectTo('curation')" class="waves-effect">
+              <i class="fa-solid fa-file-lines fa-2x"></i>
+            </a>
+          </li>
+
+          <li>
+            <a @click="redirectTo('category')" class="waves-effect">
+              <i class="fa-solid fa-bars-progress fa-2x"></i>
+            </a>
+          </li>
+
+          <li>
+            <a @click="redirectTo('user-management')" class="waves-effect">
+              <i class="fa-solid fa-users fa-2x"></i>
+            </a>
+          </li>
+
+          <li>
+            <a @click="redirectTo('role-management')" class="waves-effect">
+              <i class="fa-solid fa-list-check fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a @click="redirectTo('partners-management')" class="waves-effect">
+              <i class="fa-solid fa-handshake fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Sidebar -->
+    </div>
+  </div>
   <!-- Sidebar -->
 </template>

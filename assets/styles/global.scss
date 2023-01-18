@@ -559,6 +559,16 @@ body[data-layout="horizontal"] .footer {
 }
 .vertical-menu {
   width: 250px;
+  background: var(--bs-sidebar-bg);
+  bottom: 0;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
+  box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
+}
+.vertical-menu-collap {
+  width: 50px;
   z-index: 1005;
   background: var(--bs-sidebar-bg);
   bottom: 0;
@@ -572,7 +582,6 @@ body[data-layout="horizontal"] .footer {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 2;
 }
 .main-content {
   margin-left: 250px;

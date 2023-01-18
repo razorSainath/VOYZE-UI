@@ -27,7 +27,7 @@ const just = ()=>{
             </div>
 
             <button
-              type="button"
+              type="button" style="position: relative;left: 10px;"
                @click="just"
             >
               <i class="fa fa-fw fa-bars"></i>
