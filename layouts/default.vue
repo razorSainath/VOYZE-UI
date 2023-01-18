@@ -1,9 +1,9 @@
 <template>
     <NavBar/>
     <Sidebar/>
-    <div class="main-content">
-    <div class="page-content">
-      <div class="container-fluid">
+    <div class="main-content" >
+    <div class="page-content" >
+      <div class="container-fluid" >
         
 <slot/>
 
