@@ -130,7 +130,7 @@
       <div class="row">
         <div class="col-xl-4 col-sm-12 col-md-6">
           <div class="card">
-                <div class="card-body">
+                <div class="card-header">
                     <div class="float-start">
                         <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
                     </div>
@@ -143,14 +143,15 @@
                             <a class="dropdown-item" href="#">View</a>
                         </div>
                     </div>
-                    <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-thumbnail img-fluid">
-                    </div>
-                    <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    
                 </div>
+                <div class="clearfix"></div>
+                    <div class="mb-2">
+                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-thumbnail img-fluid img">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
+                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
+                    </div>
 
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-outline-primary text-truncate"><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</button>
@@ -177,3 +178,10 @@
   </div>
   <!-- end row -->
 </template>
+<style scoped>
+.img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+</style>
