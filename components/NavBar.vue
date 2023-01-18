@@ -1,3 +1,14 @@
+<script setup>
+let isSidebarOpen = useState("isSidebarOpen")
+const just = ()=>{
+  console.log("beforeClick" ,isSidebarOpen)
+  isSidebarOpen = !isSidebarOpen
+  console.log("afterClick" ,isSidebarOpen)
+
+}
+</script>
+
+
 <template>
   
           <header id="page-topbar">
@@ -17,7 +28,7 @@
 
             <button
               type="button"
-              class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn" @click="isShow = !isShow"
+              class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn" @click="just"
             >
               <i class="fa fa-fw fa-bars"></i>
             </button>
@@ -284,17 +295,3 @@
       </header>
 </template>
 
-<script>
-export default {
-  name: "ToggleDiv",
-  data: function () {
-    return {
-      isShow: true,
-    };
-  },
-
-  props: {
-    msg: String,
-  },
-};
-</script>

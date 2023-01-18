@@ -1,5 +1,4 @@
 <script setup>
-import {ref} from 'vue'
 const redirectTo = (page) => {
 console.log(page);
 switch (page) {
@@ -43,7 +42,7 @@ switch (page) {
 
 
 
-const isSidebarOpen = ref(true)
+const isSidebarOpen = useState("isSidebarOpen",()=>true)
 
 
 </script>
