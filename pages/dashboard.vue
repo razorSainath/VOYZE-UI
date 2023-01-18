@@ -306,6 +306,67 @@ const series = [
             </div>
           </div>
           <!-- end row-->
+          <div class="row align-items-center g-0 mt-3">
+            <div class="col-sm-3">
+              <p class="text-truncate mt-1 mb-0">
+                <i class="mdi mdi-circle-medium text-success me-2"></i> Android
+              </p>
+            </div>
+            <div class="col-sm-9">
+              <div class="progress mt-1" style="height: 6px">
+                <div
+                  class="progress-bar progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 48%"
+                  aria-valuenow="48"
+                  aria-valuemin="0"
+                  aria-valuemax="48"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- end row-->
+          <div class="row align-items-center g-0 mt-3">
+            <div class="col-sm-3">
+              <p class="text-truncate mt-1 mb-0">
+                <i class="mdi mdi-circle-medium text-success me-2"></i> Android
+              </p>
+            </div>
+            <div class="col-sm-9">
+              <div class="progress mt-1" style="height: 6px">
+                <div
+                  class="progress-bar progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 48%"
+                  aria-valuenow="48"
+                  aria-valuemin="0"
+                  aria-valuemax="48"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- end row-->
+          <div class="row align-items-center g-0 mt-3">
+            <div class="col-sm-3">
+              <p class="text-truncate mt-1 mb-0">
+                <i class="mdi mdi-circle-medium text-success me-2"></i> Android
+              </p>
+            </div>
+            <div class="col-sm-9">
+              <div class="progress mt-1" style="height: 6px">
+                <div
+                  class="progress-bar progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 48%"
+                  aria-valuenow="48"
+                  aria-valuemin="0"
+                  aria-valuemax="48"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- end row-->
+          
 
           <div class="row align-items-center g-0 mt-3">
             <div class="col-sm-3">
