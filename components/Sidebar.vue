@@ -1,18 +1,17 @@
 <script setup>
 const redirectTo = (page) => {
-console.log(page);
+
 switch (page) {
   case 'dashboard':
   navigateTo("/dashboard")
-  console.log(page);
+
     break
   case 'workspace':
   navigateTo("/organizations/sasdf/workspaces")
-  console.log(page);
+
   break
   case 'leaders':
   navigateTo("/leaders")
-  console.log(page);
     break;
   case 'analytics':
   navigateTo("/analytics")
@@ -35,8 +34,6 @@ switch (page) {
   case 'partners-management':
   navigateTo("/partners")
     break;
-//   default:
-//     console.log(`Sorry, we are out of ${expr}.`);
 }
 };
 
@@ -49,12 +46,6 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
 
 <template>
 
-  <button
-    @click="isSidebarOpen =!isSidebarOpen"
-      type="button"
-    >
-      <i class="fa fa-fw fa-bars"></i>
-    </button>
 
   <!--- Sidemenu -->
   <div class="vertical-menu" v-if="isSidebarOpen">
@@ -70,13 +61,6 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
       </a>
     </div>
 
-    <button
-    @click="isSidebarOpen =!isSidebarOpen"
-      type="button"
-      class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn"
-    >
-      <i class="fa fa-fw fa-bars"></i>
-    </button>
 
     <div data-simplebar class="sidebar-menu-scroll">
       <!--- Sidemenu -->
