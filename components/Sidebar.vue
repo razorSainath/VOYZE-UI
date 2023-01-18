@@ -1,4 +1,5 @@
 <script setup>
+import {ref} from 'vue'
 const redirectTo = (page) => {
 console.log(page);
 switch (page) {
@@ -39,11 +40,25 @@ switch (page) {
 //     console.log(`Sorry, we are out of ${expr}.`);
 }
 };
+
+
+
+const isSidebarOpen = ref(true)
+
+
 </script>
 
 <template>
+
+  <button
+    @click="isSidebarOpen =!isSidebarOpen"
+      type="button"
+    >
+      <i class="fa fa-fw fa-bars"></i>
+    </button>
+
   <!--- Sidemenu -->
-  <div class="vertical-menu">
+  <div class="vertical-menu" v-if="isSidebarOpen">
     <!-- LOGO -->
     <div class="navbar-brand-box">
       <a href="index.html" class="logo logo-dark">
@@ -57,6 +72,7 @@ switch (page) {
     </div>
 
     <button
+    @click="isSidebarOpen =!isSidebarOpen"
       type="button"
       class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn"
     >

@@ -475,7 +475,7 @@ const series = [
                   <tr>
                     <td style="width: 20px">
                       <img
-                        src="assets/images/users/avatar-4.jpg"
+                        src="~/assets/images/users/avatar-4.jpg"
                         class="avatar-xs rounded-circle"
                         alt="..."
                       />
@@ -502,7 +502,7 @@ const series = [
                   <tr>
                     <td>
                       <img
-                        src="assets/images/users/avatar-5.jpg"
+                        src="~/assets/images/users/avatar-5.jpg"
                         class="avatar-xs rounded-circle"
                         alt="..."
                       />
@@ -529,7 +529,7 @@ const series = [
                   <tr>
                     <td>
                       <img
-                        src="assets/images/users/avatar-6.jpg"
+                        src="~/assets/images/users/avatar-6.jpg"
                         class="avatar-xs rounded-circle"
                         alt="..."
                       />
@@ -556,7 +556,7 @@ const series = [
                   <tr>
                     <td>
                       <img
-                        src="assets/images/users/avatar-7.jpg"
+                        src="~/assets/images/users/avatar-7.jpg"
                         class="avatar-xs rounded-circle"
                         alt="..."
                       />
@@ -583,7 +583,7 @@ const series = [
                   <tr>
                     <td>
                       <img
-                        src="assets/images/users/avatar-8.jpg"
+                        src="~/assets/images/users/avatar-8.jpg"
                         class="avatar-xs rounded-circle"
                         alt="..."
                       />
@@ -610,7 +610,7 @@ const series = [
                   <tr>
                     <td>
                       <img
-                        src="assets/images/users/avatar-2.jpg"
+                        src="~/assets/images/users/avatar-2.jpg"
                         class="avatar-xs rounded-circle"
                         alt="..."
                       />
@@ -637,7 +637,7 @@ const series = [
                   <tr>
                     <td>
                       <img
-                        src="assets/images/users/avatar-1.jpg"
+                        src="~/assets/images/users/avatar-1.jpg"
                         class="avatar-xs rounded-circle"
                         alt="..."
                       />
