@@ -25,6 +25,8 @@ const toggleSidebar = ()=>{
 </script>
 
 <template>
+              <button @click="toggleSidebar">golu</button>
+            <div :style="styleObject">TEST TEXT TO BE TESTED</div>
   <div
     ref="bodyContainer"
     id="body-container"
@@ -57,8 +59,7 @@ const toggleSidebar = ()=>{
               <i class="fa fa-fw fa-bars"></i>
             </button>
 
-            <button @click="toggleSidebar">golu</button>
-            <div :style="styleObject">TEST TEXT TO BE TESTED</div>
+
 
             <!-- App Search-->
             <form class="app-search d-none d-lg-block">

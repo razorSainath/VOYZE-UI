@@ -20,6 +20,8 @@ const series = [
     data: [30, 40, 35, 50, 49, 60, 70, 91],
   },
 ];
+
+
 </script>
 
 <template>
@@ -366,7 +368,6 @@ const series = [
             </div>
           </div>
           <!-- end row-->
-          
 
           <div class="row align-items-center g-0 mt-3">
             <div class="col-sm-3">

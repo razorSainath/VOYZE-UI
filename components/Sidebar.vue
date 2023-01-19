@@ -36,8 +36,9 @@ switch (page) {
     break;
 }
 };
-
-
+//as the user clicks the button on dashboard
+//the it is redirected to that page & also the button text need to be styled differently
+// i need to create a function which will create take in the page & hilight 
 
 const isSidebarOpen = useState("isSidebarOpen",()=>true)
 
@@ -45,6 +46,7 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
 </script>
 
 <template>
+
 
 
   <!--- Sidemenu -->
@@ -141,6 +143,8 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
       <!-- Sidebar -->
     </div>
   </div>
+
+  
   <div class="vertical-menu" v-else="isSidebarOpen" style="display: flex;z-index:1;">
     <!-- LOGO -->
     <div class="navbar-brand-box">

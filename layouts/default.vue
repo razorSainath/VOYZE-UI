@@ -1,6 +1,6 @@
 <template>
     <NavBar/>
-    <div data-sidebar-size="sm"><Sidebar/></div>
+    <Sidebar/>
     
     <div class="main-content" >
     <div class="page-content" >

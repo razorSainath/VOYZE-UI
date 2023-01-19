@@ -1,5 +1,21 @@
+<script setup>
+
+const isShow = useState("isShow");
+
+const just = ()=>{
+  console.log("beforeClick" ,isShow.value)
+  isShow.value = !isShow.value
+  console.log("afterClick" ,isShow.value)
+
+}
+</script>
+
+
+
 <template>
   <!-- start page title -->
+<RightSidebar/>
+
 <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
@@ -186,7 +202,7 @@
                                                                     <i class="fa-solid fa-ellipsis-v"></i>
                                                                 </a>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item display-win" @click="isShow = !isShow">View more</a>
+                                                                    <a class="dropdown-item" @click="just">View more</a>
                                                                     <a class="dropdown-item" href="#">Change
                                                                         Timezone</a>
                                                                     <a class="dropdown-item" href="#">Update Profile</a>
@@ -327,7 +343,7 @@
                     </div>
 
                     <!-- Right Sidebar -->
-    <div class="right-bar" :class="{ 'hide': !isShow }" id="notShown">
+    <div class="right-bar"  id="notShown">
         <div data-simplebar class="h-100">
             <div class="rightbar-title d-flex align-items-center p-3">
 
@@ -453,12 +469,12 @@
   <!-- end row -->
 </template>
 
-<script>
+<!-- <script>
 export default {
   name: "ToggleDiv",
   data: function () {
     return {
-      isShow: true,
+    //   isShow: true,
     };
   },
 
@@ -466,7 +482,9 @@ export default {
     msg: String,
   },
 };
-</script>
+</script> -->
+
+
 
 <style scoped>
 .display-win{
