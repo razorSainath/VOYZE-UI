@@ -14,7 +14,6 @@ const just = ()=>{
 
 <template>
   <!-- start page title -->
-<RightSidebar/>
 
 <div class="row">
                         <div class="col-12">
@@ -133,16 +132,16 @@ const just = ()=>{
           </div>
         </div>
       </div>
-      
       <!-- Modal footer -->
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
       </div>
-      
     </div>
     </div>
     </div>
                                     <!-- end row -->
+
+                                    <RightSidebar/>
 
                                     <div class="table-responsive mb-4">
                                         <table class="table table-centered table-nowrap mb-0 table-sm">
@@ -202,8 +201,8 @@ const just = ()=>{
                                                                     <i class="fa-solid fa-ellipsis-v"></i>
                                                                 </a>
                                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                                    <a class="dropdown-item" @click="just">View more</a>
-                                                                    <a class="dropdown-item" href="#">Change
+                                                                    <a class="dropdown-item display-win" @click="just">View more</a>
+                                                                    <a class="dropdown-item" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">Change
                                                                         Timezone</a>
                                                                     <a class="dropdown-item" href="#">Update Profile</a>
                                                                     <a class="dropdown-item" href="#">Align Managers</a>
@@ -213,6 +212,61 @@ const just = ()=>{
                                                         </ul>
                                                     </td>
                                                 </tr>
+                                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><b>User Details</b></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <hr class="m-0" />
+
+<div class="row mt-2">
+    <div class="col-xl-6">
+        <label class="form-check-label" for="layout-mode-light">Name</label>
+        <input class="form-control" type="text" disabled>
+    </div>
+    <div class="col-xl-6">
+        <label class="form-check-label" for="layout-mode-light">Reporting Manager</label>
+        <input class="form-control" type="text" disabled>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-xl-6">
+        <label class="form-check-label" for="layout-mode-light">User Type</label>
+        <select name="" id="" class="form-control">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </div>
+    <div class="col-xl-6">
+        <label class="form-check-label" for="layout-mode-light">Role</label>
+        <input class="form-control" type="text" disabled>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-xl-6">
+        <label class="form-check-label" for="layout-mode-light">Last Login</label>
+        <input class="form-control" type="text" disabled>
+    </div>
+    <div class="col-xl-6">
+        <label class="form-check-label" for="layout-mode-light">Created At</label>
+        <input class="form-control" type="text" disabled>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-xl-6">
+        <label class="form-check-label" for="layout-mode-light">Status</label>
+        <input class="form-control" type="text" disabled>
+    </div>
+    <div class="col-xl-6">
+        <label class="form-check-label" for="layout-mode-light">Action</label>
+        <input class="form-control" type="text" disabled>
+    </div>
+</div>
+      </div>
+    </div>
                                                 <tr>
                                                     <th scope="row">
                                                         <div class="form-check font-size-16">
@@ -228,7 +282,6 @@ const just = ()=>{
                                                         <div class="d-flex flex-row">
                                                             <img src="~/assets/images/users/avatar-2.jpg" alt="" class="avatar-md rounded-circle me-2">
                                                         <div class="d-flex flex-column">Nibhash Mishra <span><small title="email">nibhash@razorlabz.com</small></span><span><small title="Time Zone">Asia/Kolkata</small></span></div>
-                                                    
                                                         </div></td>
                                                     <td>Megha Seth</td>
                                                     <td class="display">Leader, Admin</td>
@@ -341,131 +394,6 @@ const just = ()=>{
                             </div>
                         </div>
                     </div>
-
-                    <!-- Right Sidebar -->
-    <div class="right-bar"  id="notShown">
-        <div data-simplebar class="h-100">
-            <div class="rightbar-title d-flex align-items-center p-3">
-
-                <h5 class="m-0 me-2">Settings</h5>
-
-                <a  class="right-bar-toggle ms-auto">
-                    <i class="mdi mdi-close noti-icon"></i>
-                </a>
-            </div>
-
-            <!-- Settings -->
-            <hr class="m-0" />
-
-            <div class="p-4">
-                <h6 class="mb-3">Layout</h6>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
-                    <label class="form-check-label" for="layout-vertical">Vertical</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout" id="layout-horizontal"
-                        value="horizontal">
-                    <label class="form-check-label" for="layout-horizontal">Horizontal</label>
-                </div>
-
-                <h6 class="mt-4 mb-3 pt-2">Layout Mode</h6>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-light"
-                        value="light">
-                    <label class="form-check-label" for="layout-mode-light">Light</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-dark" value="dark">
-                    <label class="form-check-label" for="layout-mode-dark">Dark</label>
-                </div>
-
-                <h6 class="mt-4 mb-3 pt-2">Layout Width</h6>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-width" id="layout-width-fuild"
-                        value="fuild" onchange="document.body.setAttribute('data-layout-size', 'fluid')">
-                    <label class="form-check-label" for="layout-width-fuild">Fluid</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-width" id="layout-width-boxed"
-                        value="boxed" onchange="document.body.setAttribute('data-layout-size', 'boxed')">
-                    <label class="form-check-label" for="layout-width-boxed">Boxed</label>
-                </div>
-
-                <h6 class="mt-4 mb-3 pt-2">Layout Position</h6>
-
-                <h6 class="mt-4 mb-3 pt-2">Topbar Color</h6>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-light"
-                        value="light" onchange="document.body.setAttribute('data-topbar', 'light')">
-                    <label class="form-check-label" for="topbar-color-light">Light</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-dark" value="dark"
-                        onchange="document.body.setAttribute('data-topbar', 'dark')">
-                    <label class="form-check-label" for="topbar-color-dark">Dark</label>
-                </div>
-
-                <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Size</h6>
-
-                <div class="form-check sidebar-setting">
-                    <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-default"
-                        value="default" onchange="document.body.setAttribute('data-sidebar-size', 'lg')">
-                    <label class="form-check-label" for="sidebar-size-default">Default</label>
-                </div>
-                <div class="form-check sidebar-setting">
-                    <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-compact"
-                        value="compact" onchange="document.body.setAttribute('data-sidebar-size', 'small')">
-                    <label class="form-check-label" for="sidebar-size-compact">Compact</label>
-                </div>
-                <div class="form-check sidebar-setting">
-                    <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-small"
-                        value="small" onchange="document.body.setAttribute('data-sidebar-size', 'sm')">
-                    <label class="form-check-label" for="sidebar-size-small">Small (Icon View)</label>
-                </div>
-
-                <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Color</h6>
-
-                <div class="form-check sidebar-setting">
-                    <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-light"
-                        value="light" onchange="document.body.setAttribute('data-sidebar', 'light')">
-                    <label class="form-check-label" for="sidebar-color-light">Light</label>
-                </div>
-                <div class="form-check sidebar-setting">
-                    <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-dark"
-                        value="dark" onchange="document.body.setAttribute('data-sidebar', 'dark')">
-                    <label class="form-check-label" for="sidebar-color-dark">Dark</label>
-                </div>
-                <div class="form-check sidebar-setting">
-                    <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-colored"
-                        value="colored" onchange="document.body.setAttribute('data-sidebar', 'colored')">
-                    <label class="form-check-label" for="sidebar-color-colored">Colored</label>
-                </div>
-
-                <h6 class="mt-4 mb-3 pt-2">Direction</h6>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-ltr"
-                        value="ltr">
-                    <label class="form-check-label" for="layout-direction-ltr">LTR</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-rtl"
-                        value="rtl">
-                    <label class="form-check-label" for="layout-direction-rtl">RTL</label>
-                </div>
-
-            </div>
-
-        </div> <!-- end slimscroll-menu-->
-    </div>
-    <!-- /Right-bar -->
-
-    <!-- Right bar overlay-->
-    <div class="rightbar-overlay"></div>
   <!-- end row -->
 </template>
 

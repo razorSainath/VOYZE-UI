@@ -71,8 +71,8 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
         <ul class="metismenu list-unstyled" id="side-menu">
           <li class="menu-title">Menu</li>
 
-          <li>
-            <a @click="redirectTo('dashboard')" class="waves-effect">
+          <li class="nav-item">
+            <a @click="redirectTo('dashboard')" class="waves-effect nav-link active">
               <i class="fa-solid fa-dashboard"></i>
               <span>Dashboard</span>
             </a>
