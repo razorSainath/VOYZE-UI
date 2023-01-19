@@ -49,14 +49,6 @@ export default {
       :limit-text="limitText"
       >
     </VueMultiselect>
-
-
-            <!-- <select name="" id="" class="form-control" multiple>
-                                                <option value="0">Select Workspace</option>
-                                                <option value="1">Edelman</option>
-                                                <option value="2">Razorpod</option>
-                                                <option value="3">RAzorlabz</option>
-                                            </select> -->
           </div>
         </div>
       </div>

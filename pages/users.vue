@@ -34,13 +34,6 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <select name="" id="" class="form-control">
-                                                <option value="0">Select....</option>
-                                                <option value="1"></option>
-                                                <option value="2"></option>
-                                                <option value="3"></option>
-                                                <option value="4"></option>
-                                            </select>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3  float-md-end">
@@ -134,6 +127,7 @@
     </div>
     </div>
                                     <!-- end row -->
+
                                     <div class="table-responsive mb-4">
                                         <table class="table table-centered table-nowrap mb-0 table-sm">
                                             <thead>
@@ -149,12 +143,12 @@
                                                     <th scope="col">Index</th>
                                                     <th scope="col">Name</th>
                                                     <th scope="col">Reporting Manager</th>
-                                                    <th scope="col">User Type</th>
-                                                    <th scope="col">Role</th>
-                                                    <th scope="col">Last Login</th>
-                                                    <th scope="col">Created At</th>
-                                                    <th scope="col">Status</th>
-                                                    <th scope="col">Action</th>
+                                                    <th scope="col" class="display">User Type</th>
+                                                    <th scope="col" class="display">Role</th>
+                                                    <th scope="col" class="display">Last Login</th>
+                                                    <th scope="col" class="display">Created At</th>
+                                                    <th scope="col" class="display">Status</th>
+                                                    <th scope="col" class="display">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -173,14 +167,13 @@
                                                         <div class="d-flex flex-row">
                                                             <img src="~/assets/images/users/avatar-2.jpg" alt="" class="avatar-md rounded-circle me-2">
                                                         <div class="d-flex flex-column">Nibhash Mishra <span><small title="email">nibhash@razorlabz.com</small></span><span><small title="Time Zone">Asia/Kolkata</small></span></div>
-                                                    
                                                         </div></td>
                                                     <td>Megha Seth</td>
-                                                    <td>Leader, Admin</td>
-                                                    <td>Client Admin</td>
-                                                    <td>2021-01-03</td>
-                                                    <td>2022-12-06</td>
-                                                    <td>
+                                                    <td class="display">Leader, Admin</td>
+                                                    <td class="display">Client Admin</td>
+                                                    <td class="display">2021-01-03</td>
+                                                    <td class="display">2022-12-06</td>
+                                                    <td class="display">
                                                         <div class="badge bg-pill bg-soft-success font-size-12">Active
                                                         </div>
                                                     </td>
@@ -193,6 +186,7 @@
                                                                     <i class="fa-solid fa-ellipsis-v"></i>
                                                                 </a>
                                                                 <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item display-win" @click="isShow = !isShow">View more</a>
                                                                     <a class="dropdown-item" href="#">Change
                                                                         Timezone</a>
                                                                     <a class="dropdown-item" href="#">Update Profile</a>
@@ -221,11 +215,11 @@
                                                     
                                                         </div></td>
                                                     <td>Megha Seth</td>
-                                                    <td>Leader, Admin</td>
-                                                    <td>Client Admin</td>
-                                                    <td>2021-01-03</td>
-                                                    <td>2022-12-06</td>
-                                                    <td>
+                                                    <td class="display">Leader, Admin</td>
+                                                    <td class="display">Client Admin</td>
+                                                    <td class="display">2021-01-03</td>
+                                                    <td class="display">2022-12-06</td>
+                                                    <td class="display">
                                                         <div class="badge bg-pill bg-soft-success font-size-12">Active
                                                         </div>
                                                     </td>
@@ -266,11 +260,11 @@
                                                     
                                                         </div></td>
                                                     <td>William MushkinWilliam MushkinWilliam Mushkin</td>
-                                                    <td>Leader, Admin</td>
-                                                    <td>Client Admin</td>
-                                                    <td>2021-01-03</td>
-                                                    <td>2022-12-06</td>
-                                                    <td>
+                                                    <td class="display">Leader, Admin</td>
+                                                    <td class="display">Client Admin</td>
+                                                    <td class="display">2021-01-03</td>
+                                                    <td class="display">2022-12-06</td>
+                                                    <td class="display">
                                                         <div class="badge bg-pill bg-soft-success font-size-12">Active
                                                         </div>
                                                     </td>
@@ -326,9 +320,167 @@
                                             </div>
                                         </div>
                                     </div>
+                                 
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Right Sidebar -->
+    <div class="right-bar" :class="{ 'hide': !isShow }" id="notShown">
+        <div data-simplebar class="h-100">
+            <div class="rightbar-title d-flex align-items-center p-3">
+
+                <h5 class="m-0 me-2">Settings</h5>
+
+                <a  class="right-bar-toggle ms-auto">
+                    <i class="mdi mdi-close noti-icon"></i>
+                </a>
+            </div>
+
+            <!-- Settings -->
+            <hr class="m-0" />
+
+            <div class="p-4">
+                <h6 class="mb-3">Layout</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
+                    <label class="form-check-label" for="layout-vertical">Vertical</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="layout" id="layout-horizontal"
+                        value="horizontal">
+                    <label class="form-check-label" for="layout-horizontal">Horizontal</label>
+                </div>
+
+                <h6 class="mt-4 mb-3 pt-2">Layout Mode</h6>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-light"
+                        value="light">
+                    <label class="form-check-label" for="layout-mode-light">Light</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-dark" value="dark">
+                    <label class="form-check-label" for="layout-mode-dark">Dark</label>
+                </div>
+
+                <h6 class="mt-4 mb-3 pt-2">Layout Width</h6>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="layout-width" id="layout-width-fuild"
+                        value="fuild" onchange="document.body.setAttribute('data-layout-size', 'fluid')">
+                    <label class="form-check-label" for="layout-width-fuild">Fluid</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="layout-width" id="layout-width-boxed"
+                        value="boxed" onchange="document.body.setAttribute('data-layout-size', 'boxed')">
+                    <label class="form-check-label" for="layout-width-boxed">Boxed</label>
+                </div>
+
+                <h6 class="mt-4 mb-3 pt-2">Layout Position</h6>
+
+                <h6 class="mt-4 mb-3 pt-2">Topbar Color</h6>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-light"
+                        value="light" onchange="document.body.setAttribute('data-topbar', 'light')">
+                    <label class="form-check-label" for="topbar-color-light">Light</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-dark" value="dark"
+                        onchange="document.body.setAttribute('data-topbar', 'dark')">
+                    <label class="form-check-label" for="topbar-color-dark">Dark</label>
+                </div>
+
+                <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Size</h6>
+
+                <div class="form-check sidebar-setting">
+                    <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-default"
+                        value="default" onchange="document.body.setAttribute('data-sidebar-size', 'lg')">
+                    <label class="form-check-label" for="sidebar-size-default">Default</label>
+                </div>
+                <div class="form-check sidebar-setting">
+                    <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-compact"
+                        value="compact" onchange="document.body.setAttribute('data-sidebar-size', 'small')">
+                    <label class="form-check-label" for="sidebar-size-compact">Compact</label>
+                </div>
+                <div class="form-check sidebar-setting">
+                    <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-small"
+                        value="small" onchange="document.body.setAttribute('data-sidebar-size', 'sm')">
+                    <label class="form-check-label" for="sidebar-size-small">Small (Icon View)</label>
+                </div>
+
+                <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Color</h6>
+
+                <div class="form-check sidebar-setting">
+                    <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-light"
+                        value="light" onchange="document.body.setAttribute('data-sidebar', 'light')">
+                    <label class="form-check-label" for="sidebar-color-light">Light</label>
+                </div>
+                <div class="form-check sidebar-setting">
+                    <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-dark"
+                        value="dark" onchange="document.body.setAttribute('data-sidebar', 'dark')">
+                    <label class="form-check-label" for="sidebar-color-dark">Dark</label>
+                </div>
+                <div class="form-check sidebar-setting">
+                    <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-colored"
+                        value="colored" onchange="document.body.setAttribute('data-sidebar', 'colored')">
+                    <label class="form-check-label" for="sidebar-color-colored">Colored</label>
+                </div>
+
+                <h6 class="mt-4 mb-3 pt-2">Direction</h6>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-ltr"
+                        value="ltr">
+                    <label class="form-check-label" for="layout-direction-ltr">LTR</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-rtl"
+                        value="rtl">
+                    <label class="form-check-label" for="layout-direction-rtl">RTL</label>
+                </div>
+
+            </div>
+
+        </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
   <!-- end row -->
 </template>
+
+<script>
+export default {
+  name: "ToggleDiv",
+  data: function () {
+    return {
+      isShow: true,
+    };
+  },
+
+  props: {
+    msg: String,
+  },
+};
+</script>
+
+<style scoped>
+.display-win{
+    display: none;
+}
+.notShown {
+  visibility: hidden !important;
+}
+@media only screen and (max-width: 820px) {
+ .display{
+    display: none;
+ }
+ .display-win{
+    display: grid;
+}
+}
+</style>
