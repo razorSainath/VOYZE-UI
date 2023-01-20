@@ -21,7 +21,7 @@
   <!-- end page title -->
   <div class="row">
     <div class="col-lg-12">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="row mb-2">
             <div class="col-md-3">
@@ -44,8 +44,7 @@
                 <a
                   href="javascript:void(0);"
                   class="btn btn-primary waves-effect waves-light"
-                  data-bs-toggle="modal"
-                  data-bs-target="#role"
+                  data-bs-toggle="offcanvas" data-bs-target="#role" aria-controls="offcanvasScrolling"
                   ><i class="fa-solid fa-plus me-2"></i> Create Roles</a
                 >
               </div>
@@ -169,29 +168,15 @@
     </div>
   </div>
   <!-- end row -->
-  <!-- The Modal -->
-  <div
-    class="modal fade"
-    id="role"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-sm-">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Create Roles</h1>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
+  <!--role offcanvas-->
 
-        <!-- Modal body -->
-        <div class="modal-body">
-          <div class="row">
+  <div class="offcanvas offcanvas-end offcanvas-size-xl" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="role" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Create Roles</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row">
             <div class="col-md-4">
               <label for="">Role Name</label>
               <input
@@ -221,12 +206,54 @@
           <hr />
           <label for="">Select Features & Permissions - Management</label>
           <hr />
+          <!-- <div class="card card-primary card-outline">
+<div class="card-body">
+<div class="row">
+<div class="col-5 col-sm-3">
+<div class="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
+  <a class="nav-link active" id="pill-drafts-tab" data-bs-toggle="tab" href="#pill-tab-drafts" role="tab" aria-controls="pill-tab-drafts" aria-selected="true">Drafts</a>
+  <a class="nav-link" id="pill-drafts-tab" data-bs-toggle="tab" href="#pill-tab-drafts" role="tab" aria-controls="pill-tab-drafts" aria-selected="true">Drafts</a>
+  <a class="nav-link" id="pill-drafts-tab" data-bs-toggle="tab" href="#pill-tab-drafts" role="tab" aria-controls="pill-tab-drafts" aria-selected="true">Drafts</a>
+  <a class="nav-link" id="pill-drafts-tab" data-bs-toggle="tab" href="#pill-tab-drafts" role="tab" aria-controls="pill-tab-drafts" aria-selected="true">Drafts</a>
+</div>
+</div>
+<div class="col-7 col-sm-9">
+  <div class="tab-content border" id="pill-myTabContent">
+                    <div class="tab-pane fade show active" id="pill-tab-drafts" role="tabpanel"
+                      aria-labelledby="home-tab">
+                      <div class="row">
+            <div class="col-md-12">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
+            </div>
+        </div>
+                    </div>
+                  </div>
+</div>
+</div>
+</div>
+
+</div> -->
           <div class="accordion accordion-flush" id="accordionFlushExample">
 <div class="row">
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         Client
       </button>
     </h2>
@@ -256,10 +283,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
         Profile
       </button>
     </h2>
@@ -289,10 +316,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
         User
       </button>
     </h2>
@@ -322,10 +349,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
         Content
       </button>
     </h2>
@@ -355,10 +382,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingFive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
         Role
       </button>
     </h2>
@@ -388,10 +415,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingSix">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
         Review
       </button>
     </h2>
@@ -423,10 +450,10 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingSeven">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
         Reply
       </button>
     </h2>
@@ -456,10 +483,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingEight">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
         Notification
       </button>
     </h2>
@@ -489,10 +516,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading9">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
         Category
       </button>
     </h2>
@@ -522,10 +549,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading10">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
         Content Curation
       </button>
     </h2>
@@ -555,10 +582,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading11">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">
         Partner
       </button>
     </h2>
@@ -588,10 +615,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading12">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
         Post
       </button>
     </h2>
@@ -623,10 +650,10 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading13">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">
         Leaders
       </button>
     </h2>
@@ -656,10 +683,10 @@
     </div>
   </div>
     </div>
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-4 col-sm-6">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading14">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">
         Analytic
       </button>
     </h2>
@@ -691,15 +718,24 @@
     </div>
 </div>
 
-</div>
-        </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Create</button>
-        </div>
-      </div>
-    </div>
+</div> -->
   </div>
+  <div class="offcanvas-footer">
+    <button type="button" class="btn btn-primary ml-2 mb-2">Create</button>
+  </div>
+</div>
 </template>
+<style scoped>
+.offcanvas-size-xl {
+    --bs-offcanvas-width: min(95vw, 600px) !important;
+}
+.offcanvas-size-xxl {
+    --bs-offcanvas-width: min(95vw, 90vw) !important;
+}
+.offcanvas-size-md { /* add Responsivenes to default offcanvas */
+    --bs-offcanvas-width: min(95vw, 400px) !important;
+}
+.offcanvas-size-sm {
+    --bs-offcanvas-width: min(95vw, 250px) !important;
+}
+</style>

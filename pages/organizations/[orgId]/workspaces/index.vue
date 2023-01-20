@@ -42,8 +42,8 @@ const toggleWorkspaceModal = ()=> {
                             <div class="col-md-3">
                                 <div class="form-inline mb-3">
                                     <div class="search-box ms-2">
-                                        <div class="position-relative">
-                                            <input type="text" class="form-control rounded border-0" placeholder="Search...">
+                                        <div class="position-relative"> 
+                                            <input type="text" class="form-control rounded border-0" placeholder="Search..." style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                                             <i class="fa-solid fa-magnifying-glass search-icon"></i>
                                         </div>
                                     </div>
@@ -51,7 +51,7 @@ const toggleWorkspaceModal = ()=> {
                             </div>
                             <div class="col-md-3"></div>
                             <div class="col-md-6">
-                                <button type="button" class="btn btn-primary float-md-end" data-bs-toggle="modal" data-bs-target="#workspace">
+                                <button type="button" class="btn btn-primary float-md-end" data-bs-toggle="modal" data-bs-target="#workspace" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                                     <span><i class="fa-solid fa-plus"></i>&nbsp;</span>Add New Workspace
                                   </button>
                             </div>
@@ -66,7 +66,7 @@ const toggleWorkspaceModal = ()=> {
 
   <div class="row">
     <div class="col-xl-4 col-sm-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
@@ -104,7 +104,7 @@ const toggleWorkspaceModal = ()=> {
       </div>
     </div>
     <div class="col-xl-4 col-sm-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
@@ -142,7 +142,7 @@ const toggleWorkspaceModal = ()=> {
       </div>
     </div>
     <div class="col-xl-4 col-sm-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
@@ -180,7 +180,7 @@ const toggleWorkspaceModal = ()=> {
       </div>
     </div>
     <div class="col-xl-4 col-sm-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
@@ -218,7 +218,7 @@ const toggleWorkspaceModal = ()=> {
       </div>
     </div>
     <div class="col-xl-4 col-sm-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
@@ -256,7 +256,7 @@ const toggleWorkspaceModal = ()=> {
       </div>
     </div>
     <div class="col-xl-4 col-sm-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">

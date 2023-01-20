@@ -51,7 +51,7 @@ const series = [
 
   <div class="row">
     <div class="col-md-6 col-xl-3">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="total-revenue-chart" data-colors='["--bs-primary"]'></div>
@@ -72,7 +72,7 @@ const series = [
     <!-- end col-->
 
     <div class="col-md-6 col-xl-3">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="orders-chart" data-colors='["--bs-success"]'></div>
@@ -93,7 +93,7 @@ const series = [
     <!-- end col-->
 
     <div class="col-md-6 col-xl-3">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="customers-chart" data-colors='["--bs-primary"]'></div>
@@ -114,7 +114,7 @@ const series = [
     <!-- end col-->
 
     <div class="col-md-6 col-xl-3">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="growth-chart" data-colors='["--bs-warning"]'></div>
@@ -140,7 +140,7 @@ const series = [
 
   <div class="row">
     <div class="col-xl-8">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end">
             <div class="dropdown">
@@ -219,7 +219,7 @@ const series = [
     <!-- end col-->
 
     <div class="col-xl-4">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end">
             <div class="dropdown">
@@ -346,7 +346,7 @@ const series = [
 
   <div class="row">
     <div class="col-xl-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end">
             <div class="dropdown">
@@ -582,7 +582,7 @@ const series = [
     <!-- end col -->
 
     <div class="col-xl-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end">
             <div class="dropdown">

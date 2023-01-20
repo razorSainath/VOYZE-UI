@@ -22,7 +22,7 @@
   <!-- end page title -->
   <div class="row">
     <div class="col-md-6 col-xl-3">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="total-revenue-chart" data-colors='["--bs-primary"]'></div>
@@ -41,7 +41,7 @@
     <!-- end col-->
 
     <div class="col-md-6 col-xl-3">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end mt-2"></div>
           <div>
@@ -58,7 +58,7 @@
     <!-- end col-->
 
     <div class="col-md-6 col-xl-3">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="customers-chart" data-colors='["--bs-primary"]'></div>
@@ -77,7 +77,7 @@
     <!-- end col-->
 
     <div class="col-md-6 col-xl-3">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="growth-chart" data-colors='["--bs-warning"]'></div>
@@ -118,31 +118,28 @@
     <div class="col-md-4"></div>
     <div class="col-md-2 col-sm-2">
       <label for="">&nbsp;</label>
-      <button type="button" class="btn btn-primary form-control" data-bs-toggle="modal" data-bs-target="#newDraft">
+      <button type="button" class="btn btn-primary form-control small" data-bs-toggle="offcanvas" data-bs-target="#newDraft" aria-controls="offcanvasExample">
         <i class="fa-solid fa-plus"></i> New Draft
       </button>
     </div>
   </div>
   <!--filter end-->
 
-  <!-- The Modal -->
-  <div class="modal fade" id="newDraft" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Content Drafts</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+  <!-- The newDraft offcanvas  -->
 
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!--social platform-->
-          <p>Social Platform</p>
+  <div class="offcanvas offcanvas-end offcanvas-size-xl" tabindex="-1" id="newDraft" aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true">
+  <div class="offcanvas-header bg-light text-white">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">New Draft</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+<!--social platform-->
+<p>Social Platform</p>
           <div class="row">
-            <div class="col">
+            <div class="col" style="display:flex;flex-direction:row;align-items:center;">
               <i class="fa-brands fa-linkedin fa-2x text-primary"></i>&nbsp;<span>LinkedIn</span>
             </div>
-            <div class="col">
+            <div class="col" style="display:flex;flex-direction:row;align-items:center;">
               <i class="fa-brands fa-twitter fa-2x text-primary"></i>&nbsp;<span>Twitter</span>
             </div>
             <div class="col"></div>
@@ -208,18 +205,17 @@
               <input type="text" name="" id="" class="form-control" />
             </div>
           </div>
-        </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
+          <div class="row py-1">
+            <div class="col-md-12">
+              <label for="">Label</label>
+              <input type="text" name="" id="" class="form-control" />
+            </div>
+          </div>
   </div>
+  <div class="offcanvas-footer ml-2 mb-2 bg-light">
+          <button type="button" class="btn btn-primary ml-2">Save changes</button>
+  </div>
+</div>
 
   <div class="row">
     <div class="col-xl-12 col-lg-12">
@@ -288,7 +284,7 @@
                       aria-labelledby="home-tab">
                       <div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6">
-                          <div class="card">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
                                 background-color: transparent;
                                 border: none;
@@ -357,7 +353,7 @@
                                 सिर और घु...<span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
-                                  border: 1px solid #dcdcdc;
+                                  border: 1px solid #f3f8fb;
                                   border-radius: 50rem;
                                 " class="py-2">
                                 <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
@@ -395,7 +391,7 @@
                       aria-labelledby="home-tab">
                       <div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6">
-                          <div class="card">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
                                 background-color: transparent;
                                 border: none;
@@ -464,7 +460,7 @@
                                 सिर और घु...<span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
-                                  border: 1px solid #dcdcdc;
+                                  border: 1px solid #f3f8fb;
                                   border-radius: 50rem;
                                 " class="py-2">
                                 <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
@@ -502,7 +498,7 @@
                       aria-labelledby="home-tab">
                       <div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6 d-flex text-align-stretch flex-wrap">
-                          <div class="card">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
                                 background-color: transparent;
                                 border: none;
@@ -571,7 +567,7 @@
                                 Gandhi was asked a
                                 <span><a href="#">Read more...</a></span></small><br /><br />
                               <div style="
-                                  border: 1px solid #dcdcdc;
+                                  border: 1px solid #f3f8fb;
                                   border-radius: 50rem;
                                 " class="py-2">
                                 <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
@@ -609,7 +605,7 @@
                       aria-labelledby="home-tab">
                       <div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6">
-                          <div class="card">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
                                 background-color: transparent;
                                 border: none;
@@ -678,7 +674,7 @@
                                 सिर और घु...<span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
-                                  border: 1px solid #dcdcdc;
+                                  border: 1px solid #f3f8fb;
                                   border-radius: 50rem;
                                 " class="py-2">
                                 <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
@@ -716,7 +712,7 @@
                       aria-labelledby="home-tab">
                       <div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6 d-flex text-align-stretch flex-wrap">
-                          <div class="card">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
                                 background-color: transparent;
                                 border: none;
@@ -785,7 +781,7 @@
                                 Gandhi was asked a
                                 <span><a href="#">Read more...</a></span></small><br /><br />
                               <div style="
-                                  border: 1px solid #dcdcdc;
+                                  border: 1px solid #f3f8fb;
                                   border-radius: 50rem;
                                 " class="py-2">
                                 <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
@@ -823,7 +819,7 @@
                       aria-labelledby="home-tab">
                       <div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6">
-                          <div class="card">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
                                 background-color: transparent;
                                 border: none;
@@ -892,7 +888,7 @@
                                 सिर और घु...<span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
-                                  border: 1px solid #dcdcdc;
+                                  border: 1px solid #f3f8fb;
                                   border-radius: 50rem;
                                 " class="py-2">
                                 <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
@@ -930,7 +926,7 @@
                       aria-labelledby="home-tab">
                       <div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6 d-flex text-align-stretch flex-wrap">
-                          <div class="card">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
                                 background-color: transparent;
                                 border: none;
@@ -999,7 +995,7 @@
                                 Gandhi was asked a
                                 <span><a href="#">Read more...</a></span></small><br /><br />
                               <div style="
-                                  border: 1px solid #dcdcdc;
+                                  border: 1px solid #f3f8fb;
                                   border-radius: 50rem;
                                 " class="py-2">
                                 <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
@@ -1091,12 +1087,27 @@
 .fa-3x {
   font-size: 2.5rem !important;
 }
+.offcanvas-size-xl {
+    --bs-offcanvas-width: min(95vw, 600px) !important;
+}
+.offcanvas-size-xxl {
+    --bs-offcanvas-width: min(95vw, 90vw) !important;
+}
+.offcanvas-size-md { /* add Responsivenes to default offcanvas */
+    --bs-offcanvas-width: min(95vw, 400px) !important;
+}
+.offcanvas-size-sm {
+    --bs-offcanvas-width: min(95vw, 250px) !important;
+}
 @media screen and (max-width: 996px) {
   .fa-3x {
     font-size: 1.75rem !important;
   }
   .fa-2x{
     font-size:1.25rem !important;
+  }
+  .small{
+    font-size: 12px !important;
   }
   small{
     font-size:10px !important;

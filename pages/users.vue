@@ -32,7 +32,7 @@ const just = () => {
   <!-- end page title -->
   <div class="row">
     <div class="col-lg-12">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="row mb-2">
             <div class="col-md-3">
@@ -150,7 +150,7 @@ const just = () => {
       <div class="offcanvas-footer">
         <button
                     type="button"
-                    class="btn btn-primary ml-2"
+                    class="btn btn-primary mr-2 mb-2 float-end "
                     data-dismiss="modal"
                   >
                     Add
@@ -266,7 +266,7 @@ const just = () => {
                         <label class="form-check-label" for="layout-mode-light"
                           >Email</label
                         >
-                        <input class="form-control-plaintext" type="text" readonly value="nibhash@razorlabz.com"/>
+                        <input class="form-control" type="text"/>
                       </div>
                       <div class="col-xl-6">
                         <label class="form-check-label" for="layout-mode-light"
@@ -286,22 +286,12 @@ const just = () => {
                         <label class="form-check-label" for="layout-mode-light"
                           >Role</label
                         >
-                        <input class="form-control" type="text"  />
-                      </div>
-                      <div class="col-xl-6">
-                        <label class="form-check-label" for="layout-mode-light"
-                          >Last Login</label
-                        >
-                        <input class="form-control" type="text"  />
-                      </div>
-                    </div>
-                    <div class="row mt-2">
-                     
-                      <div class="col-xl-6">
-                        <label class="form-check-label" for="layout-mode-light"
-                          >Created At</label
-                        >
-                        <input class="form-control" type="text"  />
+                        <select name="" id="" class="form-control">
+                          <option value=""></option>
+                          <option value=""></option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
                       </div>
                       <div class="col-xl-6">
                         <label class="form-check-label" for="layout-mode-light"
@@ -314,11 +304,8 @@ const just = () => {
                         </select>
                       </div>
                     </div>
-                    <hr>
-                    <h5>Change Timezone</h5>
-                    <hr>
                     <div class="row mt-2">
-                      <div class="col-xl-12">
+                      <div class="col-xl-6">
                         <label for="">Timezone</label>
                         <select name="" id="" class="form-control">
                           <option value="">Select Timezone</option>
@@ -327,12 +314,8 @@ const just = () => {
                           <option value=""></option>
                         </select>
                       </div>
-                    </div>
-                    <hr>
-                    <h5>Manager</h5>
-                    <hr>
-                    <div class="row mt-2">
-                      <div class="col-xl-12">
+                      <div class="col-xl-6">
+                        <label for="">Workspace Manager</label>
                         <select name="" id="" class="form-control">
                           <option value="">Select your Manager</option>
                           <option value=""></option>
@@ -344,7 +327,7 @@ const just = () => {
                     </div>
                   </div>
                   <div class="offcanvas-footer">
-                    <button type="submit" class="btn btn-primary ml-2">Update</button>
+                    <button type="submit" class="btn btn-primary mr-2 mb-2 float-end">Update</button>
                   </div>
                 </div>
               </tbody>

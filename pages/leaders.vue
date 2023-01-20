@@ -58,7 +58,7 @@ export default {
 
   <div class="row py-2">
     <div class="col-xl-4 col-sm-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
@@ -105,7 +105,7 @@ export default {
       </div>
     </div>
     <div class="col-xl-4 col-sm-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
@@ -152,7 +152,7 @@ export default {
       </div>
     </div>
     <div class="col-xl-4 col-sm-6">
-      <div class="card">
+      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
