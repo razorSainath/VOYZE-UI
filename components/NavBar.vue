@@ -45,7 +45,7 @@ const just = ()=>{
             </div>
 
             <button
-              type="button" style="position: relative;left: 10px;"
+              type="button" style="position: relative;left: 10px;" class="display-button"
                @click="just"
             >
               <i class="fa fa-fw fa-bars"></i>
@@ -301,12 +301,19 @@ const just = ()=>{
 </template>
 
 <style scoped>
+.display-button{
+  display: none;
+}
 @media only screen and (max-width: 820px) {
   .display {
     display: none;
   }
   .display-win {
     display: grid;
+  }
+  .display-button{
+    display: flex;
+    top:28px;
   }
 }
 </style>
