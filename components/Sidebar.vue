@@ -10,6 +10,7 @@ let categoryColour = ref("white");
 let usersColour = ref("white");
 let rolesColour = ref("white");
 let partnersColour = ref("white");
+let textColor = ref("#7b8190");
 
 
 const redirectTo = (page) => {
@@ -20,7 +21,8 @@ const redirectTo = (page) => {
 switch (page) {
   case 'dashboard':
   navigateTo("/dashboard")
-  dashboardColour.value = "#009cd2";
+  dashboardColour.value = "#f3f8fb";
+  textColor.value = "#099cd2";
   workspaceColour = ref("white");
  leadersColour = ref("white");
  analyticsColour = ref("white");
@@ -34,7 +36,7 @@ switch (page) {
   case 'workspace':
   navigateTo("/organizations/sasdf/workspaces")
   dashboardColour = ref("white");
-  workspaceColour.value = "#009cd2";
+  workspaceColour.value = "#f3f8fb";
  leadersColour = ref("white");
  analyticsColour = ref("white");
  postsColour = ref("white");
@@ -48,7 +50,7 @@ switch (page) {
   navigateTo("/leaders")
   dashboardColour = ref("white");
   workspaceColour = ref("white");
- leadersColour.value = "#009cd2";
+ leadersColour.value = "#f3f8fb";
  analyticsColour = ref("white");
  postsColour = ref("white");
  curationColour = ref("white");
@@ -62,7 +64,7 @@ switch (page) {
   dashboardColour = ref("white");
   workspaceColour = ref("white");
  leadersColour = ref("white");
- analyticsColour.value = "#009cd2";
+ analyticsColour.value = "#f3f8fb";
  postsColour = ref("white");
  curationColour = ref("white");
  categoryColour = ref("white");
@@ -76,7 +78,7 @@ switch (page) {
   workspaceColour = ref("white");
  leadersColour = ref("white");
  analyticsColour = ref("white");
- postsColour.value = "#009cd2";
+ postsColour.value = "#f3f8fb";
  curationColour = ref("white");
  categoryColour = ref("white");
  usersColour = ref("white");
@@ -90,7 +92,7 @@ switch (page) {
  leadersColour = ref("white");
  analyticsColour = ref("white");
  postsColour = ref("white");
- curationColour.value = "#009cd2";
+ curationColour.value = "#f3f8fb";
  categoryColour = ref("white");
  usersColour = ref("white");
  rolesColour = ref("white");
@@ -104,7 +106,7 @@ switch (page) {
  analyticsColour = ref("white");
  postsColour = ref("white");
  curationColour = ref("white");
- categoryColour.value = "#009cd2";
+ categoryColour.value = "#f3f8fb";
  usersColour = ref("white");
  rolesColour = ref("white");
  partnersColour = ref("white");
@@ -118,7 +120,7 @@ switch (page) {
  postsColour = ref("white");
  curationColour = ref("white");
  categoryColour=  ref("white");
- usersColour.value = "#009cd2";
+ usersColour.value = "#f3f8fb";
  rolesColour = ref("white");
  partnersColour = ref("white");
 
@@ -133,7 +135,7 @@ switch (page) {
  curationColour = ref("white");
  categoryColour=  ref("white");
  usersColour = ref("white");
- rolesColour.value = "#009cd2";
+ rolesColour.value = "#f3f8fb";
  partnersColour = ref("white");
     break;
   case 'partners-management':
@@ -148,7 +150,7 @@ switch (page) {
  categoryColour=  ref("white");
  usersColour = ref("white");
  rolesColour = ref("white");
- partnersColour.value = "#009cd2";
+ partnersColour.value = "#f3f8fb";
     break;
 }
 };
@@ -189,8 +191,8 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
 
           <li class="nav-item" :style="{'background-color': dashboardColour}">
             <a @click="redirectTo('dashboard')"  class="waves-effect nav-link active">
-              <i class="fa-solid fa-dashboard"></i>
-              <span>Dashboard</span>
+              <i class="fa-solid fa-dashboard" :style="{'color': textColor }"></i>
+              <span :style="{'color': textColor }">Dashboard</span>
             </a>
           </li>
           <li class="menu-title">Sub-menu</li>
