@@ -10,7 +10,17 @@ let categoryColour = ref("white");
 let usersColour = ref("white");
 let rolesColour = ref("white");
 let partnersColour = ref("white");
-let textColor = ref("#7b8190");
+
+let dashboardTextColour = ref("#7b8190");
+let workspaceTextColor = ref("#7b8190");
+let leadersTextColour = ref("#7b8190");
+let analyticsTextColour = ref("#7b8190");
+let postsTextColour = ref("#7b8190");
+let curationTextColour = ref("#7b8190");
+let categoryTextColour = ref("#7b8190");
+let usersTextColour = ref("#7b8190");
+let rolesTextColour = ref("#7b8190");
+let partnersTextColour = ref("#7b8190");
 
 
 const redirectTo = (page) => {
@@ -22,7 +32,6 @@ switch (page) {
   case 'dashboard':
   navigateTo("/dashboard")
   dashboardColour.value = "#f3f8fb";
-  textColor.value = "#099cd2";
   workspaceColour = ref("white");
  leadersColour = ref("white");
  analyticsColour = ref("white");
@@ -32,6 +41,18 @@ switch (page) {
  usersColour = ref("white");
  rolesColour = ref("white");
  partnersColour = ref("white");
+
+ dashboardTextColour.value = "#099cd2";
+ workspaceTextColor = ref("#7b8190");
+ leadersTextColour = ref("#7b8190");
+ analyticsTextColour = ref("#7b8190");
+ postsTextColour = ref("#7b8190");
+ curationTextColour = ref("#7b8190");
+ categoryTextColour = ref("#7b8190");
+ usersTextColour = ref("#7b8190");
+ rolesTextColour = ref("#7b8190");
+ partnersTextColour = ref("#7b8190");
+
     break
   case 'workspace':
   navigateTo("/organizations/sasdf/workspaces")
@@ -45,6 +66,18 @@ switch (page) {
  usersColour = ref("white");
  rolesColour = ref("white");
  partnersColour = ref("white");
+
+ dashboardTextColour = ref("#7b8190");  
+ workspaceTextColor.value = "#099cd2";
+ leadersTextColour = ref("#7b8190");
+ analyticsTextColour = ref("#7b8190");
+ postsTextColour = ref("#7b8190");
+ curationTextColour = ref("#7b8190");
+ categoryTextColour = ref("#7b8190");
+ usersTextColour = ref("#7b8190");
+ rolesTextColour = ref("#7b8190");
+ partnersTextColour = ref("#7b8190");
+
   break
   case 'leaders':
   navigateTo("/leaders")
@@ -58,6 +91,18 @@ switch (page) {
  usersColour = ref("white");
  rolesColour = ref("white");
  partnersColour = ref("white");
+
+  
+ dashboardTextColour = ref("#7b8190");  
+ workspaceTextColor = ref("#7b8190");
+ leadersTextColour.value = "#099cd2";
+ analyticsTextColour = ref("#7b8190");
+ postsTextColour = ref("#7b8190");
+ curationTextColour = ref("#7b8190");
+ categoryTextColour = ref("#7b8190");
+ usersTextColour = ref("#7b8190");
+ rolesTextColour = ref("#7b8190");
+ partnersTextColour = ref("#7b8190");
     break;
   case 'analytics':
   navigateTo("/analytics")
@@ -71,6 +116,19 @@ switch (page) {
  usersColour = ref("white");
  rolesColour = ref("white");
  partnersColour = ref("white");
+
+
+ 
+ dashboardTextColour = ref("#7b8190");  
+ workspaceTextColor = ref("#7b8190");
+ leadersTextColour = ref("#7b8190");
+ analyticsTextColour.value = "#099cd2";
+ postsTextColour = ref("#7b8190");
+ curationTextColour = ref("#7b8190");
+ categoryTextColour = ref("#7b8190");
+ usersTextColour = ref("#7b8190");
+ rolesTextColour = ref("#7b8190");
+ partnersTextColour = ref("#7b8190");
     break;
   case 'posts':
   navigateTo("/posts")
@@ -84,6 +142,19 @@ switch (page) {
  usersColour = ref("white");
  rolesColour = ref("white");
  partnersColour = ref("white");
+
+
+ 
+ dashboardTextColour = ref("#7b8190");  
+ workspaceTextColor = ref("#7b8190");
+ leadersTextColour = ref("#7b8190");
+ analyticsTextColour= ref("#7b8190");
+ postsTextColour.value  = "#099cd2";
+ curationTextColour = ref("#7b8190");
+ categoryTextColour = ref("#7b8190");
+ usersTextColour = ref("#7b8190");
+ rolesTextColour = ref("#7b8190");
+ partnersTextColour = ref("#7b8190");
     break;
   case 'curation':
   navigateTo("/curation")
@@ -97,6 +168,19 @@ switch (page) {
  usersColour = ref("white");
  rolesColour = ref("white");
  partnersColour = ref("white");
+
+ 
+ dashboardTextColour = ref("#7b8190");  
+ workspaceTextColor = ref("#7b8190");
+ leadersTextColour = ref("#7b8190");
+ analyticsTextColour= ref("#7b8190");
+ postsTextColour = ref("#7b8190");
+ curationTextColour.value  = "#099cd2";
+ categoryTextColour = ref("#7b8190");
+ usersTextColour = ref("#7b8190");
+ rolesTextColour = ref("#7b8190");
+ partnersTextColour = ref("#7b8190");
+
     break;
   case 'category':
   navigateTo("/categories")
@@ -110,6 +194,19 @@ switch (page) {
  usersColour = ref("white");
  rolesColour = ref("white");
  partnersColour = ref("white");
+
+  
+ dashboardTextColour = ref("#7b8190");  
+ workspaceTextColor = ref("#7b8190");
+ leadersTextColour = ref("#7b8190");
+ analyticsTextColour= ref("#7b8190");
+ postsTextColour = ref("#7b8190");
+ curationTextColour = ref("#7b8190");
+ categoryTextColour.value  = "#099cd2";
+ usersTextColour = ref("#7b8190");
+ rolesTextColour = ref("#7b8190");
+ partnersTextColour = ref("#7b8190");
+
     break;
   case 'user-management':
   navigateTo("/users")
@@ -124,6 +221,17 @@ switch (page) {
  rolesColour = ref("white");
  partnersColour = ref("white");
 
+ dashboardTextColour = ref("#7b8190");  
+ workspaceTextColor = ref("#7b8190");
+ leadersTextColour = ref("#7b8190");
+ analyticsTextColour= ref("#7b8190");
+ postsTextColour = ref("#7b8190");
+ curationTextColour = ref("#7b8190");
+ categoryTextColour  = ref("#7b8190");
+ usersTextColour.value = "#099cd2";
+ rolesTextColour = ref("#7b8190");
+ partnersTextColour = ref("#7b8190");
+
     break;
   case 'role-management':
   navigateTo("/roles")
@@ -137,6 +245,20 @@ switch (page) {
  usersColour = ref("white");
  rolesColour.value = "#f3f8fb";
  partnersColour = ref("white");
+ 
+ dashboardTextColour = ref("#7b8190");  
+ workspaceTextColor = ref("#7b8190");
+ leadersTextColour = ref("#7b8190");
+ analyticsTextColour= ref("#7b8190");
+ postsTextColour = ref("#7b8190");
+ curationTextColour = ref("#7b8190");
+ categoryTextColour  = ref("#7b8190");
+ usersTextColour = ref("#7b8190");
+ rolesTextColour.value =  "#099cd2";
+ partnersTextColour = ref("#7b8190");
+
+
+
     break;
   case 'partners-management':
   navigateTo("/partners")
@@ -151,6 +273,18 @@ switch (page) {
  usersColour = ref("white");
  rolesColour = ref("white");
  partnersColour.value = "#f3f8fb";
+
+ 
+ dashboardTextColour = ref("#7b8190");  
+ workspaceTextColor = ref("#7b8190");
+ leadersTextColour = ref("#7b8190");
+ analyticsTextColour= ref("#7b8190");
+ postsTextColour = ref("#7b8190");
+ curationTextColour = ref("#7b8190");
+ categoryTextColour  = ref("#7b8190");
+ usersTextColour = ref("#7b8190");
+ rolesTextColour = ref("#7b8190");
+ partnersTextColour.value =  "#099cd2";
     break;
 }
 };
@@ -191,40 +325,40 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
 
           <li class="nav-item" :style="{'background-color': dashboardColour}">
             <a @click="redirectTo('dashboard')"  class="waves-effect nav-link active">
-              <i class="fa-solid fa-dashboard" :style="{'color': textColor }"></i>
-              <span :style="{'color': textColor }">Dashboard</span>
+              <i class="fa-solid fa-dashboard" :style="{'color': dashboardTextColour }"></i>
+              <span :style="{'color': dashboardTextColour }">Dashboard</span>
             </a>
           </li>
           <li class="menu-title">Sub-menu</li>
           <li :style="{'background-color': workspaceColour}">
             <a @click="redirectTo('workspace')" class="waves-effect">
-              <i class="fa-solid fa-folder-tree"></i>
-              <span>Workspace</span>
+              <i class="fa-solid fa-folder-tree" :style="{'color': workspaceTextColor }"></i>
+              <span :style="{'color': workspaceTextColor }">Workspace</span>
             </a>
           </li>
           <li :style="{'background-color': leadersColour}">
             <a @click="redirectTo('leaders')" class="waves-effect">
-              <i class="fa-solid fa-user"></i>
-              <span>Leaders</span>
+              <i class="fa-solid fa-user" :style="{'color': leadersTextColour }"></i>
+              <span :style="{'color': leadersTextColour }">Leaders</span>
             </a>
           </li>
           <li :style="{'background-color': analyticsColour}">
             <a @click="redirectTo('analytics')" class="waves-effect">
-              <i class="fa-solid fa-chart-simple"></i>
-              <span>Analytics</span>
+              <i class="fa-solid fa-chart-simple" :style="{'color': analyticsTextColour }"></i>
+              <span :style="{'color': analyticsTextColour }">Analytics</span>
             </a>
           </li>
           <li class="menu-title">Content</li>
           <li :style="{'background-color': postsColour}">
             <a @click="redirectTo('posts')" class="waves-effect">
-              <i class="fa-solid fa-envelopes-bulk"></i>
-              <span>Posts</span>
+              <i class="fa-solid fa-envelopes-bulk" :style="{'color': postsTextColour }"></i>
+              <span :style="{'color': postsTextColour }">Posts</span>
             </a>
           </li>
           <li :style="{'background-color': curationColour}">
             <a @click="redirectTo('curation')" class="waves-effect">
-              <i class="fa-solid fa-file-lines"></i>
-              <span>Curation</span>
+              <i class="fa-solid fa-file-lines" :style="{'color': curationTextColour }"></i>
+              <span :style="{'color': curationTextColour }">Curation</span>
             </a>
           </li>
 
@@ -232,28 +366,28 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
 
           <li :style="{'background-color': categoryColour}">
             <a @click="redirectTo('category')" class="waves-effect">
-              <i class="fa-solid fa-bars-progress"></i>
-              <span>Category</span>
+              <i class="fa-solid fa-bars-progress" :style="{'color': categoryTextColour }"></i>
+              <span :style="{'color': categoryTextColour }">Category</span>
             </a>
           </li>
 
           <li :style="{'background-color': usersColour}">
             <a @click="redirectTo('user-management')" class="waves-effect">
-              <i class="fa-solid fa-users"></i>
-              <span>Users</span>
+              <i class="fa-solid fa-users" :style="{'color': usersTextColour }"></i>
+              <span :style="{'color': usersTextColour }">Users</span>
             </a>
           </li>
 
           <li :style="{'background-color': rolesColour}">
             <a @click="redirectTo('role-management')" class="waves-effect">
-              <i class="fa-solid fa-list-check"></i>
-              <span>Roles</span>
+              <i class="fa-solid fa-list-check" :style="{'color': rolesTextColour }"></i>
+              <span :style="{'color': rolesTextColour }">Roles</span>
             </a>
           </li>
           <li :style="{'background-color': partnersColour}">
             <a @click="redirectTo('partners-management')" class="waves-effect">
-              <i class="fa-solid fa-handshake"></i>
-              <span>Partners</span>
+              <i class="fa-solid fa-handshake" :style="{'color': partnersTextColour }"></i>
+              <span :style="{'color': partnersTextColour }">Partners</span>
             </a>
           </li>
         </ul>
