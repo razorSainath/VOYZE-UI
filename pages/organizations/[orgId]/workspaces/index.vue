@@ -1,21 +1,3 @@
-<script>
-import VueMultiselect from "vue-multiselect";
-export default {
-  components: { VueMultiselect },
-  data() {
-    return {
-      selected: null,
-      options: ["orgnization1", "orgnization2", "orgnization3","orgnization4"],
-    };
-  },
-  methods: {
-    limitText(count) {
-      return `and ${count} more`;
-    },
-  },
-};
-
-</script>
 <script setup>
 
 const state = reactive({
@@ -78,15 +60,7 @@ const toggleWorkspaceModal = ()=> {
   <!-- end row -->
   <div class="row mb-2">
   <div class="col-md-4">
-    <VueMultiselect
-      v-model="selected"
-      :options="options"
-      :multiple="true"
-      placeholder="Select organization/s"
-      :limit="2"
-      :limit-text="limitText"
-    >
-    </VueMultiselect>
+
 </div>
 </div>
 

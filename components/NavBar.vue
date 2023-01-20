@@ -1,3 +1,21 @@
+<script>
+import VueMultiselect from "vue-multiselect";
+export default {
+  components: { VueMultiselect },
+  data() {
+    return {
+      selected: null,
+      options: ["orgnization1", "orgnization2", "orgnization3","orgnization4"],
+    };
+  },
+  methods: {
+    limitText(count) {
+      return `and ${count} more`;
+    },
+  },
+};
+</script>
+
 <script setup>
 let isSidebarOpen = useState("isSidebarOpen")
 const just = ()=>{
@@ -33,17 +51,13 @@ const just = ()=>{
               <i class="fa fa-fw fa-bars"></i>
             </button>
 
-            <!-- App Search-->
-            <form class="app-search d-none d-lg-block">
-              <div class="position-relative">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Search..."
-                />
-                <span class="fa-solid fa-magnifying-glass"></span>
-              </div>
-            </form>
+            <!-- organisation dropdown-->
+              <select name="" id="" class="form-control display" style="margin-left:15px;">
+                <option value="0">Select Organisation</option>
+                <option value="1">Edelman</option>
+                <option value="2">Razorpod</option>
+                <option value="3">Infosys</option>
+              </select>
           </div>
 
           <div class="d-flex">
@@ -285,4 +299,15 @@ const just = ()=>{
         </div>
       </header>
 </template>
+
+<style scoped>
+@media only screen and (max-width: 820px) {
+  .display {
+    display: none;
+  }
+  .display-win {
+    display: grid;
+  }
+}
+</style>
 
