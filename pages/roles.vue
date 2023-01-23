@@ -44,7 +44,7 @@
                 <a
                   href="javascript:void(0);"
                   class="btn btn-primary waves-effect waves-light"
-                  data-bs-toggle="offcanvas" data-bs-target="#role" aria-controls="offcanvasScrolling"
+                  data-bs-toggle="offcanvas" data-bs-target="#role" aria-controls="offcanvasWithBothOptions"
                   ><i class="fa-solid fa-plus me-2"></i> Create Roles</a
                 >
               </div>
@@ -170,7 +170,7 @@
   <!-- end row -->
   <!--role offcanvas-->
 
-  <div class="offcanvas offcanvas-end offcanvas-size-xl" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="role" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas offcanvas-end offcanvas-size-xl" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="role" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Create Roles</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -206,51 +206,9 @@
           <hr />
           <label for="">Select Features & Permissions - Management</label>
           <hr />
-          <!-- <div class="card card-primary card-outline">
-<div class="card-body">
-<div class="row">
-<div class="col-5 col-sm-3">
-<div class="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
-  <a class="nav-link active" id="pill-drafts-tab" data-bs-toggle="tab" href="#pill-tab-drafts" role="tab" aria-controls="pill-tab-drafts" aria-selected="true">Drafts</a>
-  <a class="nav-link" id="pill-drafts-tab" data-bs-toggle="tab" href="#pill-tab-drafts" role="tab" aria-controls="pill-tab-drafts" aria-selected="true">Drafts</a>
-  <a class="nav-link" id="pill-drafts-tab" data-bs-toggle="tab" href="#pill-tab-drafts" role="tab" aria-controls="pill-tab-drafts" aria-selected="true">Drafts</a>
-  <a class="nav-link" id="pill-drafts-tab" data-bs-toggle="tab" href="#pill-tab-drafts" role="tab" aria-controls="pill-tab-drafts" aria-selected="true">Drafts</a>
-</div>
-</div>
-<div class="col-7 col-sm-9">
-  <div class="tab-content border" id="pill-myTabContent">
-                    <div class="tab-pane fade show active" id="pill-tab-drafts" role="tabpanel"
-                      aria-labelledby="home-tab">
-                      <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
-            </div>
-        </div>
-                    </div>
-                  </div>
-</div>
-</div>
-</div>
-
-</div> -->
           <div class="accordion accordion-flush" id="accordionFlushExample">
 <div class="row">
-    <div class="col-md-4 col-sm-6">
+    <div class="col-md-12 col-sm-12">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -260,263 +218,229 @@
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
             </div>
-        </div>
       </div>
-    </div>
-  </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-        <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Profile
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
-            </div>
-        </div>
-    </div>
-    </div>
-  </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-        <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        User
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
-            </div>
-        </div>
-    </div>
-    </div>
-  </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-        <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingFour">
-      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-        Content
-      </button>
-    </h2>
-    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
-            </div>
-        </div>
-    </div>
-    </div>
-  </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-        <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingFive">
-      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-        Role
-      </button>
-    </h2>
-    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
-            </div>
-        </div>
-    </div>
-    </div>
-  </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-        <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingSix">
-      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-        Review
-      </button>
-    </h2>
-    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
-            </div>
-        </div>
-    </div>
     </div>
   </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-4 col-sm-6">
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
         <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingSeven">
-      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-        Reply
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+        Profile
       </button>
     </h2>
-    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+    <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
             </div>
-        </div>
       </div>
     </div>
   </div>
     </div>
-    <div class="col-md-4 col-sm-6">
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
         <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingEight">
-      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-        Notification
+    <h2 class="accordion-header" id="flush-heading3">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+        User
       </button>
     </h2>
-    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
             </div>
-        </div>
-    </div>
+      </div>
     </div>
   </div>
     </div>
-    <div class="col-md-4 col-sm-6">
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
+        <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading4">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+        Content
+      </button>
+    </h2>
+    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
+            </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
+        <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading5">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+        Role
+      </button>
+    </h2>
+    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
+            </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
+        <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading6">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+        Review
+      </button>
+    </h2>
+    <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
+            </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
+        <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading7">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+        Reply
+      </button>
+    </h2>
+    <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
+            </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
+        <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading8">
+      <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+        Notification
+      </button>
+    </h2>
+    <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
+            </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading9">
       <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
@@ -524,32 +448,28 @@
       </button>
     </h2>
     <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
+      <div class="accordion-body">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
             </div>
-        </div>
-    </div>
+      </div>
     </div>
   </div>
     </div>
-    <div class="col-md-4 col-sm-6">
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading10">
       <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
@@ -557,65 +477,57 @@
       </button>
     </h2>
     <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
+      <div class="accordion-body">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
             </div>
-        </div>
-    </div>
+      </div>
     </div>
   </div>
     </div>
-    <div class="col-md-4 col-sm-6">
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading11">
       <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">
-        Partner
+        Partners
       </button>
     </h2>
-    <div id="flush-collapse11" class="accordion-collapse collapse" aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
             </div>
-        </div>
-    </div>
+      </div>
     </div>
   </div>
     </div>
-    <div class="col-md-4 col-sm-6">
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading12">
       <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
@@ -623,106 +535,90 @@
       </button>
     </h2>
     <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
+      <div class="accordion-body">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
             </div>
-        </div>
-    </div>
+      </div>
     </div>
   </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-4 col-sm-6">
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading13">
       <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">
-        Leaders
+        Leader
       </button>
     </h2>
     <div id="flush-collapse13" class="accordion-collapse collapse" aria-labelledby="flush-heading13" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
             </div>
-        </div>
       </div>
     </div>
   </div>
     </div>
-    <div class="col-md-4 col-sm-6">
+</div>
+</div>
+<div class="row py-2">
+    <div class="col-md-12 col-sm-12">
         <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading14">
       <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">
-        Analytic
+        Analtics
       </button>
     </h2>
     <div id="flush-collapse14" class="accordion-collapse collapse" aria-labelledby="flush-heading14" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Create</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Read</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Update</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <input type="checkbox" name="" id="">&nbsp;<label for="">Delete</label>
             </div>
-        </div>
-    </div>
+      </div>
     </div>
   </div>
     </div>
 </div>
-
-</div> -->
+</div>
   </div>
+</div>
   <div class="offcanvas-footer">
     <button type="button" class="btn btn-primary ml-2 mb-2">Create</button>
   </div>
+
 </div>
 </template>
 <style scoped>
