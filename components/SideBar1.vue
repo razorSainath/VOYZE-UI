@@ -22,78 +22,67 @@
     <i class="fa-solid fa-dashboard material-icons"></i>
     <span class="text">Dashboard</span>
 </NuxtLink>
+</div>
+<h3>Sub-menu</h3>
+<div class ="menu">
 
-    <NuxtLink class="button" to=/organizations/sasdf/workspaces>
+  <NuxtLink class="button" to=/organizations/sasdf/workspaces>
         <i class="fa-solid fa-folder-tree material-icons"></i>
     <span class="text">Workspace</span>
 </NuxtLink>
 
+  <NuxtLink class="button" to=/leaders>
+    <i class="fa-solid fa-user material-icons"></i>
+    <span class="text">Leaders</span>
+</NuxtLink>
+
+  <NuxtLink class="button" to=/analytics>
+    <i class="fa-solid fa-chart-simple material-icons"></i>
+    <span class="text">Analytics</span>
+</NuxtLink>
+
+
+</div>
+<h3>Content</h3>
+<div class ="menu">
+  
+<NuxtLink class="button" to=/posts>
+    <i class="fa-solid fa-envelopes-bulk material-icons"></i>
+    <span class="text">Posts</span>
+</NuxtLink>
+
+<NuxtLink class="button" to=/curation>
+    <i class="fa-solid fa-file-lines material-icons"></i>
+    <span class="text">Curation</span>
+</NuxtLink>
+</div>
+<h3>Manage</h3>
+<div class ="menu">
+  
+<NuxtLink class="button" to=/categories>
+    <i class="fa-solid fa-bars-progress material-icons"></i>
+    <span class="text">Category</span>
+</NuxtLink>
+
+<NuxtLink class="button" to=/users>
+    <i class="fa-solid fa-users material-icons"></i>
+    <span class="text">Users</span>
+</NuxtLink>
+
+<NuxtLink class="button" to=/roles>
+    <i class="fa-solid fa-list-check material-icons"></i>
+    <span class="text">Roles</span>
+</NuxtLink>
+
+<NuxtLink class="button" to=/partners>
+    <i class="fa-solid fa-handshake material-icons"></i>
+    <span class="text">Partners</span>
+</NuxtLink>
 </div>
 
+
     <!-- <ul class="metismenu list-unstyled" id="side-menu">
-          <li class="menu-title">Menu</li>
 
-          <li class="nav-item" :style="{'background-color': dashboardColour}">
-            <a @click="redirectTo('dashboard')"  class="waves-effect nav-link active">
-              <i class="fa-solid fa-dashboard" :style="{'color': dashboardTextColour }"></i>
-              <span :style="{'color': dashboardTextColour }">Dashboard</span>
-            </a>
-          </li>
-          <li class="menu-title">Sub-menu</li>
-          <li :style="{'background-color': workspaceColour}">
-            <a @click="redirectTo('workspace')" class="waves-effect">
-              <i class="fa-solid fa-folder-tree" :style="{'color': workspaceTextColor }"></i>
-              <span :style="{'color': workspaceTextColor }">Workspace</span>
-            </a>
-          </li>
-          <li :style="{'background-color': leadersColour}">
-            <a @click="redirectTo('leaders')" class="waves-effect">
-              <i class="fa-solid fa-user" :style="{'color': leadersTextColour }"></i>
-              <span :style="{'color': leadersTextColour }">Leaders</span>
-            </a>
-          </li>
-          <li :style="{'background-color': analyticsColour}">
-            <a @click="redirectTo('analytics')" class="waves-effect">
-              <i class="fa-solid fa-chart-simple" :style="{'color': analyticsTextColour }"></i>
-              <span :style="{'color': analyticsTextColour }">Analytics</span>
-            </a>
-          </li>
-          <li class="menu-title">Content</li>
-          <li :style="{'background-color': postsColour}">
-            <a @click="redirectTo('posts')" class="waves-effect">
-              <i class="fa-solid fa-envelopes-bulk" :style="{'color': postsTextColour }"></i>
-              <span :style="{'color': postsTextColour }">Posts</span>
-            </a>
-          </li>
-          <li :style="{'background-color': curationColour}">
-            <a @click="redirectTo('curation')" class="waves-effect">
-              <i class="fa-solid fa-file-lines" :style="{'color': curationTextColour }"></i>
-              <span :style="{'color': curationTextColour }">Curation</span>
-            </a>
-          </li>
-
-          <li class="menu-title">Manage</li>
-
-          <li :style="{'background-color': categoryColour}">
-            <a @click="redirectTo('category')" class="waves-effect">
-              <i class="fa-solid fa-bars-progress" :style="{'color': categoryTextColour }"></i>
-              <span :style="{'color': categoryTextColour }">Category</span>
-            </a>
-          </li>
-
-          <li :style="{'background-color': usersColour}">
-            <a @click="redirectTo('user-management')" class="waves-effect">
-              <i class="fa-solid fa-users" :style="{'color': usersTextColour }"></i>
-              <span :style="{'color': usersTextColour }">Users</span>
-            </a>
-          </li>
-
-          <li :style="{'background-color': rolesColour}">
-            <a @click="redirectTo('role-management')" class="waves-effect">
-              <i class="fa-solid fa-list-check" :style="{'color': rolesTextColour }"></i>
-              <span :style="{'color': rolesTextColour }">Roles</span>
-            </a>
-          </li>
           <li :style="{'background-color': partnersColour}">
             <a @click="redirectTo('partners-management')" class="waves-effect">
               <i class="fa-solid fa-handshake" :style="{'color': partnersTextColour }"></i>
@@ -105,7 +94,7 @@
 </template>
 
 <script setup>
-const is_expanded = ref(true);
+const is_expanded = ref(false);
 const ToggleMenu = () => {
   is_expanded.value = !is_expanded.value;
 };
