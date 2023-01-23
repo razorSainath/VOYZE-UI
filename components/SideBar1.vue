@@ -1,12 +1,217 @@
 <template>
+  <aside :class="`${is_expanded ? 'is_expanded' : ''}`">
+    <div class="logo">
+      <img
+        v-if="!is_expanded"
+        src="~/assets/images/logo-sm-removebg-preview.png"
+      />
+      <img v-if="is_expanded" src="~/assets/images/logo-light.svg" />
+    </div>
+    <div class="menu-toggle-wrap">
+      <button class="menu-toggle" @click="ToggleMenu">
+        <i class="fa fa-fw fa-bars"></i>
+      </button>
+    </div>
+    <!-- Toggle Button -->
 
+    <!-- sidebar-menu -->
+<h3>Menu</h3>
+<div class ="menu">
 
+    <NuxtLink class="button" to="/dashboard">
+    <i class="fa-solid fa-dashboard material-icons"></i>
+    <span class="text">Dashboard</span>
+</NuxtLink>
+
+    <NuxtLink class="button" to=/organizations/sasdf/workspaces>
+        <i class="fa-solid fa-folder-tree material-icons"></i>
+    <span class="text">Workspace</span>
+</NuxtLink>
+
+</div>
+
+    <!-- <ul class="metismenu list-unstyled" id="side-menu">
+          <li class="menu-title">Menu</li>
+
+          <li class="nav-item" :style="{'background-color': dashboardColour}">
+            <a @click="redirectTo('dashboard')"  class="waves-effect nav-link active">
+              <i class="fa-solid fa-dashboard" :style="{'color': dashboardTextColour }"></i>
+              <span :style="{'color': dashboardTextColour }">Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-title">Sub-menu</li>
+          <li :style="{'background-color': workspaceColour}">
+            <a @click="redirectTo('workspace')" class="waves-effect">
+              <i class="fa-solid fa-folder-tree" :style="{'color': workspaceTextColor }"></i>
+              <span :style="{'color': workspaceTextColor }">Workspace</span>
+            </a>
+          </li>
+          <li :style="{'background-color': leadersColour}">
+            <a @click="redirectTo('leaders')" class="waves-effect">
+              <i class="fa-solid fa-user" :style="{'color': leadersTextColour }"></i>
+              <span :style="{'color': leadersTextColour }">Leaders</span>
+            </a>
+          </li>
+          <li :style="{'background-color': analyticsColour}">
+            <a @click="redirectTo('analytics')" class="waves-effect">
+              <i class="fa-solid fa-chart-simple" :style="{'color': analyticsTextColour }"></i>
+              <span :style="{'color': analyticsTextColour }">Analytics</span>
+            </a>
+          </li>
+          <li class="menu-title">Content</li>
+          <li :style="{'background-color': postsColour}">
+            <a @click="redirectTo('posts')" class="waves-effect">
+              <i class="fa-solid fa-envelopes-bulk" :style="{'color': postsTextColour }"></i>
+              <span :style="{'color': postsTextColour }">Posts</span>
+            </a>
+          </li>
+          <li :style="{'background-color': curationColour}">
+            <a @click="redirectTo('curation')" class="waves-effect">
+              <i class="fa-solid fa-file-lines" :style="{'color': curationTextColour }"></i>
+              <span :style="{'color': curationTextColour }">Curation</span>
+            </a>
+          </li>
+
+          <li class="menu-title">Manage</li>
+
+          <li :style="{'background-color': categoryColour}">
+            <a @click="redirectTo('category')" class="waves-effect">
+              <i class="fa-solid fa-bars-progress" :style="{'color': categoryTextColour }"></i>
+              <span :style="{'color': categoryTextColour }">Category</span>
+            </a>
+          </li>
+
+          <li :style="{'background-color': usersColour}">
+            <a @click="redirectTo('user-management')" class="waves-effect">
+              <i class="fa-solid fa-users" :style="{'color': usersTextColour }"></i>
+              <span :style="{'color': usersTextColour }">Users</span>
+            </a>
+          </li>
+
+          <li :style="{'background-color': rolesColour}">
+            <a @click="redirectTo('role-management')" class="waves-effect">
+              <i class="fa-solid fa-list-check" :style="{'color': rolesTextColour }"></i>
+              <span :style="{'color': rolesTextColour }">Roles</span>
+            </a>
+          </li>
+          <li :style="{'background-color': partnersColour}">
+            <a @click="redirectTo('partners-management')" class="waves-effect">
+              <i class="fa-solid fa-handshake" :style="{'color': partnersTextColour }"></i>
+              <span :style="{'color': partnersTextColour }">Partners</span>
+            </a>
+          </li>
+        </ul> -->
+  </aside>
 </template>
 
 <script setup>
+const is_expanded = ref(true);
+const ToggleMenu = () => {
+  is_expanded.value = !is_expanded.value;
+};
+
+// going to integrate properly our sidebar here
 </script>
 
-
 <style lang="scss" scoped>
+aside {
+  display: flex;
+  flex-direction: column;
+  width: calc(2rem + 32px);
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 1rem;
 
+  background-color: #dcdcdc;
+  color: #099cd2;
+
+  transition: 0.2s ease-out;
+  .logo {
+    img {
+      width: 2.5rem;
+    }
+  }
+
+  .menu-toggle-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+
+    position: relative;
+    top: 0;
+    transition: 00.2s ease-out;
+
+    .menu-toggle {
+      transition: 0.2s ease-out;
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+  h3{
+color: grey;
+font-size: 0.95rem;
+text-transform: uppercase;
+  }
+h3, .button .text {
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+  .menu{
+    margin:0 -1rem;
+
+    .button{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        
+        padding: 0.5rem 1rem;
+        transition: 0.2s ease-out;
+        .material-icons{
+            font-size: 2rem;
+            color: #099cd2;
+            margin-right: 1rem;
+            transition: 0.2 ease-out;
+
+        }
+        .text{
+            color:#099cd2; 
+            transition: 0.2s ease-out;
+
+        }
+        &:hover, &.router-link-exact-active{
+            background-color: blue ;
+            .material-icons .text{
+                color: black;
+
+            }
+        }
+
+        &.router-link-exact-active{
+            border-right: 5px solid blue;
+        }
+    }
+  }
+  &.is_expanded {
+    width: 300px;
+    .logo {
+      img {
+        width: 12rem;
+      }
+    }
+
+    .menu-toggle-wrap {
+      top: -3rem;
+}
+h3, .button .text {
+    opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    position: fixed;
+    z-index: 99;
+  }
+}
 </style>

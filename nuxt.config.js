@@ -9,14 +9,12 @@ export default {
           crossorigin: "anonymous",
         },
       ],
+      // link:[
+      //   { rel:"stylesheet",
+      //   href:"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" }
+      // ]//didnt work like this
     },
   },
-  // router: {
-  //   extendRoutes (routes) {
-  //     // Update 
-  //     routes.find((r) => r.path.includes('pages/product/_id.vue')).path = '/produtos/:id'
-  //   }
-  // },
   css: ['vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css', "assets/styles/global.scss", "assets/styles/bootstrap.scss"],
   build: {
     transpile: ['vuetify'],
