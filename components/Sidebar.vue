@@ -42,7 +42,7 @@ switch (page) {
  rolesColour = ref("white");
  partnersColour = ref("white");
 
- dashboardTextColour.value = "#f3f8fb";
+ dashboardTextColour.value = "#099cd2";
  workspaceTextColor = ref("#7b8190");
  leadersTextColour = ref("#7b8190");
  analyticsTextColour = ref("#7b8190");
@@ -68,7 +68,7 @@ switch (page) {
  partnersColour = ref("white");
 
  dashboardTextColour = ref("#7b8190");  
- workspaceTextColor.value = "#f3f8fb";
+ workspaceTextColor.value = "#099cd2";
  leadersTextColour = ref("#7b8190");
  analyticsTextColour = ref("#7b8190");
  postsTextColour = ref("#7b8190");
@@ -95,7 +95,7 @@ switch (page) {
   
  dashboardTextColour = ref("#7b8190");  
  workspaceTextColor = ref("#7b8190");
- leadersTextColour.value = "#f3f8fb";
+ leadersTextColour.value = "#099cd2";
  analyticsTextColour = ref("#7b8190");
  postsTextColour = ref("#7b8190");
  curationTextColour = ref("#7b8190");
@@ -122,7 +122,7 @@ switch (page) {
  dashboardTextColour = ref("#7b8190");  
  workspaceTextColor = ref("#7b8190");
  leadersTextColour = ref("#7b8190");
- analyticsTextColour.value = "#f3f8fb";
+ analyticsTextColour.value = "#099cd2";
  postsTextColour = ref("#7b8190");
  curationTextColour = ref("#7b8190");
  categoryTextColour = ref("#7b8190");
@@ -149,7 +149,7 @@ switch (page) {
  workspaceTextColor = ref("#7b8190");
  leadersTextColour = ref("#7b8190");
  analyticsTextColour= ref("#7b8190");
- postsTextColour.value  = "#f3f8fb";
+ postsTextColour.value  = "#099cd2";
  curationTextColour = ref("#7b8190");
  categoryTextColour = ref("#7b8190");
  usersTextColour = ref("#7b8190");
@@ -175,7 +175,7 @@ switch (page) {
  leadersTextColour = ref("#7b8190");
  analyticsTextColour= ref("#7b8190");
  postsTextColour = ref("#7b8190");
- curationTextColour.value  = "#f3f8fb";
+ curationTextColour.value  = "#099cd2";
  categoryTextColour = ref("#7b8190");
  usersTextColour = ref("#7b8190");
  rolesTextColour = ref("#7b8190");
@@ -202,7 +202,7 @@ switch (page) {
  analyticsTextColour= ref("#7b8190");
  postsTextColour = ref("#7b8190");
  curationTextColour = ref("#7b8190");
- categoryTextColour.value  = "#f3f8fb";
+ categoryTextColour.value  = "#099cd2";
  usersTextColour = ref("#7b8190");
  rolesTextColour = ref("#7b8190");
  partnersTextColour = ref("#7b8190");
@@ -228,7 +228,7 @@ switch (page) {
  postsTextColour = ref("#7b8190");
  curationTextColour = ref("#7b8190");
  categoryTextColour  = ref("#7b8190");
- usersTextColour.value = "#f3f8fb";
+ usersTextColour.value = "#099cd2";
  rolesTextColour = ref("#7b8190");
  partnersTextColour = ref("#7b8190");
 
@@ -254,7 +254,7 @@ switch (page) {
  curationTextColour = ref("#7b8190");
  categoryTextColour  = ref("#7b8190");
  usersTextColour = ref("#7b8190");
- rolesTextColour.value =  "#f3f8fb";
+ rolesTextColour.value =  "#099cd2";
  partnersTextColour = ref("#7b8190");
 
 
@@ -284,7 +284,7 @@ switch (page) {
  categoryTextColour  = ref("#7b8190");
  usersTextColour = ref("#7b8190");
  rolesTextColour = ref("#7b8190");
- partnersTextColour.value =  "#f3f8fb";
+ partnersTextColour.value =  "#099cd2";
     break;
 }
 };
