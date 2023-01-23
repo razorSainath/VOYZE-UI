@@ -126,6 +126,107 @@
   <div class="row">
     <div class="col-xl-12">
       <div class="row">
+        <div class="col-xl-4 col-sm-12 col-md-6 d-flex align-items-stretch flex-wrap">
+          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                <div class="card-header">
+                    <div class="float-start">
+                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
+                    </div>
+                    <div class="dropdown float-end">
+                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                      
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                    <div class="mb-2">
+                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/dhirendra_shastri-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
+                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
+                    </div>
+
+                    <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-sm-12 col-md-6">
+          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                <div class="card-header">
+                    <div class="float-start">
+                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
+                    </div>
+                    <div class="dropdown float-end">
+                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                      
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                    <div class="mb-2">
+                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/untitled_design_-_2023-01-23t090253.330-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">UP: नकल करना 'पाप' ही नहीं देश की सुरक्षा के लिए भी 'खतरा', लगेगा NSA, जानिए कानून में क्या प्रावधान?</a></h5>
+                    <p class="text-muted mb-2">देश में उत्तर प्रदेश और बिहार जैसे राज्यों में नकल को लेकर सरकारों की खूब फजीहत होती रही है. ऐसे में अब योगी सरकार ने दावा किया है कि इस बार बोर्ड परी...</p>
+                    </div>
+
+                    <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-sm-12 col-md-6">
+          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                <div class="card-header">
+                    <div class="float-start">
+                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
+                    </div>
+                    <div class="dropdown float-end">
+                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                      
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                    <div class="mb-2">
+                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/babar-azam-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Babar Azam: 'हिन्दुस्तान से सीखो...', न्यूजीलैंड सीरीज के बीच बाबर आजम पर भड़का PAK दिग्गज</a></h5>
+                    <p class="text-muted mb-2">पाकिस्तान टीम को घर में लगातार कई हार झेलनी पड़ी हैं, जिस न्यूजीलैंड ने पाकिस्तान को उसकेे घर में हरा दिया था. उसी टीम को टीम इंडिया ने अपने घर में घु...</p>
+                    </div>
+
+                    <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
+                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-xl-4 col-sm-12 col-md-6">
           <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                 <div class="card-header">
@@ -144,7 +245,7 @@
                 </div>
                 <div class="clearfix"></div>
                     <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
+                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/dhirendra_shastri-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
                     </div>
                     <div class="card-body">
                       <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
@@ -278,112 +379,11 @@
                 </div>
                 <div class="clearfix"></div>
                     <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
+                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/dhirendra_shastri-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
                     </div>
                     <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    </div>
-
-                    <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-sm-12 col-md-6">
-          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    </div>
-
-                    <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-4 col-sm-12 col-md-6">
-          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    </div>
-
-                    <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-sm-12 col-md-6">
-          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
+                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">महाराष्ट्र की उस संस्था की कहानी... जिसने बागेश्वर धाम के धीरेंद्र शास्त्री पर उठाए सवाल</a></h5>
+                    <p class="text-muted mb-2">बागेश्वर धाम के धीरेंद्र शास्त्री पर महाराष्ट्र अंधश्रद्धा निर्मूलन समिति ने 'अंधविश्वास' और 'जादू-टोना' को बढ़ावा देने का आरोप लगाया है. समिति का आरो...</p>
                     </div>
 
                     <div class="btn-group" role="group">
@@ -483,6 +483,68 @@
   object-fit: cover;
 }
 .pagination{
-  --bs-pagination-border-color:#f3f8fb !important;
+  --bs-pagination-border-color:#dcdcdc !important;
+}
+.img{
+  height: 300px;
+                                width: 100%;
+                                object-fit: cover;
+}
+.fa-3x {
+  font-size: 2.5rem !important;
+}
+.offcanvas-size-xl {
+    --bs-offcanvas-width: min(95vw, 600px) !important;
+}
+.offcanvas-size-xxl {
+    --bs-offcanvas-width: min(95vw, 90vw) !important;
+}
+.offcanvas-size-md { /* add Responsivenes to default offcanvas */
+    --bs-offcanvas-width: min(95vw, 400px) !important;
+}
+.offcanvas-size-sm {
+    --bs-offcanvas-width: min(95vw, 250px) !important;
+}
+@media screen and (max-width: 996px) {
+  .fa-3x {
+    font-size: 1.75rem !important;
+  }
+  .fa-2x{
+    font-size:1.25rem !important;
+  }
+  .small{
+    font-size: 12px !important;
+  }
+  small{
+    font-size:10px !important;
+  }
+  .img{
+    height: 200px;
+                                width: 100%;
+                                object-fit: cover;
+  }
+  p{
+    font-size:12px !important;
+  }
+  div>ul>li{
+    font-size:10px;
+    margin-top:5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .fa-3x {
+    font-size: 1.25rem !important;
+  }
+  .fa-2x{
+    font-size:.75rem !important;
+  }
+  small{
+    font-size:8px !important;
+  }
+  .img{
+    height: 100px;
+                                width: 100%;
+                                object-fit: cover;
+  }
 }
 </style>
