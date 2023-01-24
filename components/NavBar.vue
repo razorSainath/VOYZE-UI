@@ -17,7 +17,7 @@ export default {
 </script>
 
 <script setup>
-// const navbarMarginLeft = useState("navbarMarginLeft",()=>"45px")
+const navbarMarginLeft = useState("navbarMarginLeft",()=>"45px")
 let isSidebarOpen = useState("isSidebarOpen")
 const just = ()=>{
   console.log("beforeClick" ,isSidebarOpen.value)
@@ -30,7 +30,7 @@ const just = ()=>{
 
 <template>
   
-          <header  id="page-topbar" >
+          <header  id="page-topbar" :style="{left:navbarMarginLeft}">
         <div class="navbar-header">
           <div class="d-flex">
             <!-- LOGO -->

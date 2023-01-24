@@ -1,11 +1,11 @@
 <script setup>
 const isSidebarOpen = useState("isSidebarOpen",()=>false);
-// const navbarMarginLeft = useState("navbarMarginLeft")
+const navbarMarginLeft = useState("navbarMarginLeft")
 const ToggleMenu = () => {
   isSidebarOpen.value = !isSidebarOpen.value;
   console.log(isSidebarOpen.value);
-  // if(isSidebarOpen.value)navbarMarginLeft.value = "251px"
-  // else navbarMarginLeft.value = "45px"
+  if(isSidebarOpen.value)navbarMarginLeft.value = "251px"
+  else navbarMarginLeft.value = "45px"
 };
 
 // going to integrate properly our sidebar here
@@ -213,12 +213,26 @@ h3, .button .text {
     opacity: 0;
    
     }
+    &.isSidebarOpen{
+      margin-top:30px  ;
+      img{
+
+        display: none;
+      }
+    }
   }
 
   @media (max-width: 415px) {
     position: fixed;
     z-index: 99;
     transition: 0s ease-out;
+    &.isSidebarOpen{
+      margin-top:30px  ;
+      img{
+
+        display: none;
+      }
+    }
     &.sidebarClosed{
       display: none;
     }
