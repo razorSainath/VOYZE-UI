@@ -1,7 +1,11 @@
 <script setup>
 const isSidebarOpen = useState("isSidebarOpen",()=>false);
+// const navbarMarginLeft = useState("navbarMarginLeft")
 const ToggleMenu = () => {
   isSidebarOpen.value = !isSidebarOpen.value;
+  console.log(isSidebarOpen.value);
+  // if(isSidebarOpen.value)navbarMarginLeft.value = "251px"
+  // else navbarMarginLeft.value = "45px"
 };
 
 // going to integrate properly our sidebar here
@@ -108,18 +112,18 @@ const ToggleMenu = () => {
 aside {
   display: flex;
   flex-direction: column;
-  width: calc(2rem + 32px);
+  width: calc(2rem + 12px);
   min-height: 100vh;
   overflow: hidden;
   padding: 1rem;
 
-  background-color: #dcdcdc;
+  background-color: #fff;
   color: #099cd2;
 
   transition: 0.2s ease-out;
   .logo {
     img {
-      width: 2.5rem;
+      width: 1.5rem;
     }
   }
 
@@ -142,11 +146,11 @@ aside {
   }
   h3{
 color: grey;
-font-size: 0.95rem;
+font-size: .75rem;
 text-transform: uppercase;
   }
 h3, .button .text {
-    opacity: 0;
+    display: none;
     transition: 0.0s ease-out;
 }
   .menu{
@@ -160,7 +164,7 @@ h3, .button .text {
         padding: 0.5rem 1rem;
         transition: 0.2s ease-out;
         .material-icons{
-            font-size: 2rem;
+            font-size: 15px;
             color: #099cd2;
             margin-right: 1rem;
             transition: 0.2 ease-out;
@@ -172,7 +176,7 @@ h3, .button .text {
 
         }
         &:hover, &.router-link-exact-active{
-            background-color: blue ;
+            background-color:#dcdcdc ;
             .material-icons .text{
                 color: black;
 
@@ -180,15 +184,16 @@ h3, .button .text {
         }
 
         &.router-link-exact-active{
-            border-right: 5px solid blue;
+            border-right: 5px solid #099cd2;
         }
     }
   }
   &.isSidebarOpen {
-    width: 300px;
+    width: 250px;
+    
     .logo {
       img {
-        width: 12rem;
+        width: 10rem;
       }
     }
 
@@ -196,7 +201,7 @@ h3, .button .text {
       top: -3rem;
 }
 h3, .button .text {
-    opacity: 1;
+    display: flex;
     }
   }
 
@@ -223,5 +228,8 @@ h3, .button .text {
     }
 
   }
+
+
+
 }
 </style>
