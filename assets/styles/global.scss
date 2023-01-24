@@ -280,6 +280,7 @@ body[data-sidebar-size="sm"] .navbar-header .vertical-menu-btn {
   #page-topbar .navbar-header .vertical-menu-btn {
     display: inline-block;
   }
+
   .logo span.logo-lg {
     display: none;
   }
@@ -566,8 +567,8 @@ body[data-layout="horizontal"] .footer {
   -webkit-box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
   box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
 }
-.vertical-menu-collap {
-  width: 50px;
+.vertical-menu-collapsed {
+  width: 60px;
   z-index: 1005;
   background: var(--bs-sidebar-bg);
   bottom: 0;
