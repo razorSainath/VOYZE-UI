@@ -297,7 +297,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                          <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -399,7 +399,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -501,7 +501,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -606,7 +606,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -710,7 +710,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -814,7 +814,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -918,7 +918,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -1022,7 +1022,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -1126,7 +1126,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>

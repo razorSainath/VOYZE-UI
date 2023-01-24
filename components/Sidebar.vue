@@ -305,7 +305,7 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
   <div class="vertical-menu" v-if="isSidebarOpen">
     <!-- LOGO -->
     <div class="navbar-brand-box">
-      <a href="index.html" class="logo logo-dark">
+      <a  class="logo logo-dark">
         <span class="logo-sm" style="position: relative; right: 15px">
           <img src="assets/images/logo-sm.png" alt="" height="22" />
         </span>

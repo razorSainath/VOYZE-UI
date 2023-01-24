@@ -1,3 +1,4 @@
+@import "bootstrap/scss/bootstrap";
 :root {
   --bs-sidebar-bg: #ffffff;
   --bs-sidebar-menu-item-color: #7b8190;
@@ -174,8 +175,8 @@
 #page-topbar {
   position: fixed;
   top: 0;
+  left:250px;
   right: 0;
-  left: 250px;
   z-index: 1002;
   background-color: var(--bs-header-bg);
   -webkit-box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
