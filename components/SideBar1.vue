@@ -1,15 +1,24 @@
+<script setup>
+const isSidebarOpen = useState("isSidebarOpen",()=>false);
+const ToggleMenu = () => {
+  isSidebarOpen.value = !isSidebarOpen.value;
+};
+
+// going to integrate properly our sidebar here
+</script>
+
 <template>
-  <aside :class="`${is_expanded ? 'is_expanded' : ''}`">
+  <aside :class="`${isSidebarOpen ? 'isSidebarOpen' : 'sidebarClosed'}`">
     <div class="logo">
       <img
-        v-if="!is_expanded"
+        v-if="!isSidebarOpen"
         src="~/assets/images/logo-sm-removebg-preview.png"
       />
-      <img v-if="is_expanded" src="~/assets/images/logo-light.svg" />
+      <img v-if="isSidebarOpen" src="~/assets/images/logo-light.svg" />
     </div>
     <div class="menu-toggle-wrap">
       <button class="menu-toggle" @click="ToggleMenu">
-        <i class="fa fa-fw fa-bars"></i>
+        <i id="ham_burger" class="fa fa-fw fa-bars"></i>
       </button>
     </div>
     <!-- Toggle Button -->
@@ -93,14 +102,7 @@
   </aside>
 </template>
 
-<script setup>
-const is_expanded = ref(false);
-const ToggleMenu = () => {
-  is_expanded.value = !is_expanded.value;
-};
 
-// going to integrate properly our sidebar here
-</script>
 
 <style lang="scss" scoped>
 aside {
@@ -145,7 +147,7 @@ text-transform: uppercase;
   }
 h3, .button .text {
     opacity: 0;
-    transition: 0.3s ease-out;
+    transition: 0.0s ease-out;
 }
   .menu{
     margin:0 -1rem;
@@ -166,7 +168,7 @@ h3, .button .text {
         }
         .text{
             color:#099cd2; 
-            transition: 0.2s ease-out;
+            transition: 0.0s ease-out;
 
         }
         &:hover, &.router-link-exact-active{
@@ -182,7 +184,7 @@ h3, .button .text {
         }
     }
   }
-  &.is_expanded {
+  &.isSidebarOpen {
     width: 300px;
     .logo {
       img {
@@ -201,6 +203,25 @@ h3, .button .text {
   @media (max-width: 768px) {
     position: fixed;
     z-index: 99;
+    transition: 0s ease-out;
+  #ham_burger{
+    opacity: 0;
+   
+    }
+  }
+
+  @media (max-width: 415px) {
+    position: fixed;
+    z-index: 99;
+    transition: 0s ease-out;
+    &.sidebarClosed{
+      display: none;
+    }
+  #ham_burger{
+    opacity: 0;
+   
+    }
+
   }
 }
 </style>

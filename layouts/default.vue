@@ -1,5 +1,6 @@
 <template>
 	<div class="app">
+    <NavBar/>
 		<Sidebar1 />
 		<main>
 			<slot />
@@ -45,6 +46,13 @@ button {
 		@media (max-width: 768px) {
 			padding-left: 6rem;
 		}
+    @media (max-width: 415px) {
+    padding-left: 0rem;
+  }
 	}
+
+
+
+
 }
 </style>
