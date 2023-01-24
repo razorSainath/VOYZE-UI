@@ -94,7 +94,7 @@ const just = ()=>{
                 </form>
               </div>
             </div>
-            <div class="dropdown d-none d-lg-inline-block ms-1">
+            <!-- <div class="dropdown d-none d-lg-inline-block ms-1">
               <button
                 type="button"
                 class="btn header-item noti-icon waves-effect"
@@ -102,9 +102,9 @@ const just = ()=>{
               >
                 <i class="fa-solid fa-expand"></i>
               </button>
-            </div>
+            </div> -->
 
-            <div class="dropdown d-inline-block">
+            <!-- <div class="dropdown d-inline-block">
               <button
                 type="button"
                 class="btn header-item noti-icon waves-effect"
@@ -248,7 +248,7 @@ const just = ()=>{
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <div class="dropdown d-inline-block">
               <button

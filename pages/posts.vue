@@ -238,7 +238,7 @@
               </div>
             </div>
 
-            <ul class="nav nav-underline" id="myTab" role="tablist">
+            <ul class="nav nav-pills" id="myTab" role="tablist">
   <li class="nav-item"><a class="nav-link active" id="draft-tab" data-bs-toggle="tab" href="#tab-draft" role="tab" aria-controls="tab-draft" aria-selected="true">Drafts</a></li>
   <li class="nav-item"><a class="nav-link" id="review-tab" data-bs-toggle="tab" href="#tab-review" role="tab" aria-controls="tab-review" aria-selected="false">Profile</a></li>
   <li class="nav-item"><a class="nav-link" id="client-review-tab" data-bs-toggle="tab" href="#tab-client-review" role="tab" aria-controls="tab-client-review" aria-selected="false">Client Review</a></li>
