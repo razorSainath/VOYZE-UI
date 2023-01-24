@@ -245,44 +245,17 @@
               </div>
             </div>
 
-            <div class="tr-job-posted section-padding">
-              <div class="container-fluid">
-                <div class="job-tab">
-                  <ul class="nav nav-pills" id="pill-myTab" role="tablist">
-                    <li class="nav-item btn-primary">
-                      <a class="nav-link active" id="pill-drafts-tab" data-bs-toggle="tab" href="#pill-tab-drafts"
-                        role="tab" aria-controls="pill-tab-drafts" aria-selected="true">Drafts</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pill-review-tab" data-bs-toggle="tab" href="#pill-tab-review" role="tab"
-                        aria-controls="pill-tab-review" aria-selected="false">Review</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pill-client-review-tab" data-bs-toggle="tab"
-                        href="#pill-tab-client-review" role="tab" aria-controls="pill-tab-client-review"
-                        aria-selected="false">Client Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pill-rejected-tab" data-bs-toggle="tab" href="#pill-tab-rejected"
-                        role="tab" aria-controls="pill-tab-rejected" aria-selected="true">Rejected</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pill-scheduled-tab" data-bs-toggle="tab" href="#pill-tab-scheduled"
-                        role="tab" aria-controls="pill-tab-scheduled" aria-selected="false">Scheduled</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pill-published-tab" data-bs-toggle="tab" href="#pill-tab-published"
-                        role="tab" aria-controls="pill-tab-published" aria-selected="false">Published</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pill-expired-tab" data-bs-toggle="tab" href="#pill-tab-expired" role="tab"
-                        aria-controls="pill-tab-expired" aria-selected="false">Expired</a>
-                    </li>
-                  </ul>
-                  <div class="tab-content border p-3 mt-3" id="pill-myTabContent">
-                    <div class="tab-pane fade show active" id="pill-tab-drafts" role="tabpanel"
-                      aria-labelledby="home-tab">
-                      <div class="row">
+            <ul class="nav nav-underline" id="myTab" role="tablist">
+  <li class="nav-item"><a class="nav-link active" id="draft-tab" data-bs-toggle="tab" href="#tab-draft" role="tab" aria-controls="tab-draft" aria-selected="true">Drafts</a></li>
+  <li class="nav-item"><a class="nav-link" id="review-tab" data-bs-toggle="tab" href="#tab-review" role="tab" aria-controls="tab-review" aria-selected="false">Profile</a></li>
+  <li class="nav-item"><a class="nav-link" id="client-review-tab" data-bs-toggle="tab" href="#tab-client-review" role="tab" aria-controls="tab-client-review" aria-selected="false">Client Review</a></li>
+  <li class="nav-item"><a class="nav-link" id="rejected-tab" data-bs-toggle="tab" href="#tab-rejected" role="tab" aria-controls="tab-rejected" aria-selected="false">Rejected</a></li>
+  <li class="nav-item"><a class="nav-link" id="scheduled-tab" data-bs-toggle="tab" href="#tab-scheduled" role="tab" aria-controls="tab-scheduled" aria-selected="false">Scheduled</a></li>
+  <li class="nav-item"><a class="nav-link" id="published-tab" data-bs-toggle="tab" href="#tab-published" role="tab" aria-controls="tab-published" aria-selected="false">Published</a></li>
+  <li class="nav-item"><a class="nav-link" id="expired-tab" data-bs-toggle="tab" href="#tab-expired" role="tab" aria-controls="tab-expired" aria-selected="false">Expired</a></li>
+</ul>
+<div class="tab-content mt-3" id="myTabContent">
+  <div class="tab-pane fade show active" id="tab-draft" role="tabpanel" aria-labelledby="draft-tab"><div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6">
                           <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
@@ -331,7 +304,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                          <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -373,7 +346,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-4 col-sm-3">
+                              <div class="col-xl-4">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -385,11 +358,6 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="pill-tab-review" role="tabpanel"
-                      aria-labelledby="home-tab">
-                      <div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6">
                           <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
@@ -438,7 +406,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -480,7 +448,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-4 col-sm-3">
+                              <div class="col-xl-4">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -492,118 +460,6 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="pill-tab-client-review" role="tabpanel"
-                      aria-labelledby="home-tab">
-                      <div class="row">
-                        <div class="col-xl-4 col-sm-12 col-md-6 d-flex text-align-stretch flex-wrap">
-                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                            <div class="card-header" style="
-                                background-color: transparent;
-                                border: none;
-                              ">
-                              <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
-                                    display: flex;
-                                    justify-content: start;
-                                    text-align: center;
-                                  ">
-                                  <div style="display: flex">
-                                    <i class="fa-brands fa-linkedin text-primary fa-3x"></i>
-                                    <div style="
-                                        display: flex;
-                                        flex-direction: column;
-                                        text-align: start;
-                                        margin-left: 10px;
-                                      ">
-                                      <small><b>Education Post</b> </small>
-                                      <small style="
-                                          display: flex;
-                                          flex-direction: column;
-                                        ">28/12/2022 10:21</small>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
-                                  <div class="d-flex">
-                                    <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
-                                        class="badge badge-danger">4</span>
-                                    </div>
-                                    <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
-                                    </div>
-                                    <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
-                                      </button>
-                                      <ul class="dropdown-menu">
-                                        <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
-                            <div class="card-body">
-                              <p>
-                                <b>Doesn't it feel cold? Rahul Gandhi said -
-                                  Only T Shirt is working...when it will not
-                                  work, we will see</b>
-                              </p>
-                              <small class="py-2">Congress is celebrating its foundation day
-                                today. During this, Rahul Gandhi reached the
-                                Congress office in T-shirt only. When Rahul
-                                Gandhi was asked a
-                                <span><a href="#">Read more...</a></span></small><br /><br />
-                              <div style="
-                                  border: 1px solid #f3f8fb;
-                                  border-radius: 50rem;
-                                " class="py-2">
-                                <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
-                              </div>
-                            </div>
-                            <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
-                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
-                                <div style="display: flex">
-                                <div class="avatar-xs">
-                                        <img src="~/assets/images/users/avatar-1.jpg" alt=""
-                                          class="avatar-title rounded-circle" />
-                                      </div>
-                                    <div style="display: flex;flex-direction: column;text-align: start;margin-left: 10px;">
-                                      <small><b>Sainath Reddy</b> </small>
-                                      <small style="display: flex;flex-direction: row;"><i class="fa-solid fa-clock text-success" style="position:relative;top:3px;"></i><span class="ml-2">Approved</span></small>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 col-sm-3">
-                                <div class="d-flex float-md-end">
-                                  <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
-                                      title="Auto Publish"></i></span>&nbsp;&nbsp;
-                                  <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
-                                      title="Scheduled time and date"></i></span>
-                                </div>
-                              </div>
-                             </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="pill-tab-rejected" role="tabpanel"
-                      aria-labelledby="home-tab">
-                      <div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6">
                           <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
@@ -652,7 +508,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -694,7 +550,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-4 col-sm-3">
+                              <div class="col-xl-4">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -706,118 +562,9 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="pill-tab-scheduled" role="tabpanel"
-                      aria-labelledby="home-tab">
-                      <div class="row">
-                        <div class="col-xl-4 col-sm-12 col-md-6 d-flex text-align-stretch flex-wrap">
-                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                            <div class="card-header" style="
-                                background-color: transparent;
-                                border: none;
-                              ">
-                              <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
-                                    display: flex;
-                                    justify-content: start;
-                                    text-align: center;
-                                  ">
-                                  <div style="display: flex">
-                                    <i class="fa-brands fa-linkedin text-primary fa-3x"></i>
-                                    <div style="
-                                        display: flex;
-                                        flex-direction: column;
-                                        text-align: start;
-                                        margin-left: 10px;
-                                      ">
-                                      <small><b>Education Post</b> </small>
-                                      <small style="
-                                          display: flex;
-                                          flex-direction: column;
-                                        ">28/12/2022 10:21</small>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
-                                  <div class="d-flex">
-                                    <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
-                                        class="badge badge-danger">4</span>
-                                    </div>
-                                    <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
-                                    </div>
-                                    <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
-                                      </button>
-                                      <ul class="dropdown-menu">
-                                        <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
-                                        </li>
-                                        <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
-                            <div class="card-body">
-                              <p>
-                                <b>Doesn't it feel cold? Rahul Gandhi said -
-                                  Only T Shirt is working...when it will not
-                                  work, we will see</b>
-                              </p>
-                              <small class="py-2">Congress is celebrating its foundation day
-                                today. During this, Rahul Gandhi reached the
-                                Congress office in T-shirt only. When Rahul
-                                Gandhi was asked a
-                                <span><a href="#">Read more...</a></span></small><br /><br />
-                              <div style="
-                                  border: 1px solid #f3f8fb;
-                                  border-radius: 50rem;
-                                " class="py-2">
-                                <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
-                              </div>
-                            </div>
-                            <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
-                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
-                                <div style="display: flex">
-                                <div class="avatar-xs">
-                                        <img src="~/assets/images/users/avatar-1.jpg" alt=""
-                                          class="avatar-title rounded-circle" />
-                                      </div>
-                                    <div style="display: flex;flex-direction: column;text-align: start;margin-left: 10px;">
-                                      <small><b>Sainath Reddy</b> </small>
-                                      <small style="display: flex;flex-direction: row;"><i class="fa-solid fa-clock text-success" style="position:relative;top:3px;"></i><span class="ml-2">Approved</span></small>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 col-sm-3">
-                                <div class="d-flex float-md-end">
-                                  <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
-                                      title="Auto Publish"></i></span>&nbsp;&nbsp;
-                                  <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
-                                      title="Scheduled time and date"></i></span>
-                                </div>
-                              </div>
-                             </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="pill-tab-published" role="tabpanel"
-                      aria-labelledby="home-tab">
-                      <div class="row">
+
+                      </div></div>
+  <div class="tab-pane fade" id="tab-review" role="tabpanel" aria-labelledby="review-tab"><div class="row">
                         <div class="col-xl-4 col-sm-12 col-md-6">
                           <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
@@ -866,7 +613,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -908,7 +655,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-4 col-sm-3">
+                              <div class="col-xl-4">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -920,12 +667,9 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="pill-tab-expired" role="tabpanel"
-                      aria-labelledby="home-tab">
-                      <div class="row">
-                        <div class="col-xl-4 col-sm-12 col-md-6 d-flex text-align-stretch flex-wrap">
+                      </div></div>
+  <div class="tab-pane fade" id="tab-client-review" role="tabpanel" aria-labelledby="client-review-tab"><div class="row">
+                        <div class="col-xl-4 col-sm-12 col-md-6">
                           <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                             <div class="card-header" style="
                                 background-color: transparent;
@@ -945,7 +689,7 @@
                                         text-align: start;
                                         margin-left: 10px;
                                       ">
-                                      <small><b>Education Post</b> </small>
+                                      <small><b>Bussiness Post</b> </small>
                                       <small style="
                                           display: flex;
                                           flex-direction: column;
@@ -973,7 +717,7 @@
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
                                               class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
                                         </li>
                                       </ul>
@@ -982,18 +726,18 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
+                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Doesn't it feel cold? Rahul Gandhi said -
-                                  Only T Shirt is working...when it will not
-                                  work, we will see</b>
+                                <b>Rishabh Pant car accident: 'जलती कार से दूर
+                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
+                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
                               </p>
-                              <small class="py-2">Congress is celebrating its foundation day
-                                today. During this, Rahul Gandhi reached the
-                                Congress office in T-shirt only. When Rahul
-                                Gandhi was asked a
-                                <span><a href="#">Read more...</a></span></small><br /><br />
+                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
+                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
+                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
+                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
                                   border-radius: 50rem;
@@ -1002,7 +746,7 @@
                               </div>
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
-                              <div class="row">
+                             <div class="row">
                               <div class="col-md-8 col-sm-9">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
@@ -1015,7 +759,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-4 col-sm-3">
+                              <div class="col-xl-4">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -1027,14 +771,424 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.job-tab -->
-              </div>
-              <!-- /.container -->
-            </div>
+                      </div></div>
+  <div class="tab-pane fade" id="tab-rejected" role="tabpanel" aria-labelledby="rejected-tab"><div class="row">
+                        <div class="col-xl-4 col-sm-12 col-md-6">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                            <div class="card-header" style="
+                                background-color: transparent;
+                                border: none;
+                              ">
+                              <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                    display: flex;
+                                    justify-content: start;
+                                    text-align: center;
+                                  ">
+                                  <div style="display: flex">
+                                    <i class="fa-brands fa-linkedin text-primary fa-3x"></i>
+                                    <div style="
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: start;
+                                        margin-left: 10px;
+                                      ">
+                                      <small><b>Bussiness Post</b> </small>
+                                      <small style="
+                                          display: flex;
+                                          flex-direction: column;
+                                        ">28/12/2022 10:21</small>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                  <div class="d-flex">
+                                    <div>
+                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                        class="badge badge-danger">4</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                    </div>
+                                    <div class="btn-group" style="position: relative; top: -7px">
+                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li>
+                                          <a class="dropdown-item" href="#"><i
+                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                        </li>
+                                        <li>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
+                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <div class="card-body">
+                              <p>
+                                <b>Rishabh Pant car accident: 'जलती कार से दूर
+                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
+                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                              </p>
+                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
+                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
+                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
+                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <br /><br />
+                              <div style="
+                                  border: 1px solid #f3f8fb;
+                                  border-radius: 50rem;
+                                " class="py-2">
+                                <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
+                             <div class="row">
+                              <div class="col-md-8 col-sm-9">
+                                <div style="display: flex">
+                                <div class="avatar-xs">
+                                        <img src="~/assets/images/users/avatar-1.jpg" alt=""
+                                          class="avatar-title rounded-circle" />
+                                      </div>
+                                    <div style="display: flex;flex-direction: column;text-align: start;margin-left: 10px;">
+                                      <small><b>Sainath Reddy</b> </small>
+                                      <small style="display: flex;flex-direction: row;"><i class="fa-solid fa-clock text-success" style="position:relative;top:3px;"></i><span class="ml-2">Approved</span></small>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="d-flex float-md-end">
+                                  <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
+                                      title="Auto Publish"></i></span>&nbsp;&nbsp;
+                                  <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
+                                      title="Scheduled time and date"></i></span>
+                                </div>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></div>
+  <div class="tab-pane fade" id="tab-scheduled" role="tabpanel" aria-labelledby="scheduled-tab"><div class="row">
+                        <div class="col-xl-4 col-sm-12 col-md-6">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                            <div class="card-header" style="
+                                background-color: transparent;
+                                border: none;
+                              ">
+                              <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                    display: flex;
+                                    justify-content: start;
+                                    text-align: center;
+                                  ">
+                                  <div style="display: flex">
+                                    <i class="fa-brands fa-linkedin text-primary fa-3x"></i>
+                                    <div style="
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: start;
+                                        margin-left: 10px;
+                                      ">
+                                      <small><b>Bussiness Post</b> </small>
+                                      <small style="
+                                          display: flex;
+                                          flex-direction: column;
+                                        ">28/12/2022 10:21</small>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                  <div class="d-flex">
+                                    <div>
+                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                        class="badge badge-danger">4</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                    </div>
+                                    <div class="btn-group" style="position: relative; top: -7px">
+                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li>
+                                          <a class="dropdown-item" href="#"><i
+                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                        </li>
+                                        <li>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
+                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <div class="card-body">
+                              <p>
+                                <b>Rishabh Pant car accident: 'जलती कार से दूर
+                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
+                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                              </p>
+                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
+                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
+                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
+                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <br /><br />
+                              <div style="
+                                  border: 1px solid #f3f8fb;
+                                  border-radius: 50rem;
+                                " class="py-2">
+                                <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
+                             <div class="row">
+                              <div class="col-md-8 col-sm-9">
+                                <div style="display: flex">
+                                <div class="avatar-xs">
+                                        <img src="~/assets/images/users/avatar-1.jpg" alt=""
+                                          class="avatar-title rounded-circle" />
+                                      </div>
+                                    <div style="display: flex;flex-direction: column;text-align: start;margin-left: 10px;">
+                                      <small><b>Sainath Reddy</b> </small>
+                                      <small style="display: flex;flex-direction: row;"><i class="fa-solid fa-clock text-success" style="position:relative;top:3px;"></i><span class="ml-2">Approved</span></small>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="d-flex float-md-end">
+                                  <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
+                                      title="Auto Publish"></i></span>&nbsp;&nbsp;
+                                  <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
+                                      title="Scheduled time and date"></i></span>
+                                </div>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></div>
+  <div class="tab-pane fade" id="tab-published" role="tabpanel" aria-labelledby="published-tab"><div class="row">
+                        <div class="col-xl-4 col-sm-12 col-md-6">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                            <div class="card-header" style="
+                                background-color: transparent;
+                                border: none;
+                              ">
+                              <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                    display: flex;
+                                    justify-content: start;
+                                    text-align: center;
+                                  ">
+                                  <div style="display: flex">
+                                    <i class="fa-brands fa-linkedin text-primary fa-3x"></i>
+                                    <div style="
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: start;
+                                        margin-left: 10px;
+                                      ">
+                                      <small><b>Bussiness Post</b> </small>
+                                      <small style="
+                                          display: flex;
+                                          flex-direction: column;
+                                        ">28/12/2022 10:21</small>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                  <div class="d-flex">
+                                    <div>
+                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                        class="badge badge-danger">4</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                    </div>
+                                    <div class="btn-group" style="position: relative; top: -7px">
+                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li>
+                                          <a class="dropdown-item" href="#"><i
+                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                        </li>
+                                        <li>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
+                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <div class="card-body">
+                              <p>
+                                <b>Rishabh Pant car accident: 'जलती कार से दूर
+                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
+                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                              </p>
+                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
+                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
+                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
+                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <br /><br />
+                              <div style="
+                                  border: 1px solid #f3f8fb;
+                                  border-radius: 50rem;
+                                " class="py-2">
+                                <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
+                             <div class="row">
+                              <div class="col-md-8 col-sm-9">
+                                <div style="display: flex">
+                                <div class="avatar-xs">
+                                        <img src="~/assets/images/users/avatar-1.jpg" alt=""
+                                          class="avatar-title rounded-circle" />
+                                      </div>
+                                    <div style="display: flex;flex-direction: column;text-align: start;margin-left: 10px;">
+                                      <small><b>Sainath Reddy</b> </small>
+                                      <small style="display: flex;flex-direction: row;"><i class="fa-solid fa-clock text-success" style="position:relative;top:3px;"></i><span class="ml-2">Approved</span></small>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="d-flex float-md-end">
+                                  <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
+                                      title="Auto Publish"></i></span>&nbsp;&nbsp;
+                                  <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
+                                      title="Scheduled time and date"></i></span>
+                                </div>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></div>
+  <div class="tab-pane fade" id="tab-expired" role="tabpanel" aria-labelledby="expired-tab"><div class="row">
+                        <div class="col-xl-4 col-sm-12 col-md-6">
+                          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                            <div class="card-header" style="
+                                background-color: transparent;
+                                border: none;
+                              ">
+                              <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                    display: flex;
+                                    justify-content: start;
+                                    text-align: center;
+                                  ">
+                                  <div style="display: flex">
+                                    <i class="fa-brands fa-linkedin text-primary fa-3x"></i>
+                                    <div style="
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: start;
+                                        margin-left: 10px;
+                                      ">
+                                      <small><b>Bussiness Post</b> </small>
+                                      <small style="
+                                          display: flex;
+                                          flex-direction: column;
+                                        ">28/12/2022 10:21</small>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                  <div class="d-flex">
+                                    <div>
+                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                        class="badge badge-danger">4</span>
+                                    </div>
+                                    <div>
+                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                    </div>
+                                    <div class="btn-group" style="position: relative; top: -7px">
+                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li>
+                                          <a class="dropdown-item" href="#"><i
+                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                        </li>
+                                        <li>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
+                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <div class="card-body">
+                              <p>
+                                <b>Rishabh Pant car accident: 'जलती कार से दूर
+                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
+                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                              </p>
+                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
+                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
+                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
+                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <br /><br />
+                              <div style="
+                                  border: 1px solid #f3f8fb;
+                                  border-radius: 50rem;
+                                " class="py-2">
+                                <a href="" class="rounded-pill">https://www.aajtak.in/coronavirus/story/....</a>
+                              </div>
+                            </div>
+                            <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
+                             <div class="row">
+                              <div class="col-md-8 col-sm-9">
+                                <div style="display: flex">
+                                <div class="avatar-xs">
+                                        <img src="~/assets/images/users/avatar-1.jpg" alt=""
+                                          class="avatar-title rounded-circle" />
+                                      </div>
+                                    <div style="display: flex;flex-direction: column;text-align: start;margin-left: 10px;">
+                                      <small><b>Sainath Reddy</b> </small>
+                                      <small style="display: flex;flex-direction: row;"><i class="fa-solid fa-clock text-success" style="position:relative;top:3px;"></i><span class="ml-2">Approved</span></small>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="d-flex float-md-end">
+                                  <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
+                                      title="Auto Publish"></i></span>&nbsp;&nbsp;
+                                  <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
+                                      title="Scheduled time and date"></i></span>
+                                </div>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></div>
+</div>
             <!-- end row -->
 
             <div class="row mt-4">

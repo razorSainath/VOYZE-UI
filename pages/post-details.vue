@@ -6,17 +6,13 @@
           class="rightbar-title d-flex align-items-center p-3 bg-light text-primary"
         >
           <h5 class="m-0 me-2">Post Deatils - Comment</h5>
-
-          <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
-            <i class="fa-solid fa-close noti-icon"></i>
-          </a>
         </div>
 
         <!-- Settings -->
         <hr class="m-0" />
 
         <div class="p-4">
-          <div class="card">
+          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
             <div class="card-header">
               <div class="row">
                 <div
@@ -54,9 +50,9 @@
                 >
                   <div style="display: flex">
                     <img
-                      src="assets/images/users/avatar-2.jpg"
+                      src="~/assets/images/users/avatar-2.jpg"
                       alt=""
-                      class="avatar-xs rounded-circle me-2"
+                      class="rounded-soft me-2 avatar avatar-sm"
                     />
                     <div
                       style="
@@ -87,7 +83,7 @@
                 >
                   <div style="display: flex">
                     <img
-                      src="assets/images/users/avatar-2.jpg"
+                      src="~/assets/images/users/avatar-2.jpg"
                       alt=""
                       class="avatar-xs rounded-circle me-2"
                     />
@@ -111,7 +107,7 @@
             </div>
             <div class="card-footer">
               <div class="row">
-                <div class="col-md-10">
+                <div class="col-xl-11">
                   <textarea
                     name=""
                     id=""
@@ -121,9 +117,9 @@
                     placeholder="Add Comment"
                   ></textarea>
                 </div>
-                <div class="col-md-2">
-                  <button type="submit" class="form-control text-primary">
-                    <i class="fa-sharp fa-solid fa-paper-plane-top"></i>
+                <div class="col-xl-1">
+                  <button type="submit" class="form-control btn btn-primary float-end" style="position: relative;top:5px;">
+                    <i class="fa-solid fa-paper-plane fa-2x"></i>
                   </button>
                 </div>
               </div>
