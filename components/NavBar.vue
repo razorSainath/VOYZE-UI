@@ -51,7 +51,7 @@ const just = ()=>{
             </button>
 
             <!-- organisation dropdown-->
-              <select name="" id="" class="form-control display" style="margin-left:15px;">
+              <select name="" id="" class="form-control display" style="margin-left:15px;border: none;">
                 <option value="0">Select Organisation</option>
                 <option value="1">Edelman</option>
                 <option value="2">Razorpod</option>
