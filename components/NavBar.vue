@@ -28,7 +28,6 @@ const just = ()=>{
 
 
 <template>
-  
           <header id="page-topbar">
         <div class="navbar-header">
           <div class="d-flex">
@@ -45,7 +44,7 @@ const just = ()=>{
             </div>
 
             <button
-              type="button" style="position: relative;left: 10px;" class="display-button"
+              type="button" style="position: relative;left: 10px;"
                @click="just"
             >
               <i class="fa fa-fw fa-bars"></i>

@@ -1,4 +1,3 @@
-@import "bootstrap/scss/bootstrap";
 :root {
   --bs-sidebar-bg: #ffffff;
   --bs-sidebar-menu-item-color: #7b8190;
@@ -4004,7 +4003,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   background-color: #5b73e8;
 }
 .search-box .form-control {
-  border-radius: 30px;
   padding-left: 40px;
 }
 .search-box .search-icon {

@@ -123,20 +123,19 @@
   </div>
 </div>
 
-  <div class="row">
+  <div class="row py-2">
     <div class="col-xl-12">
       <div class="row">
-        <div class="col-xl-4 col-sm-12 col-md-6 d-flex align-items-stretch flex-wrap">
+        <div class="col-xl-4 d-flex align-items-stretch flex-wrap">
           <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                 <div class="card-header">
                     <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
+                        <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
                     </div>
                     <div class="dropdown float-end">
                         <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                           <i class="fa-solid fa-ellipsis-v"></i>
                         </a>
-                      
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#">View</a>
                         </div>
@@ -159,17 +158,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 col-sm-12 col-md-6">
+        <div class="col-xl-4">
           <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                 <div class="card-header">
                     <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
+                        <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
                     </div>
                     <div class="dropdown float-end">
                         <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                           <i class="fa-solid fa-ellipsis-v"></i>
                         </a>
-                      
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#">View</a>
                         </div>
@@ -192,17 +190,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 col-sm-12 col-md-6">
+        <div class="col-xl-4">
           <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                 <div class="card-header">
                     <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
+                        <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
                     </div>
                     <div class="dropdown float-end">
                         <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                           <i class="fa-solid fa-ellipsis-v"></i>
                         </a>
-                      
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#">View</a>
                         </div>
@@ -218,208 +215,6 @@
                     </div>
 
                     <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-4 col-sm-12 col-md-6">
-          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/dhirendra_shastri-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    </div>
-
-                    <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-sm-12 col-md-6">
-          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    </div>
-
-                    <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-sm-12 col-md-6">
-          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    </div>
-
-                    <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-4 col-sm-12 col-md-6">
-          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    </div>
-
-                    <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-sm-12 col-md-6">
-          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/dhirendra_shastri-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">महाराष्ट्र की उस संस्था की कहानी... जिसने बागेश्वर धाम के धीरेंद्र शास्त्री पर उठाए सवाल</a></h5>
-                    <p class="text-muted mb-2">बागेश्वर धाम के धीरेंद्र शास्त्री पर महाराष्ट्र अंधश्रद्धा निर्मूलन समिति ने 'अंधविश्वास' और 'जादू-टोना' को बढ़ावा देने का आरोप लगाया है. समिति का आरो...</p>
-                    </div>
-
-                    <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>
-                    <button type="button" class="btn btn-outline-primary text-truncate" title="Instagram"><i class="fa-brands fa-square-instagram me-1"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-sm-12 col-md-6">
-          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                      
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="~/assets/images/covid_8-sixteen_nine.webp" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
-                    </div>
-
-                <div class="btn-group" role="group">
                     <button type="button" class="btn btn-outline-primary text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1"></i></button>
                     <button type="button" class="btn btn-outline-primary text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1"></i></button>
                     <button type="button" class="btn btn-outline-primary text-truncate" title="Facebook"><i class="fa-brands fa-square-facebook me-1"></i> </button>

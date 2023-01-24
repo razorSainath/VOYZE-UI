@@ -28,7 +28,7 @@ const redirectToSignin = ()=>{
             type="email"
             class="form-control"
             id="useremail"
-            placeholder="Enter email"
+            placeholder="Enter your username/Email"
           />
         </div>
 
