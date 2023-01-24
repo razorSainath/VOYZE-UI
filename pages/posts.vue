@@ -5,20 +5,56 @@
         <h4 class="mb-0">Content Post</h4>
 
         <div class="page-title-right">
-          <ol class="breadcrumb m-0">
-            <li class="breadcrumb-item">
-              <a href="javascript: void(0);">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="javascript: void(0);">Content</a>
-            </li>
-            <li class="breadcrumb-item active">Post</li>
-          </ol>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa-solid fa-filter"></i>
+  </a>
         </div>
       </div>
     </div>
   </div>
-
+  <div class="collapse" id="collapseExample">
+  <div class="card card-body">
+   <!--filter start-->
+  <div class="row py-2">
+    <div class="col-xl-3">
+      <div class="form-inline">
+                  <div class="search-box ms-2">
+                    <label for="">Search</label>
+                    <div class="position-relative">
+                     
+                      <input type="text" class="form-control" placeholder="Search..." style="border: 1px solid #dcdcdc;">
+                      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+                  </div>
+                </div>
+    </div>
+    <div class="col-xl-3">
+      <label for="">Select Platform</label>
+      <select name="" id="" class="form-control">
+        <!-- <option value="0">Select Platform</option> -->
+        <option value="1">LinkedIn</option>
+        <option value="2">Twitter</option>
+        <option value="3">Facebook</option>
+        <option value="4">Instagram</option>
+      </select>
+    </div>
+    <div class="col-xl-3">
+      <label for="">Selct Date</label>
+      <div>
+        <input type="datetime-local" name="" id="" class="form-control" />
+      </div>
+    </div>
+    <div class="col-xl-1"></div>
+    <div class="col-xl-2">
+      <label for="">&nbsp;</label>
+      <button type="button" class="btn btn-primary form-control small float-md-end" data-bs-toggle="offcanvas" data-bs-target="#newDraft" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-plus"></i> New Draft
+      </button>
+    </div>
+  </div>
+  <!--filter end-->
+  </div>
+</div>
   <!-- end page title -->
   <div class="row">
     <div class="col-md-6 col-xl-3">
@@ -97,45 +133,7 @@
     </div>
     <!-- end col-->
   </div>
-  <!--filter start-->
-  <div class="row py-2">
-    <div class="col-xl-3">
-      <div class="form-inline">
-                  <div class="search-box ms-2">
-                    <label for="">&nbsp;</label>
-                    <div class="position-relative">
-                     
-                      <input type="text" class="form-control" placeholder="Search..." style="border: 1px solid #dcdcdc;">
-                      <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    </div>
-                  </div>
-                </div>
-    </div>
-    <div class="col-xl-3">
-      <label for="">Select Platform</label>
-      <select name="" id="" class="form-control">
-        <!-- <option value="0">Select Platform</option> -->
-        <option value="1">LinkedIn</option>
-        <option value="2">Twitter</option>
-        <option value="3">Facebook</option>
-        <option value="4">Instagram</option>
-      </select>
-    </div>
-    <div class="col-xl-3">
-      <label for="">Selct Date:</label>
-      <div>
-        <input type="datetime-local" name="" id="" class="form-control" />
-      </div>
-    </div>
-    <div class="col-xl-1"></div>
-    <div class="col-xl-2">
-      <label for="">&nbsp;</label>
-      <button type="button" class="btn btn-primary form-control small float-md-end" data-bs-toggle="offcanvas" data-bs-target="#newDraft" aria-controls="offcanvasExample">
-        <i class="fa-solid fa-plus"></i> New Draft
-      </button>
-    </div>
-  </div>
-  <!--filter end-->
+  
 
   <!-- The newDraft offcanvas  -->
 
@@ -224,8 +222,8 @@
             </div>
           </div>
   </div>
-  <div class="offcanvas-footer ml-2 mb-2 bg-light">
-          <button type="button" class="btn btn-primary ml-2">Save changes</button>
+  <div class="offcanvas-footer mr-2 mb-2">
+          <button type="button" class="btn btn-primary ml-2 float-md-end">Save changes</button>
   </div>
 </div>
 

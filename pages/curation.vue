@@ -8,19 +8,17 @@
         <h4 class="mb-0">Content Curation</h4>
 
         <div class="page-title-right">
-          <ol class="breadcrumb m-0">
-            <li class="breadcrumb-item">
-              <a href="javascript: void(0);">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item active">Curation</li>
-          </ol>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa-solid fa-filter"></i>
+  </a>
         </div>
       </div>
     </div>
   </div>
   <!-- end page title -->
-
-  <div class="row mb-2">
+  <div class="collapse" id="collapseExample">
+  <div class="card card-body" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+    <div class="row mb-2">
     <div class="col-md-3">
       <label for=""><b>Leader Topics:</b></label>
       <select
@@ -70,6 +68,9 @@
 </button>
     </div>
   </div>
+  </div>
+</div>
+
   <div class="offcanvas offcanvas-end" tabindex="-1" id="filter" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>

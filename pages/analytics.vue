@@ -35,15 +35,6 @@ const series = [
         class="page-title-box d-flex align-items-center justify-content-between"
       >
         <h4 class="mb-0">Analytics</h4>
-
-        <div class="page-title-right">
-          <ol class="breadcrumb m-0">
-            <li class="breadcrumb-item">
-              <a href="javascript: void(0);">Edelman</a>
-            </li>
-            <li class="breadcrumb-item LinkedIn">Analtics</li>
-          </ol>
-        </div>
       </div>
     </div>
   </div>

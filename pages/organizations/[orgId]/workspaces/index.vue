@@ -26,19 +26,17 @@ const toggleWorkspaceModal = ()=> {
         <h4 class="mb-0">Workspace</h4>
 
         <div class="page-title-right">
-          <ol class="breadcrumb m-0">
-            <li class="breadcrumb-item">
-              <a href="javascript: void(0);">Voyze</a>
-            </li>
-            <li class="breadcrumb-item active">Workspace</li>
-          </ol>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa-solid fa-filter"></i>
+  </a>
         </div>
       </div>
     </div>
   </div>
   <!-- end page title -->
-
-  <div class="row mb-2">
+  <div class="collapse" id="collapseExample">
+  <div class="card card-body" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+    <div class="row">
                             <div class="col-md-3">
                                 <div class="form-inline mb-3">
                                     <div class="search-box ms-2">
@@ -57,12 +55,10 @@ const toggleWorkspaceModal = ()=> {
                             </div>
 
                         </div>
+  </div>
+</div>
+ 
   <!-- end row -->
-  <div class="row mb-2">
-  <div class="col-md-4">
-
-</div>
-</div>
 
   <div class="row">
     <div class="col-xl-4 col-sm-6">
