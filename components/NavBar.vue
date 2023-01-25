@@ -17,7 +17,6 @@ export default {
 </script>
 
 <script setup>
-const navbarMarginLeft = useState("navbarMarginLeft",()=>"45px")
 let isSidebarOpen = useState("isSidebarOpen")
 const just = ()=>{
   console.log("beforeClick" ,isSidebarOpen.value)
@@ -30,7 +29,7 @@ const just = ()=>{
 
 <template>
   
-          <header  id="page-topbar" :style="{left:navbarMarginLeft}">
+          <header id="page-topbar">
         <div class="navbar-header">
           <div class="d-flex">
             <!-- LOGO -->
@@ -46,14 +45,14 @@ const just = ()=>{
             </div>
 
             <button
-              type="button" style="position: relative;left: 10px;"
+              type="button" style="position: relative;left: 10px;" class="display-button"
                @click="just"
             >
               <i class="fa fa-fw fa-bars"></i>
             </button>
 
             <!-- organisation dropdown-->
-              <select name="" id="" class="form-control display" style="margin-left:15px;border: none;">
+              <select name="" id="" class="form-control display" style="margin-left:15px;">
                 <option value="0">Select Organisation</option>
                 <option value="1">Edelman</option>
                 <option value="2">Razorpod</option>
@@ -96,7 +95,7 @@ const just = ()=>{
                 </form>
               </div>
             </div>
-            <!-- <div class="dropdown d-none d-lg-inline-block ms-1">
+            <div class="dropdown d-none d-lg-inline-block ms-1">
               <button
                 type="button"
                 class="btn header-item noti-icon waves-effect"
@@ -104,9 +103,9 @@ const just = ()=>{
               >
                 <i class="fa-solid fa-expand"></i>
               </button>
-            </div> -->
+            </div>
 
-            <!-- <div class="dropdown d-inline-block">
+            <div class="dropdown d-inline-block">
               <button
                 type="button"
                 class="btn header-item noti-icon waves-effect"
@@ -250,7 +249,7 @@ const just = ()=>{
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
 
             <div class="dropdown d-inline-block">
               <button
@@ -317,6 +316,5 @@ const just = ()=>{
     top:28px;
   }
 }
-
 </style>
 
