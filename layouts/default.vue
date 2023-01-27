@@ -1,6 +1,16 @@
+<script setup>
+let isSidebarOpen = useState("isSidebarOpen")
+</script>
+
+
 <template>
-  <NavBar/>
-  <Sidebar/>
+
+  <body
+  :class="`${!isSidebarOpen ? '' : 'sidebarClosed'}`"
+  :data-sidebar-size="`${isSidebarOpen ? 'lg' : 'sm'}`"
+  >
+    <NavBar/>
+  <Sidebar2/>
   
   <div class="main-content" >
   <div class="page-content" >
@@ -12,7 +22,9 @@
   </div>
 </div>
 
-  <Footer/>
+  <Footer/> 
+  </body>
+
 </template>
 
 

@@ -45,7 +45,7 @@ const just = ()=>{
             </div>
 
             <button
-              type="button" style="position: relative;left: 10px;" class="display-button"
+              type="button" style="position: relative;left: 10px;" class=""
                @click="just"
             >
               <i class="fa fa-fw fa-bars"></i>
