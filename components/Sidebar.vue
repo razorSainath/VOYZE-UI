@@ -1,26 +1,5 @@
 <script setup>
 import {ref} from 'vue'
-let dashboardColour = ref("white");
-let workspaceColour = ref("white");
-let leadersColour = ref("white");
-let analyticsColour = ref("white");
-let postsColour = ref("white");
-let curationColour = ref("white");
-let categoryColour = ref("white");
-let usersColour = ref("white");
-let rolesColour = ref("white");
-let partnersColour = ref("white");
-
-let dashboardTextColour = ref("#7b8190");
-let workspaceTextColor = ref("#7b8190");
-let leadersTextColour = ref("#7b8190");
-let analyticsTextColour = ref("#7b8190");
-let postsTextColour = ref("#7b8190");
-let curationTextColour = ref("#7b8190");
-let categoryTextColour = ref("#7b8190");
-let usersTextColour = ref("#7b8190");
-let rolesTextColour = ref("#7b8190");
-let partnersTextColour = ref("#7b8190");
 
 
 const redirectTo = (page) => {
@@ -31,231 +10,44 @@ const redirectTo = (page) => {
 switch (page) {
   case 'dashboard':
   navigateTo("/dashboard")
-  dashboardColour.value = "#f3f8fb";
-  workspaceColour = ref("white");
- leadersColour = ref("white");
- analyticsColour = ref("white");
- postsColour = ref("white");
- curationColour = ref("white");
- categoryColour = ref("white");
- usersColour = ref("white");
- rolesColour = ref("white");
- partnersColour = ref("white");
 
- dashboardTextColour.value = "#099cd2";
- workspaceTextColor = ref("#7b8190");
- leadersTextColour = ref("#7b8190");
- analyticsTextColour = ref("#7b8190");
- postsTextColour = ref("#7b8190");
- curationTextColour = ref("#7b8190");
- categoryTextColour = ref("#7b8190");
- usersTextColour = ref("#7b8190");
- rolesTextColour = ref("#7b8190");
- partnersTextColour = ref("#7b8190");
 
     break
   case 'workspace':
   navigateTo("/organizations/sasdf/workspaces")
-  dashboardColour = ref("white");
-  workspaceColour.value = "#f3f8fb";
- leadersColour = ref("white");
- analyticsColour = ref("white");
- postsColour = ref("white");
- curationColour = ref("white");
- categoryColour = ref("white");
- usersColour = ref("white");
- rolesColour = ref("white");
- partnersColour = ref("white");
 
- dashboardTextColour = ref("#7b8190");  
- workspaceTextColor.value = "#099cd2";
- leadersTextColour = ref("#7b8190");
- analyticsTextColour = ref("#7b8190");
- postsTextColour = ref("#7b8190");
- curationTextColour = ref("#7b8190");
- categoryTextColour = ref("#7b8190");
- usersTextColour = ref("#7b8190");
- rolesTextColour = ref("#7b8190");
- partnersTextColour = ref("#7b8190");
 
   break
   case 'leaders':
   navigateTo("/leaders")
-  dashboardColour = ref("white");
-  workspaceColour = ref("white");
- leadersColour.value = "#f3f8fb";
- analyticsColour = ref("white");
- postsColour = ref("white");
- curationColour = ref("white");
- categoryColour = ref("white");
- usersColour = ref("white");
- rolesColour = ref("white");
- partnersColour = ref("white");
 
-  
- dashboardTextColour = ref("#7b8190");  
- workspaceTextColor = ref("#7b8190");
- leadersTextColour.value = "#099cd2";
- analyticsTextColour = ref("#7b8190");
- postsTextColour = ref("#7b8190");
- curationTextColour = ref("#7b8190");
- categoryTextColour = ref("#7b8190");
- usersTextColour = ref("#7b8190");
- rolesTextColour = ref("#7b8190");
- partnersTextColour = ref("#7b8190");
     break;
   case 'analytics':
   navigateTo("/analytics")
-  dashboardColour = ref("white");
-  workspaceColour = ref("white");
- leadersColour = ref("white");
- analyticsColour.value = "#f3f8fb";
- postsColour = ref("white");
- curationColour = ref("white");
- categoryColour = ref("white");
- usersColour = ref("white");
- rolesColour = ref("white");
- partnersColour = ref("white");
 
-
- 
- dashboardTextColour = ref("#7b8190");  
- workspaceTextColor = ref("#7b8190");
- leadersTextColour = ref("#7b8190");
- analyticsTextColour.value = "#099cd2";
- postsTextColour = ref("#7b8190");
- curationTextColour = ref("#7b8190");
- categoryTextColour = ref("#7b8190");
- usersTextColour = ref("#7b8190");
- rolesTextColour = ref("#7b8190");
- partnersTextColour = ref("#7b8190");
     break;
   case 'posts':
   navigateTo("/posts")
-  dashboardColour = ref("white");
-  workspaceColour = ref("white");
- leadersColour = ref("white");
- analyticsColour = ref("white");
- postsColour.value = "#f3f8fb";
- curationColour = ref("white");
- categoryColour = ref("white");
- usersColour = ref("white");
- rolesColour = ref("white");
- partnersColour = ref("white");
 
-
- 
- dashboardTextColour = ref("#7b8190");  
- workspaceTextColor = ref("#7b8190");
- leadersTextColour = ref("#7b8190");
- analyticsTextColour= ref("#7b8190");
- postsTextColour.value  = "#099cd2";
- curationTextColour = ref("#7b8190");
- categoryTextColour = ref("#7b8190");
- usersTextColour = ref("#7b8190");
- rolesTextColour = ref("#7b8190");
- partnersTextColour = ref("#7b8190");
     break;
   case 'curation':
   navigateTo("/curation")
-  dashboardColour = ref("white");
-  workspaceColour = ref("white");
- leadersColour = ref("white");
- analyticsColour = ref("white");
- postsColour = ref("white");
- curationColour.value = "#f3f8fb";
- categoryColour = ref("white");
- usersColour = ref("white");
- rolesColour = ref("white");
- partnersColour = ref("white");
 
- 
- dashboardTextColour = ref("#7b8190");  
- workspaceTextColor = ref("#7b8190");
- leadersTextColour = ref("#7b8190");
- analyticsTextColour= ref("#7b8190");
- postsTextColour = ref("#7b8190");
- curationTextColour.value  = "#099cd2";
- categoryTextColour = ref("#7b8190");
- usersTextColour = ref("#7b8190");
- rolesTextColour = ref("#7b8190");
- partnersTextColour = ref("#7b8190");
 
     break;
   case 'category':
   navigateTo("/categories")
-  dashboardColour = ref("white");
-  workspaceColour = ref("white");
- leadersColour = ref("white");
- analyticsColour = ref("white");
- postsColour = ref("white");
- curationColour = ref("white");
- categoryColour.value = "#f3f8fb";
- usersColour = ref("white");
- rolesColour = ref("white");
- partnersColour = ref("white");
 
-  
- dashboardTextColour = ref("#7b8190");  
- workspaceTextColor = ref("#7b8190");
- leadersTextColour = ref("#7b8190");
- analyticsTextColour= ref("#7b8190");
- postsTextColour = ref("#7b8190");
- curationTextColour = ref("#7b8190");
- categoryTextColour.value  = "#099cd2";
- usersTextColour = ref("#7b8190");
- rolesTextColour = ref("#7b8190");
- partnersTextColour = ref("#7b8190");
 
     break;
   case 'user-management':
   navigateTo("/users")
-  dashboardColour = ref("white");
-  workspaceColour = ref("white");
- leadersColour = ref("white");
- analyticsColour = ref("white");
- postsColour = ref("white");
- curationColour = ref("white");
- categoryColour=  ref("white");
- usersColour.value = "#f3f8fb";
- rolesColour = ref("white");
- partnersColour = ref("white");
 
- dashboardTextColour = ref("#7b8190");  
- workspaceTextColor = ref("#7b8190");
- leadersTextColour = ref("#7b8190");
- analyticsTextColour= ref("#7b8190");
- postsTextColour = ref("#7b8190");
- curationTextColour = ref("#7b8190");
- categoryTextColour  = ref("#7b8190");
- usersTextColour.value = "#099cd2";
- rolesTextColour = ref("#7b8190");
- partnersTextColour = ref("#7b8190");
 
     break;
   case 'role-management':
   navigateTo("/roles")
-  dashboardColour = ref("white");
-  workspaceColour = ref("white");
- leadersColour = ref("white");
- analyticsColour = ref("white");
- postsColour = ref("white");
- curationColour = ref("white");
- categoryColour=  ref("white");
- usersColour = ref("white");
- rolesColour.value = "#f3f8fb";
- partnersColour = ref("white");
- 
- dashboardTextColour = ref("#7b8190");  
- workspaceTextColor = ref("#7b8190");
- leadersTextColour = ref("#7b8190");
- analyticsTextColour= ref("#7b8190");
- postsTextColour = ref("#7b8190");
- curationTextColour = ref("#7b8190");
- categoryTextColour  = ref("#7b8190");
- usersTextColour = ref("#7b8190");
- rolesTextColour.value =  "#099cd2";
- partnersTextColour = ref("#7b8190");
+
 
 
 
@@ -263,28 +55,9 @@ switch (page) {
   case 'partners-management':
   navigateTo("/partners")
 
-  dashboardColour = ref("white");
-  workspaceColour = ref("white");
- leadersColour = ref("white");
- analyticsColour = ref("white");
- postsColour = ref("white");
- curationColour = ref("white");
- categoryColour=  ref("white");
- usersColour = ref("white");
- rolesColour = ref("white");
- partnersColour.value = "#f3f8fb";
 
- 
- dashboardTextColour = ref("#7b8190");  
- workspaceTextColor = ref("#7b8190");
- leadersTextColour = ref("#7b8190");
- analyticsTextColour= ref("#7b8190");
- postsTextColour = ref("#7b8190");
- curationTextColour = ref("#7b8190");
- categoryTextColour  = ref("#7b8190");
- usersTextColour = ref("#7b8190");
- rolesTextColour = ref("#7b8190");
- partnersTextColour.value =  "#099cd2";
+
+
     break;
 }
 };

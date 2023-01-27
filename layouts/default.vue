@@ -5,10 +5,10 @@ let isSidebarOpen = useState("isSidebarOpen")
 
 <template>
 
-  <body
+  <!-- <body
   :class="`${!isSidebarOpen ? '' : 'sidebar-enable'}`"
   :data-sidebar-size="`${isSidebarOpen ? 'lg' : 'sm'}`"
-  >
+  > -->
     <NavBar/>
   <Sidebar2/>
   
@@ -23,7 +23,7 @@ let isSidebarOpen = useState("isSidebarOpen")
 </div>
 
   <Footer/> 
-  </body>
+  <!-- </body> -->
 
 </template>
 
