@@ -79,7 +79,7 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
     <div class="navbar-brand-box">
       <a href="index.html" class="logo logo-dark">
         <span class="logo-sm" style="position: relative; right: 15px">
-          <img src="assets/images/logo-sm.png" alt="" height="22" />
+          <img src="assets/images/logo-sm-removebg-preview.png" alt="" height="22" />
         </span>
         <span class="logo-lg">
           <img src="~/assets/images/logo-light.svg" alt="" height="20" />
@@ -88,21 +88,21 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
     </div>
 
 
-    <div data-simplebar class="sidebar-menu-scroll">
+    <div data-simplebar class="sidebar-menu-scroll mm-show">
       <!--- Sidemenu -->
-      <div id="sidebar-menu">
+      <div id="sidebar-menu" class="mm-active">
         <!-- Left Menu Start -->
-        <ul class="metismenu list-unstyled" id="side-menu">
+        <ul class="metismenu list-unstyled mm-show" id="side-menu">
           <li class="menu-title">Menu</li>
 
-          <li class="nav-item" >
-            <a @click="redirectTo('dashboard')"  class="waves-effect nav-link active">
+          <li >
+            <a @click="redirectTo('dashboard')"  class="waves-effect">
               <i class="fa-solid fa-dashboard" ></i>
               <span >Dashboard</span>
             </a>
           </li>
           <li class="menu-title">Sub-menu</li>
-          <li >
+          <li class="mm-active">
             <a @click="redirectTo('workspace')" class="waves-effect">
               <i class="fa-solid fa-folder-tree" ></i>
               <span >Workspace</span>
