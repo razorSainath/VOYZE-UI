@@ -10,7 +10,8 @@ let isSidebarOpen = useState("isSidebarOpen")
   :data-sidebar-size="`${isSidebarOpen ? 'lg' : 'sm'}`"
   >
     <NavBar/>
-  <Sidebar2/>
+
+<Sidebar2/>
   
   <div class="main-content" >
   <div class="page-content" >

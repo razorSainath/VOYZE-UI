@@ -4,31 +4,21 @@
       <div class="page-title-box d-flex align-items-center justify-content-between">
         <h4 class="mb-0">Content Post</h4>
 
-        <div class="page-title-right">
-          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa-solid fa-filter"></i>
-  </a>
-        </div>
       </div>
     </div>
   </div>
-  <div class="collapse" id="collapseExample">
-  <div class="card card-body">
    <!--filter start-->
   <div class="row py-2">
-    <div class="col-xl-3">
-      <div class="form-inline">
-                  <div class="search-box ms-2">
+    <div class="col-xl-3 py-1">
+                  <div class="search-box">
                     <label for="">Search</label>
                     <div class="position-relative">
-                     
                       <input type="text" class="form-control" placeholder="Search..." style="border: 1px solid #dcdcdc;">
                       <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     </div>
                   </div>
-                </div>
     </div>
-    <div class="col-xl-3">
+    <div class="col-xl-3 py-1">
       <label for="">Select Platform</label>
       <select name="" id="" class="form-control">
         <!-- <option value="0">Select Platform</option> -->
@@ -38,7 +28,7 @@
         <option value="4">Instagram</option>
       </select>
     </div>
-    <div class="col-xl-3">
+    <div class="col-xl-3 py-1">
       <label for="">Selct Date</label>
       <div>
         <input type="datetime-local" name="" id="" class="form-control" />
@@ -53,10 +43,8 @@
     </div>
   </div>
   <!--filter end-->
-  </div>
-</div>
   <!-- end page title -->
-  <div class="row">
+  <div class="row py-2">
     <div class="col-md-6 col-xl-3">
       <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
@@ -277,28 +265,26 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                      <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                      <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                          <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                          <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -306,17 +292,12 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/axar_patel_wedding_with_meha_patel-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Rishabh Pant car accident: 'जलती कार से दूर
-                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
-                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                                <b>Axar Patel Wedding with Meha: अक्षर पटेल की हुईं मेहा पटेल... वरमाला और सात फेरों का वीडियो वायरल </b>
                               </p>
-                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
-                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
-                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
-                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <small>भारतीय टीम के स्टार ऑलराउंडर अक्षर पटेल को शादी के बंधन में बंध गए हैं. उन्होंने गुजरात के वडोदरा में गुरुवार (26 जनवरी) को मंगेतर मेहा पटेल के साथ सा... <span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
@@ -327,7 +308,7 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
+                              <div class="col-md-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -339,7 +320,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4">
+                              <div class="col-md-6">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -379,28 +360,26 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                      <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                      <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                          <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -408,17 +387,12 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/axar_patel_wedding_with_meha_patel-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Rishabh Pant car accident: 'जलती कार से दूर
-                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
-                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                                <b>Axar Patel Wedding with Meha: अक्षर पटेल की हुईं मेहा पटेल... वरमाला और सात फेरों का वीडियो वायरल </b>
                               </p>
-                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
-                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
-                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
-                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <small>भारतीय टीम के स्टार ऑलराउंडर अक्षर पटेल को शादी के बंधन में बंध गए हैं. उन्होंने गुजरात के वडोदरा में गुरुवार (26 जनवरी) को मंगेतर मेहा पटेल के साथ सा... <span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
@@ -429,7 +403,7 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
+                              <div class="col-md-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -441,7 +415,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4">
+                              <div class="col-md-6">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -481,28 +455,26 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                      <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                      <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                          <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -510,17 +482,12 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/axar_patel_wedding_with_meha_patel-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Rishabh Pant car accident: 'जलती कार से दूर
-                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
-                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                                <b>Axar Patel Wedding with Meha: अक्षर पटेल की हुईं मेहा पटेल... वरमाला और सात फेरों का वीडियो वायरल </b>
                               </p>
-                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
-                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
-                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
-                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <small>भारतीय टीम के स्टार ऑलराउंडर अक्षर पटेल को शादी के बंधन में बंध गए हैं. उन्होंने गुजरात के वडोदरा में गुरुवार (26 जनवरी) को मंगेतर मेहा पटेल के साथ सा... <span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
@@ -531,7 +498,7 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
+                              <div class="col-md-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -543,7 +510,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4">
+                              <div class="col-md-6">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -586,28 +553,26 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                      <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                      <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                          <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -615,17 +580,12 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/axar_patel_wedding_with_meha_patel-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Rishabh Pant car accident: 'जलती कार से दूर
-                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
-                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                                <b>Axar Patel Wedding with Meha: अक्षर पटेल की हुईं मेहा पटेल... वरमाला और सात फेरों का वीडियो वायरल </b>
                               </p>
-                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
-                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
-                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
-                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <small>भारतीय टीम के स्टार ऑलराउंडर अक्षर पटेल को शादी के बंधन में बंध गए हैं. उन्होंने गुजरात के वडोदरा में गुरुवार (26 जनवरी) को मंगेतर मेहा पटेल के साथ सा... <span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
@@ -636,7 +596,7 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
+                              <div class="col-md-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -648,7 +608,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4">
+                              <div class="col-md-6">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -690,28 +650,26 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                      <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                      <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                          <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -719,17 +677,12 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/axar_patel_wedding_with_meha_patel-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Rishabh Pant car accident: 'जलती कार से दूर
-                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
-                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                                <b>Axar Patel Wedding with Meha: अक्षर पटेल की हुईं मेहा पटेल... वरमाला और सात फेरों का वीडियो वायरल </b>
                               </p>
-                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
-                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
-                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
-                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <small>भारतीय टीम के स्टार ऑलराउंडर अक्षर पटेल को शादी के बंधन में बंध गए हैं. उन्होंने गुजरात के वडोदरा में गुरुवार (26 जनवरी) को मंगेतर मेहा पटेल के साथ सा... <span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
@@ -740,7 +693,7 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
+                              <div class="col-md-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -752,7 +705,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4">
+                              <div class="col-md-6">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -794,28 +747,26 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                      <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                      <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                          <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -823,17 +774,12 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/axar_patel_wedding_with_meha_patel-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Rishabh Pant car accident: 'जलती कार से दूर
-                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
-                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                                <b>Axar Patel Wedding with Meha: अक्षर पटेल की हुईं मेहा पटेल... वरमाला और सात फेरों का वीडियो वायरल </b>
                               </p>
-                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
-                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
-                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
-                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <small>भारतीय टीम के स्टार ऑलराउंडर अक्षर पटेल को शादी के बंधन में बंध गए हैं. उन्होंने गुजरात के वडोदरा में गुरुवार (26 जनवरी) को मंगेतर मेहा पटेल के साथ सा... <span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
@@ -844,7 +790,7 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
+                              <div class="col-md-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -856,7 +802,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4">
+                              <div class="col-md-6">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -898,28 +844,26 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                      <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                      <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                          <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -927,17 +871,12 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/axar_patel_wedding_with_meha_patel-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Rishabh Pant car accident: 'जलती कार से दूर
-                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
-                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                                <b>Axar Patel Wedding with Meha: अक्षर पटेल की हुईं मेहा पटेल... वरमाला और सात फेरों का वीडियो वायरल </b>
                               </p>
-                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
-                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
-                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
-                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <small>भारतीय टीम के स्टार ऑलराउंडर अक्षर पटेल को शादी के बंधन में बंध गए हैं. उन्होंने गुजरात के वडोदरा में गुरुवार (26 जनवरी) को मंगेतर मेहा पटेल के साथ सा... <span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
@@ -948,7 +887,7 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
+                              <div class="col-md-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -960,7 +899,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4">
+                              <div class="col-md-6">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -1002,28 +941,26 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                      <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                      <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                          <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -1031,17 +968,12 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/axar_patel_wedding_with_meha_patel-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Rishabh Pant car accident: 'जलती कार से दूर
-                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
-                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                                <b>Axar Patel Wedding with Meha: अक्षर पटेल की हुईं मेहा पटेल... वरमाला और सात फेरों का वीडियो वायरल </b>
                               </p>
-                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
-                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
-                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
-                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <small>भारतीय टीम के स्टार ऑलराउंडर अक्षर पटेल को शादी के बंधन में बंध गए हैं. उन्होंने गुजरात के वडोदरा में गुरुवार (26 जनवरी) को मंगेतर मेहा पटेल के साथ सा... <span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
@@ -1052,7 +984,7 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
+                              <div class="col-md-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -1064,7 +996,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4">
+                              <div class="col-md-6">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -1106,28 +1038,26 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6">
+                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
                                   <div class="d-flex">
                                     <div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x"></i><span
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
                                         class="badge badge-danger">4</span>
                                     </div>
                                     <div>
-                                      <i class="fa-solid fa-pen-to-square text-primary fa-2x"></i>
+                                      <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
                                     </div>
                                     <div class="btn-group" style="position: relative; top: -7px">
-                                      <button type="button" class="btn text-primary dropdown-toggle-split"
+                                      <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                                       </button>
                                       <ul class="dropdown-menu">
                                         <li>
-                                          <a class="dropdown-item" href="#"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Move to review</a>
+                                          <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')"><i
-                                              class="fa-solid fa-arrow-right"></i>&nbsp;Post Details</a>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
                                     </div>
@@ -1135,17 +1065,12 @@
                                 </div>
                               </div>
                             </div>
-                            <img src="~/assets/images/modi_mother_12-sixteen_nine.webp" alt="" class="img-fluid img" />
+                            <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/axar_patel_wedding_with_meha_patel-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img" />
                             <div class="card-body">
                               <p>
-                                <b>Rishabh Pant car accident: 'जलती कार से दूर
-                                  किया, चादर लपेटकर अस्पताल भेजा...' ऋषभ पंत के
-                                  लिए मसीहा बनकर आया ये बस ड्राइवर</b>
+                                <b>Axar Patel Wedding with Meha: अक्षर पटेल की हुईं मेहा पटेल... वरमाला और सात फेरों का वीडियो वायरल </b>
                               </p>
-                              <small>ऋषभ पंत अपनी मर्सिडीज कार खुद चलाकर होम टाउन
-                                रूड़की जा रहे थे. इसी दौरान झपकी आई और उनकी कार
-                                डिवाइडर से टकराकर दुर्घटना ग्रस्त हो गई. पंत को
-                                सिर और घु...<span><a href="#">Read more...</a></span></small>
+                              <small>भारतीय टीम के स्टार ऑलराउंडर अक्षर पटेल को शादी के बंधन में बंध गए हैं. उन्होंने गुजरात के वडोदरा में गुरुवार (26 जनवरी) को मंगेतर मेहा पटेल के साथ सा... <span><a href="#">Read more...</a></span></small>
                               <br /><br />
                               <div style="
                                   border: 1px solid #f3f8fb;
@@ -1156,7 +1081,7 @@
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-8 col-sm-9">
+                              <div class="col-md-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -1168,7 +1093,7 @@
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-xl-4">
+                              <div class="col-md-6">
                                 <div class="d-flex float-md-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
@@ -1184,7 +1109,7 @@
 </div>
             <!-- end row -->
 
-            <div class="row mt-4">
+            <!-- <div class="row mt-4">
               <div class="col-sm-6 col-xs-6">
                 <div>
                   <p class="mb-sm-0">Page 2 of 84</p>
@@ -1217,7 +1142,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -1236,6 +1161,9 @@
 }
 .fa-3x {
   font-size: 2.5rem !important;
+}
+.fa-2x{
+  font-size:15px !important;
 }
 .offcanvas-size-xl {
     --bs-offcanvas-width: min(95vw, 600px) !important;
