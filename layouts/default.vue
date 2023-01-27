@@ -6,7 +6,7 @@ let isSidebarOpen = useState("isSidebarOpen")
 <template>
 
   <body
-  :class="`${!isSidebarOpen ? '' : 'sidebarClosed'}`"
+  :class="`${!isSidebarOpen ? '' : 'sidebar-enable'}`"
   :data-sidebar-size="`${isSidebarOpen ? 'lg' : 'sm'}`"
   >
     <NavBar/>
