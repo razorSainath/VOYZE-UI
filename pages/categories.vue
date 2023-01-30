@@ -1,3 +1,8 @@
+<script setup>
+let pageTitle = useState('pageTitle')
+      pageTitle.value = "Category" 
+</script>
+
 <template>
 
 

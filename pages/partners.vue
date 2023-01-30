@@ -1,3 +1,10 @@
+<script setup>
+let pageTitle = useState('pageTitle')
+      pageTitle.value = "Partners" 
+</script>
+
+
+
 <template>
 
 

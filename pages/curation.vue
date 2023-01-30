@@ -1,3 +1,11 @@
+<script setup>
+let pageTitle = useState('pageTitle')
+      pageTitle.value = "Curation" 
+</script>
+
+
+
+
 <template>
   
   <div class="row mb-2">

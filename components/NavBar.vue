@@ -18,7 +18,8 @@ export default {
 
 <script setup>
 let isSidebarOpen = useState("isSidebarOpen")
-let pageTitle = useState("pageTitle")
+let pageTitle = useState("pageTitle", () => "");
+
 const just = ()=>{
   console.log("beforeClick" ,isSidebarOpen.value)
   isSidebarOpen.value = !isSidebarOpen.value

@@ -1,3 +1,10 @@
+<script setup>
+let pageTitle = useState('pageTitle')
+      pageTitle.value = "Posts" 
+</script>
+
+
+
 <template>
   <!--analytics cards start-->
   <div class="row py-2">
