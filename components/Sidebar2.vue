@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 const dashboard = ref(false);
 // const  = ref(true)
-let isSidebarOpen = useState("isSidebarOpen", () => true);
+let isSidebarOpen = useState("isSidebarOpen", () => false);
 const redirectTo = (page) => {
   //iam gonna put the variable in backround colour parameter & set the respective values as whight-black button is clicked
   //first implement for the 1 button
