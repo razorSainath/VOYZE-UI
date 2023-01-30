@@ -2,16 +2,18 @@
 
 import { ref } from "vue";
 let isSidebarOpen = useState("isSidebarOpen", () => false);
-let dashboard = ref(false);
-let workspace = ref(false);
-let leaders = ref(false);
-let analytics = ref(false);
-let posts = ref(false);
-let curation = ref(false);
-let category = ref(false);
-let users = ref(false);
-let roles = ref(false);
-let partners = ref(false);
+let dashboard = useState("dashboard", () => false);
+let workspace = useState("workspace", () => false);
+let leaders = useState("leaders", () => false);
+let analytics = useState("analytics", () => false);
+let posts = useState("posts", () => false);
+let curation = useState("curation", () => false);
+let category = useState("category", () => false);
+let users = useState("users", () => false);
+let roles = useState("roles", () => false);
+let partners = useState("partners", () => false);
+let pageTitle = useState("pageTitle", () => "");
+//set the pageTitle & as user click the particular page suitable page comes in
 
 const redirectTo = (page) => {
   //iam gonna put the variable in backround colour parameter & set the respective values as whight-black button is clicked
@@ -32,6 +34,8 @@ const redirectTo = (page) => {
       users.value = false;
       roles.value = false;
       partners.value = false;
+
+      pageTitle.value = "Dashboard"      
       break;
     case "workspace":
       navigateTo("/organizations/sasdf/workspaces");
@@ -48,6 +52,7 @@ const redirectTo = (page) => {
       roles.value = false;
       partners.value = false;
 
+      pageTitle.value = "Workspace"   
       break;
     case "leaders":
       navigateTo("/leaders");
@@ -63,6 +68,8 @@ const redirectTo = (page) => {
       users.value = false;
       roles.value = false;
       partners.value = false;
+
+      pageTitle.value = "Workspace Leaders"   
       break;
     case "analytics":
       navigateTo("/analytics");
@@ -78,6 +85,8 @@ const redirectTo = (page) => {
       users.value = false;
       roles.value = false;
       partners.value = false;
+
+      pageTitle.value = "Analytics"   
 
       break;
     case "posts":
@@ -95,6 +104,7 @@ const redirectTo = (page) => {
       roles.value = false;
       partners.value = false;
 
+      pageTitle.value = "Content Posts"   
       break;
     case "curation":
       navigateTo("/curation");
@@ -111,6 +121,7 @@ const redirectTo = (page) => {
       roles.value = false;
       partners.value = false;
 
+      pageTitle.value = "Content Curation"   
       break;
     case "category":
       navigateTo("/categories");
@@ -126,6 +137,8 @@ const redirectTo = (page) => {
       users.value = false;
       roles.value = false;
       partners.value = false;
+
+      pageTitle.value = "Category Management"   
 
       break;
     case "user-management":
@@ -143,6 +156,8 @@ const redirectTo = (page) => {
       roles.value = false;
       partners.value = false;
 
+      pageTitle.value = "Manage Users"   
+
       break;
     case "role-management":
       navigateTo("/roles");
@@ -159,6 +174,9 @@ const redirectTo = (page) => {
       users.value = false;
       roles.value = true;
       partners.value = false;
+
+      pageTitle.value = "Manage Roles"   
+
       break;
     case "partners-management":
       navigateTo("/partners");
@@ -175,6 +193,9 @@ const redirectTo = (page) => {
       users.value = false;
       roles.value = false;
       partners.value = true;
+
+      pageTitle.value = "Manage Partners"   
+
       break;
   }
 };

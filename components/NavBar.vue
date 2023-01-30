@@ -18,6 +18,7 @@ export default {
 
 <script setup>
 let isSidebarOpen = useState("isSidebarOpen")
+let pageTitle = useState("pageTitle")
 const just = ()=>{
   console.log("beforeClick" ,isSidebarOpen.value)
   isSidebarOpen.value = !isSidebarOpen.value
@@ -51,6 +52,12 @@ const just = ()=>{
               <i class="fa fa-fw fa-bars"></i>
             </button>
           </div>
+          <div
+        
+      >
+        <h4 class="page-title">{{ pageTitle }}</h4>
+
+      </div>
 
           <div class="d-flex">
                         <!-- organisation dropdown-->
@@ -257,6 +264,13 @@ const just = ()=>{
 </template>
 
 <style scoped>
+.page-title{
+  position:absolute;
+  display: flex;
+  top:22px;
+  font-family: "Gill Sans", sans-serif;
+  font-weight:600;
+}
 
 @media(max-width: 768px){
   .button-fixed{
@@ -264,12 +278,24 @@ position: fixed;
 left:100px;
 top: 24px;
 }
+
+.page-title{
+  left:140px;
+  width:20px
+}
 }
 
 @media(min-width: 769px){.button-fixed{
 position: relative;
 left:10px;
-}}
+
+}
+
+.page-title{
+  left:50px;
+}
+
+}
 
 .display-button{
   display: none;
