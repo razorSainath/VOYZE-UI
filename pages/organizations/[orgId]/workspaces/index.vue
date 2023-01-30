@@ -17,17 +17,7 @@ const toggleWorkspaceModal = ()=> {
 
 <template>
   <!-- as the suitable route is created, now you have to code the dynamic part of page -->
-  <!-- start page title -->
-  <div class="row">
-    <div class="col-12">
-      <div
-        class="page-title-box d-flex align-items-center justify-content-between"
-      >
-        <h4 class="mb-0">Workspace</h4>
-      </div>
-    </div>
-  </div>
-  <!-- end page title -->
+
     <div class="row">
                             <div class="col-md-3">
                                 <div class="form-inline mb-3">

@@ -22,11 +22,6 @@ export default {
   <!-- start page title -->
   <div class="row">
     <div class="col-12">
-      <div
-        class="page-title-box d-flex align-items-center justify-content-between"
-      >
-        <h4 class="mb-0">Workspace Leader</h4>
-      </div>
       <div class="row">
         <div class="col-md-4">
           <div class="page-title-left">
@@ -47,6 +42,17 @@ export default {
     </div>
   </div>
   <!-- end page title -->
+
+    <!-- <div class="row">
+    <div class="col-12">
+      <div
+        class="page-title-box d-flex align-items-center justify-content-between"
+      >
+        <h4 class="mb-0">Partners</h4>
+      </div>
+    </div>
+  </div> -->
+
 
   <div class="row py-2">
     <div class="col-xl-4 col-sm-6">
