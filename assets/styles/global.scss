@@ -213,6 +213,11 @@ section[data-sidebar-size="sm"] #page-topbar {
 section[data-sidebar-size="sm"] .navbar-header .vertical-menu-btn {
   display: block;
 }
+// @media(max-width: 768px){
+//   section[data-sidebar-size="sm"]{
+//     data-sidebar-size:"lg"
+//   }
+// }
 .navbar-header .vertical-menu-btn {
   display: none;
 }

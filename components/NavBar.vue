@@ -45,7 +45,7 @@ const just = ()=>{
             </div>
 
             <button
-              type="button" style="position: relative;left: 10px;" class=""
+              type="button"  class="button-fixed"
                @click="just"
             >
               <i class="fa fa-fw fa-bars"></i>
@@ -257,6 +257,20 @@ const just = ()=>{
 </template>
 
 <style scoped>
+
+@media(max-width: 768px){
+  .button-fixed{
+position: fixed;
+left:100px;
+top: 24px;
+}
+}
+
+@media(min-width: 769px){.button-fixed{
+position: relative;
+left:10px;
+}}
+
 .display-button{
   display: none;
 }
