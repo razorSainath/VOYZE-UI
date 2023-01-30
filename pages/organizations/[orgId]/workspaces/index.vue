@@ -17,7 +17,9 @@ const toggleWorkspaceModal = ()=> {
 
 <template>
   <!-- as the suitable route is created, now you have to code the dynamic part of page -->
-
+  <head>
+        <title>Workspace | Voyze</title>
+    </head>
     <div class="row">
                             <div class="col-md-3">
                                 <div class="form-inline mb-3">

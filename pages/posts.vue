@@ -1,4 +1,8 @@
 <template>
+
+<head>
+        <title>Posts | Voyze</title>
+    </head>
   <!--analytics cards start-->
   <div class="row py-2">
     <div class="col-md-6 col-xl-3">

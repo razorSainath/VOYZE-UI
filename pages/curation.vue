@@ -1,4 +1,7 @@
 <template>
+   <head>
+        <title>Curation | Voyze</title>
+    </head>
   <div class="row mb-2">
     <div class="col-md-3">
       <label for=""><b>Leader Topics:</b></label>

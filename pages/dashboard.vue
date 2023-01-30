@@ -25,7 +25,9 @@ const series = [
 </script>
 
 <template>
-
+ <head>
+        <title>Dashboard | Voyze</title>
+    </head>
 
   <div class="row">
     <div class="col-md-6 col-xl-3">
