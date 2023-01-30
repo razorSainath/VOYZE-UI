@@ -272,7 +272,7 @@ const just = ()=>{
   font-weight:600;
 }
 
-@media(max-width: 768px){
+@media(max-width: 960px){
   .button-fixed{
 position: fixed;
 left:100px;
@@ -281,11 +281,17 @@ top: 24px;
 
 .page-title{
   left:140px;
-  width:20px
+  font-size:19px ;
+}
+}
+@media(max-width: 420px){
+
+.page-title{
+display: none;
 }
 }
 
-@media(min-width: 769px){.button-fixed{
+@media(min-width: 960px){.button-fixed{
 position: relative;
 left:10px;
 
