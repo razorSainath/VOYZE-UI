@@ -1,19 +1,4 @@
 <template>
-  <!-- start page title -->
-  <div class="row">
-    <div class="col-12">
-      <div class="row">
-        <div class="col-md-9">
-          <div
-        class="page-title-box d-flex align-items-center justify-content-between"
-      >
-        <h4 class="mb-0">Content Curation</h4>
-      </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end page title -->
   <div class="row mb-2">
     <div class="col-md-3">
       <label for=""><b>Leader Topics:</b></label>
@@ -59,16 +44,17 @@
     </div>
     <div class="col-md-2">
       <label for="">&nbsp;</label>
-      <a class="btn btn-primary form-control" data-bs-toggle="collapse" href="#filters" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Filters
-  </a>
+      <input class="btn btn-primary form-control" data-bs-toggle="offcanvas" data-bs-target="#filters" aria-controls="offcanvasExample" value="Filters" type="button">
     </div>
   </div>
-
-<div class="collapse py-2" id="filters">
-  <div class="card card-body" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="filters" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
     <div class="row">
-            <div class="col-xl-4" >
+            <div class="col-xl-12" >
               <label for="" class="py-2"><b>Enter Location:</b></label>
           <select name="" id="" class="form-control">
             <option value="0"></option>
@@ -77,7 +63,7 @@
             <option value="3"></option>
           </select>
             </div>
-          <div class="col-xl-4">
+          <div class="col-xl-12">
               <label for="" class="py-2"><b>Categories:</b></label>
           <select name="" id="" class="form-control">
             <option value="0"></option>
@@ -86,7 +72,7 @@
             <option value="3"></option>
           </select>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-12">
               <label for="" class="py-2"><b>Sources:</b></label>
           <select name="" id="" class="form-control">
             <option value="0"></option>
@@ -95,7 +81,7 @@
             <option value="3"></option>
           </select>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-12">
               <label for="" class="py-2"><b>Authors:</b></label>
           <select name="" id="" class="form-control">
             <option value="0"></option>
@@ -104,20 +90,11 @@
             <option value="3"></option>
           </select>
             </div>
-            <div class="col-xl-4" >
+            <div class="col-xl-12" >
               <label for="" class="py-2"><b>Times Of Interest:</b></label>
-          <input type="date" name="" id="" class="form-control" />
+         <input type="datetime-local" name="" id="" class="form-control">
             </div>
         </div>
-  </div>
-</div>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="filter" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-
   </div>
 </div>
 

@@ -122,7 +122,7 @@ const isSidebarOpen = useState("isSidebarOpen",()=>true)
                                 </a>
                             </li>
                             <li class="menu-title">Content</li>
-                            <li>
+                            <li class="mm-active">
                                 <a  @click="redirectTo('posts')" class="waves-effect">
                                     <i class="fa-solid fa-envelopes-bulk"></i>
                                     <span>Posts</span>
