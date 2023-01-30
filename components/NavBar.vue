@@ -50,60 +50,16 @@ const just = ()=>{
             >
               <i class="fa fa-fw fa-bars"></i>
             </button>
+          </div>
 
-            <!-- organisation dropdown-->
-              <select name="" id="" class="form-control display" style="margin-left:15px;">
+          <div class="d-flex">
+                        <!-- organisation dropdown-->
+                        <select name="" id="" class="display border-none" style="margin-left:15px;">
                 <option value="0">Select Organisation</option>
                 <option value="1">Edelman</option>
                 <option value="2">Razorpod</option>
                 <option value="3">Infosys</option>
               </select>
-          </div>
-
-          <div class="d-flex">
-            <div class="dropdown d-inline-block d-lg-none ms-2">
-              <button
-                type="button"
-                class="btn header-item noti-icon waves-effect"
-                id="page-header-search-dropdown"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <i class="uil-search"></i>
-              </button>
-              <div
-                class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                aria-labelledby="page-header-search-dropdown"
-              >
-                <form class="p-3">
-                  <div class="m-0">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Search ..."
-                        aria-label="Recipient's username"
-                      />
-                      <div class="input-group-append">
-                        <button class="btn btn-primary" type="submit">
-                          <i class="mdi mdi-magnify"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="dropdown d-none d-lg-inline-block ms-1">
-              <button
-                type="button"
-                class="btn header-item noti-icon waves-effect"
-                data-bs-toggle="fullscreen"
-              >
-                <i class="fa-solid fa-expand"></i>
-              </button>
-            </div>
 
             <div class="dropdown d-inline-block">
               <button

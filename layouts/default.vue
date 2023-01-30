@@ -12,18 +12,16 @@ let isSidebarOpen = useState("isSidebarOpen")
     <NavBar/>
 
 <Sidebar2/>
-  
   <div class="main-content" >
   <div class="page-content" >
     <div class="container-fluid" >
-      
 <slot/>
 
     </div>
   </div>
 </div>
 
-  <Footer/> 
+  <Footer/>
   </section>
 
 </template>

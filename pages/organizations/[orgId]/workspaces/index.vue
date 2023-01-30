@@ -24,24 +24,16 @@ const toggleWorkspaceModal = ()=> {
         class="page-title-box d-flex align-items-center justify-content-between"
       >
         <h4 class="mb-0">Workspace</h4>
-
-        <div class="page-title-right">
-          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa-solid fa-filter"></i>
-  </a>
-        </div>
       </div>
     </div>
   </div>
   <!-- end page title -->
-  <div class="collapse" id="collapseExample">
-  <div class="card card-body" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
     <div class="row">
                             <div class="col-md-3">
                                 <div class="form-inline mb-3">
                                     <div class="search-box ms-2">
                                         <div class="position-relative"> 
-                                            <input type="text" class="form-control rounded border-0" placeholder="Search..." style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                                            <input type="text" class="form-control rounded border-0" placeholder="Search...">
                                             <i class="fa-solid fa-magnifying-glass search-icon"></i>
                                         </div>
                                     </div>
@@ -49,14 +41,12 @@ const toggleWorkspaceModal = ()=> {
                             </div>
                             <div class="col-md-3"></div>
                             <div class="col-md-6">
-                                <button type="button" class="btn btn-primary float-md-end" data-bs-toggle="modal" data-bs-target="#workspace" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                                <button type="button" class="btn btn-primary float-md-end" data-bs-toggle="modal" data-bs-target="#workspace">
                                     <span><i class="fa-solid fa-plus"></i>&nbsp;</span>Add New Workspace
                                   </button>
                             </div>
 
                         </div>
-  </div>
-</div>
  
   <!-- end row -->
 
