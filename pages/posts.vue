@@ -83,7 +83,6 @@
   <div class="row py-2">
     <div class="col-xl-3 py-1">
                   <div class="search-box">
-                    <label for="">Search</label>
                     <div class="position-relative">
                       <input type="text" class="form-control" placeholder="Search..." style="border: 1px solid #dcdcdc;">
                       <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -91,9 +90,8 @@
                   </div>
     </div>
     <div class="col-xl-3 py-1">
-      <label for="">Select Platform</label>
       <select name="" id="" class="form-control">
-        <!-- <option value="0">Select Platform</option> -->
+        <option value="0">Select Platform</option>
         <option value="1">LinkedIn</option>
         <option value="2">Twitter</option>
         <option value="3">Facebook</option>
@@ -101,14 +99,12 @@
       </select>
     </div>
     <div class="col-xl-3 py-1">
-      <label for="">Selct Date</label>
       <div>
         <input type="datetime-local" name="" id="" class="form-control" />
       </div>
     </div>
     <div class="col-xl-1"></div>
     <div class="col-xl-2">
-      <label for="">&nbsp;</label>
       <button type="button" class="btn btn-primary form-control small float-md-end" data-bs-toggle="offcanvas" data-bs-target="#newDraft" aria-controls="offcanvasExample">
         <i class="fa-solid fa-plus"></i> New Draft
       </button>
