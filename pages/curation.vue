@@ -25,7 +25,7 @@
         placeholder="Enter queries..."
       />
     </div>
-    <div class="col-md-2">
+    <div class="col-md-1">
       <label for=""><b>Results:</b></label>
       <select name="" id="" class="form-control">
         <option value="0">10</option>
@@ -42,7 +42,7 @@
         class="btn btn-primary form-control"
       />
     </div>
-    <div class="col-md-2">
+    <div class="col-md-3 filter">
       <label for="">&nbsp;</label>
       <input class="btn btn-primary form-control" data-bs-toggle="offcanvas" data-bs-target="#filters" aria-controls="offcanvasExample" value="Filters" type="button">
     </div>
@@ -99,7 +99,7 @@
 </div>
 
   <div class="row py-2">
-    <div class="col-xl-12">
+    <div class="col-xl-9">
       <div class="row">
         <div class="col-xl-4 d-flex align-items-stretch flex-wrap">
           <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
@@ -215,6 +215,42 @@
         </div>
       </div>
     </div>
+    <div class="col-xl-3 filter1">
+    <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+        <div class="card-body">
+<label for="" class="py-2"><b>Enter Location:</b></label>
+<select name="" id="" class="form-control">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+</select>
+<label for="" class="py-2"><b>Categories:</b></label>
+<select name="" id="" class="form-control">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+</select>
+<label for="" class="py-2"><b>Sources:</b></label>
+<select name="" id="" class="form-control">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+</select>
+<label for="" class="py-2"><b>Authors:</b></label>
+<select name="" id="" class="form-control">
+    <option value="0"></option>
+    <option value="1"></option>
+    <option value="2"></option>
+    <option value="3"></option>
+</select>
+<label for="" class="py-2"><b>Times Of Interest:</b></label>
+<input type="date" name="" id="" class="form-control">
+        </div>
+    </div>
+</div>
   </div>
   <!-- end row -->
 
@@ -268,6 +304,9 @@
   width: 100%;
   object-fit: cover;
 }
+.filter{
+  display: none;
+}
 .pagination{
   --bs-pagination-border-color:#dcdcdc !important;
 }
@@ -298,6 +337,12 @@
   .fa-2x{
     font-size:1.25rem !important;
   }
+  .filter{
+    display: grid;
+  }
+  .filter1{
+    display: none;
+  }
   .small{
     font-size: 12px !important;
   }
@@ -323,6 +368,12 @@
   }
   .fa-2x{
     font-size:.75rem !important;
+  }
+  .filter{
+    display: grid;
+  }
+  .filter1{
+    display: none;
   }
   small{
     font-size:8px !important;
