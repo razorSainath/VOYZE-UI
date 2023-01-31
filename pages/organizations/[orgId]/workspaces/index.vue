@@ -31,15 +31,13 @@ const toggleWorkspaceModal = ()=> {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3"></div>
                             <div class="col-md-6">
-                                <button type="button" class="btn btn-primary float-md-end" data-bs-toggle="modal" data-bs-target="#workspace">
-                                    <span><i class="fa-solid fa-plus"></i>&nbsp;</span>Add New Workspace
+                                <button type="button" class="btn btn-primary float-end mb-2" data-bs-toggle="modal" data-bs-target="#workspace">
+                                    <span><i class="fa-solid fa-plus"></i>&nbsp;</span><span class="display">Add New Workspace</span>
                                   </button>
                             </div>
 
                         </div>
- 
   <!-- end row -->
 
   <div class="row">
@@ -316,3 +314,14 @@ const toggleWorkspaceModal = ()=> {
     </div>
   </div>
 </template>
+
+<style scoped>
+.display{
+  display: contents;
+}
+@media(max-width: 400px){
+  .display{
+    display: none;
+  }
+}
+</style>
