@@ -390,9 +390,7 @@ export default {
   overflow: none;
 }
 @media only screen and (max-width: 820px) {
-  .display {
-    display: none;
-  }
+
   .display-win {
     display: grid;
   }
@@ -401,9 +399,7 @@ export default {
   }
 }
 @media only screen and (max-width: 400px) {
-  .display {
-    display: none;
-  }
+
   .display-win {
     display: grid;
   }
