@@ -15,7 +15,7 @@ const redirectToDashboard = ()=>{
 
 <template>
     <head>
-        <title>Login | Voyze</title>
+        <title>Sign in | Voyze</title>
     </head>
 
   <div class="card-body p-4" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
@@ -91,7 +91,8 @@ const redirectToDashboard = ()=>{
             <a
               @click="redirectToSignup"
               class="fw-medium"
-              style="color: #009dc2"
+              style="color: #009dc2; cursor: pointer; "
+              
             >
               Signup now
             </a>

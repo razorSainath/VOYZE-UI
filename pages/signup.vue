@@ -86,8 +86,8 @@ const redirectToSignup = ()=>{
         <div class="text-center">
           <p class="text-muted">
             Already have an account ?
-            <a @click="redirectToSignup" class="fw-medium" style="color: #009dc2">
-              Login</a
+            <a @click="redirectToSignup" class="fw-medium" style="color: #009dc2; cursor: pointer;">
+              Sign in</a
             >
           </p>
         </div>

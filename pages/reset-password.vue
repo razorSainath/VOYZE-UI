@@ -45,7 +45,7 @@ const redirectToSignin = ()=>{
         <div class="mt-4 text-center">
           <p class="mb-0">
             Remember It ?
-            <a @click="redirectToSignin" class="fw-medium" style="color: #009dc2">
+            <a @click="redirectToSignin" class="fw-medium" style="color: #009dc2; cursor: pointer;">
               Sign In
             </a>
           </p>
