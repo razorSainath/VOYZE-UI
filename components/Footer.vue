@@ -13,3 +13,11 @@
     </div>
   </footer>
 </template>
+
+<style scoped>
+@media (max-width:700px ) {
+  section[data-sidebar-size=sm] .footer {
+    left: 0px;
+}
+}
+</style>
