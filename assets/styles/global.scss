@@ -175,7 +175,7 @@
 #page-topbar {
   position: fixed;
   top: 0;
-  left:250px;
+  left:200px;
   right: 0;
   z-index: 1002;
   background-color: var(--bs-header-bg);
@@ -222,7 +222,7 @@ section[data-sidebar-size="sm"] .navbar-header .vertical-menu-btn {
 }
 .navbar-brand-box {
   padding: 0 1.5rem;
-  width: 250px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   background-color: var(--bs-sidebar-bg);
@@ -462,7 +462,7 @@ section[data-layout="horizontal"] .page-content {
   position: absolute;
   right: 0;
   color: var(--bs-footer-color);
-  left: 250px;
+  left: 200px;
   height: 60px;
   -webkit-box-shadow: 0 0 4px rgba(15, 34, 58, 0.12);
   box-shadow: 0 0 4px rgba(15, 34, 58, 0.12);
@@ -560,7 +560,7 @@ section[data-layout="horizontal"] .footer {
   transition-property: height, visibility;
 }
 .vertical-menu {
-  width: 250px;
+  width: 200px;
   background: var(--bs-sidebar-bg);
   bottom: 0;
   margin-top: 0;
@@ -586,7 +586,7 @@ section[data-layout="horizontal"] .footer {
   top: 0;
 }
 .main-content {
-  margin-left: 250px;
+  margin-left: 200px;
   overflow: hidden;
 }
 .main-content .content {
@@ -1456,12 +1456,12 @@ section[data-layout-size="boxed"] #layout-wrapper {
   box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
 }
 section[data-layout-size="boxed"] #page-topbar {
-  max-width: calc(1300px - 250px);
+  max-width: calc(1300px - 200px);
   margin: 0 auto;
 }
 section[data-layout-size="boxed"] .footer {
   margin: 0 auto;
-  max-width: calc(1300px - 250px);
+  max-width: calc(1300px - 200px);
 }
 section[data-layout-size="boxed"] section[data-sidebar-size="sm"] #page-topbar {
   max-width: calc(1300px - 70px);
@@ -3414,7 +3414,7 @@ span.flatpickr-weekday {
   margin-left: 7px;
 }
 .ck-editor__editable {
-  min-height: 250px !important;
+  min-height: 200px !important;
 }
 .ck.ck-reset_all,
 .ck.ck-reset_all * {
@@ -4556,7 +4556,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 }
 @media (max-width: 991.98px) {
   .chat-message-list {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 200px);
   }
 }
 .chat-conversation-message {
