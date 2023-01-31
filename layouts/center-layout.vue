@@ -13,7 +13,7 @@ import image from "@/assets/images/logo-light.svg"
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <a class="mb-5 d-block auth-logo">
+                        <a class="mt-2 mb-2 d-block auth-logo">
                             <img :src="image" height="30" class="logo logo-dark">
                         </a>
                     </div>
@@ -21,7 +21,7 @@ import image from "@/assets/images/logo-light.svg"
             </div>
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-8 col-lg-6 col-xl-5">
-                    <div class="card mb-0">
+                    <div class="card mb-0" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
 <slot/>
                     </div>
 

@@ -16,8 +16,8 @@ const redirectToSignup = ()=>{
       <h5 style="color: #009dc2">Register Account</h5>
       <p class="text-muted">Register yourself to get Voyze access</p>
     </div>
-    <div class="p-2 mt-4">
-      <form action="index.html">
+    <div class="mt-4">
+      <form action="">
         <div class="mb-3">
           <label class="form-label" for="useremail">Email</label>
           <input

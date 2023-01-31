@@ -45,7 +45,6 @@ let pageTitle = useState('pageTitle')
           <div class="modal fade" id="category" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-                          
                           <!-- Modal Header -->
                           <div class="modal-header">
                             <h4 class="modal-title">Add New Category</h4>
@@ -165,7 +164,7 @@ let pageTitle = useState('pageTitle')
                           <i class="fa-solid fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit">Edit</a>
+                          <a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#edit" aria-controls="offcanvasWithBothOptions">Edit</a>
                           <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete">Delete</a>
                         </div>
                       </li>
@@ -293,34 +292,30 @@ let pageTitle = useState('pageTitle')
             </table>
           </div>
           <!-- Edit Modal -->
-<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Category</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-xl-12">
-            <label for="">Category Name</label>
-        <input type="text" name="" id="" class="form-control">
-          </div>
-        </div>
-        <div class="row py-2">
-          <div class="col-xl-12">
-            <label for="">Category Description</label>
-        <textarea name="" id="" cols="10" rows="3" class="form-control"></textarea>
-          </div>
-        </div>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="edit" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
+  <div class="offcanvas-body">
+    <div class="row">
+      <div class="col-12">
+        <label for="">Category Name</label>
+        <input type="text" name="" id="" class="form-control">
+        </div>
+      </div>
+      <div class="row py-2">
+      <div class="col-12">
+        <label for="">Category Description</label>
+        <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+        </div>
+      </div>
+    <span class="py-2"><input type="checkbox" name="" id=""> Active</span>  
+
+  </div>
+  <div class="offcanvas-footer">
+    <button type="button" class="btn btn-primary " data-bs-dismiss="offcanvas">Submit</button>
+    </div>
 </div>
 
 <!-- Delete Modal -->
