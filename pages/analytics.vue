@@ -1,4 +1,6 @@
 <script setup>
+let pageTitle = useState('pageTitle')
+      pageTitle.value = "Analytics" 
 
 const chartOptions = {
   chart: {

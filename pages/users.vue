@@ -1,5 +1,7 @@
 <script setup>
 const isShow = useState("isShow");
+let pageTitle = useState('pageTitle')
+      pageTitle.value = "Users" 
 
 const just = () => {
   console.log("beforeClick", isShow.value);

@@ -16,6 +16,11 @@ export default {
 }
 </script>
 
+<script setup>
+let pageTitle = useState('pageTitle')
+      pageTitle.value = "Leaders" 
+</script>
+
 <style src="vue-multiselect/dist/vue-multiselect.css"></style>
 
 <template>

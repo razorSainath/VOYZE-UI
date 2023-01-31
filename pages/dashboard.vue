@@ -1,4 +1,10 @@
 <script setup>
+let pageTitle = useState('pageTitle')
+      pageTitle.value = "Dashboard" 
+// let dashboard = useState('dashboard')
+//       dashboard.value = true
+
+
 const chartOptions = {
   chart: {
     id: "vuechart-example",
@@ -42,8 +48,7 @@ const series = [
           </div>
           <p class="text-muted mt-3 mb-0">
             <span class="text-success me-1"
-              ><i class="mdi mdi-arrow-up-bold me-1"></i>2.65%</span
-            >
+              ><i class="mdi mdi-arrow-up-bold me-1"></i>2.65%</span>
             since last week
           </p>
         </div>
