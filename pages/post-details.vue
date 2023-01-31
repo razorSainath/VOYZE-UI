@@ -1,4 +1,7 @@
 <template>
+   <head>
+        <title>Post Details | Voyze</title>
+    </head>
   <div>
     <div class="right-bar">
       <div data-simplebar class="h-100">

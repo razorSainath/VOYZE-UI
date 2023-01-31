@@ -24,6 +24,10 @@ let pageTitle = useState('pageTitle')
 <style src="vue-multiselect/dist/vue-multiselect.css"></style>
 
 <template>
+
+<head>
+        <title>Leader | Voyze</title>
+    </head>
   <!-- start page title -->
   <div class="row">
     <div class="col-12">

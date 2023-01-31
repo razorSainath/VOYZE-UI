@@ -18,8 +18,9 @@ const redirectToDashboard = ()=>{
         <title>Login | Voyze</title>
     </head>
 
-
-  <div class="card-body p-4">
+<div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+  </div>
+  <div class="card-body p-4" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
     <div class="text-center mt-2">
       <h5 style="color: #009dc2">Welcome Back !</h5>
       <p class="text-muted">Sign in to continue to Voyze.</p>

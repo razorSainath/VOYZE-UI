@@ -6,7 +6,9 @@ let pageTitle = useState('pageTitle')
 
 
 <template>
-
+ <head>
+        <title>Partners | Voyze</title>
+    </head>
 
   <div class="row">
     <div class="col-lg-12">

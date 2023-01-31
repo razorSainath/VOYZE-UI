@@ -7,7 +7,9 @@ let pageTitle = useState('pageTitle')
 
 
 <template>
-
+ <head>
+        <title>Roles | Voyze</title>
+    </head>
   <div class="row">
     <div class="col-lg-12">
       <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
@@ -69,6 +71,246 @@ let pageTitle = useState('pageTitle')
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <th scope="row">
+                    <div class="form-check font-size-16">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="contacusercheck1"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="contacusercheck1"
+                      ></label>
+                    </div>
+                  </th>
+                  <td>1</td>
+                  <td>Client Admin</td>
+                  <td>N.A.</td>
+                  <td>Edelman</td>
+                  <td>
+                    <div class="badge bg-pill bg-soft-success font-size-12">
+                      Active
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>01-12-2022</td>
+                  <td>
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item dropdown">
+                        <a
+                          class="text-muted font-size-18 px-2"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                        >
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Change Timezone</a>
+                          <a class="dropdown-item" href="#">Update Profile</a>
+                          <a class="dropdown-item" href="#">Align Managers</a>
+                          <a class="dropdown-item" href="#">Remove Manager</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="form-check font-size-16">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="contacusercheck1"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="contacusercheck1"
+                      ></label>
+                    </div>
+                  </th>
+                  <td>1</td>
+                  <td>Client Admin</td>
+                  <td>N.A.</td>
+                  <td>Edelman</td>
+                  <td>
+                    <div class="badge bg-pill bg-soft-success font-size-12">
+                      Active
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>01-12-2022</td>
+                  <td>
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item dropdown">
+                        <a
+                          class="text-muted font-size-18 px-2"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                        >
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Change Timezone</a>
+                          <a class="dropdown-item" href="#">Update Profile</a>
+                          <a class="dropdown-item" href="#">Align Managers</a>
+                          <a class="dropdown-item" href="#">Remove Manager</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="form-check font-size-16">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="contacusercheck1"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="contacusercheck1"
+                      ></label>
+                    </div>
+                  </th>
+                  <td>1</td>
+                  <td>Client Admin</td>
+                  <td>N.A.</td>
+                  <td>Edelman</td>
+                  <td>
+                    <div class="badge bg-pill bg-soft-success font-size-12">
+                      Active
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>01-12-2022</td>
+                  <td>
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item dropdown">
+                        <a
+                          class="text-muted font-size-18 px-2"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                        >
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Change Timezone</a>
+                          <a class="dropdown-item" href="#">Update Profile</a>
+                          <a class="dropdown-item" href="#">Align Managers</a>
+                          <a class="dropdown-item" href="#">Remove Manager</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="form-check font-size-16">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="contacusercheck1"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="contacusercheck1"
+                      ></label>
+                    </div>
+                  </th>
+                  <td>1</td>
+                  <td>Client Admin</td>
+                  <td>N.A.</td>
+                  <td>Edelman</td>
+                  <td>
+                    <div class="badge bg-pill bg-soft-success font-size-12">
+                      Active
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>01-12-2022</td>
+                  <td>
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item dropdown">
+                        <a
+                          class="text-muted font-size-18 px-2"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                        >
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Change Timezone</a>
+                          <a class="dropdown-item" href="#">Update Profile</a>
+                          <a class="dropdown-item" href="#">Align Managers</a>
+                          <a class="dropdown-item" href="#">Remove Manager</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="form-check font-size-16">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="contacusercheck1"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="contacusercheck1"
+                      ></label>
+                    </div>
+                  </th>
+                  <td>1</td>
+                  <td>Client Admin</td>
+                  <td>N.A.</td>
+                  <td>Edelman</td>
+                  <td>
+                    <div class="badge bg-pill bg-soft-success font-size-12">
+                      Active
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>01-12-2022</td>
+                  <td>
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item dropdown">
+                        <a
+                          class="text-muted font-size-18 px-2"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                        >
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#">Change Timezone</a>
+                          <a class="dropdown-item" href="#">Update Profile</a>
+                          <a class="dropdown-item" href="#">Align Managers</a>
+                          <a class="dropdown-item" href="#">Remove Manager</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
                 <tr>
                   <th scope="row">
                     <div class="form-check font-size-16">

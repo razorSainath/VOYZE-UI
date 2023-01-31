@@ -5,7 +5,9 @@ let pageTitle = useState('pageTitle')
 
 <template>
 
-
+<head>
+        <title>Category | Voyze</title>
+    </head>
   <div class="row">
     <div class="col-lg-12">
       <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
@@ -54,8 +56,8 @@ let pageTitle = useState('pageTitle')
                           <div class="modal-body">
                            <!-- Nav tabs -->
 
-                    <ul class="nav nav-underline" id="myTab" role="tablist">
-  <li class="nav-item"><a class="nav-link active" id="existing-tab" data-bs-toggle="tab" href="#tab-existing" role="tab" aria-controls="tab-existing" aria-selected="true">Selecting from existing</a></li>
+                           <ul class="nav nav-pills" id="myTab" role="tablist">
+  <li class="nav-item"><a class="nav-link active" id="existing-tab" data-bs-toggle="tab" href="#tab-existing" role="tab" aria-controls="tab-existing" aria-selected="true">Select From Existing</a></li>
   <li class="nav-item"><a class="nav-link" id="new-tab" data-bs-toggle="tab" href="#tab-new" role="tab" aria-controls="tab-new" aria-selected="false">Add New</a></li>
 </ul>
 <div class="tab-content mt-3" id="myTabContent">
@@ -163,8 +165,8 @@ let pageTitle = useState('pageTitle')
                           <i class="fa-solid fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#">Edit</a>
-                          <a class="dropdown-item" href="#">Delete</a>
+                          <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit">Edit</a>
+                          <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete">Delete</a>
                         </div>
                       </li>
                     </ul>
@@ -290,6 +292,55 @@ let pageTitle = useState('pageTitle')
               </tbody>
             </table>
           </div>
+          <!-- Edit Modal -->
+<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Category</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xl-12">
+            <label for="">Category Name</label>
+        <input type="text" name="" id="" class="form-control">
+          </div>
+        </div>
+        <div class="row py-2">
+          <div class="col-xl-12">
+            <label for="">Category Description</label>
+        <textarea name="" id="" cols="10" rows="3" class="form-control"></textarea>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Delete Modal -->
+<div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Category</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you want to delete this category?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
           <div class="row mt-4">
             <div class="col-sm-6">
               <div>
@@ -327,5 +378,4 @@ let pageTitle = useState('pageTitle')
     </div>
   </div>
 </template>
-
 

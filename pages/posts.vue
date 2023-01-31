@@ -6,6 +6,10 @@ let pageTitle = useState('pageTitle')
 
 
 <template>
+
+<head>
+        <title>Posts | Voyze</title>
+    </head>
   <!--analytics cards start-->
   <div class="row py-2">
     <div class="col-md-6 col-xl-3">
@@ -86,7 +90,38 @@ let pageTitle = useState('pageTitle')
   </div>
   <!--analtics cards end-->
   <!-- end page title -->
-  
+  <!--filter start-->
+  <div class="row py-2">
+    <div class="col-xl-3 py-1">
+                  <div class="search-box">
+                    <div class="position-relative">
+                      <input type="text" class="form-control" placeholder="Search..." style="border: 1px solid #dcdcdc;">
+                      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+                  </div>
+    </div>
+    <div class="col-xl-3 py-1">
+      <select name="" id="" class="form-control">
+        <option value="0">Select Platform</option>
+        <option value="1">LinkedIn</option>
+        <option value="2">Twitter</option>
+        <option value="3">Facebook</option>
+        <option value="4">Instagram</option>
+      </select>
+    </div>
+    <div class="col-xl-3 py-1">
+      <div>
+        <input type="datetime-local" name="" id="" class="form-control" />
+      </div>
+    </div>
+    <div class="col-xl-1"></div>
+    <div class="col-xl-2">
+      <button type="button" class="btn btn-primary form-control small float-md-end" data-bs-toggle="offcanvas" data-bs-target="#newDraft" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-plus"></i> New Draft
+      </button>
+    </div>
+  </div>
+  <!--filter end-->
 
   <!-- The newDraft offcanvas  -->
 
@@ -180,7 +215,7 @@ let pageTitle = useState('pageTitle')
   </div>
 </div>
 <div class="row">
-  <div class="col-xl-6">
+  <div class="col-xl-12">
     <ul class="nav nav-pills" id="myTab" role="tablist">
   <li class="nav-item"><a class="nav-link active" id="draft-tab" data-bs-toggle="tab" href="#tab-draft" role="tab" aria-controls="tab-draft" aria-selected="true">Drafts</a></li>
   <li class="nav-item"><a class="nav-link" id="review-tab" data-bs-toggle="tab" href="#tab-review" role="tab" aria-controls="tab-review" aria-selected="false">Profile</a></li>
@@ -190,39 +225,6 @@ let pageTitle = useState('pageTitle')
   <li class="nav-item"><a class="nav-link" id="published-tab" data-bs-toggle="tab" href="#tab-published" role="tab" aria-controls="tab-published" aria-selected="false">Published</a></li>
   <li class="nav-item"><a class="nav-link" id="expired-tab" data-bs-toggle="tab" href="#tab-expired" role="tab" aria-controls="tab-expired" aria-selected="false">Expired</a></li>
 </ul>
-  </div>
-  <div class="col-xl-6">
-       <!--filter start-->
-  <div class="row py-2">
-    <div class="col-xl-3 py-1">
-                  <div class="search-box">
-                    <div class="position-relative">
-                      <input type="text" class="form-control" placeholder="Search..." style="border: 1px solid #dcdcdc;">
-                      <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    </div>
-                  </div>
-    </div>
-    <div class="col-xl-3 py-1">
-      <select name="" id="" class="form-control">
-        <option value="0">Select Platform</option>
-        <option value="1">LinkedIn</option>
-        <option value="2">Twitter</option>
-        <option value="3">Facebook</option>
-        <option value="4">Instagram</option>
-      </select>
-    </div>
-    <div class="col-xl-3 py-1">
-      <div>
-        <input type="datetime-local" name="" id="" class="form-control" />
-      </div>
-    </div>
-    <div class="col-xl-3">
-      <button type="button" class="btn btn-primary form-control small float-md-end" data-bs-toggle="offcanvas" data-bs-target="#newDraft" aria-controls="offcanvasExample">
-        <i class="fa-solid fa-plus"></i> New Draft
-      </button>
-    </div>
-  </div>
-  <!--filter end-->
   </div>
 </div>
   <div class="row">
@@ -258,14 +260,15 @@ let pageTitle = useState('pageTitle')
                                   </div>
                                 </div>
                                 <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
-                                  <div class="d-flex row">
-                                    <div class="col-xl-4"><div>
-                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"></span>
-                                    </div></div>
-                                    <div class="col-xl-4"><div>
+                                  <div class="d-flex">
+                                    <div>
+                                      <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
+                                        class="badge badge-danger rounded-pill">4</span>
+                                    </div>
+                                    <div>
                                       <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
-                                    </div></div>
-                                    <div class="col-xl-4"><div class="btn-group" style="position: relative; top: -7px">
+                                    </div>
+                                    <div class="btn-group" style="position: relative; top: -7px">
                                       <button type="button" class="btn dropdown-toggle-split"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
@@ -275,10 +278,10 @@ let pageTitle = useState('pageTitle')
                                           <a class="dropdown-item" href="#">Move to review</a>
                                         </li>
                                         <li>
-                                          <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
+                                                                                    <a class="dropdown-item" href="#" @click="navigateTo('/post-details')">Post Details</a>
                                         </li>
                                       </ul>
-                                    </div></div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
