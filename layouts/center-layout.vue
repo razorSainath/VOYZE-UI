@@ -7,13 +7,13 @@ import image from "@/assets/images/logo-light.svg"
     
 
 
-<body class="authentication-bg">
+<section class="authentication-bg">
     <div class="account-pages pt-sm-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <a href="index.html" class="mb-5 d-block auth-logo">
+                        <a class="mb-5 d-block auth-logo">
                             <img :src="image" height="30" class="logo logo-dark">
                         </a>
                     </div>
@@ -40,7 +40,7 @@ import image from "@/assets/images/logo-light.svg"
 
 
 
-</body>
+</section>
 
 
 

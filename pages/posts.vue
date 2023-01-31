@@ -238,7 +238,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                <div class="col-sm-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -259,7 +259,7 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
+                                <div class="col-sm-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span

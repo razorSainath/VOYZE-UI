@@ -10,7 +10,9 @@ const random = ()=>{
     :class="`${!isSidebarOpen ? '' : 'sidebar-enable'}`"
     :data-sidebar-size="`${isSidebarOpen ? 'lg' : 'sm'}`"
   >
-    <NavBar />
+  <div id="layout-wrapper">
+    <NavBar/>
+
 
     <Sidebar />
     <div class="main-content" @click="random">
@@ -19,8 +21,11 @@ const random = ()=>{
           <slot />
         </div>
       </div>
-    </div>
+   
 
-    <Footer />
+
+  <Footer/>
+  </div>
+</div>
   </section>
 </template>

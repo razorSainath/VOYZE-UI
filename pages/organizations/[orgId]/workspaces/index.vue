@@ -21,7 +21,7 @@ const toggleWorkspaceModal = ()=> {
         <title>Workspace | Voyze</title>
     </head>
     <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-6">
                                 <div class="form-inline mb-3">
                                     <div class="search-box ms-2">
                                         <div class="position-relative"> 
@@ -31,15 +31,13 @@ const toggleWorkspaceModal = ()=> {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6">
-                                <button type="button" class="btn btn-primary float-md-end" data-bs-toggle="modal" data-bs-target="#workspace">
-                                    <span><i class="fa-solid fa-plus"></i>&nbsp;</span>Add New Workspace
+                            <div class="col-6">
+                                <button type="button" class="btn btn-primary float-end mb-2" data-bs-toggle="modal" data-bs-target="#workspace">
+                                    <span><i class="fa-solid fa-plus"></i>&nbsp;</span><span class="display">Add New Workspace</span>
                                   </button>
                             </div>
 
                         </div>
- 
   <!-- end row -->
 
   <div class="row">
@@ -307,12 +305,21 @@ const toggleWorkspaceModal = ()=> {
           />
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.display{
+  display: contents;
+}
+@media(max-width: 400px){
+  .display{
+    display: none;
+  }
+}
+</style>

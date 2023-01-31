@@ -226,7 +226,7 @@ let pageTitle = useState('pageTitle')
         </div>
       </div>
     </div>
-    <div class="col-xl-3 filter1">
+    <div class="col-xl-3 filter1 align-items-stretch flex-wrap">
     <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="card-body">
 <label for="" class="py-2"><b>Enter Location:</b></label>
@@ -257,6 +257,10 @@ let pageTitle = useState('pageTitle')
     <option value="2"></option>
     <option value="3"></option>
 </select>
+<label for="" class="py-2"><b>Times Of Interest:</b></label>
+<input type="date" name="" id="" class="form-control">
+<label for="" class="py-2"><b>Times Of Interest:</b></label>
+<input type="date" name="" id="" class="form-control">
 <label for="" class="py-2"><b>Times Of Interest:</b></label>
 <input type="date" name="" id="" class="form-control">
         </div>
