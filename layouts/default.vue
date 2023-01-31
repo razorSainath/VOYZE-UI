@@ -1,31 +1,26 @@
 <script setup>
-let isSidebarOpen = useState("isSidebarOpen")
+let isSidebarOpen = useState("isSidebarOpen");
+const random = ()=>{
+  isSidebarOpen.value = false
+}
 </script>
 
-
 <template>
-
   <section
-  :class="`${!isSidebarOpen ? '' : 'sidebar-enable'}`"
-  :data-sidebar-size="`${isSidebarOpen ? 'lg' : 'sm'}`"
+    :class="`${!isSidebarOpen ? '' : 'sidebar-enable'}`"
+    :data-sidebar-size="`${isSidebarOpen ? 'lg' : 'sm'}`"
   >
-    <NavBar/>
+    <NavBar />
 
-<Sidebar2/>
-  <div class="main-content" >
-  <div class="page-content" >
-    <div class="container-fluid" >
-<slot/>
-
+    <Sidebar />
+    <div class="main-content" @click="random">
+      <div class="page-content">
+        <div class="container-fluid">
+          <slot />
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-  <Footer/>
+    <Footer />
   </section>
-
 </template>
-
-
-
-

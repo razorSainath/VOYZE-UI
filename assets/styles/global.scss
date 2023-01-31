@@ -717,11 +717,11 @@ section[data-layout="horizontal"] .footer {
     display: block;
   }
 }
-@media (min-width: 700px) {
-  section[data-sidebar-size="sm"] {
-    min-height: 1450px;
-  }
-}
+// @media (min-width: 700px) {
+//   section[data-sidebar-size="sm"] {
+//     min-height: 1450px;
+//   }
+// }
 section[data-sidebar-size="sm"] .main-content {
   margin-left: 70px;
 }
