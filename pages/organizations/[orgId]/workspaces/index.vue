@@ -1,5 +1,6 @@
 <script setup>
-
+let pageTitle = useState('pageTitle')
+      pageTitle.value = "Workspace" 
 const state = reactive({
   isWorspaceModelOpen: false,
 });

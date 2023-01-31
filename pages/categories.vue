@@ -292,9 +292,9 @@ let pageTitle = useState('pageTitle')
             </table>
           </div>
           <!-- Edit Modal -->
-          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="edit" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="edit" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Edit Category</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -314,13 +314,13 @@ let pageTitle = useState('pageTitle')
 
   </div>
   <div class="offcanvas-footer">
-    <button type="button" class="btn btn-primary " data-bs-dismiss="offcanvas">Submit</button>
+    <button type="button" class="btn btn-primary mb-2 mr-2 float-end" data-bs-dismiss="offcanvas">Submit</button>
     </div>
 </div>
 
 <!-- Delete Modal -->
 <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Category</h1>
