@@ -56,7 +56,7 @@ const just = ()=>{
           <div
         
       >
-        <h9 class="page-title">{{ pageTitle }}</h9>
+        <h6 class="page-title">{{ pageTitle }}</h6>
 
       </div>
 
