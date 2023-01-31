@@ -11,7 +11,7 @@ const redirectToSignup = ()=>{
   <head>
     <title>Register | Voyze</title>
   </head>
-  <div class="card-body p-4">
+  <div class="card-body">
     <div class="text-center mt-2">
       <h5 style="color: #009dc2">Register Account</h5>
       <p class="text-muted">Register yourself to get Voyze access</p>
@@ -83,8 +83,8 @@ const redirectToSignup = ()=>{
           </button>
         </div>
 
-        <div class="mt-4 text-center">
-          <p class="text-muted mb-0">
+        <div class="text-center">
+          <p class="text-muted">
             Already have an account ?
             <a @click="redirectToSignup" class="fw-medium" style="color: #009dc2">
               Login</a
