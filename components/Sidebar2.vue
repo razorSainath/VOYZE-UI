@@ -25,16 +25,16 @@ const redirectTo = (page) => {
       navigateTo("/dashboard");
       isSidebarOpen.value = false;
 
-      // dashboard.value = true;
-      // workspace.value = false;
-      // leaders.value = false;
-      // analytics.value = false;
-      // posts.value = false;
-      // curation.value = false;
-      // category.value = false;
-      // users.value = false;
-      // roles.value = false;
-      // partners.value = false;
+      dashboard.value = true;
+      workspace.value = false;
+      leaders.value = false;
+      analytics.value = false;
+      posts.value = false;
+      curation.value = false;
+      category.value = false;
+      users.value = false;
+      roles.value = false;
+      partners.value = false;
 
    
       break;
