@@ -6,6 +6,9 @@ target: "static",
 router:{
 base:'/VOYZE-UI/'
 },
+experimental: {
+  payloadExtraction: false
+},
 
   app: {
     head: {
