@@ -1,4 +1,5 @@
 <script setup>
+
 let isSidebarOpen = useState("isSidebarOpen");
 const random = ()=>{
   isSidebarOpen.value = false

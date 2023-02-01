@@ -1,9 +1,33 @@
 <script setup>
-let pageTitle = useState('pageTitle')
-      pageTitle.value = "Dashboard" 
-// let dashboard = useState('dashboard')
-//       dashboard.value = true
 
+
+
+let pageTitle = useState("pageTitle");
+
+pageTitle.value = "Dashboard";
+
+const {
+  dashboard,
+  workspace,
+  leaders,
+  analytics,
+  posts,
+  curation,
+  category,
+  users,
+  roles,
+  partners,
+} = useActiveSidebar()
+dashboard.value = true;
+workspace.value = false;
+leaders.value = false;
+analytics.value = false;
+posts.value = false;
+curation.value = false;
+category.value = false;
+users.value = false;
+roles.value = false;
+partners.value = false;
 
 const chartOptions = {
   chart: {
@@ -26,18 +50,23 @@ const series = [
     data: [30, 40, 35, 50, 49, 60, 70, 91],
   },
 ];
-
-
 </script>
 
 <template>
- <head>
-        <title>Dashboard | Voyze</title>
-    </head>
+  <head>
+    <title>Dashboard | Voyze</title>
+  </head>
 
   <div class="row">
     <div class="col-md-6 col-xl-3">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <div
+        class="card"
+        style="
+          border: 1px solid #f3f8fb;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        "
+      >
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="total-revenue-chart" data-colors='["--bs-primary"]'></div>
@@ -48,7 +77,8 @@ const series = [
           </div>
           <p class="text-muted mt-3 mb-0">
             <span class="text-success me-1"
-              ><i class="mdi mdi-arrow-up-bold me-1"></i>2.65%</span>
+              ><i class="mdi mdi-arrow-up-bold me-1"></i>2.65%</span
+            >
             since last week
           </p>
         </div>
@@ -57,7 +87,14 @@ const series = [
     <!-- end col-->
 
     <div class="col-md-6 col-xl-3">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <div
+        class="card"
+        style="
+          border: 1px solid #f3f8fb;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        "
+      >
         <div class="card-body">
           <div class="float-end mt-2"></div>
           <div>
@@ -76,7 +113,14 @@ const series = [
     <!-- end col-->
 
     <div class="col-md-6 col-xl-3">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <div
+        class="card"
+        style="
+          border: 1px solid #f3f8fb;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        "
+      >
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="customers-chart" data-colors='["--bs-primary"]'></div>
@@ -97,7 +141,14 @@ const series = [
     <!-- end col-->
 
     <div class="col-md-6 col-xl-3">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <div
+        class="card"
+        style="
+          border: 1px solid #f3f8fb;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        "
+      >
         <div class="card-body">
           <div class="float-end mt-2">
             <div id="growth-chart" data-colors='["--bs-warning"]'></div>
@@ -123,7 +174,14 @@ const series = [
 
   <div class="row">
     <div class="col-xl-8">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <div
+        class="card"
+        style="
+          border: 1px solid #f3f8fb;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        "
+      >
         <div class="card-body">
           <div class="float-end">
             <div class="dropdown">
@@ -202,7 +260,14 @@ const series = [
     <!-- end col-->
 
     <div class="col-xl-4">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <div
+        class="card"
+        style="
+          border: 1px solid #f3f8fb;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        "
+      >
         <div class="card-body">
           <div class="float-end">
             <div class="dropdown">
@@ -514,7 +579,14 @@ const series = [
 
   <div class="row">
     <div class="col-xl-4">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <div
+        class="card"
+        style="
+          border: 1px solid #f3f8fb;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        "
+      >
         <div class="card-body">
           <h4 class="card-title mb-4">Top Users</h4>
 
@@ -725,7 +797,14 @@ const series = [
     <!-- end col -->
 
     <div class="col-xl-4">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <div
+        class="card"
+        style="
+          border: 1px solid #f3f8fb;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        "
+      >
         <div class="card-body">
           <div class="float-end">
             <div class="dropdown">
@@ -822,7 +901,14 @@ const series = [
     </div>
 
     <div class="col-xl-4">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <div
+        class="card"
+        style="
+          border: 1px solid #f3f8fb;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        "
+      >
         <div class="card-body">
           <div class="float-end">
             <div class="dropdown">

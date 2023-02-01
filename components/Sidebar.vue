@@ -1,18 +1,21 @@
 <script setup>
-
 import { ref } from "vue";
+
 let isSidebarOpen = useState("isSidebarOpen", () => false);
 
-let dashboard = useState("dashboard", () => false);
-let workspace = useState("workspace", () => false);
-let leaders = useState("leaders", () => false);
-let analytics = useState("analytics", () => false);
-let posts = useState("posts", () => false);
-let curation = useState("curation", () => false);
-let category = useState("category", () => false);
-let users = useState("users", () => false);
-let roles = useState("roles", () => false);
-let partners = useState("partners", () => false);
+
+const {
+  dashboard,
+  workspace,
+  leaders,
+  analytics,
+  posts,
+  curation,
+  category,
+  users,
+  roles,
+  partners,
+} = useActiveSidebar()
 
 //set the pageTitle & as user click the particular page suitable page comes in
 
@@ -36,7 +39,6 @@ const redirectTo = (page) => {
       roles.value = false;
       partners.value = false;
 
-   
       break;
     case "workspace":
       navigateTo("/organizations/sasdf/workspaces");
@@ -69,7 +71,6 @@ const redirectTo = (page) => {
       roles.value = false;
       partners.value = false;
 
-
       break;
     case "analytics":
       navigateTo("/analytics");
@@ -85,8 +86,6 @@ const redirectTo = (page) => {
       users.value = false;
       roles.value = false;
       partners.value = false;
-
-
 
       break;
     case "posts":
@@ -120,7 +119,6 @@ const redirectTo = (page) => {
       roles.value = false;
       partners.value = false;
 
-
       break;
     case "category":
       navigateTo("/categories");
@@ -136,7 +134,6 @@ const redirectTo = (page) => {
       users.value = false;
       roles.value = false;
       partners.value = false;
-
 
       break;
     case "user-management":
@@ -154,12 +151,10 @@ const redirectTo = (page) => {
       roles.value = false;
       partners.value = false;
 
-
       break;
     case "role-management":
       navigateTo("/roles");
       isSidebarOpen.value = false;
-
 
       dashboard.value = false;
       workspace.value = false;
@@ -172,12 +167,10 @@ const redirectTo = (page) => {
       roles.value = true;
       partners.value = false;
 
-
       break;
     case "partners-management":
       navigateTo("/partners");
       isSidebarOpen.value = false;
-
 
       dashboard.value = false;
       workspace.value = false;
@@ -189,7 +182,6 @@ const redirectTo = (page) => {
       users.value = false;
       roles.value = false;
       partners.value = true;
-
 
       break;
   }
