@@ -137,15 +137,14 @@ let pageTitle = useState('pageTitle')
                     </div>
                     <div class="card-footer">
                       <div class="row">
-                        <div class="col-md-6"><b>Create Draft:</b></div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" style=""><b>Create Draft:</b></div>
+                        <div class="col-md-6" style="top:2px;">
                           <div class="btn-group float-md-end" role="group">
                     <span class=" text-truncate" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
                     <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
                 </div>
                         </div>
                       </div>
-                      
                     </div>
             </div>
         </div>
@@ -174,15 +173,14 @@ let pageTitle = useState('pageTitle')
                     </div>
                     <div class="card-footer">
                       <div class="row">
-                        <div class="col-md-6"><b>Create Draft:</b></div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" style=""><b>Create Draft:</b></div>
+                        <div class="col-md-6" style="top:2px;">
                           <div class="btn-group float-md-end" role="group">
-                    <span class=" text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></span>
-                    <span class=" text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></span>
+                    <span class=" text-truncate" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
+                    <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
                 </div>
                         </div>
                       </div>
-                      
                     </div>
             </div>
         </div>
@@ -212,15 +210,14 @@ let pageTitle = useState('pageTitle')
 
                     <div class="card-footer">
                       <div class="row">
-                        <div class="col-md-6"><b>Create Draft:</b></div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" style=""><b>Create Draft:</b></div>
+                        <div class="col-md-6" style="top:2px;">
                           <div class="btn-group float-md-end" role="group">
-                    <span class=" text-truncate" title="LinkedIn "><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></span>
-                    <span class=" text-truncate" title="Twitter"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></span>
+                    <span class=" text-truncate" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
+                    <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
                 </div>
                         </div>
                       </div>
-                      
                     </div>
             </div>
         </div>
