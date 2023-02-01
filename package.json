@@ -5,7 +5,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy":"push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "node-sass": "^8.0.0",
@@ -24,6 +25,7 @@
     "bootstrap-vue": "^2.23.1",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
+    "push-dir": "^0.4.1",
     "sass": "^1.57.1",
     "vue": "^3.2.45",
     "vue-multiselect": "^3.0.0-alpha.2",
