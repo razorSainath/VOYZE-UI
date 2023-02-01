@@ -339,7 +339,7 @@ let pageTitle = useState('pageTitle')
                                     text-align: center;
                                   ">
                                   <div style="display: flex">
-                                    <i class="fa-brands fa-linkedin text-primary fa-3x"></i>
+                                    <i class="fa-brands fa-twitter-square text-primary fa-3x"></i>
                                     <div style="
                                         display: flex;
                                         flex-direction: column;
