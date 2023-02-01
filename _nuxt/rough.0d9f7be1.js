@@ -1,0 +1,1 @@
+import{c as t,o,F as s,b as e}from"./entry.cbeb110a.js";const a=e("h1",null,"About",-1),n=e("p",null,"This is the about page",-1),u={__name:"rough",setup(c){return(r,_)=>(o(),t(s,null,[a,n],64))}};export{u as default};

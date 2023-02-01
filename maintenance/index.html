@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html >
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/79955d71bb.js" crossorigin="anonymous"></script>
+<style type="text/css" id="vuetify-theme-stylesheet">.v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 98,0,238;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 55,0,179;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 3,218,198;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 0,0,0;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-variant: 189,189,189;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 66,66,66;
+      --v-theme-primary: 187,134,252;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 55,0,179;
+      --v-theme-primary-darken-1-overlay-multiplier: 1;
+      --v-theme-secondary: 3,218,197;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 3,218,197;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 0,0,0;
+      --v-theme-on-secondary-darken-1: 0,0,0;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+</style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="modulepreload" href="/maintenance/_payload.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/entry.cbeb110a.js"><link rel="preload" as="style" href="/_nuxt/entry.660fe2c1.css"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/default.cb033c6b.js"><link rel="preload" as="style" href="/_nuxt/default.62b3550a.css"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/logo-light.80867dfe.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/avatar-2.c05a98a6.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/vue-multiselect.esm.253bdb11.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/_plugin-vue_export-helper.a1a6add7.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/maintenance.e1236596.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/center-layout.23f9eed1.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/error-component.cb104f04.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/404-error.ef12e46a.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/500-error.a69dbef3.js"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/logo-light.417ac44a.svg"><link rel="prefetch" as="image" type="image/jpeg" href="/_nuxt/avatar-2.8d5771fe.jpg"><link rel="prefetch" as="image" type="image/png" href="/_nuxt/maintenance.99770be1.png"><link rel="stylesheet" href="/_nuxt/entry.660fe2c1.css"><link rel="stylesheet" href="/_nuxt/default.62b3550a.css"><style>.page-title[data-v-2141508d]{display:flex;font-family:Gill Sans,sans-serif;font-weight:600;position:absolute;top:22px}.display1[data-v-2141508d]{display:none!important}@media(max-width:960px){.button-fixed[data-v-2141508d]{left:100px;position:fixed;top:24px}.page-title[data-v-2141508d]{font-size:19px;left:140px}.display1[data-v-2141508d]{display:contents}}@media(max-width:420px){.page-title[data-v-2141508d]{display:none}.display1[data-v-2141508d]{display:contents}}@media(min-width:960px){.button-fixed[data-v-2141508d]{left:10px;position:relative}.display1[data-v-2141508d]{display:contents}.page-title[data-v-2141508d]{left:50px}}.display-button[data-v-2141508d]{display:none}@media only screen and (max-width:820px){.display[data-v-2141508d]{display:content}.display-win[data-v-2141508d]{display:grid}.display-button[data-v-2141508d]{display:flex;top:28px}}</style><style>@media (max-width:700px){section[data-sidebar-size=sm] .footer[data-v-5dd71aa3]{left:0}}</style></head>
+<body ><div id="__nuxt"><!--[--><section class="" data-sidebar-size="sm"><div id="layout-wrapper"><header id="page-topbar" data-v-2141508d><div class="navbar-header" data-v-2141508d><div class="d-flex" data-v-2141508d><div class="navbar-brand-box" data-v-2141508d><a class="logo logo-dark" data-v-2141508d><span class="logo-sm" data-v-2141508d><img src="data:image/png;base64,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" alt="" height="22" data-v-2141508d></span><span class="logo-lg" data-v-2141508d><img src="/_nuxt/logo-light.417ac44a.svg" alt="" height="20" data-v-2141508d></span></a></div><button type="button" class="button-fixed" data-v-2141508d><i class="fa fa-fw fa-bars" data-v-2141508d></i></button></div><div data-v-2141508d><h6 class="page-title" data-v-2141508d></h6></div><div class="d-flex" data-v-2141508d><select name="" id="" class="display border-none" style="margin-left:15px;" data-v-2141508d><option value="1" data-v-2141508d>Edelman</option><option value="2" data-v-2141508d>Razorpod</option><option value="3" data-v-2141508d>Infosys</option></select><div class="dropdown d-inline-block" data-v-2141508d><button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-2141508d><img class="rounded-circle header-profile-user" src="/_nuxt/avatar-2.8d5771fe.jpg" alt="Header Avatar" data-v-2141508d><span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15" data-v-2141508d>Nibhash</span><i class="fa-solid fa-angle-down d-none d-xl-inline-block font-size-15" data-v-2141508d></i></button><div class="dropdown-menu dropdown-menu-end" data-v-2141508d><a class="dropdown-item" href="#" data-v-2141508d><i class="fa-solid fa-user-circle font-size-18 align-middle text-muted me-1" data-v-2141508d></i><span class="align-middle" data-v-2141508d>View Profile</span></a><a class="dropdown-item" href="#" data-v-2141508d><i class="fa-sharp fa-solid fa-display font-size-18 align-middle me-1 text-muted" data-v-2141508d></i><span class="align-middle" data-v-2141508d>Lock screen</span></a><a class="dropdown-item" href="#" data-v-2141508d><i class="fa-solid fa-sign-out-alt font-size-18 align-middle me-1 text-muted" data-v-2141508d></i><span class="align-middle" data-v-2141508d>Sign out</span></a></div></div></div></div></header><div class="vertical-menu mm-active" style="z-index:4;"><div class="navbar-brand-box"><a class="logo logo-dark"><span class="logo-sm" style="position:relative;right:15px;"><img src="data:image/png;base64,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" alt="" height="22"></span><span class="logo-lg"><img src="/_nuxt/logo-light.417ac44a.svg" alt="" height="20"></span></a></div><div data-simplebar class="sidebar-menu-scroll mm-show"><div id="sidebar-menu" class="mm-active"><ul class="metismenu list-unstyled mm-show" id="side-menu"><li class="menu-title">Menu</li><li class=""><a class="waves-effect"><i class="fa-solid fa-dashboard"></i><span>Dashboard</span></a></li><li class="menu-title">Sub-menu</li><li class=""><a class="waves-effect"><i class="fa-solid fa-folder-tree"></i><span>Workspace</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-user"></i><span>Leaders</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-chart-simple"></i><span>Analytics</span></a></li><li class="menu-title">Content</li><li class=""><a class="waves-effect"><i class="fa-solid fa-envelopes-bulk"></i><span>Posts</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-file-lines"></i><span>Curation</span></a></li><li class="menu-title">Manage</li><li class=""><a class="waves-effect"><i class="fa-solid fa-bars-progress"></i><span>Category</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-users"></i><span>Users</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-list-check"></i><span>Roles</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-handshake"></i><span>Partners</span></a></li></ul></div></div></div><div class="main-content"><div class="page-content"><div class="container-fluid"><!--[--><!--[--><!--[--><head><meta charset="utf-8"><title>Maintenance | Minible - Admin &amp; Dashboard Template</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta content="Premium Multipurpose Admin &amp; Dashboard Template" name="description"><meta content="Themesbrand" name="author"><link rel="shortcut icon" href="assets/images/favicon.ico"><link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css"><link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css"></head><body class="authentication-bg"><div class="my-5 pt-sm-5"><div class="container"><div class="row"><div class="col-12 text-center"><div class="home-wrapper"><a href="index.html" class="mb-5 d-block auth-logo"><img src="/_nuxt/logo-light.417ac44a.svg" alt="" height="30" class="logo logo-dark"></a><div class="row justify-content-center"><div class="col-lg-4 col-sm-5"><div class="maintenance-img"><img src="/_nuxt/maintenance.99770be1.png" alt="" class="img-fluid mx-auto d-block"></div></div></div><h3 class="mt-5">Site is Under Maintenance</h3><p>Please check back in sometime.</p><div class="row"><div class="col-md-4"><div class="card mt-4 maintenance-box"><div class="card-body p-4"><div class="avatar-sm mx-auto mb-4"><div class="avatar-title rounded-circle font-size-20" style="color:#009dc2;background-color:#DCEFF3;"><i class="fa-solid fa-cloud-arrow-up"></i></div></div><h5 class="font-size-15 text-uppercase">Why is the Site Down?</h5><p class="text-muted mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p></div></div></div><div class="col-md-4"><div class="card mt-4 maintenance-box"><div class="card-body p-4"><div class="avatar-sm mx-auto mb-4"><div class="avatar-title rounded-circle font-size-20" style="color:#009dc2;background-color:#DCEFF3;"><i class="fa-solid fa-clock"></i></div></div><h5 class="font-size-15 text-uppercase"> What is the Downtime?</h5><p class="text-muted mb-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.</p></div></div></div><div class="col-md-4"><div class="card mt-4 maintenance-box"><div class="card-body p-4"><div class="avatar-sm mx-auto mb-4"><div class="avatar-title rounded-circle font-size-20" style="color:#009dc2;background-color:#DCEFF3;"><i class="fa-solid fa-envelope"></i></div></div><h5 class="font-size-15 text-uppercase"> Do you need Support?</h5><p class="text-muted mb-0">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embar.. <a href="mailto:no-reply@voyze.io" style="color:#009dc2;">no-reply@voyze.io</a></p></div></div></div></div></div></div></div></div></div></body><!--]--><!--]--><!--]--></div></div><footer class="footer" data-v-5dd71aa3><div class="container-fluid" data-v-5dd71aa3><div class="row" data-v-5dd71aa3><div class="col-sm-6" style="font-size:12px;" data-v-5dd71aa3> © 2021 - 2023 Razorlabz Software Private Limited. </div><div class="col-sm-6" data-v-5dd71aa3><div class="text-sm-end d-none d-sm-block" style="font-size:12px;" data-v-5dd71aa3>All rights reserved</div></div></div></div></footer></div></div></section><!--]--></div><script type="module">import p from "/maintenance/_payload.js";window.__NUXT__={...p,...((function(a,b){return {state:{$spageTitle:b,$sisSidebarOpen:a,$sdashboard:a,$sworkspace:a,$sleaders:a,$sanalytics:a,$sposts:a,$scuration:a,$scategory:a,$susers:a,$sroles:a,$spartners:a},_errors:{},serverRendered:true,config:{public:{},app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:b}},prerenderedAt:1675241866715}}(false,"")))}</script><script type="module" src="/_nuxt/entry.cbeb110a.js" crossorigin></script><script type="module" src="/_nuxt/default.cb033c6b.js" crossorigin></script><script type="module" src="/_nuxt/maintenance.e1236596.js" crossorigin></script></body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html >
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/79955d71bb.js" crossorigin="anonymous"></script>
+<style type="text/css" id="vuetify-theme-stylesheet">.v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 98,0,238;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 55,0,179;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 3,218,198;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 0,0,0;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-variant: 189,189,189;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 66,66,66;
+      --v-theme-primary: 187,134,252;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 55,0,179;
+      --v-theme-primary-darken-1-overlay-multiplier: 1;
+      --v-theme-secondary: 3,218,197;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 3,218,197;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 0,0,0;
+      --v-theme-on-secondary-darken-1: 0,0,0;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+</style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="modulepreload" href="/dashboard/_payload.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/entry.cbeb110a.js"><link rel="preload" as="style" href="/_nuxt/entry.660fe2c1.css"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/default.cb033c6b.js"><link rel="preload" as="style" href="/_nuxt/default.62b3550a.css"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/logo-light.80867dfe.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/avatar-2.c05a98a6.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/vue-multiselect.esm.253bdb11.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/_plugin-vue_export-helper.a1a6add7.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/dashboard.aa6bc696.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/avatar-8.5fcf09c7.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/avatar-1.42e359ef.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/center-layout.23f9eed1.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/error-component.cb104f04.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/404-error.ef12e46a.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/500-error.a69dbef3.js"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/logo-light.417ac44a.svg"><link rel="prefetch" as="image" type="image/jpeg" href="/_nuxt/avatar-2.8d5771fe.jpg"><link rel="prefetch" as="image" type="image/jpeg" href="/_nuxt/avatar-4.b0db35be.jpg"><link rel="prefetch" as="image" type="image/jpeg" href="/_nuxt/avatar-5.48503ad1.jpg"><link rel="prefetch" as="image" type="image/jpeg" href="/_nuxt/avatar-6.db235aa6.jpg"><link rel="prefetch" as="image" type="image/jpeg" href="/_nuxt/avatar-7.e5ed400e.jpg"><link rel="prefetch" as="image" type="image/jpeg" href="/_nuxt/avatar-8.9eb5fbf1.jpg"><link rel="prefetch" as="image" type="image/jpeg" href="/_nuxt/avatar-1.7bb6ff2f.jpg"><link rel="stylesheet" href="/_nuxt/entry.660fe2c1.css"><link rel="stylesheet" href="/_nuxt/default.62b3550a.css"><style>.page-title[data-v-2141508d]{display:flex;font-family:Gill Sans,sans-serif;font-weight:600;position:absolute;top:22px}.display1[data-v-2141508d]{display:none!important}@media(max-width:960px){.button-fixed[data-v-2141508d]{left:100px;position:fixed;top:24px}.page-title[data-v-2141508d]{font-size:19px;left:140px}.display1[data-v-2141508d]{display:contents}}@media(max-width:420px){.page-title[data-v-2141508d]{display:none}.display1[data-v-2141508d]{display:contents}}@media(min-width:960px){.button-fixed[data-v-2141508d]{left:10px;position:relative}.display1[data-v-2141508d]{display:contents}.page-title[data-v-2141508d]{left:50px}}.display-button[data-v-2141508d]{display:none}@media only screen and (max-width:820px){.display[data-v-2141508d]{display:content}.display-win[data-v-2141508d]{display:grid}.display-button[data-v-2141508d]{display:flex;top:28px}}</style><style>@media (max-width:700px){section[data-sidebar-size=sm] .footer[data-v-5dd71aa3]{left:0}}</style></head>
+<body ><div id="__nuxt"><!--[--><section class="" data-sidebar-size="sm"><div id="layout-wrapper"><header id="page-topbar" data-v-2141508d><div class="navbar-header" data-v-2141508d><div class="d-flex" data-v-2141508d><div class="navbar-brand-box" data-v-2141508d><a class="logo logo-dark" data-v-2141508d><span class="logo-sm" data-v-2141508d><img src="data:image/png;base64,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" alt="" height="22" data-v-2141508d></span><span class="logo-lg" data-v-2141508d><img src="/_nuxt/logo-light.417ac44a.svg" alt="" height="20" data-v-2141508d></span></a></div><button type="button" class="button-fixed" data-v-2141508d><i class="fa fa-fw fa-bars" data-v-2141508d></i></button></div><div data-v-2141508d><h6 class="page-title" data-v-2141508d></h6></div><div class="d-flex" data-v-2141508d><select name="" id="" class="display border-none" style="margin-left:15px;" data-v-2141508d><option value="1" data-v-2141508d>Edelman</option><option value="2" data-v-2141508d>Razorpod</option><option value="3" data-v-2141508d>Infosys</option></select><div class="dropdown d-inline-block" data-v-2141508d><button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-2141508d><img class="rounded-circle header-profile-user" src="/_nuxt/avatar-2.8d5771fe.jpg" alt="Header Avatar" data-v-2141508d><span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15" data-v-2141508d>Nibhash</span><i class="fa-solid fa-angle-down d-none d-xl-inline-block font-size-15" data-v-2141508d></i></button><div class="dropdown-menu dropdown-menu-end" data-v-2141508d><a class="dropdown-item" href="#" data-v-2141508d><i class="fa-solid fa-user-circle font-size-18 align-middle text-muted me-1" data-v-2141508d></i><span class="align-middle" data-v-2141508d>View Profile</span></a><a class="dropdown-item" href="#" data-v-2141508d><i class="fa-sharp fa-solid fa-display font-size-18 align-middle me-1 text-muted" data-v-2141508d></i><span class="align-middle" data-v-2141508d>Lock screen</span></a><a class="dropdown-item" href="#" data-v-2141508d><i class="fa-solid fa-sign-out-alt font-size-18 align-middle me-1 text-muted" data-v-2141508d></i><span class="align-middle" data-v-2141508d>Sign out</span></a></div></div></div></div></header><div class="vertical-menu mm-active" style="z-index:4;"><div class="navbar-brand-box"><a class="logo logo-dark"><span class="logo-sm" style="position:relative;right:15px;"><img src="data:image/png;base64,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" alt="" height="22"></span><span class="logo-lg"><img src="/_nuxt/logo-light.417ac44a.svg" alt="" height="20"></span></a></div><div data-simplebar class="sidebar-menu-scroll mm-show"><div id="sidebar-menu" class="mm-active"><ul class="metismenu list-unstyled mm-show" id="side-menu"><li class="menu-title">Menu</li><li class=""><a class="waves-effect"><i class="fa-solid fa-dashboard"></i><span>Dashboard</span></a></li><li class="menu-title">Sub-menu</li><li class=""><a class="waves-effect"><i class="fa-solid fa-folder-tree"></i><span>Workspace</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-user"></i><span>Leaders</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-chart-simple"></i><span>Analytics</span></a></li><li class="menu-title">Content</li><li class=""><a class="waves-effect"><i class="fa-solid fa-envelopes-bulk"></i><span>Posts</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-file-lines"></i><span>Curation</span></a></li><li class="menu-title">Manage</li><li class=""><a class="waves-effect"><i class="fa-solid fa-bars-progress"></i><span>Category</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-users"></i><span>Users</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-list-check"></i><span>Roles</span></a></li><li class=""><a class="waves-effect"><i class="fa-solid fa-handshake"></i><span>Partners</span></a></li></ul></div></div></div><div class="main-content"><div class="page-content"><div class="container-fluid"><!--[--><!--[--><!--[--><head><title>Dashboard | Voyze</title></head><div class="row"><div class="col-md-6 col-xl-3"><div class="card" style="border:1px solid #f3f8fb;border-radius:10px;box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><div class="card-body"><div class="float-end mt-2"><div id="total-revenue-chart" data-colors="[&quot;--bs-primary&quot;]"></div></div><div><h4 class="mb-1 mt-1"><span data-plugin="counterup">152</span></h4><p class="text-muted mb-0">Total Posts</p></div><p class="text-muted mt-3 mb-0"><span class="text-success me-1"><i class="mdi mdi-arrow-up-bold me-1"></i>2.65%</span> since last week </p></div></div></div><div class="col-md-6 col-xl-3"><div class="card" style="border:1px solid #f3f8fb;border-radius:10px;box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><div class="card-body"><div class="float-end mt-2"></div><div><h4 class="mb-1 mt-1"><span data-plugin="counterup">43</span></h4><p class="text-muted mb-0">Published</p></div><p class="text-muted mt-3 mb-0"><span class="text-danger me-1"><i class="mdi mdi-arrow-down-bold me-1"></i>0.82%</span> since last week </p></div></div></div><div class="col-md-6 col-xl-3"><div class="card" style="border:1px solid #f3f8fb;border-radius:10px;box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><div class="card-body"><div class="float-end mt-2"><div id="customers-chart" data-colors="[&quot;--bs-primary&quot;]"></div></div><div><h4 class="mb-1 mt-1"><span data-plugin="counterup">54</span></h4><p class="text-muted mb-0">Review</p></div><p class="text-muted mt-3 mb-0"><span class="text-danger me-1"><i class="mdi mdi-arrow-down-bold me-1"></i>6.24%</span> since last week </p></div></div></div><div class="col-md-6 col-xl-3"><div class="card" style="border:1px solid #f3f8fb;border-radius:10px;box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><div class="card-body"><div class="float-end mt-2"><div id="growth-chart" data-colors="[&quot;--bs-warning&quot;]"></div></div><div><h4 class="mb-1 mt-1"> + <span data-plugin="counterup">12.58</span>% </h4><p class="text-muted mb-0">Growth</p></div><p class="text-muted mt-3 mb-0"><span class="text-success me-1"><i class="mdi mdi-arrow-up-bold me-1"></i>10.51%</span> since last week </p></div></div></div></div><div class="row"><div class="col-xl-8"><div class="card" style="border:1px solid #f3f8fb;border-radius:10px;box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><div class="card-body"><div class="float-end"><div class="dropdown"><a class="dropdown-toggle text-reset" href="#" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fw-semibold">Sort By:</span><span class="text-muted">Yearly<i class="mdi mdi-chevron-down ms-1"></i></span></a><div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton5"><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a><a class="dropdown-item" href="#">Weekly</a></div></div></div><h4 class="card-title mb-4">Post Analytics</h4><div class="mt-1"><ul class="list-inline main-chart mb-0"><li class="list-inline-item chart-border-left me-0 border-0"><h3 class="text-primary"><span data-plugin="counterup">2,371</span><span class="text-muted d-inline-block font-size-15 ms-3">Income</span></h3></li><li class="list-inline-item chart-border-left me-0"><h3><span data-plugin="counterup">258</span><span class="text-muted d-inline-block font-size-15 ms-3">Sales</span></h3></li><li class="list-inline-item chart-border-left me-0"><h3><span data-plugin="counterup">3.6</span>%<span class="text-muted d-inline-block font-size-15 ms-3">Conversation Ratio</span></h3></li></ul></div><div class="mt-3"><div><span></span></div></div></div></div></div><div class="col-xl-4"><div class="card" style="border:1px solid #f3f8fb;border-radius:10px;box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><div class="card-body"><div class="float-end"><div class="dropdown"><a class="dropdown-toggle text-reset" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fw-semibold">Sort By:</span><span class="text-muted">Yearly<i class="mdi mdi-chevron-down ms-1"></i></span></a><div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1"><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a><a class="dropdown-item" href="#">Weekly</a></div></div></div><h4 class="card-title mb-4">Top Selling Products</h4><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-primary me-2"></i> Desktops </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-primary" role="progressbar" style="width:52%;" aria-valuenow="52" aria-valuemin="0" aria-valuemax="52"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-info me-2"></i> iPhones </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-info" role="progressbar" style="width:45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="45"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-success me-2"></i> Android </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-success" role="progressbar" style="width:48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="48"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-success me-2"></i> Android </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-success" role="progressbar" style="width:48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="48"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-success me-2"></i> Android </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-success" role="progressbar" style="width:48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="48"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-success me-2"></i> Android </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-success" role="progressbar" style="width:48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="48"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-warning me-2"></i> Tablets </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-warning" role="progressbar" style="width:78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="78"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-purple me-2"></i> Cables </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-purple" role="progressbar" style="width:63%;" aria-valuenow="63" aria-valuemin="0" aria-valuemax="63"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-primary me-2"></i> Desktops </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-primary" role="progressbar" style="width:52%;" aria-valuenow="52" aria-valuemin="0" aria-valuemax="52"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-info me-2"></i> iPhones </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-info" role="progressbar" style="width:45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="45"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-success me-2"></i> Android </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-success" role="progressbar" style="width:48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="48"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-warning me-2"></i> Tablets </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-warning" role="progressbar" style="width:78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="78"></div></div></div></div><div class="row align-items-center g-0 mt-3"><div class="col-sm-3"><p class="text-truncate mt-1 mb-0"><i class="mdi mdi-circle-medium text-purple me-2"></i> Cables </p></div><div class="col-sm-9"><div class="progress mt-1" style="height:6px;"><div class="progress-bar progress-bar bg-purple" role="progressbar" style="width:63%;" aria-valuenow="63" aria-valuemin="0" aria-valuemax="63"></div></div></div></div></div></div></div></div><div class="row"><div class="col-xl-4"><div class="card" style="border:1px solid #f3f8fb;border-radius:10px;box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><div class="card-body"><h4 class="card-title mb-4">Top Users</h4><div data-simplebar style="max-height:339px;overflow:auto;"><div class="table-responsive"><table class="table table-borderless table-centered table-nowrap"><tbody><tr><td style="width:20px;"><img src="/_nuxt/avatar-4.b0db35be.jpg" class="avatar-xs rounded-circle" alt="..."></td><td><h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6><p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Nevada </p></td><td><span class="badge bg-soft-danger font-size-12">Cancel</span></td><td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>250.00 </td></tr><tr><td><img src="/_nuxt/avatar-5.48503ad1.jpg" class="avatar-xs rounded-circle" alt="..."></td><td><h6 class="font-size-15 mb-1 fw-normal">Lolita Hamill</h6><p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Texas </p></td><td><span class="badge bg-soft-success font-size-12">Success</span></td><td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>110.00 </td></tr><tr><td><img src="/_nuxt/avatar-6.db235aa6.jpg" class="avatar-xs rounded-circle" alt="..."></td><td><h6 class="font-size-15 mb-1 fw-normal">Robert Mercer</h6><p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> California </p></td><td><span class="badge bg-soft-info font-size-12">Active</span></td><td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>420.00 </td></tr><tr><td><img src="/_nuxt/avatar-7.e5ed400e.jpg" class="avatar-xs rounded-circle" alt="..."></td><td><h6 class="font-size-15 mb-1 fw-normal">Marie Kim</h6><p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Montana </p></td><td><span class="badge bg-soft-warning font-size-12">Pending</span></td><td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>120.00 </td></tr><tr><td><img src="/_nuxt/avatar-8.9eb5fbf1.jpg" class="avatar-xs rounded-circle" alt="..."></td><td><h6 class="font-size-15 mb-1 fw-normal">Sonya Henshaw</h6><p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Colorado </p></td><td><span class="badge bg-soft-info font-size-12">Active</span></td><td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>112.00 </td></tr><tr><td><img src="/_nuxt/avatar-2.8d5771fe.jpg" class="avatar-xs rounded-circle" alt="..."></td><td><h6 class="font-size-15 mb-1 fw-normal">Marie Kim</h6><p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Australia </p></td><td><span class="badge bg-soft-success font-size-12">Success</span></td><td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>120.00 </td></tr><tr><td><img src="/_nuxt/avatar-1.7bb6ff2f.jpg" class="avatar-xs rounded-circle" alt="..."></td><td><h6 class="font-size-15 mb-1 fw-normal">Sonya Henshaw</h6><p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> India </p></td><td><span class="badge bg-soft-danger font-size-12">Cancel</span></td><td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>112.00 </td></tr></tbody></table></div></div></div></div></div><div class="col-xl-4"><div class="card" style="border:1px solid #f3f8fb;border-radius:10px;box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><div class="card-body"><div class="float-end"><div class="dropdown"><a class="dropdown-toggle" href="#" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-muted">Recent<i class="mdi mdi-chevron-down ms-1"></i></span></a><div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton3"><a class="dropdown-item" href="#">Recent</a><a class="dropdown-item" href="#">By Users</a></div></div></div><h4 class="card-title mb-4">Recent Activity</h4><ol class="activity-feed mb-0 ps-2" data-simplebar style="max-height:339px;overflow:auto;"><li class="feed-item"><div class="feed-item-list"><p class="text-muted mb-1 font-size-13"> Today<small class="d-inline-block ms-1">12:20 pm</small></p><p class="mb-0"> Andrei Coman magna sed porta finibus, risus posted a new article: <span class="text-primary">Forget UX Rowland</span></p></div></li><li class="feed-item"><p class="text-muted mb-1 font-size-13"> 22 Jul, 2020 <small class="d-inline-block ms-1">12:36 pm</small></p><p class="mb-0"> Andrei Coman posted a new article: <span class="text-primary">Designer Alex</span></p></li><li class="feed-item"><p class="text-muted mb-1 font-size-13"> 18 Jul, 2020 <small class="d-inline-block ms-1">07:56 am</small></p><p class="mb-0"> Zack Wetass, sed porta finibus, risus Chris Wallace Commented <span class="text-primary"> Developer Moreno</span></p></li><li class="feed-item"><p class="text-muted mb-1 font-size-13"> 10 Jul, 2020 <small class="d-inline-block ms-1">08:42 pm</small></p><p class="mb-0"> Zack Wetass, Chris combined Commented <span class="text-primary">UX Murphy</span></p></li><li class="feed-item"><p class="text-muted mb-1 font-size-13"> 23 Jun, 2020 <small class="d-inline-block ms-1">12:22 am</small></p><p class="mb-0"> Zack Wetass, sed porta finibus, risus Chris Wallace Commented <span class="text-primary"> Developer Moreno</span></p></li><li class="feed-item pb-1"><p class="text-muted mb-1 font-size-13"> 20 Jun, 2020 <small class="d-inline-block ms-1">09:48 pm</small></p><p class="mb-0"> Zack Wetass, Chris combined Commented <span class="text-primary">UX Murphy</span></p></li></ol></div></div></div><div class="col-xl-4"><div class="card" style="border:1px solid #f3f8fb;border-radius:10px;box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><div class="card-body"><div class="float-end"><div class="dropdown"><a class="dropdown-toggle" href="#" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-muted">Monthly<i class="mdi mdi-chevron-down ms-1"></i></span></a><div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton4"><a class="dropdown-item" href="#">Yearly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Weekly</a></div></div></div><h4 class="card-title">Social Source</h4><div class="text-center"><div class="avatar-sm mx-auto mb-4"><span class="avatar-title rounded-circle font-size-24" style="background-color:#009dc2;"><i class="fa-brands fa-linkedin-in text-white"></i></span></div><p class="font-16 text-muted mb-2"></p><h5><a href="#" class="text-dark">LinkedIn - <span class="text-muted font-16">125 posts</span></a></h5><p class="text-muted"> Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus tincidunt. </p><a href="#" class="text-reset font-16">Learn more <i class="mdi mdi-chevron-right"></i></a></div><div class="row mt-4"><div class="col-3"><div class="social-source text-center mt-3"><div class="avatar-xs mx-auto mb-3"><span class="avatar-title rounded-circle font-size-16" style="background-color:#009dc2;"><i class="fa-brands fa-linkedin-in text-white"></i></span></div><h5 class="font-size-15">LinkedIn</h5><p class="text-muted mb-0">125 posts</p></div></div><div class="col-3"><div class="social-source text-center mt-3"><div class="avatar-xs mx-auto mb-3"><span class="avatar-title rounded-circle font-size-16" style="background-color:#009dc2;"><i class="fa-brands fa-twitter text-white"></i></span></div><h5 class="font-size-15">Twitter</h5><p class="text-muted mb-0">112 posts</p></div></div><div class="col-3"><div class="social-source text-center mt-3"><div class="avatar-xs mx-auto mb-3"><span class="avatar-title rounded-circle font-size-16" style="background-color:#009dc2;"><i class="fa-brands fa-instagram"></i></span></div><h5 class="font-size-15">Instagram</h5><p class="text-muted mb-0">12 posts</p></div></div><div class="col-3"><div class="social-source text-center mt-3"><div class="avatar-xs mx-auto mb-3"><span class="avatar-title rounded-circle font-size-16" style="background-color:#009dc2;"><i class="fa-brands fa-facebook-f"></i></span></div><h5 class="font-size-15">Facebook</h5><p class="text-muted mb-0">102 posts</p></div></div></div><div class="mt-3 text-center"><a href="#" class="text-primary font-size-14 fw-medium">View All Sources <i class="mdi mdi-chevron-right"></i></a></div></div></div></div></div><!--]--><!--]--><!--]--></div></div><footer class="footer" data-v-5dd71aa3><div class="container-fluid" data-v-5dd71aa3><div class="row" data-v-5dd71aa3><div class="col-sm-6" style="font-size:12px;" data-v-5dd71aa3> © 2021 - 2023 Razorlabz Software Private Limited. </div><div class="col-sm-6" data-v-5dd71aa3><div class="text-sm-end d-none d-sm-block" style="font-size:12px;" data-v-5dd71aa3>All rights reserved</div></div></div></div></footer></div></div></section><!--]--></div><script type="module">import p from "/dashboard/_payload.js";window.__NUXT__={...p,...((function(a){return {state:{$spageTitle:"Dashboard",$sisSidebarOpen:a,$sdashboard:a,$sworkspace:a,$sleaders:a,$sanalytics:a,$sposts:a,$scuration:a,$scategory:a,$susers:a,$sroles:a,$spartners:a},_errors:{},serverRendered:true,config:{public:{},app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""}},prerenderedAt:1675241866657}}(false)))}</script><script type="module" src="/_nuxt/entry.cbeb110a.js" crossorigin></script><script type="module" src="/_nuxt/default.cb033c6b.js" crossorigin></script><script type="module" src="/_nuxt/dashboard.aa6bc696.js" crossorigin></script></body>
+</html>
