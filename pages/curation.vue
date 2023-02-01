@@ -140,7 +140,7 @@ let pageTitle = useState('pageTitle')
                         <div class="col-md-6" style=""><b>Create Draft:</b></div>
                         <div class="col-md-6" style="top:2px;">
                           <div class="btn-group float-md-end" role="group">
-                    <span class=" text-truncate" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
+                    <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
                     <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
                 </div>
                         </div>
@@ -176,7 +176,7 @@ let pageTitle = useState('pageTitle')
                         <div class="col-md-6" style=""><b>Create Draft:</b></div>
                         <div class="col-md-6" style="top:2px;">
                           <div class="btn-group float-md-end" role="group">
-                    <span class=" text-truncate" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
+                    <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
                     <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
                 </div>
                         </div>
@@ -213,7 +213,7 @@ let pageTitle = useState('pageTitle')
                         <div class="col-md-6" style=""><b>Create Draft:</b></div>
                         <div class="col-md-6" style="top:2px;">
                           <div class="btn-group float-md-end" role="group">
-                    <span class=" text-truncate" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
+                    <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
                     <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
                 </div>
                         </div>
