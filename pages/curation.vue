@@ -129,11 +129,11 @@ let pageTitle = useState('pageTitle')
                 </div>
                 <div class="clearfix"></div>
                     <div class="mb-2">
-                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/dhirendra_shastri-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
+                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202302/bank1-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
                     </div>
                     <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Kanjhawala case: Delhi girl, hit and dragged by car, was with a friend who fled from spot</a></h5>
-                    <p class="text-muted mb-2">The Delhi Police on Tuesday said that the 20-year-old woman who was killed after her scooter was hit by a car and dragged several kilometres two days ...</p>
+                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">5, 10 या 15 लाख कितना कमाते हैं आप? जानिए- नए स्लैब के बाद आपकी इनकम पर कितना लगेगा अब टैक्स</a></h5>
+                    <p class="text-muted mb-2">New Tax Slab Benefits: बजट में वित्त मंत्री निर्मला सीतारमण ने नया इनकम टैक्स स्लैब (New Income Tax Slab) पेश किया है, जिसमें सबसे ज्यादा मध्यवर्गीय प...</p>
                     </div>
                     <div class="card-footer">
                       <div class="row">
@@ -165,11 +165,11 @@ let pageTitle = useState('pageTitle')
                 </div>
                 <div class="clearfix"></div>
                     <div class="mb-2">
-                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/untitled_design_-_2023-01-23t090253.330-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
+                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202302/getty-mobile-shopping-sixteen_nine_0.jpg?size=948:533" alt="" class="img-fluid img">
                     </div>
                     <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">UP: नकल करना 'पाप' ही नहीं देश की सुरक्षा के लिए भी 'खतरा', लगेगा NSA, जानिए कानून में क्या प्रावधान?</a></h5>
-                    <p class="text-muted mb-2">देश में उत्तर प्रदेश और बिहार जैसे राज्यों में नकल को लेकर सरकारों की खूब फजीहत होती रही है. ऐसे में अब योगी सरकार ने दावा किया है कि इस बार बोर्ड परी...</p>
+                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Budget 2023: सस्ते होंगे मोबाइल और टीवी, सरकार ने घटा दी कस्टम ड्यूटी, बजट में बड़ा ऐलान</a></h5>
+                    <p class="text-muted mb-2">Budget 2023: केंद्रीय बजट 2023-24 पेश कर दिया गया है. इस बजट में सरकार ने टैक्स स्लैब में बदलाव से कस्टम ड्यूटी में कटौती तक कई बड़े ऐलान किए हैं. कंज...</p>
                     </div>
                     <div class="card-footer">
                       <div class="row">
