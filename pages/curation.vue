@@ -137,9 +137,9 @@ let pageTitle = useState('pageTitle')
                     </div>
                     <div class="card-footer">
                       <div class="row">
-                        <div class="col-md-6" style=""><b>Create Draft:</b></div>
-                        <div class="col-md-6" style="top:2px;">
-                          <div class="btn-group float-md-end" role="group">
+                        <div class="col-6" style=""><b>Create Draft:</b></div>
+                        <div class="col-6 " style="top:2px;">
+                          <div class="btn-group float-end" role="group">
                     <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
                     <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
                 </div>
@@ -173,9 +173,9 @@ let pageTitle = useState('pageTitle')
                     </div>
                     <div class="card-footer">
                       <div class="row">
-                        <div class="col-md-6" style=""><b>Create Draft:</b></div>
-                        <div class="col-md-6" style="top:2px;">
-                          <div class="btn-group float-md-end" role="group">
+                        <div class="col-6" style=""><b>Create Draft:</b></div>
+                        <div class="col-6" style="top:2px;">
+                          <div class="btn-group float-end" role="group">
                     <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
                     <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
                 </div>
@@ -210,9 +210,9 @@ let pageTitle = useState('pageTitle')
 
                     <div class="card-footer">
                       <div class="row">
-                        <div class="col-md-6" style=""><b>Create Draft:</b></div>
-                        <div class="col-md-6" style="top:2px;">
-                          <div class="btn-group float-md-end" role="group">
+                        <div class="col-6" style=""><b>Create Draft:</b></div>
+                        <div class="col-6" style="top:2px;">
+                          <div class="btn-group float-end" role="group">
                     <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
                     <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
                 </div>
@@ -281,12 +281,12 @@ let pageTitle = useState('pageTitle')
 
   <!--pagination-->
   <div class="row mt-4">
-            <div class="col-sm-6">
+            <div class="col-6">
               <div>
                 <p class="mb-sm-0 font">Showing 1 to 10 of 12 entries</p>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-6">
               <nav aria-label="...">
   <ul class="pagination pagination-sm justify-content-end">
     <li class="page-item">

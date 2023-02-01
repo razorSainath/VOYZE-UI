@@ -337,12 +337,12 @@ let pageTitle = useState('pageTitle')
   </div>
 </div>
           <div class="row mt-4">
-            <div class="col-sm-6">
+            <div class="col-6">
               <div>
                 <p class="mb-sm-0">Showing 1 to 10 of 12 entries</p>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-6">
               <div class="float-sm-end">
                 <ul class="pagination mb-sm-0">
                   <li class="page-item disabled">
