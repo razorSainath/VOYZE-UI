@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default {
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   app: {
     head: {
       script: [
@@ -15,7 +21,7 @@ export default {
       // ]//didnt work like this
     },
   },
-  css: ['vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css', "assets/styles/global.scss", "assets/styles/bootstrap.scss"],
+  css: ['assets/css/main.css','vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css', "assets/styles/global.scss", "assets/styles/bootstrap.scss"],
   build: {
     transpile: ['vuetify'],
   },
@@ -25,3 +31,6 @@ export default {
     },
   },
 };
+
+
+

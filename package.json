@@ -8,9 +8,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "node-sass": "^8.0.0",
     "nuxt": "3.0.0",
-    "sass-loader": "^13.2.0"
+    "postcss": "^8.4.21",
+    "sass-loader": "^13.2.0",
+    "tailwindcss": "^3.2.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -20,7 +23,6 @@
     "@fortawesome/vue-fontawesome": "^3.0.2",
     "@mdi/font": "^7.1.96",
     "apexcharts": "^3.36.3",
-    "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",

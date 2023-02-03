@@ -1,5 +1,7 @@
 <script setup>
-
+//remove boot-strap first(done)
+//add tailwind css 
+//use the tailwind css to obtain the structure of bootstrap one
 import { ref } from 'vue'
 
 let sidebarSize = ref("lg")

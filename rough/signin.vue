@@ -2,11 +2,19 @@
 definePageMeta({
   layout: "center-layout",
 });
+const redirectToSignup = ()=>{
+  navigateTo("/signup")
+}
+const redirectToForgetpassword = ()=>{
+  navigateTo("/reset-password")
+}
+const redirectToDashboard = ()=>{
+  navigateTo("/dashboard")
+}
 </script>
 
-
 <template>
-  <head>
+    <head>
         <title>Sign in | Voyze</title>
     </head>
 
