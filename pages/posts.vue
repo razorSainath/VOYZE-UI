@@ -238,7 +238,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-sm-6" style="
+                                <div class="col-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -259,7 +259,7 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-sm-6 d-flex justify-content-end">
+                                <div class="col-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
@@ -302,7 +302,7 @@ let pageTitle = useState('pageTitle')
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -314,8 +314,8 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="d-flex float-md-end">
+                              <div class="col-6">
+                                <div class="d-flex float-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
@@ -333,7 +333,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                <div class="col-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -354,11 +354,11 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
+                                <div class="col-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
-                                        class="badge badge-danger">4</span>
+                                        class="badge badge-danger rounded-pill">4</span>
                                     </div>
                                     <div>
                                       <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
@@ -397,7 +397,7 @@ let pageTitle = useState('pageTitle')
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -409,8 +409,8 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="d-flex float-md-end">
+                              <div class="col-6">
+                                <div class="d-flex float-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
@@ -428,7 +428,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                <div class="col-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -449,11 +449,11 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
+                                <div class="col-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
-                                        class="badge badge-danger">4</span>
+                                        class="badge badge-danger rounded-pill">4</span>
                                     </div>
                                     <div>
                                       <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
@@ -492,7 +492,7 @@ let pageTitle = useState('pageTitle')
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -504,8 +504,8 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="d-flex float-md-end">
+                              <div class="col-6">
+                                <div class="d-flex float-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
@@ -526,7 +526,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                <div class="col-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -547,11 +547,11 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
+                                <div class="col-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
-                                        class="badge badge-danger">4</span>
+                                        class="badge badge-danger rounded-pill">4</span>
                                     </div>
                                     <div>
                                       <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
@@ -590,7 +590,7 @@ let pageTitle = useState('pageTitle')
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -602,8 +602,8 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="d-flex float-md-end">
+                              <div class="col-6">
+                                <div class="d-flex float-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
@@ -623,7 +623,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                <div class="col-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -644,11 +644,11 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
+                                <div class="col-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
-                                        class="badge badge-danger">4</span>
+                                        class="badge badge-danger rounded-pill">4</span>
                                     </div>
                                     <div>
                                       <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
@@ -687,7 +687,7 @@ let pageTitle = useState('pageTitle')
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -699,8 +699,8 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="d-flex float-md-end">
+                              <div class="col-6">
+                                <div class="d-flex float-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
@@ -720,7 +720,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                <div class="col-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -741,11 +741,11 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
+                                <div class="col-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
-                                        class="badge badge-danger">4</span>
+                                        class="badge badge-danger rounded-pill">4</span>
                                     </div>
                                     <div>
                                       <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
@@ -784,7 +784,7 @@ let pageTitle = useState('pageTitle')
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -796,8 +796,8 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="d-flex float-md-end">
+                              <div class="col-6">
+                                <div class="d-flex float-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
@@ -817,7 +817,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                <div class="col-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -838,11 +838,11 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
+                                <div class="col-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
-                                        class="badge badge-danger">4</span>
+                                        class="badge badge-danger rounded-pill">4</span>
                                     </div>
                                     <div>
                                       <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
@@ -881,7 +881,7 @@ let pageTitle = useState('pageTitle')
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -893,8 +893,8 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="d-flex float-md-end">
+                              <div class="col-6">
+                                <div class="d-flex float-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
@@ -914,7 +914,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                <div class="col-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -935,11 +935,11 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
+                                <div class="col-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
-                                        class="badge badge-danger">4</span>
+                                        class="badge badge-danger rounded-pill">4</span>
                                     </div>
                                     <div>
                                       <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
@@ -978,7 +978,7 @@ let pageTitle = useState('pageTitle')
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -990,8 +990,8 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="d-flex float-md-end">
+                              <div class="col-6">
+                                <div class="d-flex float-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
@@ -1011,7 +1011,7 @@ let pageTitle = useState('pageTitle')
                                 border: none;
                               ">
                               <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="
+                                <div class="col-6" style="
                                     display: flex;
                                     justify-content: start;
                                     text-align: center;
@@ -1032,11 +1032,11 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6  col-sm-6 d-flex justify-content-end col-xs-6" style="top:10px;">
+                                <div class="col-6 d-flex justify-content-end">
                                   <div class="d-flex">
                                     <div>
                                       <i class="fa-solid fa-comment text-primary fa-2x" title="comment"></i><span
-                                        class="badge badge-danger">4</span>
+                                        class="badge badge-danger rounded-pill">4</span>
                                     </div>
                                     <div>
                                       <i class="fa-solid fa-pen-to-square text-success fa-2x" title="edit"></i>
@@ -1075,7 +1075,7 @@ let pageTitle = useState('pageTitle')
                             </div>
                             <div class="card-footer" style="background-color: rgba(147, 241, 183, 0.2)">
                              <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <div style="display: flex">
                                 <div class="avatar-xs">
                                         <img src="~/assets/images/users/avatar-1.jpg" alt=""
@@ -1087,8 +1087,8 @@ let pageTitle = useState('pageTitle')
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="d-flex float-md-end">
+                              <div class="col-6">
+                                <div class="d-flex float-end">
                                   <span><i class="fa-sharp fa-solid fa-clock-rotate-left text-success fa-2x"
                                       title="Auto Publish"></i></span>&nbsp;&nbsp;
                                   <span><i class="fa-solid fa-calendar-days text-dark fa-2x"
