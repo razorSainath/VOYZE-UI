@@ -4,46 +4,30 @@ import image from "@/assets/images/logo-light.svg"
 
 
 <template>
-    
-
-
-<section class="authentication-bg">
-    <div class="account-pages pt-sm-5 pb-sm-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <a class="mt-2 mb-2 d-block auth-logo">
-                            <img :src="image" height="30" class="logo logo-dark">
+    <div class="relative py-12 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40">
+	    <div class="container xl:max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12">
+                    <div class="justify-center relative" style="display: flex;">
+                        <a class="mt-4 mb-2">
+                            <img :src="image"  class="h-auto max-w-full" width="250px">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-8 col-lg-6 col-xl-5">
-                    <div class="card mb-0" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+	      <div class="flex flex-wrap flex-row -mx-4 justify-center">
 <slot/>
                     </div>
 
                 </div>
             </div>
             <!-- end row -->
-            <div class="text-center mt-sm-5" style=" position:absolute;
-    bottom:0;
-    right:0;
-    width:100%;">
-                        <p>© 2021 -
+            <div class="flex justify-center aligns-center text-center mt-12 absolute bottom-0 right-0 w-full">
+                        <p class="flex justify-center">© 2021 -
                             {{new Date().getFullYear()}} Razorlabs Software Private
                             Limited. All rights reserved.
                         </p>
                     </div>
-        </div>
-        <!-- end container -->
-    </div>
-
-
-
-</section>
 
 
 
