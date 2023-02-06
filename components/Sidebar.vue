@@ -208,15 +208,15 @@ const redirectTo = (page) => {
     <!-- LOGO -->
     <div class="navbar-brand-box">
       <a class="logo logo-dark">
-        <span class="logo-sm" style="position: relative; right: 15px">
+        <span class="logo-sm" style="position: relative;top: 14px;width: 100px;right: 18px;">
           <img
             src="~/assets/images/logo-sm-removebg-preview.png"
             alt=""
             height="22"
           />
         </span>
-        <span class="logo-lg">
-          <img src="~/assets/images/logo-light.svg" alt="" height="20" />
+        <span class="logo-lg" style="position: absolute;top: 10px;width: 200px;">
+          <img src="~/assets/images/logo-light.svg" alt="" height="20" width="150px" />
         </span>
       </a>
     </div>

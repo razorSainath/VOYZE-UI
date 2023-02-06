@@ -5,7 +5,7 @@ import image from "@/assets/images/logo-light.svg"
 
 <template>
     <div class="relative py-12 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40">
-	    <div class="container xl:max-w-6xl mx-auto px-4">
+	    <div class="container xl:max-w-6xl mx-auto px-4 w-full">
             <div class="grid grid-cols-12">
                 <div class="col-span-12">
                     <div class="justify-center relative" style="display: flex;">
@@ -15,7 +15,7 @@ import image from "@/assets/images/logo-light.svg"
                     </div>
                 </div>
             </div>
-	      <div class="flex flex-wrap flex-row -mx-4 justify-center">
+	      <div class="flex flex-wrap flex-row mx-4 justify-center w-full">
 <slot/>
                     </div>
 
