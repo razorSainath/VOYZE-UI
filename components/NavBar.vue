@@ -67,22 +67,6 @@ const just = ()=>{
                 <option value="2">Razorpod</option>
                 <option value="3">Infosys</option>
               </select>
-              <div x-data="{ show: false }" class="relative ltr:mr-4 rtl:ml-4">
-  <button @click="show = ! show" type="button" class="flex py-2 px-4 text-center rounded-md leading-normal text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-700 hover:ring-0 hover:border-indigo-700 focus:bg-indigo-700 focus:border-indigo-700 focus:outline-none focus:ring-0">
-    <div class="relative">
-  <a href="#">
-    <img class="inline-block rounded-full shadow-xl w-12 h-12 max-w-full bg-gray-300 dark:bg-gray-800 ltr:-mr-4 rtl:-ml-4 border-2 border-gray-200 transform hover:-translate-y-1" src="~/assets/images/users/avatar-2.jpg" alt="Image Description">
-  </a>
-  </div>
-  </button>
-  <div x-show="show" @click.away="show = false" class="absolute bg-white z-10 rounded border border-gray-200 dark:bg-gray-800 dark:border-gray-700" style="min-width:12rem">
-      <a class="block px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900" href="#">Action</a>
-      <a class="block px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900" href="#">Another action</a>
-      <a class="block px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900" href="#">Something else here</a>
-      <hr class="border-t border-gray-200 dark:border-gray-700 my-0">
-      <a class="block px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:focus:bg-gray-900" href="#">Separated link</a>
-  </div>
-</div>
             <div class="inline-block">
               <button
                 type="button"
