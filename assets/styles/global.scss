@@ -212,6 +212,7 @@ section[data-sidebar-size="sm"] #page-topbar {
   section[data-sidebar-size="sm"] #page-topbar {
     left: 0;
   }
+
 }
 section[data-sidebar-size="sm"] .navbar-header .vertical-menu-btn {
   display: block;
@@ -4709,4 +4710,16 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 }
 .pricing-box .plan-features li {
   padding: 7px 0;
+}
+.short-logo{
+display: none;
+}
+@media (max-width: 991.98px) {
+.logo{
+  display: none;
+}
+.short-logo{
+  display: block;
+  margin-left: 15px;
+}
 }
