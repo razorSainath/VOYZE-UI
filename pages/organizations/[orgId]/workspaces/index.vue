@@ -21,9 +21,9 @@ const toggleWorkspaceModal = ()=> {
   <head>
         <title>Workspace | Voyze</title>
     </head>
-    <div class="grid grid-col-2">
+    <div class="flex">
 
-                                <div class="mb-3">
+                                <div class="mb-3 flex-none">
                                     <div class="search-box ms-2">
                                         <div class="position-relative"> 
                                             <input type="text" class="form-control rounded border-0" placeholder="Search...">
@@ -32,8 +32,8 @@ const toggleWorkspaceModal = ()=> {
                                     </div>
                                 </div>
 
-                            <div class="col-6">
-                                <button type="button" class="btn btn-primary float-end mb-2" data-bs-toggle="modal" data-bs-target="#workspace">
+                            <div class="flex-initial">
+                                <button type="button" class="bg-cyan-500 rounded-full py-2 mb-2 float-right" data-bs-toggle="modal" data-bs-target="#workspace">
                                     <span><i class="fa-solid fa-plus"></i>&nbsp;</span><span class="display">Add New Workspace</span>
                                   </button>
                             </div>

@@ -1,14 +1,12 @@
 <template>
   <footer class="footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6" style="font-size:12px;">
+    <div class="container">
+      <div class="grid grid-cols-2">
+        <div class="text-sm">
           © 2021 - {{ new Date().getFullYear() }} Razorlabz Software Private
           Limited.
         </div>
-        <div class="col-sm-6">
-          <div class="text-sm-end d-none d-sm-block" style="font-size:12px;">All rights reserved</div>
-        </div>
+          <div class="sm:text-right md:hidden sm:block text-sm">All rights reserved</div>
       </div>
     </div>
   </footer>

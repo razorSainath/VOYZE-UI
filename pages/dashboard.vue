@@ -36,7 +36,7 @@ const series = [
     </head>
 
   <!-- card -->
-<div class="grid grid-cols-4 gap-3">
+<div class="flex gap-3">
 
                 <div class="flex-shrink max-w-full w-full mb-6">
                   <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
@@ -123,38 +123,21 @@ const series = [
                 </div><!-- end card -->
   <!-- end row-->
 
-  <div class="grid grid-flow-row grid-cols-2 gap-3">
-    <div class="w-full">
+  <div class="flex gap-3">
+    <div class="w-9/12">
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
           <h4 class="mb-4">Post Analytics</h4>
 
-          <div class="mt-1 ">
-            <ul class="inline main-chart mb-0 grid grid-rows-3">
-              <li class="inline-item chart-border-left me-0 border-0">
-                <p class="text-primary text-sm">
-                  <span data-plugin="counterup">2,371</span
-                  ><span class="text-gray-400 inline-block text-xs ml-4"
-                    >Income</span
-                  >
-                </p>
-              </li>
-              <li class="list-outside chart-border-left me-0">
-                <p>
-                  <span data-plugin="counterup">258</span
-                  ><span class="text-gray-400 inline-block text-xs ml-4"
-                    >Sales</span
-                  >
-                </p>
-              </li>
-              <li class="list-outside chart-border-left me-0">
-                <p>
-                  <span data-plugin="counterup">3.6</span>%<span
-                    class="text-gray-400 inline-block text-xs ml-4"
-                    >Conversation Ratio</span
-                  >
-                </p>
-              </li>
-            </ul>
+          <div class="grid grid-cols-3 mt-4">
+              <div class="text-center mt-3">
+                <p class="text-2xl">2,371 <span class="gap-5 text-grey-200 text-base">Income</span></p>
+              </div>
+              <div class="text-center mt-3">
+                <p class="text-2xl">258 <span class="gap-5 text-grey-200 text-base">Sales</span></p>
+              </div>
+              <div class="text-center mt-3">
+                <p class="text-2xl">3.6% <span class="gap-5 text-grey-200 text-base">Conversation Ratio</span></p>
+              </div>
           </div>
 
           <div class="mt-3">
@@ -175,8 +158,7 @@ const series = [
     </div>
     <!-- end col-->
 
-    <div class="col-xl-4">
-      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6 w-3/12 flex-initial">
 
           <h4 class="card-title mb-4">Top Selling Products</h4>
 
@@ -229,253 +211,189 @@ const series = [
         <!-- end card-body-->
       </div>
       <!-- end card-->
-    </div>
     <!-- end Col -->
   </div>
   <!-- end row-->
 
-  <div class="grid grid-cols-2 mt-3 gap-3">
+  <div class="grid grid-cols-3 mt-3 gap-3">
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
-        <div class="card-body">
-          <h4 class="card-title mb-4">Top Users</h4>
+          <h4 class="mb-4">Top Users</h4>
 
-          <div data-simplebar style="max-height: 339px; overflow: auto">
-            <div class="table-responsive">
-              <table class="table table-borderless table-centered table-nowrap">
-                <tbody>
-                  <tr>
-                    <td style="width: 20px">
-                      <img
-                        src="~/assets/images/users/avatar-4.jpg"
-                        class="avatar-xs rounded-circle"
-                        alt="..."
-                      />
-                    </td>
-                    <td>
-                      <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
+          <!-- table -->
+
+          <div class="flex flex-col">
+  <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="overflow-hidden">
+        <table class="min-w-full">
+          <tbody>
+            <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 w-24"><img src="~/assets/images/users/avatar-1.jpg" alt="" class="rounded-full"></td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
                       <p class="text-muted font-size-13 mb-0">
                         <i class="mdi mdi-map-marker"></i> Nevada
                       </p>
-                    </td>
-                    <td>
-                      <span class="badge bg-soft-danger font-size-12"
-                        >Cancel</span
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-red-600 text-white rounded-full"
+                        >Inactive</span
                       >
-                    </td>
-                    <td class="text-muted fw-semibold text-end">
-                      <i
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i
                         class="icon-xs icon me-2 text-success"
                         data-feather="trending-up"
                       ></i
                       >250.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="~/assets/images/users/avatar-5.jpg"
-                        class="avatar-xs rounded-circle"
-                        alt="..."
-                      />
-                    </td>
-                    <td>
-                      <h6 class="font-size-15 mb-1 fw-normal">Lolita Hamill</h6>
+              </td>
+            </tr>
+            <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 w-24"><img src="~/assets/images/users/avatar-1.jpg" alt="" class="rounded-full"></td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
                       <p class="text-muted font-size-13 mb-0">
-                        <i class="mdi mdi-map-marker"></i> Texas
+                        <i class="mdi mdi-map-marker"></i> Nevada
                       </p>
-                    </td>
-                    <td>
-                      <span class="badge bg-soft-success font-size-12"
-                        >Success</span
-                      >
-                    </td>
-                    <td class="text-muted fw-semibold text-end">
-                      <i
-                        class="icon-xs icon me-2 text-danger"
-                        data-feather="trending-down"
-                      ></i
-                      >110.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="~/assets/images/users/avatar-6.jpg"
-                        class="avatar-xs rounded-circle"
-                        alt="..."
-                      />
-                    </td>
-                    <td>
-                      <h6 class="font-size-15 mb-1 fw-normal">Robert Mercer</h6>
-                      <p class="text-muted font-size-13 mb-0">
-                        <i class="mdi mdi-map-marker"></i> California
-                      </p>
-                    </td>
-                    <td>
-                      <span class="badge bg-soft-info font-size-12"
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded-full"
                         >Active</span
                       >
-                    </td>
-                    <td class="text-muted fw-semibold text-end">
-                      <i
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i
                         class="icon-xs icon me-2 text-success"
                         data-feather="trending-up"
                       ></i
-                      >420.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="~/assets/images/users/avatar-7.jpg"
-                        class="avatar-xs rounded-circle"
-                        alt="..."
-                      />
-                    </td>
-                    <td>
-                      <h6 class="font-size-15 mb-1 fw-normal">Marie Kim</h6>
+                      >250.00
+              </td>
+            </tr>
+            <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 w-24"><img src="~/assets/images/users/avatar-1.jpg" alt="" class="rounded-full"></td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
                       <p class="text-muted font-size-13 mb-0">
-                        <i class="mdi mdi-map-marker"></i> Montana
+                        <i class="mdi mdi-map-marker"></i> Nevada
                       </p>
-                    </td>
-                    <td>
-                      <span class="badge bg-soft-warning font-size-12"
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-400 text-white rounded-full"
                         >Pending</span
                       >
-                    </td>
-                    <td class="text-muted fw-semibold text-end">
-                      <i
-                        class="icon-xs icon me-2 text-danger"
-                        data-feather="trending-down"
-                      ></i
-                      >120.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="~/assets/images/users/avatar-8.jpg"
-                        class="avatar-xs rounded-circle"
-                        alt="..."
-                      />
-                    </td>
-                    <td>
-                      <h6 class="font-size-15 mb-1 fw-normal">Sonya Henshaw</h6>
-                      <p class="text-muted font-size-13 mb-0">
-                        <i class="mdi mdi-map-marker"></i> Colorado
-                      </p>
-                    </td>
-                    <td>
-                      <span class="badge bg-soft-info font-size-12"
-                        >Active</span
-                      >
-                    </td>
-                    <td class="text-muted fw-semibold text-end">
-                      <i
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i
                         class="icon-xs icon me-2 text-success"
                         data-feather="trending-up"
                       ></i
-                      >112.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="~/assets/images/users/avatar-2.jpg"
-                        class="avatar-xs rounded-circle"
-                        alt="..."
-                      />
-                    </td>
-                    <td>
-                      <h6 class="font-size-15 mb-1 fw-normal">Marie Kim</h6>
+                      >250.00
+              </td>
+            </tr>
+            <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 w-24"><img src="~/assets/images/users/avatar-1.jpg" alt="" class="rounded-full"></td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
                       <p class="text-muted font-size-13 mb-0">
-                        <i class="mdi mdi-map-marker"></i> Australia
+                        <i class="mdi mdi-map-marker"></i> Nevada
                       </p>
-                    </td>
-                    <td>
-                      <span class="badge bg-soft-success font-size-12"
-                        >Success</span
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-400 text-white rounded-full"
+                        >Pending</span
                       >
-                    </td>
-                    <td class="text-muted fw-semibold text-end">
-                      <i
-                        class="icon-xs icon me-2 text-danger"
-                        data-feather="trending-down"
-                      ></i
-                      >120.00
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="~/assets/images/users/avatar-1.jpg"
-                        class="avatar-xs rounded-circle"
-                        alt="..."
-                      />
-                    </td>
-                    <td>
-                      <h6 class="font-size-15 mb-1 fw-normal">Sonya Henshaw</h6>
-                      <p class="text-muted font-size-13 mb-0">
-                        <i class="mdi mdi-map-marker"></i> India
-                      </p>
-                    </td>
-                    <td>
-                      <span class="badge bg-soft-danger font-size-12"
-                        >Cancel</span
-                      >
-                    </td>
-                    <td class="text-muted fw-semibold text-end">
-                      <i
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i
                         class="icon-xs icon me-2 text-success"
                         data-feather="trending-up"
                       ></i
-                      >112.00
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- enbd table-responsive-->
-          </div>
+                      >250.00
+              </td>
+            </tr>
+            <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 w-24"><img src="~/assets/images/users/avatar-1.jpg" alt="" class="rounded-full"></td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
+                      <p class="text-muted font-size-13 mb-0">
+                        <i class="mdi mdi-map-marker"></i> Nevada
+                      </p>
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-400 text-white rounded-full"
+                        >Pending</span
+                      >
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i
+                        class="icon-xs icon me-2 text-success"
+                        data-feather="trending-up"
+                      ></i
+                      >250.00
+              </td>
+            </tr>
+            <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 w-24"><img src="~/assets/images/users/avatar-1.jpg" alt="" class="rounded-full"></td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
+                      <p class="text-muted font-size-13 mb-0">
+                        <i class="mdi mdi-map-marker"></i> Nevada
+                      </p>
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-400 text-white rounded-full"
+                        >Pending</span
+                      >
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i
+                        class="icon-xs icon me-2 text-success"
+                        data-feather="trending-up"
+                      ></i
+                      >250.00
+              </td>
+            </tr>
+            <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 w-24"><img src="~/assets/images/users/avatar-1.jpg" alt="" class="rounded-full"></td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
+                      <p class="text-muted font-size-13 mb-0">
+                        <i class="mdi mdi-map-marker"></i> Nevada
+                      </p>
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-400 text-white rounded-full"
+                        >Pending</span
+                      >
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i
+                        class="icon-xs icon me-2 text-success"
+                        data-feather="trending-up"
+                      ></i
+                      >250.00
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
           <!-- data-sidebar-->
-        </div>
         <!-- end card-body-->
       </div>
       <!-- end card-->
     <!-- end col -->
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
         <div class="card-body">
-          <div class="float-end">
-            <div class="dropdown">
-              <a
-                class="dropdown-toggle"
-                href="#"
-                id="dropdownMenuButton3"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <span class="text-muted"
-                  >Recent<i class="mdi mdi-chevron-down ms-1"></i
-                ></span>
-              </a>
-
-              <div
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="dropdownMenuButton3"
-              >
-                <a class="dropdown-item" href="#">Recent</a>
-                <a class="dropdown-item" href="#">By Users</a>
-              </div>
-            </div>
-          </div>
 
           <h4 class="card-title mb-4">Recent Activity</h4>
 
           <ol
             class="activity-feed mb-0 ps-2"
             data-simplebar
-            style="max-height: 339px; overflow: auto"
           >
             <li class="feed-item">
               <div class="feed-item-list">
@@ -538,33 +456,14 @@ const series = [
         </div>
       </div>
 
-    <div class="grid grid-cols-1">
+      <!--Social source-->
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
-        <div class="card-body">
-          <div class="float-end">
-            <div class="dropdown">
-              <a
-                class="dropdown-toggle"
-                href="#"
-                id="dropdownMenuButton4"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <span class="text-muted"
-                  >Monthly<i class="mdi mdi-chevron-down ms-1"></i
-                ></span>
-              </a>
-
-              <div
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="dropdownMenuButton4"
-              >
-                <a class="dropdown-item" href="#">Yearly</a>
-                <a class="dropdown-item" href="#">Monthly</a>
-                <a class="dropdown-item" href="#">Weekly</a>
-              </div>
-            </div>
+          <div class="float-right">
+<select name="" id="" class="border-0">
+  <option value="">Monthly</option>
+  <option value="">Yearly</option>
+  <option value="">Quarderly</option>
+</select>
           </div>
 
           <h4 class="card-title">Social Source</h4>
@@ -592,8 +491,7 @@ const series = [
               >Learn more <i class="mdi mdi-chevron-right"></i
             ></a>
           </div>
-          <div class="row mt-4">
-            <div class="col-3">
+          <div class="grid grid-cols-4 mt-4">
               <div class="social-source text-center mt-3">
                 <div class="avatar-xs mx-auto mb-3">
                   <span
@@ -606,8 +504,6 @@ const series = [
                 <h5 class="font-size-15">LinkedIn</h5>
                 <p class="text-muted mb-0">125 posts</p>
               </div>
-            </div>
-            <div class="col-3">
               <div class="social-source text-center mt-3">
                 <div class="avatar-xs mx-auto mb-3">
                   <span
@@ -620,8 +516,6 @@ const series = [
                 <h5 class="font-size-15">Twitter</h5>
                 <p class="text-muted mb-0">112 posts</p>
               </div>
-            </div>
-            <div class="col-3">
               <div class="social-source text-center mt-3">
                 <div class="avatar-xs mx-auto mb-3">
                   <span
@@ -634,8 +528,6 @@ const series = [
                 <h5 class="font-size-15">Instagram</h5>
                 <p class="text-muted mb-0">12 posts</p>
               </div>
-            </div>
-            <div class="col-3">
               <div class="social-source text-center mt-3">
                 <div class="avatar-xs mx-auto mb-3">
                   <span
@@ -648,18 +540,6 @@ const series = [
                 <h5 class="font-size-15">Facebook</h5>
                 <p class="text-muted mb-0">102 posts</p>
               </div>
-            </div>
-            <!-- <div class="col-4">
-                                                <div class="social-source text-center mt-3">
-                                                    <div class="avatar-xs mx-auto mb-3">
-                                                        <span class="avatar-title rounded-circle bg-pink font-size-16">
-                                                                <i class="mdi mdi-instagram text-white"></i>
-                                                            </span>
-                                                    </div>
-                                                    <h5 class="font-size-15">Instagram</h5>
-                                                    <p class="text-muted mb-0">104 sales</p>
-                                                </div>
-                                            </div> -->
           </div>
 
           <div class="mt-3 text-center">
@@ -667,9 +547,10 @@ const series = [
               >View All Sources <i class="mdi mdi-chevron-right"></i
             ></a>
           </div>
-        </div>
       </div>
-    </div>
   </div>
   <!-- end row -->
+  <div class="grid grid-cols-2 mt-3">
+      
+    </div>
 </template>

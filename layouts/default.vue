@@ -17,14 +17,14 @@ const random = ()=>{
     <Sidebar />
     <div class="main-content" @click="random">
       <div class="page-content">
-        <div class="container-fluid">
+        <div class="container-fluid" >
           <slot />
         </div>
       </div>
    
 
 
-  <Footer/>
+
   </div>
 </div>
   </section>
