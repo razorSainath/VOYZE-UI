@@ -1,5 +1,6 @@
 <script setup>
 import image from "@/assets/images/blog_4.jpg"
+import {ref} from 'vue'
 definePageMeta({
   layout: "empty",
 });
@@ -12,6 +13,19 @@ const redirectToForgetpassword = () => {
 const redirectToDashboard = () => {
   navigateTo("/dashboard")
 }
+
+
+
+const inputType =ref("password")
+const showHidebtnText = ref('🙈')
+
+const ToggleInput = ()=>{
+             inputType.value =  inputType.value === "password" ? "text" : "password";
+             showHidebtnText.value = showHidebtnText.value === '🙈' ?  "🙊" : "🙈"; 
+
+             console.log(inputType.value, "values",showHidebtnText.value )
+             }
+             
 </script>
 
 
@@ -21,7 +35,7 @@ const redirectToDashboard = () => {
     <title>Sign in | Voyze</title>
   </head>
   <!--tailwind css card start-->
-  <div class="bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40"
+  <div class="bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40" id=""
     :style="{'backgroundImage':`url(${image})`,'background-repeat':'no-repeat','background-size':'cover','background-attachment':'fixed',}">
     <div class="flex flex-wrap flex-row">
       <span class="fixed bg-gray-900 bg-opacity-70 w-full h-full inset-x-0 top-0"></span>
@@ -35,7 +49,7 @@ const redirectToDashboard = () => {
                   <a class="py-2 text-xl">
                     <img class="inline-block w-48 h-auto ltr:mr-2 rtl:ml-2 -mt-1" src="~/assets/images/logo-light.svg">
                   </a>
-                  <h2 class="text-xl font-semibold text-gray-900 px-1 mt-2 max-h-9 overflow-hidden mt-5">
+                  <h2 class="text-xl font-semibold text-gray-900 px-1 max-h-9 overflow-hidden mt-5">
                     Hey, hello 👋
                   </h2>
                   <small class="font-semibold text-gray-400 px-1 max-h-9 overflow-hidden">Enter the information you
@@ -43,23 +57,24 @@ const redirectToDashboard = () => {
                 </div>
                 <div class="mb-6">
                   <label for="inputemail" class="inline-block mb-2">Username</label>
-                  <input name="email" id="inputemail"
-                    class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
-                    value="" aria-label="email" type="email" required="" placeholder="Enter Username/Email">
+                  <input placeholder="Enter Username/Email" type="text"
+                  class="text-md block px-3 py-2  rounded-lg w-full 
+                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" >
                 </div>
-                <div class="mb-6">
-                  <div class="flex flex-wrap flex-row">
-                    <div class="flex-shrink max-w-full w-1/2">
-                      <label for="inputpass" class="inline-block mb-2">Password</label>
-                    </div>
-                  </div>
-                  <input id="inputpass"
-                    class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
-                    aria-label="password" type="password" value="" required="" placeholder="Enter your password">
-                </div>
+                <div class="py-2" x-data="{ show: true }">
+                <span class="px-1 text-sm text-gray-600">Password</span>
+                <div class="relative w-full">
+    <div class="absolute inset-y-0 right-0 flex items-center px-2">
+      <input class="hidden js-password-toggle" id="toggle"   />
+      <label class="rounded px-2 py-1 text-sm text-gray-600 font-mono cursor-pointer js-password-label" for="toggle" @click='ToggleInput()'>{{showHidebtnText}}</label>
+    </div>
+    <input class="appearance-none border-2 rounded w-full py-3 px-3 leading-tight border-gray-300 bg-gray-100 focus:outline-none focus:border-indigo-700 focus:bg-white text-gray-700 pr-16 font-mono js-password" id="password" :type="inputType" autocomplete="off"
+    />
+  </div>
+              </div>
                 <div class="mb-6 flex flex-row">
                   <input
-                    class="form-checkbox h-5 w-5 text-indigo-500 dark:bg-gray-700 border border-gray-300 dark:border-gray-700 rounded focus:outline-none"
+                    class="form-checkbox h-5 w-5 text-cyan-500 dark:bg-gray-700 border border-gray-300 dark:border-gray-700 rounded focus:outline-none"
                     type="checkbox" value="" id="remember" required="">
                   <div class="flex-shrink max-w-full w-1/2">
                     <label class="ltr:ml-2 rtl:mr-2 ml-2" for="remember">
@@ -71,7 +86,7 @@ const redirectToDashboard = () => {
                   </div>
                 </div>
                 <div class="mb-3">
-                  <small class="text-gray-600 px-1 max-h-9 overflow-hidden">By clicking SignIn, you agree to our <a class="cursor-pointer">Terms</a> & that you have read our <a class="cursor-pointer">Data Use Policy</a>.</small>
+                  <small class="text-gray-600 px-1 max-h-9 overflow-hidden">By clicking SignIn, you agree to our <a class="cursor-pointer text-cyan-500 hover:text-cyan-700">Terms</a> & that you have read our <a class="cursor-pointer text-cyan-500 hover:text-cyan-700">Data Use Policy</a>.</small>
                 </div>
                 <div class="grid">
                   <button type="submit"
@@ -86,7 +101,7 @@ const redirectToDashboard = () => {
                       <path fill-rule="evenodd"
                         d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z">
                       </path>
-                    </svg> SignIn
+                    </svg> Sign In 
                   </button>
                 </div>
               </form>

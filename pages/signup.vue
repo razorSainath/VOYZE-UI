@@ -1,11 +1,22 @@
 <script setup>
 import image from "@/assets/images/blog_4.jpg"
+import {ref} from 'vue'
 definePageMeta({
   layout: "empty",
 });
 const redirectToSignup = ()=>{
   navigateTo("/signin")
 }
+
+const inputType =ref("password")
+const showHidebtnText = ref('🙈')
+
+const ToggleInput = ()=>{
+             inputType.value =  inputType.value === "password" ? "text" : "password";
+             showHidebtnText.value = showHidebtnText.value === '🙈' ?  "🙊" : "🙈"; 
+
+             console.log(inputType.value, "values",showHidebtnText.value )
+             }
 </script>
 
 <template>
@@ -63,9 +74,14 @@ const redirectToSignup = ()=>{
                       <label for="inputpass" class="inline-block mb-2">Password</label>
                     </div>
                   </div>
-                  <input id="inputpass"
-                    class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
-                    aria-label="password" type="password" value="" required="" placeholder="Min. 8 characters">
+                  <div class="relative w-full">
+    <div class="absolute inset-y-0 right-0 flex items-center px-2">
+      <input class="hidden js-password-toggle" id="toggle" type="checkbox" />
+      <label class="rounded px-2 py-1 text-sm text-gray-600 font-mono cursor-pointer js-password-label" for="toggle" @click='ToggleInput()'>{{showHidebtnText}}</label>
+    </div>
+    <input class="appearance-none border-2 rounded w-full py-3 px-3 leading-tight border-gray-300 bg-gray-100 focus:outline-none focus:border-indigo-700 focus:bg-white text-gray-700 pr-16 js-password" id="password" :type="inputType" autocomplete="off" placeholder="Min. 8 characters"
+    />
+  </div>
                 </div>
                 <div class="mb-6 flex flex-row">
                   <input
@@ -73,7 +89,7 @@ const redirectToSignup = ()=>{
                     type="checkbox" value="" id="remember" required="">
                   <div class="flex-shrink max-w-full w-full">
                     <label class="ltr:ml-2 rtl:mr-2 ml-2" for="remember">
-                      I agree to the <a href="">Terms</a> & <a href="">Privacy</a>
+                      I agree to the <a href="" class="cursor-pointer text-cyan-500 hover:text-cyan-700">Terms</a> & <a href="" class="cursor-pointer text-cyan-500 hover:text-cyan-700">Privacy</a>
                     </label>
                   </div>
                 </div>
@@ -95,7 +111,7 @@ const redirectToSignup = ()=>{
                 </div>
               </form>
               <div class="mt-4">
-                <p class="text-center mb-0">Have an account? <a class="hover:text-cyan-500 cursor-pointer"
+                <p class="text-center mb-0">Have an account? <a class="hover:text-cyan-700 cursor-pointer text-cyan-500"
                     @click="redirectToSignup">SignIn</a></p>
               </div>
             </div>
