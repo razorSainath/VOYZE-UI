@@ -204,7 +204,7 @@ const redirectTo = (page) => {
 
 <template>
   <!--- Sidemenu -->
-  <div class="vertical-menu mm-active" style="z-index: 4">
+  <div class="vertical-menu mm-active" style="position: fixed;z-index: 4">
     <!-- LOGO -->
     <div class="navbar-brand-box">
       <a class="logo logo-dark">

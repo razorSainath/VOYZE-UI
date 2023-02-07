@@ -27,5 +27,11 @@ const random = ()=>{
 
   </div>
 </div>
+<div class="relative">
+  <Footer/>
+</div>
+
   </section>
+
+
 </template>

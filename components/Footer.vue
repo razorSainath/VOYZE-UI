@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer ">
     <div class="container">
       <div class="grid grid-cols-2">
         <div class="text-sm">
