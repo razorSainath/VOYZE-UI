@@ -29,7 +29,7 @@ let pageTitle = useState('pageTitle')
         <title>Leader | Voyze</title>
     </head>
   <!-- start page title -->
-  <div class="row">
+  <div class="flex">
     <div class="col-12">
       <div class="row">
         <div class="col-md-4">
@@ -52,21 +52,9 @@ let pageTitle = useState('pageTitle')
   </div>
   <!-- end page title -->
 
-    <!-- <div class="row">
-    <div class="col-12">
-      <div
-        class="page-title-box d-flex align-items-center justify-content-between"
-      >
-        <h4 class="mb-0">Partners</h4>
-      </div>
-    </div>
-  </div> -->
 
-
-  <div class="row py-2">
-    <div class="col-xl-4 col-sm-6">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
+  <div class="grid grid-cols-3 gap-3 py-4">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
               <div class="avatar-sm">
@@ -86,34 +74,24 @@ let pageTitle = useState('pageTitle')
                   <i class="fa-solid fa-envelope"></i> sainath@razorlabz.com
                 </p>
               </div>
-              <div class="row">
-                <div class="col-4">
+              <div class="grid grid-cols-3">
                   <div class="mt-3">
                     <p class="text-muted mb-2 font-size-12">Approved</p>
                     <h5 class="font-size-13 mb-0">94</h5>
                   </div>
-                </div>
-                <div class="col-4">
                   <div class="mt-3">
                     <p class="text-muted mb-2 font-size-12">Rejected</p>
                     <h5 class="font-size-13 mb-0">$9,852</h5>
                   </div>
-                </div>
-                <div class="col-4">
                   <div class="mt-3">
                     <p class="text-muted mb-2 font-size-12">Published</p>
                     <h5 class="font-size-13 mb-0">94</h5>
                   </div>
-                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
-    </div>
-    <div class="col-xl-4 col-sm-6">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
               <div class="avatar-sm">
@@ -133,34 +111,24 @@ let pageTitle = useState('pageTitle')
                   <i class="fa-solid fa-envelope"></i> sunil@razorlabz.com
                 </p>
               </div>
-              <div class="row">
-                <div class="col-4">
+              <div class="grid grid-cols-3">
                   <div class="mt-3">
                     <p class="text-muted mb-2 font-size-12">Approved</p>
                     <h5 class="font-size-13 mb-0">94</h5>
                   </div>
-                </div>
-                <div class="col-4">
                   <div class="mt-3">
                     <p class="text-muted mb-2 font-size-12">Rejected</p>
                     <h5 class="font-size-13 mb-0">$9,852</h5>
                   </div>
-                </div>
-                <div class="col-4">
                   <div class="mt-3">
                     <p class="text-muted mb-2 font-size-12">Published</p>
                     <h5 class="font-size-13 mb-0">94</h5>
                   </div>
-                </div>
-              </div>
+                              </div>
             </div>
           </div>
-        </div>
       </div>
-    </div>
-    <div class="col-xl-4 col-sm-6">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
               <div class="avatar-sm">
@@ -180,7 +148,7 @@ let pageTitle = useState('pageTitle')
                   <i class="fa-solid fa-envelope"></i> nibhash@razorlabz.com
                 </p>
               </div>
-              <div class="row">
+              <div class="grid grid-cols-3">
                 <div class="col-4">
                   <div class="mt-3">
                     <p class="text-muted mb-2 font-size-12">Approved</p>
@@ -202,9 +170,7 @@ let pageTitle = useState('pageTitle')
               </div>
             </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
   <!-- end row -->
 

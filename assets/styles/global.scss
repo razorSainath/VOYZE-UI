@@ -182,6 +182,9 @@
   -webkit-box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
   box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
 }
+body{
+  background-color: --bs-body-bg;
+}
 .navbar-header {
   display: -webkit-box;
   display: -ms-flexbox;

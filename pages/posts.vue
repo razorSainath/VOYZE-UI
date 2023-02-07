@@ -11,79 +11,71 @@ let pageTitle = useState('pageTitle')
         <title>Posts | Voyze</title>
     </head>
   <!--analytics cards start-->
-  <div class="row py-2">
-    <div class="col-md-6 col-xl-3">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
-          <div class="float-end mt-2">
+  <div class="flex gap-3 py-2">
+    <div class="w-3/12">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full p-6">
+          <div class="float-right mt-2">
             <div id="total-revenue-chart" data-colors='["--bs-primary"]'></div>
           </div>
           <div>
-            <h4 class="mb-1 mt-1"><span data-plugin="counterup">152</span></h4>
-            <p class="text-muted mb-0">Total Posts</p>
+            <h4 class="mb-1 mt-1 text-2xl"><span data-plugin="counterup">152</span></h4>
+            <p class="text-slate-400 mb-0">Total Posts</p>
           </div>
-          <p class="text-muted mt-3 mb-0">
-            <span class="text-success me-1"><i class="mdi mdi-arrow-up-bold me-1"></i>2.65%</span>
+          <p class="text-slate-400 mt-3 mb-0">
+            <span class="text-green-400 me-1"><i class="mdi mdi-arrow-up-bold me-1"></i>2.65%</span>
             since last week
           </p>
-        </div>
       </div>
     </div>
     <!-- end col-->
 
-    <div class="col-md-6 col-xl-3">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
+    <div class="w-3/12">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full p-6">
           <div class="float-end mt-2"></div>
           <div>
-            <h4 class="mb-1 mt-1"><span data-plugin="counterup">43</span></h4>
-            <p class="text-muted mb-0">Published</p>
+            <h4 class="mb-1 mt-1 text-2xl"><span data-plugin="counterup">43</span></h4>
+            <p class="text-slate-400 mb-0">Published</p>
           </div>
-          <p class="text-muted mt-3 mb-0">
-            <span class="text-danger me-1"><i class="mdi mdi-arrow-down-bold me-1"></i>0.82%</span>
+          <p class="text-slate-400 mt-3 mb-0">
+            <span class="text-red-400 me-1"><i class="mdi mdi-arrow-down-bold me-1"></i>0.82%</span>
             since last week
           </p>
-        </div>
       </div>
     </div>
     <!-- end col-->
 
-    <div class="col-md-6 col-xl-3">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
+    <div class="w-3/12">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full p-6">
           <div class="float-end mt-2">
             <div id="customers-chart" data-colors='["--bs-primary"]'></div>
           </div>
           <div>
-            <h4 class="mb-1 mt-1"><span data-plugin="counterup">54</span></h4>
-            <p class="text-muted mb-0">Review</p>
+            <h4 class="mb-1 mt-1 text-2xl"><span data-plugin="counterup">54</span></h4>
+            <p class="text-slate-400 mb-0">Review</p>
           </div>
-          <p class="text-muted mt-3 mb-0">
-            <span class="text-danger me-1"><i class="mdi mdi-arrow-down-bold me-1"></i>6.24%</span>
+          <p class="text-slate-400 mt-3 mb-0">
+            <span class="text-red-400 me-1"><i class="mdi mdi-arrow-down-bold me-1"></i>6.24%</span>
             since last week
           </p>
-        </div>
       </div>
     </div>
     <!-- end col-->
 
-    <div class="col-md-6 col-xl-3">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
+    <div class="w-3/12">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full p-6">
           <div class="float-end mt-2">
             <div id="growth-chart" data-colors='["--bs-warning"]'></div>
           </div>
           <div>
-            <h4 class="mb-1 mt-1">
+            <h4 class="mb-1 mt-1 text-2xl">
               + <span data-plugin="counterup">12.58</span>%
             </h4>
-            <p class="text-muted mb-0">Growth</p>
+            <p class="text-slate-400 mb-0">Growth</p>
           </div>
-          <p class="text-muted mt-3 mb-0">
-            <span class="text-success me-1"><i class="mdi mdi-arrow-up-bold me-1"></i>10.51%</span>
+          <p class="text-slate-400 mt-3 mb-0">
+            <span class="text-green-400 me-1"><i class="mdi mdi-arrow-up-bold me-1"></i>10.51%</span>
             since last week
           </p>
-        </div>
       </div>
     </div>
     <!-- end col-->
@@ -91,17 +83,53 @@ let pageTitle = useState('pageTitle')
   <!--analtics cards end-->
   <!-- end page title -->
   <!--filter start-->
-  <div class="row py-2">
-    <div class="col-xl-3 py-1">
+  <div class="flex py-2 gap-3">
+    <div class="w-3/12 py-1">
                   <div class="search-box">
-                    <div class="position-relative">
-                      <input type="text" class="form-control" placeholder="Search..." style="border: 1px solid #dcdcdc;">
+                    <div class="relative">
+                      <input type="text" class="" placeholder="Search..." style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
                       <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     </div>
                   </div>
     </div>
-    <div class="col-xl-3 py-1">
-      <select name="" id="" class="form-control">
+    <div class="w-3/12 py-1">
+      <select name="" id="" class="border-1" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
         <option value="0">Select Platform</option>
         <option value="1">LinkedIn</option>
         <option value="2">Twitter</option>
@@ -109,14 +137,32 @@ let pageTitle = useState('pageTitle')
         <option value="4">Instagram</option>
       </select>
     </div>
-    <div class="col-xl-3 py-1">
+    <div class="w-3/12 py-1">
       <div>
-        <input type="datetime-local" name="" id="" class="form-control" />
+        <input type="datetime-local" name="" id="" class="" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;" />
       </div>
     </div>
-    <div class="col-xl-1"></div>
-    <div class="col-xl-2">
-      <button type="button" class="btn btn-primary form-control small float-md-end" data-bs-toggle="offcanvas" data-bs-target="#newDraft" aria-controls="offcanvasExample">
+    <div class="w-1/12"></div>
+    <div class="w-2/12">
+      <button type="button" class="bg-cyan-500 rounded-lg p-2 text-white float-right small md:float-right" data-bs-toggle="offcanvas" data-bs-target="#newDraft" aria-controls="offcanvasExample" >
         <i class="fa-solid fa-plus"></i> New Draft
       </button>
     </div>
