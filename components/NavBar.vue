@@ -33,6 +33,13 @@ const options= ref(false)
 <template>
   <header id="page-topbar">
     <div class="navbar-header">
+      <span class="short-logo">
+              <img
+                src="~/assets/images/logo-sm-removebg-preview.png"
+                alt=""
+                height="22"
+              />
+            </span>
       <div class="flex flex-end">
         <!-- LOGO -->
         <div class="navbar-brand-box">
@@ -44,9 +51,7 @@ const options= ref(false)
                 height="22"
               />
             </span>
-            <span class="logo-lg">
-              <img src="~/assets/images/logo-light.svg" alt="" height="20" />
-            </span>
+
           </a>
         </div>
 
