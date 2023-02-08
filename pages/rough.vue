@@ -7,6 +7,7 @@ definePageMeta({
   <!-- @click="options=!options" -->
 
 <template>
+
   <!-- The add partners Modal -->
   <div class="modal" id="partners" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
