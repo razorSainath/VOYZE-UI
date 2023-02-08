@@ -9,7 +9,7 @@ const random = ()=>{
   <section
     :class="`${!isSidebarOpen ? '' : 'sidebar-enable'}`"
     :data-sidebar-size="`${isSidebarOpen ? 'lg' : 'sm'}`"
-    style="background-color: #f5f6f8;font-family: Arial, Helvetica, sans-serif;"
+    class="bg-slate-200"
   >
   <div id="layout-wrapper" class="min-h-screen">
     <NavBar/>

@@ -41,7 +41,7 @@ const ToggleInput = ()=>{
       <span class="fixed bg-gray-900 bg-opacity-70 w-full h-full inset-x-0 top-0"></span>
       <div class="flex-shrink max-w-full w-full min-h-screen sm:w-2/3 lg:w-1/2 xl:w-1/3 z-30">
         <!-- login form -->
-        <div class="max-w-full w-full h-full px-6 sm:px-12 bg-white dark:bg-gray-800 shadow-lg z-40">
+        <div class="max-w-full w-full h-full px-6 sm:px-12 bg-slate-200 dark:bg-gray-800 shadow-lg z-40">
           <div class="relative">
             <div class="p-6 sm:p-8">
               <form id="login-form">
@@ -58,17 +58,18 @@ const ToggleInput = ()=>{
                 <div class="mb-6">
                   <label for="inputemail" class="inline-block mb-2">Username</label>
                   <input placeholder="Enter Username/Email" type="text"
-                  class="text-md block px-3 py-2  rounded-lg w-full 
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" >
+                  class="text-base block px-3 py-2  rounded-lg w-full 
+                bg-white border-2 border-slate-300 placeholder-gray-600 shadow focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none" >
                 </div>
                 <div class="py-2" x-data="{ show: true }">
                 <span class="px-1 text-sm text-gray-600">Password</span>
                 <div class="relative w-full">
     <div class="absolute inset-y-0 right-0 flex items-center px-2">
       <input class="hidden js-password-toggle" id="toggle"   />
-      <label class="rounded px-2 py-1 text-sm text-gray-600 font-mono cursor-pointer js-password-label" for="toggle" @click='ToggleInput()'>{{showHidebtnText}}</label>
+      <label class="rounded px-2 py-1 text-sm text-gray-600 cursor-pointer js-password-label" for="toggle" @click='ToggleInput()'>{{showHidebtnText}}</label>
     </div>
-    <input class="appearance-none border-2 rounded w-full py-3 px-3 leading-tight border-gray-300 bg-gray-100 focus:outline-none focus:border-indigo-700 focus:bg-white text-gray-700 pr-16 js-password" id="password" :type="inputType" autocomplete="off" placeholder="Enter your Password"
+    <input class="text-base block 
+                bg-white placeholder-gray-600 shadow focus:placeholder-gray-500 appearance-none border-2 rounded-lg w-full py-3 px-3 leading-tight border-slate-300 focus:outline-none focus:border-cyan-700 focus:bg-white text-gray-700 pr-16 js-password" id="password" :type="inputType" autocomplete="off" placeholder="Enter your Password"
     />
   </div>
               </div>
