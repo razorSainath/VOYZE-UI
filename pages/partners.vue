@@ -83,7 +83,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-              <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded-lg">Accepted</span>
+              <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-red-400 text-white rounded-lg">Decline</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -110,7 +110,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded-lg">Accepted</span>
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-400 text-white rounded-lg">Pending</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -137,7 +137,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded-lg">Accepted</span>
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-400 text-white rounded-lg">Accepted</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -164,7 +164,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded-lg">Accepted</span>
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-400 text-white rounded-lg">Waiting</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -192,6 +192,42 @@ let pageTitle = useState('pageTitle')
     </div>
   </div>
 </div>
+<div class="flex mt-4">
+            <div class="w-6/12">
+              <div>
+                <p class="mb-sm-0">Showing 1 to 10 of 12 entries</p>
+              </div>
+            </div>
+            <div class="w-6/12">
+              <div class="float-right">
+                <div class="flex justify-center">
+  <nav aria-label="Page navigation example">
+    <ul class="flex list-style-none">
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
+          href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">1</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">2</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">3</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a></li>
+    </ul>
+  </nav>
+</div>
+              </div>
+            </div>
+          </div>
 </div>
     
   <!-- end row -->
