@@ -215,7 +215,7 @@ const series = [
   </div>
   <!-- end row-->
 
-  <div class="grid grid-cols-3 mt-3 gap-3">
+  <div class="grid grid-cols-3 mt-3 gap-3 mb-3">
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
           <h4 class="mb-4">Top Users</h4>
 
@@ -549,8 +549,4 @@ const series = [
           </div>
       </div>
   </div>
-  <!-- end row -->
-  <div class="grid grid-cols-2 mt-3">
-      
-    </div>
 </template>

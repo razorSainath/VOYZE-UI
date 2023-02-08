@@ -6,7 +6,7 @@
           © 2021 - {{ new Date().getFullYear() }} Razorlabz Software Private
           Limited.
         </div>
-          <div class="sm:text-right md:hidden sm:block text-sm">All rights reserved</div>
+          <div class="sm:text-right sm:block text-sm">All rights reserved</div>
       </div>
     </div>
   </footer>

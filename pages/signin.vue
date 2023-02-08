@@ -68,7 +68,7 @@ const ToggleInput = ()=>{
       <input class="hidden js-password-toggle" id="toggle"   />
       <label class="rounded px-2 py-1 text-sm text-gray-600 font-mono cursor-pointer js-password-label" for="toggle" @click='ToggleInput()'>{{showHidebtnText}}</label>
     </div>
-    <input class="appearance-none border-2 rounded w-full py-3 px-3 leading-tight border-gray-300 bg-gray-100 focus:outline-none focus:border-indigo-700 focus:bg-white text-gray-700 pr-16 font-mono js-password" id="password" :type="inputType" autocomplete="off"
+    <input class="appearance-none border-2 rounded w-full py-3 px-3 leading-tight border-gray-300 bg-gray-100 focus:outline-none focus:border-indigo-700 focus:bg-white text-gray-700 pr-16 js-password" id="password" :type="inputType" autocomplete="off" placeholder="Enter your Password"
     />
   </div>
               </div>
