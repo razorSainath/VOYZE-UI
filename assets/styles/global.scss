@@ -129,6 +129,9 @@
   --bs-card-bg: #2b2e3b;
   --bs-card-border-color: #2b2e3b;
 }
+.short-logo{
+  display: none;
+}
 [data-layout-mode="dark"] .dropdown-menu {
   --bs-dropdown-bg: #2b2e3b;
   --bs-dropdown-link-color: #9699a8;
@@ -235,7 +238,7 @@ section[data-sidebar-size="sm"] .navbar-header .vertical-menu-btn {
   line-height: 70px;
 }
 .logo .logo-sm {
-  display: none;
+  display: block;
 }
 .logo-dark {
   display: var(--bs-display-block);
@@ -273,6 +276,10 @@ section[data-sidebar-size="sm"] .navbar-header .vertical-menu-btn {
   color: #495057;
 }
 @media (max-width: 991.98px) {
+  .short-logo{
+    display: block;
+    margin-left: 15px;
+  }
   .navbar-brand-box {
     width: auto;
   }
