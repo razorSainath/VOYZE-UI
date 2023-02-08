@@ -185,7 +185,6 @@ let pageTitle = useState('pageTitle')
                 <i class="fa-solid fa-ellipsis-h"></i>
               </td>
             </tr>
-
           </tbody>
         </table>
       </div>
@@ -200,6 +199,7 @@ let pageTitle = useState('pageTitle')
             </div>
             <div class="w-6/12">
               <div class="float-right">
+                
                 <div class="flex justify-center">
   <nav aria-label="Page navigation example">
     <ul class="flex list-style-none">
