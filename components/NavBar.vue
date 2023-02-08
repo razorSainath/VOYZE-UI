@@ -17,7 +17,7 @@ export default {
 </script>
 
 <script setup>
-import {ref} from 'vue'
+import { ref } from "vue";
 let isSidebarOpen = useState("isSidebarOpen");
 let pageTitle = useState("pageTitle", () => "");
 
@@ -27,31 +27,30 @@ const just = () => {
   // console.log("afterClick", isSidebarOpen.value);
 };
 
-const options= ref(false)
+const options = ref(false);
 </script>
 
 <template>
   <header id="page-topbar">
     <div class="navbar-header">
       <span class="short-logo">
-              <img
-                src="~/assets/images/logo-sm-removebg-preview.png"
-                alt=""
-                height="22"
-              />
-            </span>
+        <img src="~/assets/images/logo-sm-removebg-preview.png" alt="" />
+      </span>
       <div class="flex flex-end">
         <!-- LOGO -->
         <div class="navbar-brand-box">
           <a class="logo logo-dark">
             <span class="logo-sm">
+              <img src="~/assets/images/logo-sm-removebg-preview.png" alt="" />
+            </span>
+            <span class="logo-lg">
               <img
-                src="~/assets/images/logo-sm-removebg-preview.png"
+                src="~/assets/images/logo-light.svg"
                 alt=""
-                height="22"
+                height="20"
+                class="w-24"
               />
             </span>
-
           </a>
         </div>
 
@@ -83,7 +82,7 @@ const options= ref(false)
             data-bs-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
-            @click="options=!options"
+            @click="options = !options"
           >
             <img
               class="rounded-circle header-profile-user"
@@ -97,53 +96,52 @@ const options= ref(false)
               ></i>
             </div>
 
-                              <!-- item-->
-                              <div v-if="options" class="absolute top-[70px] right-[-9px] float-right mt- w-[200px] h-[130px]">
+            <!-- item-->
             <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6"
+              v-if="options"
+              class="absolute top-[70px] right-[-9px] float-right mt- w-[200px] h-[130px]"
             >
-              <div class="flex flex-wrap flex-row items-center">
-                <div class="flex-shrink max-w-full">
-                  <div class="flex flex-col">
-                    <div class="">
-                      <a class="dropdown-item" href="#"
-                        ><i
-                          class="fa-solid fa-user-circle font-size-18 align-middle text-muted me-1"
-                        ></i>
-                        <span class="align-middle">View Profile</span></a
-                      >
-                    </div>
-                    <div class="">
-                      <a class="dropdown-item" href="#"
-                        ><i
-                          class="fa-sharp fa-solid fa-display font-size-18 align-middle me-1 text-muted"
-                        ></i>
-                        <span class="align-middle">Lock screen</span></a
-                      >
-                    </div>
-                    <div class="ml-[-24px]">
-                      <a class="dropdown-item" href="#"
-                        ><i
-                          class="fa-solid fa-sign-out-alt font-size-18 align-middle me-1 text-muted"
-                        ></i>
-                        <span class="align-middle">Sign out</span></a
-                      >
+              <div
+                class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6"
+              >
+                <div class="flex flex-wrap flex-row items-center">
+                  <div class="flex-shrink max-w-full">
+                    <div class="flex flex-col">
+                      <div class="">
+                        <a class="dropdown-item" href="#"
+                          ><i
+                            class="fa-solid fa-user-circle font-size-18 align-middle text-muted me-1"
+                          ></i>
+                          <span class="align-middle">View Profile</span></a
+                        >
+                      </div>
+                      <div class="">
+                        <a class="dropdown-item" href="#"
+                          ><i
+                            class="fa-sharp fa-solid fa-display font-size-18 align-middle me-1 text-muted"
+                          ></i>
+                          <span class="align-middle">Lock screen</span></a
+                        >
+                      </div>
+                      <div class="ml-[-24px]">
+                        <a class="dropdown-item" href="#"
+                          ><i
+                            class="fa-solid fa-sign-out-alt font-size-18 align-middle me-1 text-muted"
+                          ></i>
+                          <span class="align-middle">Sign out</span></a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-                    <!-- item-->
+            <!-- item-->
           </button>
-
-
         </div>
-
       </div>
     </div>
   </header>
-  
 </template>
 
 <style scoped>
