@@ -22,9 +22,9 @@ let isSidebarOpen = useState("isSidebarOpen");
 let pageTitle = useState("pageTitle", () => "");
 
 const just = () => {
-  console.log("beforeClick", isSidebarOpen.value);
+  // console.log("beforeClick", isSidebarOpen.value);
   isSidebarOpen.value = !isSidebarOpen.value;
-  console.log("afterClick", isSidebarOpen.value);
+  // console.log("afterClick", isSidebarOpen.value);
 };
 
 const options= ref(false)
