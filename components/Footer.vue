@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer bg-white ">
+  <footer class="footer bg-white fixed-bottom ">
     <div class="container">
       <div class="grid grid-cols-2">
         <div class="text-sm">

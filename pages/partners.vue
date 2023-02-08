@@ -9,8 +9,7 @@ let pageTitle = useState('pageTitle')
  <head>
         <title>Partners | Voyze</title>
     </head>
-
-    <div class="flex flex-col">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full p-6"><div class="flex flex-col">
   <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
     <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
       <div class="overflow-hidden">
@@ -162,7 +161,8 @@ let pageTitle = useState('pageTitle')
       </div>
     </div>
   </div>
-</div>
+</div></div>
+    
   <!-- end row -->
 
 </template>

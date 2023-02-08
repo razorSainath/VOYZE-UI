@@ -318,33 +318,35 @@ pageTitle.value = "Category"
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-6">
-            <div>
+        <div class="flex">
+            <div class="w-6/12">
               <p class="mb-sm-0">Showing 1 to 10 of 12 entries</p>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="float-sm-end">
-              <ul class="pagination mb-sm-0">
-                <li class="page-item disabled">
-                  <a href="#" class="page-link"><i class="mdi mdi-chevron-left"></i></a>
-                </li>
-                <li class="page-item active">
-                  <a href="#" class="page-link">1</a>
-                </li>
-                <li class="page-item">
-                  <a href="#" class="page-link">2</a>
-                </li>
-                <li class="page-item">
-                  <a href="#" class="page-link">3</a>
-                </li>
-                <li class="page-item">
-                  <a href="#" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
-                </li>
-              </ul>
+            <div class="w-6/12">
+              <div class="float-right">
+                <div class="flex justify-center">
+  <nav aria-label="Page navigation example">
+    <ul class="flex list-style-none">
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
+          href="#">Previous</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">1</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">2</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">3</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">Next</a></li>
+    </ul>
+  </nav>
+</div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </div>
