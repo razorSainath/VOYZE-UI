@@ -9,8 +9,37 @@ let pageTitle = useState('pageTitle')
  <head>
         <title>Partners | Voyze</title>
     </head>
-
-    <div class="flex flex-col">
+<div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full p-6">
+  <div class="flex flex-col">
+    <div class="flex mb-2">
+            <div class="w-3/12">
+              <div class="form-inline mb-3">
+                <div class="search-box ms-2">
+                  <div class="relative">
+                    <input
+                      type="text"
+                      class="form-control rounded bg-slate-100 border-2 "
+                      placeholder="Search..."
+                    />
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-3/12"></div>
+            <div class="w-6/12">
+              <div class="mb-3 float-right">
+                <div class="mb-3 float-md-end">
+                <a
+                  href="javascript:void(0);"
+                  class="bg-cyan-500 rounded-lg p-2 hover:bg-cyan-700 text-white waves-effect waves-light"
+                  data-bs-toggle="modal" data-bs-target="#partners"
+                  ><i class="fa-solid fa-plus me-2"></i> Add Partner</a
+                >
+              </div>
+              </div>
+            </div>
+          </div>
   <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
     <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
       <div class="overflow-hidden">
@@ -54,7 +83,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-              <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded">Accepted</span>
+              <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded-lg">Accepted</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -81,7 +110,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded">Accepted</span>
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded-lg">Accepted</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -108,7 +137,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded">Accepted</span>
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded-lg">Accepted</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -135,7 +164,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded">Accepted</span>
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded-lg">Accepted</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -163,6 +192,8 @@ let pageTitle = useState('pageTitle')
     </div>
   </div>
 </div>
+</div>
+    
   <!-- end row -->
   
 </template>

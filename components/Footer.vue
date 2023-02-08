@@ -1,12 +1,12 @@
 <template>
   <footer class="footer bg-white fixed-bottom ">
-    <div class="container">
-      <div class="grid grid-cols-2">
-        <div class="text-sm">
-          © 2021 - {{ new Date().getFullYear() }} Razorlabz Software Private
-          Limited.
+    <div class="container-fluid">
+      <div class="flex">
+        <div class="text-sm w-6/12">
+         <p class="text-left"> © 2021 - {{ new Date().getFullYear() }} Razorlabz Software Private
+          Limited.</p>
         </div>
-          <div class="sm:text-right sm:block text-sm">All rights reserved</div>
+          <div class="w-6/12"><p class="text-right">All rights reserved</p></div>
       </div>
     </div>
   </footer>
