@@ -53,7 +53,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-              Accepted
+              <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded">Accepted</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -71,7 +71,7 @@ let pageTitle = useState('pageTitle')
                 2021-01-03
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <i class="fa-solid fa-ellipsis-v"></i>
+                <i class="fa-solid fa-ellipsis-h"></i>
               </td>
             </tr>
             <tr class="border-b">
@@ -80,7 +80,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-              Accepted
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded">Accepted</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -98,7 +98,7 @@ let pageTitle = useState('pageTitle')
                 2021-01-03
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <i class="fa-solid fa-ellipsis-v"></i>
+                <i class="fa-solid fa-ellipsis-h"></i>
               </td>
             </tr>
             <tr class="border-b">
@@ -107,7 +107,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-              Accepted
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded">Accepted</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -125,7 +125,7 @@ let pageTitle = useState('pageTitle')
                 2021-01-03
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <i class="fa-solid fa-ellipsis-v"></i>
+                <i class="fa-solid fa-ellipsis-h"></i>
               </td>
             </tr>
             <tr class="border-b">
@@ -134,7 +134,7 @@ let pageTitle = useState('pageTitle')
                 Edelman
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-              Accepted
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-600 text-white rounded">Accepted</span>
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                recieved
@@ -152,7 +152,7 @@ let pageTitle = useState('pageTitle')
                 2021-01-03
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                <i class="fa-solid fa-ellipsis-v"></i>
+                <i class="fa-solid fa-ellipsis-h"></i>
               </td>
             </tr>
 
