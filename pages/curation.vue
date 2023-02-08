@@ -10,13 +10,32 @@ let pageTitle = useState('pageTitle')
    <head>
         <title>Curation | Voyze</title>
     </head>
-  <div class="row mb-2">
-    <div class="col-md-3">
+  <div class="flex mb-2 gap-3">
+    <div class="w-3/12">
       <label for=""><b>Leader Topics:</b></label>
       <select
         name=""
         id=""
         class="form-control"
+        style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;"
         aria-placeholder="Select Topics"
       >
         <option value="0" class="active">Select Topics...</option>
@@ -26,39 +45,79 @@ let pageTitle = useState('pageTitle')
         <option value="4">Bussiness</option>
       </select>
     </div>
-    <div class="col-md-3">
+    <div class="w-3/12">
       <label for=""><b>Enter Query:</b></label>
       <input
         type="text"
         name=""
         id=""
-        class="form-control"
+        class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;"
         placeholder="Enter queries..."
       />
     </div>
-    <div class="col-md-1">
+    <div class="w-1/12">
       <label for=""><b>Results:</b></label>
-      <select name="" id="" class="form-control">
+      <select name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
         <option value="0">10</option>
         <option value="1">25</option>
         <option value="2">50</option>
         <option value="3">100</option>
       </select>
     </div>
-    <div class="col-md-2">
-      <label for="">&nbsp;</label>
+    <div class="w-2/12">
+      <label for="">&nbsp;</label><br>
       <input
         type="button"
         value="Search"
-        class="btn btn-primary form-control"
+        class="bg-cyan-500 hover:bg-cyan-700 form-control p-1 text-white rounded-lg"
       />
     </div>
-    <div class="col-md-3 filter">
+    <div class="w-2/12 filter">
       <label for="">&nbsp;</label>
-      <input class="btn btn-primary form-control" data-bs-toggle="offcanvas" data-bs-target="#filters" aria-controls="offcanvasExample" value="Filters" type="button">
+      <button class="inline-block px-6 py-2.5 bg-cyan-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-cyan-700 hover:shadow-lg focus:bg-cyan-700 focus:shadow-lg  focus:outline-none focus:ring-0 active:bg-cyan-800 active:shadow-lg transition duration-150 ease-in-out" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter" aria-controls="offcanvasExample">
+      Filter
+    </button>
     </div>
   </div>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="filters" aria-labelledby="offcanvasExampleLabel">
+
+<!--filter offcanvas start-->
+<div class="offcanvas offcanvas-start fixed bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 left-0 border-none w-96" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -67,7 +126,25 @@ let pageTitle = useState('pageTitle')
     <div class="row">
             <div class="col-xl-12" >
               <label for="" class="py-2"><b>Enter Location:</b></label>
-          <select name="" id="" class="form-control">
+          <select name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
             <option value="0"></option>
             <option value="1"></option>
             <option value="2"></option>
@@ -76,7 +153,25 @@ let pageTitle = useState('pageTitle')
             </div>
           <div class="col-xl-12">
               <label for="" class="py-2"><b>Categories:</b></label>
-          <select name="" id="" class="form-control">
+          <select name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
             <option value="0"></option>
             <option value="1"></option>
             <option value="2"></option>
@@ -85,7 +180,25 @@ let pageTitle = useState('pageTitle')
             </div>
             <div class="col-xl-12">
               <label for="" class="py-2"><b>Sources:</b></label>
-          <select name="" id="" class="form-control">
+          <select name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
             <option value="0"></option>
             <option value="1"></option>
             <option value="2"></option>
@@ -94,7 +207,25 @@ let pageTitle = useState('pageTitle')
             </div>
             <div class="col-xl-12">
               <label for="" class="py-2"><b>Authors:</b></label>
-          <select name="" id="" class="form-control">
+          <select name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
             <option value="0"></option>
             <option value="1"></option>
             <option value="2"></option>
@@ -103,210 +234,324 @@ let pageTitle = useState('pageTitle')
             </div>
             <div class="col-xl-12" >
               <label for="" class="py-2"><b>Times Of Interest:</b></label>
-         <input type="datetime-local" name="" id="" class="form-control">
+         <input type="datetime-local" name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
             </div>
         </div>
   </div>
-</div>
+    </div>
+<!--filter offcanvas end-->
 
-  <div class="row py-2">
-    <div class="col-xl-9">
-      <div class="row">
-        <div class="col-xl-4 d-flex align-items-stretch flex-wrap">
-          <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
+  <div class="flex py-2 gap-3">
+      <div class="grid grid-cols-3 gap-3">
+        <div>
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full">
+                    <div class="grid grid-cols-2 p-3">
+                      <div class="float-left">
                         <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" style="top:10px;position:absolute;">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                    <div class="mb-2">
-                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202302/bank1-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">5, 10 या 15 लाख कितना कमाते हैं आप? जानिए- नए स्लैब के बाद आपकी इनकम पर कितना लगेगा अब टैक्स</a></h5>
-                    <p class="text-muted mb-2">New Tax Slab Benefits: बजट में वित्त मंत्री निर्मला सीतारमण ने नया इनकम टैक्स स्लैब (New Income Tax Slab) पेश किया है, जिसमें सबसे ज्यादा मध्यवर्गीय प...</p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="row">
-                        <div class="col-6" style=""><b>Create Draft:</b></div>
-                        <div class="col-6 " style="top:2px;">
-                          <div class="btn-group float-end" role="group">
-                    <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
-                    <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
-                </div>
-                        </div>
+                      </div>
+                      <div>
+                       <i class="fa-solid fa-eye float-right"></i>
                       </div>
                     </div>
-            </div>
-        </div>
-        <div class="col-xl-4">
-          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
-                        <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
-                    </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" style="top:10px;position:absolute;">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
-                    </div>
-                </div>
                 <div class="clearfix"></div>
                     <div class="mb-2">
                         <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202302/getty-mobile-shopping-sixteen_nine_0.jpg?size=948:533" alt="" class="img-fluid img">
                     </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Budget 2023: सस्ते होंगे मोबाइल और टीवी, सरकार ने घटा दी कस्टम ड्यूटी, बजट में बड़ा ऐलान</a></h5>
-                    <p class="text-muted mb-2">Budget 2023: केंद्रीय बजट 2023-24 पेश कर दिया गया है. इस बजट में सरकार ने टैक्स स्लैब में बदलाव से कस्टम ड्यूटी में कटौती तक कई बड़े ऐलान किए हैं. कंज...</p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="row">
+                      <h5 class="text-base mb-1 p-2"><a href="#" class="text-dark">Budget 2023: सस्ते होंगे मोबाइल और टीवी, सरकार ने घटा दी कस्टम ड्यूटी, बजट में बड़ा ऐलान</a></h5>
+                    <p class="text-slate-400 mb-1 p-2">Budget 2023: केंद्रीय बजट 2023-24 पेश कर दिया गया है. इस बजट में सरकार ने टैक्स स्लैब में बदलाव से कस्टम ड्यूटी में कटौती तक कई बड़े ऐलान किए हैं. कंज...</p>
+                      <div class="grid grid-cols-2 p-1">
                         <div class="col-6" style=""><b>Create Draft:</b></div>
                         <div class="col-6" style="top:2px;">
-                          <div class="btn-group float-end" role="group">
-                    <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
-                    <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
+                          <div class="btn-group float-right" role="group">
+                    <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-cyan-500"></i></a></span>
+                    <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-cyan-500"></i></a></span>
                 </div>
                         </div>
                       </div>
-                    </div>
             </div>
         </div>
-        <div class="col-xl-4">
-          <div class="card" style="border: 1px solid #f3f8fb;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <div class="card-header">
-                    <div class="float-start">
+        <div>
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full">
+                    <div class="grid grid-cols-2 p-3">
+                      <div class="float-left">
                         <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
+                      </div>
+                      <div>
+                       <i class="fa-solid fa-eye float-right"></i>
+                      </div>
                     </div>
-                    <div class="dropdown float-end">
-                        <a class="text-body font-size-16" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" style="top:10px;position:absolute;">
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">View</a>
-                        </div>
+                <div class="clearfix"></div>
+                    <div class="mb-2">
+                        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202302/getty-mobile-shopping-sixteen_nine_0.jpg?size=948:533" alt="" class="img-fluid img">
                     </div>
+                      <h5 class="text-base mb-1 p-2"><a href="#" class="text-dark">Budget 2023: सस्ते होंगे मोबाइल और टीवी, सरकार ने घटा दी कस्टम ड्यूटी, बजट में बड़ा ऐलान</a></h5>
+                    <p class="text-slate-400 mb-2 p-2">Budget 2023: केंद्रीय बजट 2023-24 पेश कर दिया गया है. इस बजट में सरकार ने टैक्स स्लैब में बदलाव से कस्टम ड्यूटी में कटौती तक कई बड़े ऐलान किए हैं. कंज...</p>
+                      <div class="grid grid-cols-2 p-1">
+                        <div class="col-6" style=""><b>Create Draft:</b></div>
+                        <div class="col-6" style="top:2px;">
+                          <div class="btn-group float-right" role="group">
+                    <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-cyan-500"></i></a></span>
+                    <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-cyan-500"></i></a></span>
                 </div>
+                        </div>
+                      </div>
+            </div>
+        </div>
+        <div>
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full">
+            <div class="grid grid-cols-2 p-3">
+                      <div class="float-left">
+                        <small><span><b>Date Of Publication:</b></span><br><small>January 4th 2021, 14:26</small></small>
+                      </div>
+                      <div>
+                       <i class="fa-solid fa-eye float-right"></i>
+                      </div>
+                    </div>
                 <div class="clearfix"></div>
                     <div class="mb-2">
                         <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/babar-azam-sixteen_nine.jpg?size=948:533" alt="" class="img-fluid img">
                     </div>
-                    <div class="card-body">
-                      <h5 class="font-size-16 mb-1"><a href="#" class="text-dark">Babar Azam: 'हिन्दुस्तान से सीखो...', न्यूजीलैंड सीरीज के बीच बाबर आजम पर भड़का PAK दिग्गज</a></h5>
-                    <p class="text-muted mb-2">पाकिस्तान टीम को घर में लगातार कई हार झेलनी पड़ी हैं, जिस न्यूजीलैंड ने पाकिस्तान को उसकेे घर में हरा दिया था. उसी टीम को टीम इंडिया ने अपने घर में घु...</p>
-                    </div>
-
-                    <div class="card-footer">
-                      <div class="row">
-                        <div class="col-6" style=""><b>Create Draft:</b></div>
-                        <div class="col-6" style="top:2px;">
-                          <div class="btn-group float-end" role="group">
-                    <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-primary"></i></a></span>
-                    <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-primary"></i></a></span>
+                      <h5 class="text-base mb-1 p-2"><a href="#" class="text-dark">Babar Azam: 'हिन्दुस्तान से सीखो...', न्यूजीलैंड सीरीज के बीच बाबर आजम पर भड़का PAK दिग्गज</a></h5>
+                    <p class="text-slate-400 mb-2 p-2">पाकिस्तान टीम को घर में लगातार कई हार झेलनी पड़ी हैं, जिस न्यूजीलैंड ने पाकिस्तान को उसकेे घर में हरा दिया था. उसी टीम को टीम इंडिया ने अपने घर में घु...</p>
+                    <div class="grid grid-cols-2 p-1">
+                        <div><b>Create Draft:</b></div>
+                        <div style="top:2px;">
+                          <div class="btn-group float-right" role="group">
+                    <span class=" text-truncate me-2" title="LinkedIn "><a href="#"><i class="fa-brands fa-linkedin me-1 fa-2x text-cyan-500"></i></a></span>
+                    <span class=" text-truncate" title="Twitter"><a href="#"><i class="fa-brands fa-square-twitter me-1 fa-2x text-cyan-500"></i></a></span>
                 </div>
                         </div>
                       </div>
-                    </div>
             </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-3 filter1 align-items-stretch flex-wrap">
-    <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
+      <div class="filter1">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full p-6">
 <label for="" class="py-2"><b>Enter Location:</b></label>
-<select name="" id="" class="form-control">
+<select name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
     <option value="0"></option>
     <option value="1"></option>
     <option value="2"></option>
     <option value="3"></option>
 </select>
 <label for="" class="py-2"><b>Categories:</b></label>
-<select name="" id="" class="form-control">
+<select name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
     <option value="0"></option>
     <option value="1"></option>
     <option value="2"></option>
     <option value="3"></option>
 </select>
 <label for="" class="py-2"><b>Sources:</b></label>
-<select name="" id="" class="form-control">
+<select name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
     <option value="0"></option>
     <option value="1"></option>
     <option value="2"></option>
     <option value="3"></option>
 </select>
 <label for="" class="py-2"><b>Authors:</b></label>
-<select name="" id="" class="form-control">
+<select name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
     <option value="0"></option>
     <option value="1"></option>
     <option value="2"></option>
     <option value="3"></option>
 </select>
 <label for="" class="py-2"><b>Times Of Interest:</b></label>
-<input type="date" name="" id="" class="form-control">
+<input type="date" name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
 <label for="" class="py-2"><b>Times Of Interest:</b></label>
-<input type="date" name="" id="" class="form-control">
+<input type="date" name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
 <label for="" class="py-2"><b>Times Of Interest:</b></label>
-<input type="date" name="" id="" class="form-control">
-        </div>
+<input type="date" name="" id="" class="form-control" style="display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;">
     </div>
-</div>
+      </div>
   </div>
   <!-- end row -->
 
-  <div class="row mt-3">
-    <div class="col-xl-12">
+  <div class="grid grid-cols-1 mt-3">
       <div class="text-center my-3">
-        <a href="javascript:void(0);" class="text-primary"
+        <a href="javascript:void(0);" class="text-cyan-500"
           ><i
             class="fa-solid fa-spinner fa-spin font-size-20 align-middle me-2"
           ></i>
           Load more
         </a>
       </div>
-    </div>
   </div>
 
   <!--pagination-->
-  <div class="row mt-4">
-            <div class="col-6">
-              <div>
-                <p class="mb-sm-0 font">Showing 1 to 10 of 12 entries</p>
+  <div class="grid grid-cols-2 mt-4">
+              <div class="float-left">
+                <p class="sm:mb-0 font">Showing 1 to 10 of 12 entries</p>
               </div>
-            </div>
-            <div class="col-6">
               <nav aria-label="...">
-  <ul class="pagination pagination-sm justify-content-end">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li class="page-item active" aria-current="page">
-      <span class="page-link">1</span>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
+                <ul class="flex space-x-2 justify-center pagination-Container float-right mb-2">
+          <a href="#" class="group">
+            <li class="active w-10 h-10 text-gray-800 grid place-items-center rounded-md border lg:border-2 border-green-700 group-hover:bg-green-700">
+              <span class="text-green-700 font-medium group-hover:text-slate-200">1</span>
+            </li>
+          </a>
+
+          <a href="#" class="group">
+            <li class="w-10 h-10 text-gray-800 grid place-items-center rounded-md border lg:border-2 border-red-700 group-hover:bg-red-700">
+              <span class="text-red-700 font-medium group-hover:text-slate-200">2</span>
+            </li>
+          </a>
+          <a href="#" class="group">
+            <li class="w-10 h-10 text-gray-800 grid place-items-center rounded-md border lg:border-2 border-orange-700 group-hover:bg-orange-700">
+              <span class="text-orange-700 font-medium group-hover:text-slate-200">3</span>
+            </li>
+          </a>
+
+          <a href="#" class="group">
+            <li class="w-10 h-10 text-gray-800 grid place-items-center rounded-md border lg:border-2 border-sky-700 group-hover:bg-sky-700">
+              <span class="text-sky-700 font-medium group-hover:text-slate-200">4</span>
+            </li>
+          </a>
+        </ul>
 </nav>
-            </div>
           </div>
   <!-- end row -->
 </template>

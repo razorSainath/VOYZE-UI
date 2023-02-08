@@ -15,6 +15,9 @@ export default {
           src: "https://kit.fontawesome.com/79955d71bb.js",
           crossorigin: "anonymous",
         },
+        {
+          src: "./TW-ELEMENTS-PATH/dist/js/index.min.js"
+        }
       ],
       // link:[
       //   { rel:"stylesheet",
@@ -22,7 +25,7 @@ export default {
       // ]//didnt work like this
     },
   },
-  css: ['assets/css/main.css','vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css', "assets/styles/global.scss"],
+  css: ['assets/css/main.css','vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css', "assets/styles/global.scss", "~/node_modules/tw-elements/dist/css/index.min.css"],
   build: {
     transpile: ['vuetify'],
   },
