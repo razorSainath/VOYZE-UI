@@ -10,18 +10,16 @@ let pageTitle = useState('pageTitle')
  <head>
         <title>Roles | Voyze</title>
     </head>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
-          <div class="row mb-2">
-            <div class="col-md-3">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full p-6">
+  <div class="flex flex-col">
+    <div class="flex mb-2">
+            <div class="w-3/12">
               <div class="form-inline mb-3">
                 <div class="search-box ms-2">
-                  <div class="position-relative">
+                  <div class="relative">
                     <input
                       type="text"
-                      class="form-control rounded bg-light border-0"
+                      class="form-control rounded bg-slate-100 border-2 "
                       placeholder="Search..."
                     />
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -29,379 +27,213 @@ let pageTitle = useState('pageTitle')
                 </div>
               </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-              <div class="mb-3 float-md-end">
+            <div class="w-3/12"></div>
+            <div class="w-6/12">
+              <div class="mb-3 float-right">
+                <div class="mb-3 float-md-end">
                 <a
                   href="javascript:void(0);"
-                  class="btn btn-primary waves-effect waves-light"
-                  data-bs-toggle="offcanvas" data-bs-target="#role" aria-controls="offcanvasWithBothOptions"
-                  ><i class="fa-solid fa-plus me-2"></i> Create Roles</a
-                >
+                  class="bg-cyan-500 rounded-lg p-2 hover:bg-cyan-700 text-white waves-effect waves-light"
+                  data-bs-toggle="modal" data-bs-target="#partners"
+                  ><i class="fa-solid fa-plus me-2"></i> Create Roles</a>
+              </div>
               </div>
             </div>
           </div>
-          <!-- end row -->
-          <div class="table-responsive mb-4">
-            <table class="table table-centered table-nowrap mb-0 table-sm">
-              <thead>
-                <tr>
-                  <th scope="col" style="width: 50px">
-                    <div class="form-check font-size-16">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="contacusercheck"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="contacusercheck"
-                      ></label>
-                    </div>
-                  </th>
-                  <th scope="col">S. No.</th>
-                  <th scope="col">Role Name</th>
-                  <th scope="col">Parent Role</th>
-                  <th scope="col">Created For</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Created by</th>
-                  <th scope="col">Updated by</th>
-                  <th scope="col">Updated on</th>
-                  <th scope="col">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">
-                    <div class="form-check font-size-16">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="contacusercheck1"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="contacusercheck1"
-                      ></label>
-                    </div>
-                  </th>
-                  <td>1</td>
-                  <td>Client Admin</td>
-                  <td>N.A.</td>
-                  <td>Edelman</td>
-                  <td>
-                    <div class="badge bg-pill bg-soft-success font-size-12">
-                      Active
-                    </div>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td>01-12-2022</td>
-                  <td>
-                    <ul class="list-inline mb-0">
-                      <li class="list-inline-item dropdown">
-                        <a
-                          class="text-muted font-size-18 px-2"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-haspopup="true"
-                        >
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#">Change Timezone</a>
-                          <a class="dropdown-item" href="#">Update Profile</a>
-                          <a class="dropdown-item" href="#">Align Managers</a>
-                          <a class="dropdown-item" href="#">Remove Manager</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <div class="form-check font-size-16">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="contacusercheck1"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="contacusercheck1"
-                      ></label>
-                    </div>
-                  </th>
-                  <td>1</td>
-                  <td>Client Admin</td>
-                  <td>N.A.</td>
-                  <td>Edelman</td>
-                  <td>
-                    <div class="badge bg-pill bg-soft-success font-size-12">
-                      Active
-                    </div>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td>01-12-2022</td>
-                  <td>
-                    <ul class="list-inline mb-0">
-                      <li class="list-inline-item dropdown">
-                        <a
-                          class="text-muted font-size-18 px-2"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-haspopup="true"
-                        >
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#">Change Timezone</a>
-                          <a class="dropdown-item" href="#">Update Profile</a>
-                          <a class="dropdown-item" href="#">Align Managers</a>
-                          <a class="dropdown-item" href="#">Remove Manager</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <div class="form-check font-size-16">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="contacusercheck1"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="contacusercheck1"
-                      ></label>
-                    </div>
-                  </th>
-                  <td>1</td>
-                  <td>Client Admin</td>
-                  <td>N.A.</td>
-                  <td>Edelman</td>
-                  <td>
-                    <div class="badge bg-pill bg-soft-success font-size-12">
-                      Active
-                    </div>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td>01-12-2022</td>
-                  <td>
-                    <ul class="list-inline mb-0">
-                      <li class="list-inline-item dropdown">
-                        <a
-                          class="text-muted font-size-18 px-2"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-haspopup="true"
-                        >
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#">Change Timezone</a>
-                          <a class="dropdown-item" href="#">Update Profile</a>
-                          <a class="dropdown-item" href="#">Align Managers</a>
-                          <a class="dropdown-item" href="#">Remove Manager</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <div class="form-check font-size-16">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="contacusercheck1"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="contacusercheck1"
-                      ></label>
-                    </div>
-                  </th>
-                  <td>1</td>
-                  <td>Client Admin</td>
-                  <td>N.A.</td>
-                  <td>Edelman</td>
-                  <td>
-                    <div class="badge bg-pill bg-soft-success font-size-12">
-                      Active
-                    </div>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td>01-12-2022</td>
-                  <td>
-                    <ul class="list-inline mb-0">
-                      <li class="list-inline-item dropdown">
-                        <a
-                          class="text-muted font-size-18 px-2"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-haspopup="true"
-                        >
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#">Change Timezone</a>
-                          <a class="dropdown-item" href="#">Update Profile</a>
-                          <a class="dropdown-item" href="#">Align Managers</a>
-                          <a class="dropdown-item" href="#">Remove Manager</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <div class="form-check font-size-16">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="contacusercheck1"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="contacusercheck1"
-                      ></label>
-                    </div>
-                  </th>
-                  <td>1</td>
-                  <td>Client Admin</td>
-                  <td>N.A.</td>
-                  <td>Edelman</td>
-                  <td>
-                    <div class="badge bg-pill bg-soft-success font-size-12">
-                      Active
-                    </div>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td>01-12-2022</td>
-                  <td>
-                    <ul class="list-inline mb-0">
-                      <li class="list-inline-item dropdown">
-                        <a
-                          class="text-muted font-size-18 px-2"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-haspopup="true"
-                        >
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#">Change Timezone</a>
-                          <a class="dropdown-item" href="#">Update Profile</a>
-                          <a class="dropdown-item" href="#">Align Managers</a>
-                          <a class="dropdown-item" href="#">Remove Manager</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <div class="form-check font-size-16">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="contacusercheck1"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="contacusercheck1"
-                      ></label>
-                    </div>
-                  </th>
-                  <td>1</td>
-                  <td>Client Admin</td>
-                  <td>N.A.</td>
-                  <td>Edelman</td>
-                  <td>
-                    <div class="badge bg-pill bg-soft-success font-size-12">
-                      Active
-                    </div>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td>01-12-2022</td>
-                  <td>
-                    <ul class="list-inline mb-0">
-                      <li class="list-inline-item dropdown">
-                        <a
-                          class="text-muted font-size-18 px-2"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-haspopup="true"
-                        >
-                          <i class="fa-solid fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#">Change Timezone</a>
-                          <a class="dropdown-item" href="#">Update Profile</a>
-                          <a class="dropdown-item" href="#">Align Managers</a>
-                          <a class="dropdown-item" href="#">Remove Manager</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="row mt-4">
-            <div class="col-6">
+  <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="overflow-hidden">
+        <table class="min-w-full">
+          <thead class="border-b">
+            <tr>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                S.No
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Role-Name
+              </th>
+
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Parent Role	
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Created For
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Status
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Created By
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Updated By
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Updated On
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Action
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Client Admin
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                N.A
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+               Edelman
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-400 text-white rounded-lg">Active</span>
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Viren Jangra
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Viren Jangra
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                2021-01-03
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i class="fa-solid fa-ellipsis-h"></i>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Client Admin
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                N.A
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+               Edelman
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-400 text-white rounded-lg">Active</span>
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Viren Jangra
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Viren Jangra
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                2021-01-03
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i class="fa-solid fa-ellipsis-h"></i>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Client Admin
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                N.A
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+               Edelman
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-400 text-white rounded-lg">Active</span>
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Viren Jangra
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Viren Jangra
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                2021-01-03
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i class="fa-solid fa-ellipsis-h"></i>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Client Admin
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                N.A
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+               Edelman
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-400 text-white rounded-lg">Active</span>
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Viren Jangra
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Viren Jangra
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                2021-01-03
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <i class="fa-solid fa-ellipsis-h"></i>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flex mt-4">
+            <div class="w-6/12">
               <div>
                 <p class="mb-sm-0">Showing 1 to 10 of 12 entries</p>
               </div>
             </div>
-            <div class="col-6">
-              <div class="float-sm-end">
-                <ul class="pagination mb-sm-0">
-                  <li class="page-item disabled">
-                    <a href="#" class="page-link"
-                      ><i class="mdi mdi-chevron-left"></i
-                    ></a>
-                  </li>
-                  <li class="page-item active">
-                    <a href="#" class="page-link">1</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link">2</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link">3</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link"
-                      ><i class="mdi mdi-chevron-right"></i
-                    ></a>
-                  </li>
-                </ul>
+            <div class="w-6/12">
+              <div class="float-right">
+                
+                <div class="flex justify-center">
+  <nav aria-label="Page navigation example">
+    <ul class="flex list-style-none">
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
+          href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">1</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">2</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">3</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a></li>
+    </ul>
+  </nav>
+</div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
   <!-- end row -->
   <!--role offcanvas-->
 
-  <div class="offcanvas offcanvas-end offcanvas-size-xl" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="role" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <!-- <div class="offcanvas offcanvas-end offcanvas-size-xl" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="role" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Create Roles</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -850,7 +682,7 @@ let pageTitle = useState('pageTitle')
     <button type="button" class="btn btn-primary ml-2 mb-2">Create</button>
   </div>
 
-</div>
+</div> -->
 </template>
 <style scoped>
 .offcanvas-size-xl {
