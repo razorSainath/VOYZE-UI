@@ -94,7 +94,7 @@ const just = () => {
                 <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-400 text-white rounded-lg">Active</span>
               </td>
             
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+              <td class="text-sm text-slate-500 font-light px-6 py-4 whitespace-nowrap">
                 <i class="fa-solid fa-edit ml-4"></i>
               </td>
             </tr>
