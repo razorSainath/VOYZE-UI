@@ -14,18 +14,17 @@ const just = () => {
  <head>
         <title>Users | Voyze</title>
     </head>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="card" style="border: 1px solid #f3f8fb; border-radius: 10px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-        <div class="card-body">
-          <div class="row mb-2">
-            <div class="col-md-3">
+
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow h-full p-6">
+  <div class="flex flex-col">
+    <div class="flex mb-2">
+            <div class="w-3/12">
               <div class="form-inline mb-3">
                 <div class="search-box ms-2">
-                  <div class="position-relative">
+                  <div class="relative">
                     <input
                       type="text"
-                      class="form-control rounded bg-light border-0"
+                      class="form-control rounded bg-slate-100 border-2 "
                       placeholder="Search..."
                     />
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -33,339 +32,121 @@ const just = () => {
                 </div>
               </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-              <div class="mb-3 float-md-end">
+            <div class="w-3/12"></div>
+            <div class="w-6/12">
+              <div class="mb-3 float-right">
+                <div class="mb-3 float-md-end">
                 <a
-                  class="btn btn-primary waves-effect waves-light"
-                  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar1" aria-controls="offcanvasNavbar"
-                  ><i class="fa-solid fa-plus me-2"></i> Add User</a
-                >
+                  href="javascript:void(0);"
+                  class="bg-cyan-500 rounded-lg p-2 hover:bg-cyan-700 text-white waves-effect waves-light"
+                  data-bs-toggle="modal" data-bs-target="#partners"
+                  ><i class="fa-solid fa-plus me-2"></i> Create Roles</a>
+              </div>
               </div>
             </div>
           </div>
+  <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="overflow-hidden">
+        <table class="min-w-full">
+          <thead class="border-b">
+            <tr>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                S.No
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Name
+              </th>
 
-          <div class="offcanvas offcanvas-end offcanvas-size-xl" tabindex="-1" id="offcanvasNavbar1" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel1">Add New User</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <hr>
-      <div class="offcanvas-body">
-        <div class="row">
-                    <div class="col-xl-6">
-                      <label for="">Email</label>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        class="form-control"
-                        placeholder="Enter user email"
-                      />
-                    </div>
-                    <div class="col-xl-6">
-                      <label for="">Name</label>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        class="form-control"
-                        placeholder="Enter user name"
-                      />
-                    </div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-md-6">
-                      <label for="">Manager</label>
-                      <select class="form-control">
-                        <option value="0" class="active">
-                          Select Manager
-                        </option>
-                        <option value="1">Nibhash Mishra</option>
-                        <option value="2">Sunil Kumar</option>
-                      </select>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="">Workspaces</label>
-                      <select class="form-control">
-                        <option value="0" class="active">
-                          Select a Workspace
-                        </option>
-                        <option value="1">Edelman</option>
-                        <option value="2">Razorpod</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row py-1">
-                    <div class="col-md-6">
-                      <label for="">User Type</label>
-                      <select class="form-control">
-                        <option value="0" class="active">
-                          Select User Type
-                        </option>
-                        <option value="1">User</option>
-                        <option value="2">Leader</option>
-                      </select>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="">User Role</label>
-                      <select class="form-control">
-                        <option value="0" class="active">
-                          Please select a role
-                        </option>
-                        <option value="1">Admin</option>
-                        <option value="2">Leader</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row py-1">
-                    <div class="col-md-6">
-                      <label for="">Timezone</label>
-                      <select name="" id="" class="form-control">
-                        <option value="0">Select timezone</option>
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                      </select>
-                    </div>
-                  </div>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Manager
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                User-Type
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Role
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                Status
+              </th>
 
-      </div>
-      <div class="offcanvas-footer">
-        <button
-                    type="button"
-                    class="btn btn-primary mr-2 mb-2 float-end "
-                    data-dismiss="modal"
-                  >
-                    Add
-                  </button>
-      </div>
-    </div>
-          <!-- end row -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                Nibhash Mishra
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+               Megha Seth
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+               Leader,Admin
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+               Client Admin
+              </td>
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-400 text-white rounded-lg">Active</span>
+                <i class="fa-solid fa-ellipsis-h ml-2"></i>
+              </td>
+            
+              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
 
-          <div class="table-responsive mb-4">
-            <table class="table table-centered table-nowrap mb-0 table-sm">
-              <thead>
-                <tr>
-                  <th scope="col" style="width: 50px">
-                    <div class="form-check font-size-16 display">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="contacusercheck"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="contacusercheck"
-                      ></label>
-                    </div>
-                  </th>
-                  <th scope="col" class="display">Index</th>
-                  <th scope="col" class="center">Name</th>
-                  <th scope="col" class="display">Manager</th>
-                  <th scope="col" class="display">User Type</th>
-                  <th scope="col" class="display">Role</th>
-                  <th scope="col" class="display">Status</th>
-                  <th scope="col" class="display"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">
-                    <div class="form-check font-size-16 display">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="contacusercheck1"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="contacusercheck1"
-                      ></label>
-                    </div>
-                  </th>
-                  <td class="display">1</td>
-                  <td>
-                    <div class="d-flex flex-row">
-                      <img
-                        src="~/assets/images/users/avatar-2.jpg"
-                        alt=""
-                        class="avatar-xs rounded-circle me-2"
-                      />
-                      <div class="mt-2">
-                        Nibhash Mishra
-                      </div>
-                    </div>
-                  </td>
-                  <td class="display">Megha Seth</td>
-                  <td class="display">Leader, Admin</td>
-                  <td class="display">Client Admin</td>
-                  <td class="display">
-                    <div class="badge bg-pill bg-soft-success font-size-12">
-                      Active
-                    </div>
-                  </td>
-                  <td class="display text-muted font-size-18 px-2" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar"
-                            aria-controls="offcanvasNavbar">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                  </td>
-                </tr>
-                <div
-                  class="offcanvas offcanvas-end offcanvas-size-xl"
-                  tabindex="-1"
-                  id="offcanvasNavbar"
-                  aria-labelledby="offcanvasNavbarLabel"
-                >
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                      <b>Edit User Details</b>
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close mr-2"
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <hr class="m-0" />
+              </td>
+            </tr>
 
-                    <div class="row mt-2">
-                      <div class="col-xl-6">
-                        <label class="form-check-label" for="layout-mode-light"
-                          >Name</label
-                        >
-                        <input class="form-control-plaintext" type="text" readonly value="Nibhash Mishra" />
-                      </div>
-                      <div class="col-xl-6">
-                        <label class="form-check-label" for="layout-mode-light"
-                          >Manager</label
-                        >
-                        <input class="form-control-plaintext" type="text" readonly value="Megha Seth"/>
-                      </div>
-                    </div>
-                    <div class="row mt-2">
-                      <div class="col-xl-6">
-                        <label class="form-check-label" for="layout-mode-light"
-                          >Email</label
-                        >
-                        <input class="form-control" type="text"/>
-                      </div>
-                      <div class="col-xl-6">
-                        <label class="form-check-label" for="layout-mode-light"
-                          >User Type</label
-                        >
-                        <select name="" id="" class="form-control">
-                          <option value=""></option>
-                          <option value=""></option>
-                          <option value=""></option>
-                          <option value=""></option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row mt-2">
-                     
-                      <div class="col-xl-6">
-                        <label class="form-check-label" for="layout-mode-light"
-                          >Role</label
-                        >
-                        <select name="" id="" class="form-control">
-                          <option value=""></option>
-                          <option value=""></option>
-                          <option value=""></option>
-                          <option value=""></option>
-                        </select>
-                      </div>
-                      <div class="col-xl-6">
-                        <label class="form-check-label" for="layout-mode-light"
-                          >Status</label
-                        >
-                        <select name="" id="" class="form-control">
-                          <option value="0">Active</option>
-                          <option value="1">Inactive</option>
-                          <option value="3">Archive</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row mt-2">
-                      <div class="col-xl-6">
-                        <label for="">Timezone</label>
-                        <select name="" id="" class="form-control">
-                          <option value="">Select Timezone</option>
-                          <option value=""></option>
-                          <option value=""></option>
-                          <option value=""></option>
-                        </select>
-                      </div>
-                      <div class="col-xl-6">
-                        <label for="">Workspace Manager</label>
-                        <select name="" id="" class="form-control">
-                          <option value="">Select your Manager</option>
-                          <option value=""></option>
-                          <option value=""></option>
-                          <option value=""></option>
-                          <option value=""></option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="offcanvas-footer">
-                    <button type="submit" class="btn btn-primary mr-2 mb-2 float-end">Update</button>
-                  </div>
-                </div>
-              </tbody>
-            </table>
-          </div>
-          <div class="row mt-4">
-            <div class="col-6">
-              <div>
-                <p class="mb-sm-0 font">Showing 1 to 10 of 12 entries</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <nav aria-label="...">
-  <ul class="pagination pagination-sm justify-content-end">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li class="page-item active" aria-current="page">
-      <span class="page-link">1</span>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-            </div>
-          </div>
-        </div>
+
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
+</div>
+<div class="flex mt-4">
+            <div class="w-6/12">
+              <div>
+                <p class="mb-sm-0">Showing 1 to 10 of 12 entries</p>
+              </div>
+            </div>
+            <div class="w-6/12">
+              <div class="float-right">
+                
+                <div class="flex justify-center">
+  <nav aria-label="Page navigation example">
+    <ul class="flex list-style-none">
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
+          href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">1</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">2</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">3</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a></li>
+    </ul>
+  </nav>
+</div>
+              </div>
+            </div>
+          </div>
+</div>
   <!-- end row -->
 </template>
 
-<!-- <script>
-export default {
-  name: "ToggleDiv",
-  data: function () {
-    return {
-    //   isShow: true,
-    };
-  },
 
-  props: {
-    msg: String,
-  },
-};
-</script> -->
 
 <style scoped>
 .display-win {
