@@ -1,6 +1,11 @@
 <script setup>
 let pageTitle = useState('pageTitle')
+const isModal =useState('isModal')
       pageTitle.value = "Partners" 
+      //add partner(modal),  add user(rightsidebar)
+      const openModal = ()=>{
+isModal.value =true
+      }
 </script>
 
 
@@ -34,6 +39,7 @@ let pageTitle = useState('pageTitle')
                   href="javascript:void(0);"
                   class="bg-cyan-500 rounded-lg p-2 hover:bg-cyan-700 text-white waves-effect waves-light"
                   data-bs-toggle="modal" data-bs-target="#partners"
+                  @click="openModal()"
                   ><i class="fa-solid fa-plus me-2"></i> Add Partner</a
                 >
               </div>
