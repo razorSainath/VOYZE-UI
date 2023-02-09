@@ -1,8 +1,13 @@
 <script setup>
 let isSidebarOpen = useState("isSidebarOpen");
+const isRightOffcanvasOpen = useState("isRightOffcanvasOpen",()=>false)
+const isModal = useState("isModal",()=>true)
 const random = ()=>{
   isSidebarOpen.value = false
+
 }
+
+
 </script>
 
 <template>
@@ -11,12 +16,13 @@ const random = ()=>{
     :data-sidebar-size="`${isSidebarOpen ? 'lg' : 'sm'}`"
     class="bg-slate-200"
   >
-  <div id="layout-wrapper" class="min-h-screen">
+  
+  <div id="layout-wrapper" class="min-h-screen" >
     <NavBar/>
-
-
+<Modal v-if="isModal" />
+<RightOffcanvas v-if="isRightOffcanvasOpen"/>
     <Sidebar />
-    <div class="main-content" @click="random">
+    <div class="main-content min-h-screen" @click="random">
       <div class="page-content">
         <div class="container-fluid" >
           <slot />
