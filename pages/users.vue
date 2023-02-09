@@ -1,6 +1,10 @@
 <script setup>
 const isShow = useState("isShow");
 let pageTitle = useState('pageTitle')
+const isRightOffcanvasOpen =useState('isRightOffcanvasOpen')
+const openOffcanvas = ()=>{
+  isRightOffcanvasOpen.value = true
+}
       pageTitle.value = "Users" 
 
 const just = () => {
@@ -40,7 +44,8 @@ const just = () => {
                   href="javascript:void(0);"
                   class="bg-cyan-500 rounded-lg p-2 hover:bg-cyan-700 text-white waves-effect waves-light"
                   data-bs-toggle="modal" data-bs-target="#partners"
-                  ><i class="fa-solid fa-plus me-2"></i> Create Roles</a>
+                  @click="openOffcanvas()"
+                  ><i class="fa-solid fa-plus me-2"></i> Add User</a>
               </div>
               </div>
             </div>

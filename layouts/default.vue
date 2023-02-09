@@ -1,7 +1,7 @@
 <script setup>
 let isSidebarOpen = useState("isSidebarOpen");
 const isRightOffcanvasOpen = useState("isRightOffcanvasOpen",()=>false)
-const isModal = useState("isModal",()=>true)
+const isModal = useState("isModal",()=>false)
 const random = ()=>{
   isSidebarOpen.value = false
 
