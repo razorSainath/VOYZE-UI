@@ -70,6 +70,8 @@ const just = () => {
               <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                 Status
               </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+              </th>
 
             </tr>
           </thead>
@@ -90,11 +92,10 @@ const just = () => {
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                 <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-green-400 text-white rounded-lg">Active</span>
-                <i class="fa-solid fa-ellipsis-h ml-2"></i>
               </td>
             
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-
+                <i class="fa-solid fa-edit ml-4"></i>
               </td>
             </tr>
 

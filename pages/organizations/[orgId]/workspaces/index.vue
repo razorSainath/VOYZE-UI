@@ -33,7 +33,7 @@ const toggleWorkspaceModal = ()=> {
                                 </div>
 
                             <div class="flex-initial w-2/12">
-<button type="button" class="float-right mb-3 inline-block px-6 py-2.5 bg-cyan-600 text-white font-medium text-xs leading-tight rounded-lg shadow-md hover:bg-cyan-700 hover:shadow-lg focus:bg-cyan-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-cyan-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+<button type="button" class="float-right mb-3 inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight rounded-lg shadow-md hover:bg-cyan-700 hover:shadow-lg focus:bg-cyan-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-cyan-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable" style="background-color: #099cd2;">
   <span><i class="fa-solid fa-plus"></i></span> Add New Workspace
 
   </button>
@@ -42,7 +42,7 @@ const toggleWorkspaceModal = ()=> {
                         </div>
   <!-- end row -->
 
-  <div class="grid grid-cols-3 gap-3">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
           <div class="d-flex align-items-start">
             <div class="flex-shrink-0 me-4">
@@ -60,6 +60,7 @@ const toggleWorkspaceModal = ()=> {
                   <a href="#" class="text-dark">Edelmen</a>
                 </h5>
               </div>
+              <hr>
               <div class="grid grid-cols-2">
                   <div class="mt-3">
                     <p class="text-muted mb-2">Social Profile</p>
@@ -90,6 +91,7 @@ const toggleWorkspaceModal = ()=> {
                   <a href="#" class="text-dark">Edelmen</a>
                 </h5>
               </div>
+              <hr>
               <div class="grid grid-cols-2">
                   <div class="mt-3">
                     <p class="text-muted mb-2">Social Profile</p>
@@ -120,6 +122,7 @@ const toggleWorkspaceModal = ()=> {
                   <a href="#" class="text-dark">Edelmen</a>
                 </h5>
               </div>
+              <hr>
               <div class="grid grid-cols-2">
                   <div class="mt-3">
                     <p class="text-muted mb-2">Social Profile</p>
@@ -150,6 +153,7 @@ const toggleWorkspaceModal = ()=> {
                   <a href="#" class="text-dark">Edelmen</a>
                 </h5>
               </div>
+              <hr>
               <div class="grid grid-cols-2">
                   <div class="mt-3">
                     <p class="text-muted mb-2">Social Profile</p>
@@ -180,6 +184,7 @@ const toggleWorkspaceModal = ()=> {
                   <a href="#" class="text-dark">Edelmen</a>
                 </h5>
               </div>
+              <hr>
               <div class="grid grid-cols-2">
                   <div class="mt-3">
                     <p class="text-muted mb-2">Social Profile</p>
@@ -210,6 +215,7 @@ const toggleWorkspaceModal = ()=> {
                   <a href="#" class="text-dark">Edelmen</a>
                 </h5>
               </div>
+              <hr>
               <div class="grid grid-cols-2">
                   <div class="mt-3">
                     <p class="text-muted mb-2">Social Profile</p>
@@ -226,17 +232,15 @@ const toggleWorkspaceModal = ()=> {
   </div>
   <!-- end row -->
 
-  <div class="row">
-    <div class="col-xl-12">
+  <div class="grid grid-cols-1">
       <div class="text-center my-3">
-        <a href="javascript:void(0);" class="text-primary"
+        <a href="javascript:void(0);" class="text-cyan-500"
           ><i
-            class="fa-solid fa-spinner fa-spin font-size-20 align-middle me-2"
+            class="fa-solid fa-spinner fa-spin text-lg align-middle me-2"
           ></i>
           Load more
         </a>
       </div>
-    </div>
   </div>
   <!-- end row -->
 

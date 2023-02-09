@@ -36,7 +36,7 @@ const series = [
     </head>
 
   <!-- card -->
-<div class="flex gap-3">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 md:gap-2 lg:gap-3">
 
                 <div class="flex-shrink max-w-full w-full mb-6">
                   <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
@@ -215,20 +215,20 @@ const series = [
   </div>
   <!-- end row-->
 
-  <div class="grid grid-cols-3 mt-3 gap-3 mb-3">
+  <div class="grid grid-cols-1  mt-3 gap-3 mb-3 md:grid-cols-2 lg:grid-cols-3">
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6">
           <h4 class="mb-4">Top Users</h4>
 
           <!-- table -->
 
-          <div class="flex flex-col">
-  <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="flex flex-col overflow-auto">
+  <div class="sm:-mx-6 lg:-mx-8">
     <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
       <div class="overflow-hidden">
         <table class="min-w-full">
           <tbody>
             <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 w-24"><img src="~/assets/images/users/avatar-1.jpg" alt="" class="rounded-full"></td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 w-24">Nibhash</td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                 <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
                       <p class="text-muted font-size-13 mb-0">

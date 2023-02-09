@@ -526,32 +526,31 @@ let pageTitle = useState('pageTitle')
               <div class="float-left">
                 <p class="sm:mb-0 font">Showing 1 to 10 of 12 entries</p>
               </div>
-              <nav aria-label="...">
-                <ul class="flex space-x-2 justify-center pagination-Container float-right mb-2">
-          <a href="#" class="group">
-            <li class="active w-10 h-10 text-gray-800 grid place-items-center rounded-md border lg:border-2 border-green-700 group-hover:bg-green-700">
-              <span class="text-green-700 font-medium group-hover:text-slate-200">1</span>
-            </li>
-          </a>
-
-          <a href="#" class="group">
-            <li class="w-10 h-10 text-gray-800 grid place-items-center rounded-md border lg:border-2 border-red-700 group-hover:bg-red-700">
-              <span class="text-red-700 font-medium group-hover:text-slate-200">2</span>
-            </li>
-          </a>
-          <a href="#" class="group">
-            <li class="w-10 h-10 text-gray-800 grid place-items-center rounded-md border lg:border-2 border-orange-700 group-hover:bg-orange-700">
-              <span class="text-orange-700 font-medium group-hover:text-slate-200">3</span>
-            </li>
-          </a>
-
-          <a href="#" class="group">
-            <li class="w-10 h-10 text-gray-800 grid place-items-center rounded-md border lg:border-2 border-sky-700 group-hover:bg-sky-700">
-              <span class="text-sky-700 font-medium group-hover:text-slate-200">4</span>
-            </li>
-          </a>
-        </ul>
-</nav>
+              <div class="flex justify-end">
+  <nav aria-label="Page navigation example">
+    <ul class="flex list-style-none">
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
+          href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3  border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">1</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">2</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#">3</a></li>
+      <li class="page-item"><a
+          class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+          href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a></li>
+    </ul>
+  </nav>
+</div>
           </div>
   <!-- end row -->
 </template>

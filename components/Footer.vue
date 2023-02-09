@@ -6,7 +6,7 @@
          <p class="text-left"> © 2021 - {{ new Date().getFullYear() }} Razorlabz Software Private
           Limited.</p>
         </div>
-          <div class="w-6/12"><p class="text-right">All rights reserved</p></div>
+          <div class="w-6/12"><p class="text-right text-sm">All rights reserved</p></div>
       </div>
     </div>
   </footer>
