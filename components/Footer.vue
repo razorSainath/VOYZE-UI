@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer bg-white fixed-bottom ">
+  <footer class="footer bg-white">
     <div class="container-fluid">
       <div class="flex">
         <div class="text-sm w-6/12">
